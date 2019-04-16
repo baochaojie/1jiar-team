@@ -2,5 +2,16 @@
 <project version="4">
   <component name="Encoding" addBOMForNewFiles="with NO BOM">
     <file url="file://$PROJECT_DIR$/1jiar-eureka" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/1jiar-feign-agent" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/1jiar-feign-house-ad" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/1jiar-feign-house-cu" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/1jiar-feign-integral" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/1jiar-feign-user" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/1jiar-provider-agent" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/1jiar-provider-house-ad" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/1jiar-provider-house-cu" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/1jiar-provider-house-su" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/1jiar-provider-integral" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/1jiar-provider-user" charset="UTF-8" />
   </component>
 </project>
