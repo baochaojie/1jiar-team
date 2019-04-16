@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="1jiar" />
+        <module name="1jiar-common" />
         <module name="1jiar-eureka" />
       </profile>
     </annotationProcessing>
