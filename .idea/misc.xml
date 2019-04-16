@@ -9,7 +9,22 @@
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/1jiar-eureka/pom.xml" />
+        <option value="$PROJECT_DIR$/1jiar-provider-user/pom.xml" />
+        <option value="$PROJECT_DIR$/1jiar-provider-agent/pom.xml" />
+        <option value="$PROJECT_DIR$/1jiar-provider-house-ad/pom.xml" />
+        <option value="$PROJECT_DIR$/1jiar-provider-house-cu/pom.xml" />
+        <option value="$PROJECT_DIR$/1jiar-provider-integral/pom.xml" />
+        <option value="$PROJECT_DIR$/1jiar-feign-user/pom.xml" />
+        <option value="$PROJECT_DIR$/1jiar-feign-agent/pom.xml" />
+        <option value="$PROJECT_DIR$/1jiar-feign-house-ad/pom.xml" />
+        <option value="$PROJECT_DIR$/1jiar-feign-house-cu/pom.xml" />
+        <option value="$PROJECT_DIR$/1jiar-feign-integral/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/1jiar-provider-house-su/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
