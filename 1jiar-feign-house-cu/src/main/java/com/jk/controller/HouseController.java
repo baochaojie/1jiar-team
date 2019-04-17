@@ -40,5 +40,6 @@ public class HouseController {
     @ResponseBody
     public List<Subway> queryditie(Integer pid){
         return houseService.queryditie(pid);
+
     }
 }
