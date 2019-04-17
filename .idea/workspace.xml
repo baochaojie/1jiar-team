@@ -137,17 +137,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="10" selection-start-line="10" selection-end-line="10" />
+            <state relative-caret-position="112">
+              <caret line="8" column="3" lean-forward="true" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/1jiar-common/src/java/com/jk/model/Text1.java">
+        <entry file="file://$PROJECT_DIR$/1jiar-common/src/java/com/jk/model/TextBean.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="130">
-              <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+            <state relative-caret-position="104">
+              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
             </state>
           </provider>
         </entry>
@@ -274,6 +274,32 @@
               <item name="text222" type="b2602c69:ProjectViewProjectNode" />
               <item name="text222" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="text222" type="b2602c69:ProjectViewProjectNode" />
+              <item name="text222" type="462c0819:PsiDirectoryNode" />
+              <item name="1jiar-common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="text222" type="b2602c69:ProjectViewProjectNode" />
+              <item name="text222" type="462c0819:PsiDirectoryNode" />
+              <item name="1jiar-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="text222" type="b2602c69:ProjectViewProjectNode" />
+              <item name="text222" type="462c0819:PsiDirectoryNode" />
+              <item name="1jiar-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="text222" type="b2602c69:ProjectViewProjectNode" />
+              <item name="text222" type="462c0819:PsiDirectoryNode" />
+              <item name="1jiar-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -289,7 +315,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="add_unversioned_files" value="$PROJECT_DIR$/.gitignore" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555478269357" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555478342372" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -371,7 +397,7 @@
       <workItem from="1555407669202" duration="3881000" />
       <workItem from="1555417284527" duration="9205000" />
       <workItem from="1555457399559" duration="3860000" />
-      <workItem from="1555475386574" duration="2154000" />
+      <workItem from="1555475386574" duration="2401000" />
     </task>
     <task id="LOCAL-00001" summary="实体类提交测试">
       <created>1555418475716</created>
@@ -384,10 +410,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19661000" />
+    <option name="totallyTimeSpent" value="19908000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26492536" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -644,13 +670,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/1jiar-common/src/java/com/jk/model/TextBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/1jiar-common/src/java/com/jk/model/House.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-364">
@@ -730,17 +749,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/1jiar-common/src/java/com/jk/model/Text1.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="130">
-          <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+          <caret line="5" column="9" lean-forward="true" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="8" column="3" lean-forward="true" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1jiar-common/src/java/com/jk/model/TextBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
