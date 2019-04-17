@@ -12,4 +12,8 @@ public interface AgentMapper {
     void saveAgent(AgentBean agentBean);
 
     List<AgentBean> findRegion(Integer id);
+
+    AgentBean findAgentInfoById(Integer agentId);
+
+    int deleteAgent(Integer[] ids);
 }

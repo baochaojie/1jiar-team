@@ -24,4 +24,17 @@
     <select id="findRegion" resultType="com.jk.model.AreaBean">
 		select * from t_area where pid = #{id}
 	</select>
+	<select id="findAgentInfoById" parameterType="int"  resultType="com.jk.model.AgentBean">
+		select a.*,a1.name regionName,a2.name streetName from t_agent a
+	left join t_area a1 on a.region=a1.id
+	left join t_area a2 on a2.id=a.street where a.agentId = #{agentId}
+	</select>
+	<delete id="deleteAgent" parameterType="int">
+		delete from t_agent where agentId in(
+		<foreach collection="array" index="index" item="ids" separator=",">
+			#{ids}
+		</foreach>
+		)
+
+	</delete>
 </mapper>

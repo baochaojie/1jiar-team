@@ -28,11 +28,9 @@
                 <label for="name">图书名</label>
                 <input type="text" class="form-control" id="name" placeholder="请输入经济人名称">
             </div>
-
             <button type="button" class="btn btn-primary glyphicon glyphicon-search" onclick="searchAgent()">搜索</button>
             <button type="button" onclick="deleteMany()" class="btn btn-danger glyphicon glyphicon-remove glyphicon glyphicon-trash">批量删除</button>
             <button type="button" onclick="openAdd()" class="btn btn-info glyphicon glyphicon-plus ">新增</button>
-
         </form>
     </div>
 </div>
@@ -76,8 +74,8 @@
                 {field:"detail",title:"经济人简介"},
                 {field:"agentPhone",title:"经济人电话"},
                 {field:"agentJob",title:"经纪人职位"},
-                {field:"agentImg",title:"图片",formatter:function(value,row,index){
-                        return "<img width='50px' height='50px' src='../"+value+"'>";
+                {field:"argentImg",title:"图片",formatter:function(value,row,index){
+                        return "<img width='50px' height='50px' src="+value+">";
                     }},
                 {field:"score",title:"积分"},
                 {field:"regionName",title:"地址",formatter:function(value,row,index){
@@ -86,9 +84,9 @@
                 {field:"tools",title:"操作",
                     formatter: function (value, row, index) {
                         //js传递字符串的时候一定要加引号!!!!
-                        var butt = '<button onclick="deleteById(\''+row.id+'\')" class="btn btn-danger glyphicon glyphicon-remove glyphicon glyphicon-trash" >删除</button>';
+                        var butt = '<button onclick="deleteOne(\''+row.agentId+'\')" class="btn btn-danger glyphicon glyphicon-remove glyphicon glyphicon-trash" >删除</button>';
                         butt+=" "
-                        butt += '<button onclick="openUpdate(\''+row.id+'\')" class="btn btn-info glyphicon glyphicon-wrench" >修改</button>';
+                        butt += '<button onclick="openUpdate(\''+row.agentId+'\')" class="btn btn-info glyphicon glyphicon-wrench" >修改</button>';
 
                         return butt
                     }
@@ -190,6 +188,138 @@
         });
         //初始化区域
         initRegion();
+    }
+    //修改弹框
+    function editOpenDialog(){
+        bootbox.dialog({
+            title:'修改经济人',
+            message: createAddContent("/toEditAgent"),
+            closeButton: true,
+            buttons : {
+                "success" : {
+                    "label" : "<i class='icon-ok'></i> 保存",
+                    "className" : "btn-sm btn-success",
+                    "callback" : function() {
+                        $.ajax({
+                            url:'/saveAgent',
+                            type:'post',
+                            data:$("#agentForm").serialize(),
+                            dataType:'json',
+                            success:function(data){
+                                if(data){
+                                    searchAgent();
+                                }else{
+                                    bootbox.alert({
+                                        size: "small",
+                                        title: "提示",
+                                        message: "修改失败！",
+                                        buttons: {
+                                            ok: {
+                                                label: '确定',
+                                                className: 'btn-success'
+                                            }
+                                        }
+                                    })
+                                }
+
+                            }
+                        });
+                    }
+                },
+                "cancel" : {
+                    "label" : "<i class='icon-info'></i> 取消",
+                    "className" : "btn-sm btn-danger",
+                    "callback" : function() {
+
+                    }
+                }
+            }
+
+        });
+    }
+    //修改
+    function openUpdate(agentId){
+        //打开修改弹框
+        editOpenDialog();
+        //初始化表单数据
+        initRegion();
+        //查询回显数据
+        $.ajax({
+            url:'/findAgentInfoById',
+            type:'post',
+            data:{agentId:agentId},
+            dataType:'json',
+            success:function(data){
+                $("#agentId").val(data.agentId);
+                $("#agentName").val(data.agentName);
+                $("#agentJob").val(data.agentJob);
+                $("#detail").val(data.detail);
+                $("#agentPhone").val(data.agentPhone);
+                $("#region").val(data.region);
+                $("#street").val(data.street);
+                $("#score").val(data.score);
+               // $("#hidImg").val(data.img);
+                //回显上传插件
+                //uploadImg(data.img);
+            }
+        })
+    }
+    //批量删除
+    function deleteMany(ids){
+        var ids = '';
+        var agent = $('#agentTable').bootstrapTable('getSelections');
+        for (var i = 0; i < agent.length; i++) {
+            ids += ids == '' ? agent[i].agentId : ","+agent[i].agentId
+        }
+        delAgent(ids)
+    }
+    //单删
+    function deleteOne(id){
+        delAgent(id);
+    }
+    function delAgent(ids){
+        bootbox.confirm({
+            size:'small',
+            message:"你确认要删除吗",
+            buttons:{
+                confirm:{
+                    label:'确认',
+                    className:'btn-success'
+                },
+                cancel:{
+                    label:'取消',
+                    className: 'btn-danger'
+                }
+            },
+            callback:function(result){
+                if(result){
+                    $.ajax({
+                        url:"/deleteAgent",
+                        type:"post",
+                        data:{ids:ids},
+                        dataType:"json",
+                        success:function(data){
+                            if(data){
+                                searchAgent();
+                            }else{
+                                bootbox.alert({
+                                    size: "small",
+                                    title: "提示",
+                                    message: "删除失败！",
+                                    buttons: {
+                                        ok: {
+                                            label: '确定',
+                                            className: 'btn-success'
+                                        }
+                                    }
+                                })
+                            }
+                        }
+                    })
+                }
+            }
+
+        })
     }
     </script>
 </body>
