@@ -17,6 +17,7 @@ public class HouseServiceImpl implements HouseService {
 
     @Override
     public HashMap<String, Object> findHousePage(Integer page, Integer rows, House house) {
+
         HashMap<String, Object> hashMap = new HashMap<>();
         //查询总条数
         int total = houseMapper.findHouseCount(house);

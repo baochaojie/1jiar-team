@@ -14,10 +14,15 @@ public class House implements Serializable {
     private  String houseJianzhuMianji;//建筑面积
     private  String houseTaoneiMianji;//套内面积
     private  Integer houseTypeId;//房型id 关联一张房屋类型表
+    private  String  houseTypeName;//房型名
     private  Integer houseUseId;//用途id 关联一张房屋用途表
+    private  String  houseUseName;//房型名
     private  Integer houseFloorTypeId;//楼层类型表id 关联一张楼层类型表
+    private  String  houseFloorTypeName;//楼层类型名
     private  Integer houseDirectionId;//房屋朝向表id 关联一张房屋朝向表
+    private  String  houseDirectionName;//房屋朝向名
     private  Integer houseAgeId;//楼龄id 关联一张楼龄表
+    private  String  houseAgeName;//楼龄名
     private  Integer houseElevator;//有无电梯 1是有电梯，2是没有电梯
     private  Integer houseFinish;//是否装修 1是已装修，2是未装修
     private  Integer houseHeating;//是否供暖 1是供暖，2是不供暖
@@ -32,6 +37,7 @@ public class House implements Serializable {
     //临时
     private Integer	startPrice;//开始价格
     private Integer	endPrice;//结束价格
+    private Integer[]	houseTypeIds;//结束价格
 
 
     public static long getSerialVersionUID() {
@@ -228,5 +234,53 @@ public class House implements Serializable {
 
     public void setEndPrice(Integer endPrice) {
         this.endPrice = endPrice;
+    }
+
+    public String getHouseAgeName() {
+        return houseAgeName;
+    }
+
+    public void setHouseAgeName(String houseAgeName) {
+        this.houseAgeName = houseAgeName;
+    }
+
+    public String getHouseDirectionName() {
+        return houseDirectionName;
+    }
+
+    public void setHouseDirectionName(String houseDirectionName) {
+        this.houseDirectionName = houseDirectionName;
+    }
+
+    public String getHouseFloorTypeName() {
+        return houseFloorTypeName;
+    }
+
+    public void setHouseFloorTypeName(String houseFloorTypeName) {
+        this.houseFloorTypeName = houseFloorTypeName;
+    }
+
+    public String getHouseTypeName() {
+        return houseTypeName;
+    }
+
+    public void setHouseTypeName(String houseTypeName) {
+        this.houseTypeName = houseTypeName;
+    }
+
+    public String getHouseUseName() {
+        return houseUseName;
+    }
+
+    public void setHouseUseName(String houseUseName) {
+        this.houseUseName = houseUseName;
+    }
+
+    public Integer[] getHouseTypeIds() {
+        return houseTypeIds;
+    }
+
+    public void setHouseTypeIds(Integer[] houseTypeIds) {
+        this.houseTypeIds = houseTypeIds;
     }
 }

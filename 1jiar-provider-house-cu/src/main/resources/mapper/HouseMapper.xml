@@ -16,9 +16,16 @@
         <include refid="searchSql"></include>
     </select>
     <select id="findHousePage" resultType="com.jk.model.House">
-        select h.*,a.name houseQuYuName,s.subwayName houseDiTieName from t_house h
+        select h.*,a.name houseQuYuName,s.subwayName houseDiTieName,hage.ageName houseAgeName,
+        hdir.otName houseDirectionName,hfl.floorName houseFloorTypeName,
+        hty.houseName houseTypeName,hus.useName houseUseName from t_house h
         left join t_area a on h.houseQuYuId = a.id
         left join t_subway s on h.houseDiTieId = s.subwayId
+        left join house_age hage on h.houseAgeId = hage.houseAgeId
+        left join house_direction hdir on h.houseDirectionId = hdir.houseDirectionId
+        left join house_floor hfl on h.houseFloorTypeId = hfl.houseFloorTypeId
+        left join house_type hty on h.houseTypeId = hty.houseTypeId
+        left join house_use hus on h.houseUseId = hus.houseUseId
         <include refid="searchSql"></include>
         group by h.houseId
         limit #{start},#{rows}
@@ -61,17 +68,10 @@
         <if test="house.endPrice !=null and house.endPrice!=''">
             and h.housePrice &lt;=#{house.endPrice}
         </if>
-
-        <!--
-       <if test="book.chubanshe!=null and book.chubanshe!=''">
-           and (u.chubanshe = #{book.chubanshe})
-       </if>
-       <if test="book.startTime !=null ">&lt;!&ndash; 不要判断bookTime !='' 会报错 &ndash;&gt;
-           and u.riqi &gt;=#{book.startTime}
-       </if>
-       <if test="book.endTime !=null ">&lt;!&ndash; 不要判断bookTime !='' 会报错 &ndash;&gt;
-           and u.riqi &lt;=#{book.endTime}
-       </if>-->
+        /*户型条件查询*/
+        <if test="house.houseTypeIds=null and house.houseTypeIds!=''">
+            and (h.houseTypeId in  (#{house.houseTypeIds}))
+        </if>
     </sql>
     <!-- 根据pid获取地区数据 -->
     <select id="findArea" parameterType="int" resultType="com.jk.model.Area">
