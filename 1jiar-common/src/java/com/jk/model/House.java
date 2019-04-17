@@ -4,7 +4,7 @@ package com.jk.model;
 
 import java.io.Serializable;
 
-//@Data
+//房屋主表
 public class House implements Serializable {
     private static final long serialVersionUID = -3999842267868731167L;
     private  Integer houseId;//id
@@ -24,6 +24,10 @@ public class House implements Serializable {
     private  String ridgepoleName;//楼栋
     private  String elementName;//单元
     private  String doorplateName;//门牌号
+    private  Integer houseQuYuId;//区域关联表id
+    private  String houseQuYuName;//区域名
+    private  Integer houseDiTieId;//地铁关联表id
+    private  String houseDiTieName;//地铁名
 
     public static long getSerialVersionUID() {
         return serialVersionUID;
@@ -163,5 +167,37 @@ public class House implements Serializable {
 
     public void setDoorplateName(String doorplateName) {
         this.doorplateName = doorplateName;
+    }
+
+    public Integer getHouseQuYuId() {
+        return houseQuYuId;
+    }
+
+    public void setHouseQuYuId(Integer houseQuYuId) {
+        this.houseQuYuId = houseQuYuId;
+    }
+
+    public Integer getHouseDiTieId() {
+        return houseDiTieId;
+    }
+
+    public void setHouseDiTieId(Integer houseDiTieId) {
+        this.houseDiTieId = houseDiTieId;
+    }
+
+    public String getHouseQuYuName() {
+        return houseQuYuName;
+    }
+
+    public void setHouseQuYuName(String houseQuYuName) {
+        this.houseQuYuName = houseQuYuName;
+    }
+
+    public String getHouseDiTieName() {
+        return houseDiTieName;
+    }
+
+    public void setHouseDiTieName(String houseDiTieName) {
+        this.houseDiTieName = houseDiTieName;
     }
 }

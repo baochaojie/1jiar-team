@@ -10,9 +10,63 @@
 			         目的:将maapper接口与sql映射文件//动态绑定.
  -->
 <mapper namespace="com.jk.mapper.HouseMapper">
-
-    <select id="queryhouse" resultType="com.jk.model.House">
-        select h.* from t_house h
-
+    <!-- 查询总条数 -->
+    <select id="findHouseCount" parameterType="com.jk.model.House" resultType="int">
+        select count(1) from t_house h
+        <include refid="searchSql"></include>
     </select>
+    <select id="findHousePage" resultType="com.jk.model.House">
+        select h.*,a.name houseQuYuName,s.subwayName houseDiTieName from t_house h
+        left join t_area a on h.houseQuYuId = a.id
+        left join t_subway s on h.houseDiTieId = s.subwayId
+        <include refid="searchSql"></include>
+        group by h.houseId
+        limit #{start},#{rows}
+    </select>
+    <sql id="searchSql">
+        where 1=1
+        /*房屋名条件查询*/
+       <if test="house.houseaheName!=null and house.houseaheName!=''">
+            and (h.houseaheName like '%${house.houseaheName}%')
+        </if>
+        /*是否有电梯条件查询*/
+        <if test="house.houseElevator!=null and house.houseElevator!=''">
+            and (h.houseElevator = #{house.houseElevator})
+        </if>
+        /*是否装修条件查询*/
+        <if test="house.houseFinish!=null and house.houseFinish!=''">
+            and (h.houseFinish = #{house.houseFinish})
+        </if>
+        /*是否供暖条件查询*/
+        <if test="house.houseHeating!=null and house.houseHeating!=''">
+            and (h.houseHeating = #{house.houseHeating})
+        </if>
+        /*地区街道条件查询*/
+        <if test="house.houseQuYuId!=null and house.houseQuYuId!=''">
+            and (h.houseQuYuId = #{house.houseQuYuId})
+        </if>
+        /*是地铁站点条件查询*/
+        <if test="house.houseDiTieId!=null and house.houseDiTieId!=''">
+            and (h.houseDiTieId = #{house.houseDiTieId})
+        </if>
+
+        <!--
+       <if test="book.chubanshe!=null and book.chubanshe!=''">
+           and (u.chubanshe = #{book.chubanshe})
+       </if>
+       <if test="book.startTime !=null ">&lt;!&ndash; 不要判断bookTime !='' 会报错 &ndash;&gt;
+           and u.riqi &gt;=#{book.startTime}
+       </if>
+       <if test="book.endTime !=null ">&lt;!&ndash; 不要判断bookTime !='' 会报错 &ndash;&gt;
+           and u.riqi &lt;=#{book.endTime}
+       </if>-->
+    </sql>
+    <!-- 根据pid获取地区数据 -->
+    <select id="findArea" parameterType="int" resultType="com.jk.model.Area">
+		select * from t_area a where a.pid=#{pid}
+	</select>
+    <!-- 根据pid获取地铁数据 -->
+    <select id="queryditie" parameterType="int" resultType="com.jk.model.Subway">
+		select * from t_subway s where s.subwayPid=#{pid}
+	</select>
 </mapper>
