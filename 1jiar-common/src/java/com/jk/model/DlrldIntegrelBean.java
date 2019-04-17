@@ -8,4 +8,6 @@ public class DlrldIntegrelBean {
     private Integer dltypeid;
 
     private String dltypeName;
+
+    private String dltymoney;
 }

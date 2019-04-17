@@ -10,10 +10,10 @@ import org.springframework.context.annotation.ComponentScan;
 @EnableEurekaClient
 @MapperScan("com.jk.*")
 @ComponentScan("com.jk.*")
-public class Application {
+public class Appintlication {
 
     public static void main(String[] args) {
-        SpringApplication.run(Application.class, args);
+        SpringApplication.run(Appintlication.class, args);
     }
 
 }

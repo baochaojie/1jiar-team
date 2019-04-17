@@ -8,14 +8,12 @@ public class DlrldBean {
 
     private Integer integralAdd;
 
-    private Integer dlrIIntegral;
-
     private Integer houseId;
 
     private Integer prizeTypeid;
 
     private String takeTime;
 
-    private String awardImg;
+    private Integer dlrldtyId;
 
 }

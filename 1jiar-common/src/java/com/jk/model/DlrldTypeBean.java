@@ -10,4 +10,6 @@ public class DlrldTypeBean {
     private String dlrldName;
 
     private Integer prizeId;
+
+    private String awardImg;
 }
