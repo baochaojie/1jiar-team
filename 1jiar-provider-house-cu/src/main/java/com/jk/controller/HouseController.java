@@ -21,6 +21,5 @@ public class HouseController {
 
           list= houseService.queryhouse();
         return list;
-
     }
 }
