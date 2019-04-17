@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.springframework.org/schema/jdbc">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="container-fluid">
+    <form class="form-horizontal" id="agentForm">
+        <div class="form-group">
+            <label for="agentName" class="col-sm-2 control-label">经济人名称</label>
+            <div class="col-sm-4">
+                <input type="hidden" id="agentId" name="agentId">
+                <input type="text" class="form-control" id="agentName" name="agentName">
+            </div>
+            <label for="agentJob" class="col-sm-2 control-label">经济人职位</label>
+            <div class="col-sm-4">
+                <input type="text" class="form-control" id="agentJob" name="agentJob">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="detail" class="col-sm-2 control-label">经济人简介</label>
+            <div class="col-sm-4">
+                <input type="text" class="form-control" id="detail" name="detail">
+            </div>
+            <label for="agentPhone" class="col-sm-2 control-label">经济人电话</label>
+            <div class="col-sm-4">
+                <input type="text" class="form-control" id="agentPhone" name="agentPhone">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="score" class="col-sm-2 control-label">积分</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="score" name="score">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="imgId" class="col-sm-2 control-label">封面</label>
+            <div class="col-sm-10">
+                <input id="hidImg" type="hidden" name="agentImg">
+                <input type="file" class="projectfile" id="imgId" name="file">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="region" class="col-sm-2 control-label">区域</label>
+            <div class="col-sm-4">
+                <select onchange="initStreet(this.value)" id="region"  name="region" class="from-control">  </select>
+            </div>
+            <label for="street" class="col-sm-2 control-label">街道</label>
+            <div class="col-sm-4">
+                <select id="street"  name="street" class="from-control">  </select>
+            </div>
+        </div>
+    </form>
+</div>
+</body>
+<script type="text/javascript">
+    $(function(){
+        //初始化区域
+        initRegion();
+       // uploadImg();
+    })
+</script>
+</html>
