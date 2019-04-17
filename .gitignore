@@ -8,3 +8,12 @@
 out
 gen
 .idea/
+1jiar-common/target/generated-sources/
+1jiar-eureka/target/generated-sources/
+1jiar-eureka/target/generated-test-sources/
+1jiar-feign-house-ad/target/generated-sources/
+1jiar-feign-house-ad/target/generated-test-sources/
+1jiar-provider-house-ad/target/generated-sources/
+1jiar-provider-house-ad/target/generated-test-sources/
+.gitignore
+generated-sources/
