@@ -41,6 +41,10 @@
         <if test="house.houseHeating!=null and house.houseHeating!=''">
             and (h.houseHeating = #{house.houseHeating})
         </if>
+        /*租期条件查询*/
+        <if test="house.houseZuQi!=null and house.houseZuQi!=''">
+            and (h.houseZuQi = #{house.houseZuQi})
+        </if>
         /*地区街道条件查询*/
         <if test="house.houseQuYuId!=null and house.houseQuYuId!=''">
             and (h.houseQuYuId = #{house.houseQuYuId})

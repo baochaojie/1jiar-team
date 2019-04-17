@@ -52,6 +52,14 @@
                     <input type="radio" name="houseHeating"  value="2" > 未供暖
                 </label>
             </div>
+            <div class="radio">
+                <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <label>租期</label>
+                <label>
+                    <input type="radio" name="houseZuQi"  value="1" > 月租
+                    <input type="radio" name="houseZuQi"  value="2" > 年租
+                </label>
+            </div>
         </div>
         <div class="form-Area">
             <label  >选择区域</label>
@@ -104,6 +112,7 @@
                     houseElevator:  $("input[name='houseElevator']:checked").val(),
                     houseFinish:  $("input[name='houseFinish']:checked").val(),
                     houseHeating:  $("input[name='houseHeating']:checked").val(),
+                    houseZuQi:  $("input[name='houseZuQi']:checked").val(),
                     houseQuYuId:  $("#jiedao option:selected").val(),
                     houseDiTieId: $("#zhandian option:selected").val(),
                     //chubanshe:$("#chubanshes").val(),
@@ -126,6 +135,10 @@
                 {field:"houseFloorTypeId",title:"楼层类型表id"},
                 {field:"houseDirectionId",title:"房屋朝向表id"},
                 {field:"houseAgeId",title:"楼龄id"},
+                {field:"houseZuQi",title:"租期",
+                    formatter: function(value,row,index){
+                        return value==1?"月租":value==2?"年租":"";
+                    }},
                 {field:"houseElevator",title:"有无电梯",
                     formatter: function(value,row,index){
                         return value==1?"有电梯":value==2?"没有电梯":"";

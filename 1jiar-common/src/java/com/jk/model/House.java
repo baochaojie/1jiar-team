@@ -28,6 +28,7 @@ public class House implements Serializable {
     private  String houseQuYuName;//区域名
     private  Integer houseDiTieId;//地铁关联表id
     private  String houseDiTieName;//地铁名
+    private  Integer houseZuQi;//租期 1月租 2年租
 
     public static long getSerialVersionUID() {
         return serialVersionUID;
@@ -199,5 +200,13 @@ public class House implements Serializable {
 
     public void setHouseDiTieName(String houseDiTieName) {
         this.houseDiTieName = houseDiTieName;
+    }
+
+    public Integer getHouseZuQi() {
+        return houseZuQi;
+    }
+
+    public void setHouseZuQi(Integer houseZuQi) {
+        this.houseZuQi = houseZuQi;
     }
 }
