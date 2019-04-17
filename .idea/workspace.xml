@@ -2,7 +2,262 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2860c424-a6dc-4038-8d9b-4fe74b1f0a24" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/1jiar-common/src/java/com/jk/utils/OSSClientUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/java/com/jk/controller/DlrldBeanController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/java/com/jk/service/DlrldBeanService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/bootstrap-fileinput/css/fileinput.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/bootstrap-fileinput/css/fileinput.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/bootstrap-fileinput/img/loading-sm.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/bootstrap-fileinput/img/loading.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/bootstrap-fileinput/js/fileinput.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/bootstrap-fileinput/js/fileinput.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/bootstrap-fileinput/js/locales/zh-TW.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/bootstrap-fileinput/js/locales/zh.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/bootstrap-fileinput/themes/explorer/theme.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/bootstrap-fileinput/themes/explorer/theme.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/bootstrap-fileinput/themes/fa/theme.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/bootstrap-fileinput/themes/gly/theme.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/bootstrap3/css/bootstrap-theme.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/bootstrap3/css/bootstrap-theme.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/bootstrap3/css/bootstrap-theme.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/bootstrap3/css/bootstrap-theme.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/bootstrap3/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/bootstrap3/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/bootstrap3/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/bootstrap3/css/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/bootstrap3/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/bootstrap3/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/bootstrap3/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/bootstrap3/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/bootstrap3/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/bootstrap3/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/bootstrap3/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/bootstrap3/js/npm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/fileinput.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootStrap-addTabs/bootstrap.addtabs.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootStrap-addTabs/bootstrap.addtabs.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootbox/bootbox.all.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootbox/bootbox.locales.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootbox/bootbox.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-bootbox/bootbox.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-datetimepicker/css/bootstrap-datetimepicker.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-datetimepicker/js/bootstrap-datetimepicker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.zh-CN.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.zh-TW.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-fileinput/css/fileinput.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-fileinput/css/fileinput.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-fileinput/img/loading-sm.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-fileinput/img/loading.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-fileinput/js/fileinput.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-fileinput/js/fileinput.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-fileinput/js/locales/zh-TW.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-fileinput/js/locales/zh.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-fileinput/themes/explorer/theme.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-fileinput/themes/explorer/theme.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-fileinput/themes/fa/theme.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-fileinput/themes/gly/theme.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/bootstrap-table-locale-all.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/bootstrap-table-locale-all.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/bootstrap-table.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/bootstrap-table.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/bootstrap-table.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/bootstrap-table.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/extensions/accent-neutralise/bootstrap-table-accent-neutralise.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/extensions/accent-neutralise/bootstrap-table-accent-neutralise.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/extensions/angular/bootstrap-table-angular.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/extensions/angular/bootstrap-table-angular.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/extensions/auto-refresh/bootstrap-table-auto-refresh.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/extensions/auto-refresh/bootstrap-table-auto-refresh.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/extensions/auto-refresh/bootstrap-table-auto-refresh.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/extensions/click-edit-row/bootstrap-table-click-edit-row.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/extensions/click-edit-row/bootstrap-table-click-edit-row.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/extensions/click-edit-row/bootstrap-table-click-edit-row.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/extensions/cookie/bootstrap-table-cookie.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/extensions/cookie/bootstrap-table-cookie.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/extensions/copy-rows/bootstrap-table-copy-rows.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/extensions/copy-rows/bootstrap-table-copy-rows.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/extensions/editable/bootstrap-table-editable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/extensions/editable/bootstrap-table-editable.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/extensions/export/bootstrap-table-export.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/extensions/export/bootstrap-table-export.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/extensions/filter-control/bootstrap-table-filter-control.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/extensions/filter-control/bootstrap-table-filter-control.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/extensions/filter-control/bootstrap-table-filter-control.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/extensions/filter/bootstrap-table-filter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/extensions/filter/bootstrap-table-filter.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/extensions/flat-json/bootstrap-table-flat-json.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/extensions/flat-json/bootstrap-table-flat-json.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/extensions/group-by-v2/bootstrap-table-group-by.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/extensions/group-by-v2/bootstrap-table-group-by.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/extensions/group-by-v2/bootstrap-table-group-by.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/extensions/group-by/bootstrap-table-group-by.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/extensions/group-by/bootstrap-table-group-by.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/extensions/group-by/bootstrap-table-group-by.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/extensions/i18n-enhance/bootstrap-table-i18n-enhance.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/extensions/i18n-enhance/bootstrap-table-i18n-enhance.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/extensions/key-events/bootstrap-table-key-events.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/extensions/key-events/bootstrap-table-key-events.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/extensions/mobile/bootstrap-table-mobile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/extensions/mobile/bootstrap-table-mobile.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/extensions/multi-column-toggle/bootstrap-table-multi-toggle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/extensions/multi-column-toggle/bootstrap-table-multi-toggle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/extensions/multiple-search/bootstrap-table-multiple-search.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/extensions/multiple-search/bootstrap-table-multiple-search.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/extensions/multiple-selection-row/bootstrap-table-multiple-selection-row.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/extensions/multiple-selection-row/bootstrap-table-multiple-selection-row.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/extensions/multiple-selection-row/bootstrap-table-multiple-selection-row.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/extensions/multiple-sort/bootstrap-table-multiple-sort.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/extensions/multiple-sort/bootstrap-table-multiple-sort.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/extensions/natural-sorting/bootstrap-table-natural-sorting.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/extensions/natural-sorting/bootstrap-table-natural-sorting.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/extensions/print/bootstrap-table-print.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/extensions/print/bootstrap-table-print.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/extensions/reorder-columns/bootstrap-table-reorder-columns.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/extensions/reorder-columns/bootstrap-table-reorder-columns.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/extensions/reorder-rows/bootstrap-table-reorder-rows.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/extensions/reorder-rows/bootstrap-table-reorder-rows.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/extensions/reorder-rows/bootstrap-table-reorder-rows.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/extensions/resizable/bootstrap-table-resizable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/extensions/resizable/bootstrap-table-resizable.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/extensions/select2-filter/bootstrap-table-select2-filter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/extensions/select2-filter/bootstrap-table-select2-filter.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/extensions/sticky-header/bootstrap-table-sticky-header.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/extensions/sticky-header/bootstrap-table-sticky-header.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/extensions/sticky-header/bootstrap-table-sticky-header.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/extensions/toolbar/bootstrap-table-toolbar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/extensions/toolbar/bootstrap-table-toolbar.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/extensions/tree-column/bootstrap-table-tree-column.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/extensions/tree-column/bootstrap-table-tree-column.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/extensions/tree-column/bootstrap-table-tree-column.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-af-ZA.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-af-ZA.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-ar-SA.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-ar-SA.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-ca-ES.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-ca-ES.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-cs-CZ.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-cs-CZ.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-da-DK.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-da-DK.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-de-DE.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-de-DE.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-el-GR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-el-GR.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-en-US.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-en-US.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-es-AR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-es-AR.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-es-CL.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-es-CL.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-es-CR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-es-CR.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-es-ES.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-es-ES.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-es-MX.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-es-MX.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-es-NI.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-es-NI.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-es-SP.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-es-SP.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-et-EE.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-et-EE.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-fa-IR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-fa-IR.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-fr-BE.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-fr-BE.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-fr-FR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-fr-FR.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-he-IL.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-he-IL.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-hr-HR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-hr-HR.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-hu-HU.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-hu-HU.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-id-ID.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-id-ID.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-it-IT.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-it-IT.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-ja-JP.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-ja-JP.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-ka-GE.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-ka-GE.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-ko-KR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-ko-KR.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-ms-MY.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-ms-MY.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-nb-NO.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-nb-NO.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-nl-NL.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-nl-NL.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-pl-PL.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-pl-PL.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-pt-BR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-pt-BR.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-pt-PT.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-pt-PT.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-ro-RO.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-ro-RO.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-ru-RU.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-ru-RU.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-sk-SK.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-sk-SK.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-sv-SE.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-sv-SE.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-th-TH.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-th-TH.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-tr-TR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-tr-TR.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-uk-UA.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-uk-UA.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-ur-PK.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-ur-PK.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-uz-Latn-UZ.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-uz-Latn-UZ.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-vi-VN.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-vi-VN.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-zh-CN.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-zh-CN.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-zh-TW.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-table/locale/bootstrap-table-zh-TW.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-treeview/bootstrap-treeview.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootstrap-treeview/bootstrap-treeview.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/toastr.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/toastr.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/uploadify/Change Log.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/uploadify/check-exists.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/uploadify/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/uploadify/jquery.uploadify.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/uploadify/jquery.uploadify.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/uploadify/readme.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/uploadify/uploadify-cancel.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/uploadify/uploadify.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/uploadify/uploadify.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/uploadify/uploadify.swf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/script/addbook.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/script/book.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/script/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/templates/addbook.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/templates/booklist.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/templates/choujiang.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/templates/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1jiar-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1jiar-common/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1jiar-common/src/java/com/jk/model/DlrldBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/1jiar-common/src/java/com/jk/model/DlrldBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1jiar-common/src/java/com/jk/model/DlrldTypeBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/1jiar-common/src/java/com/jk/model/DlrldTypeBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1jiar-common/target/classes/com/jk/model/DlrldBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/1jiar-common/target/classes/com/jk/model/DlrldBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1jiar-common/target/classes/com/jk/model/DlrldTypeBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/1jiar-common/target/classes/com/jk/model/DlrldTypeBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1jiar-feign-integral/src/main/java/com/jk/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/java/com/jk/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1jiar-provider-integral/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1jiar-provider-integral/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1jiar-provider-integral/src/main/java/com/jk/Appintlication.java" beforeDir="false" afterPath="$PROJECT_DIR$/1jiar-provider-integral/src/main/java/com/jk/Appintlication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1jiar-provider-integral/src/main/java/com/jk/controller/DlrldBeanController.java" beforeDir="false" afterPath="$PROJECT_DIR$/1jiar-provider-integral/src/main/java/com/jk/controller/DlrldBeanController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1jiar-provider-integral/src/main/java/com/jk/mapper/DlrldBeanMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/1jiar-provider-integral/src/main/java/com/jk/mapper/DlrldBeanMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1jiar-provider-integral/src/main/java/com/jk/service/DlrldBeanService.java" beforeDir="false" afterPath="$PROJECT_DIR$/1jiar-provider-integral/src/main/java/com/jk/service/DlrldBeanService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1jiar-provider-integral/src/main/java/com/jk/service/DlrldBeanServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/1jiar-provider-integral/src/main/java/com/jk/service/DlrldBeanServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1jiar-provider-integral/src/main/resources/mapper/DlrldBeanMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1jiar-provider-integral/src/main/resources/mapper/DlrldBeanMapper.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -26,15 +281,69 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/1jiar_team$Application__1_.ic" NAME="Application (1) Coverage Results" MODIFIED="1555500225635" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.jk.*</FILTER>
+    </SUITE>
+  </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/templates/choujiang.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-189">
+              <caret line="26" column="90" selection-start-line="26" selection-start-column="79" selection-end-line="26" selection-end-column="90" />
+              <folding>
+                <element signature="n#style#0;n#select#0;n#div#0;n#div#0;n#div#0;n#div#0;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/1jiar-feign-integral/src/main/java/com/jk/Application.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="13" selection-start-line="13" selection-end-line="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#503#504#0" expanded="true" />
+                <element signature="e#565#566#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/1jiar-provider-integral/src/main/java/com/jk/Appintlication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="276">
+              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/script/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1886">
+              <caret line="102" column="38" selection-start-line="102" selection-start-column="38" selection-end-line="102" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Gradle Kotlin DSL Build Script" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -42,6 +351,20 @@
     <findStrings>
       <find>spring-be</find>
       <find>RELEASE</find>
+      <find>mysql</find>
+      <find>`</find>
+      <find>bookTable</find>
+      <find>mydiv</find>
+      <find>hideImg</find>
+      <find>upload</find>
+      <find>showImg</find>
+      <find>prizeTable</find>
+      <find>openAdd</find>
+      <find>text</find>
+      <find>addbook</find>
+      <find>awardImg</find>
+      <find>uploadImg</find>
+      <find>headImg</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -57,27 +380,35 @@
         <option value="$PROJECT_DIR$/1jiar-eureka/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/1jiarcommon/src/java/com/jk/model/UserBean.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/1jiar-common/pom.xml" />
         <option value="$PROJECT_DIR$/1jiar-common/src/java/com/jk/model/Dlrld.java" />
         <option value="$PROJECT_DIR$/1jiar-eureka/src/main/java/com/jk/Application.java" />
         <option value="$PROJECT_DIR$/1jiar-provider-integral/src/main/java/com/jk/Application.java" />
-        <option value="$PROJECT_DIR$/1jiar-common/src/java/com/jk/model/DlrldBean.java" />
         <option value="$PROJECT_DIR$/1jiar-common/src/java/com/jk/model/DlrldIntegrelBean.java" />
-        <option value="$PROJECT_DIR$/1jiar-common/src/java/com/jk/model/DlrldTypeBean.java" />
-        <option value="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/1jiar-feign-integral/pom.xml" />
-        <option value="$PROJECT_DIR$/1jiar-feign-integral/src/main/java/com/jk/controller/DlrldBeanController.java" />
-        <option value="$PROJECT_DIR$/1jiar-feign-integral/src/main/java/com/jk/service/DlrldBeanService.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/1jiar-feign-integral/src/main/java/com/jk/Application.java" />
         <option value="$PROJECT_DIR$/1jiar-provider-integral/src/main/java/com/jk/Appintlication.java" />
-        <option value="$PROJECT_DIR$/1jiar-provider-integral/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/1jiar-provider-integral/pom.xml" />
+        <option value="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/script/book.js" />
+        <option value="$PROJECT_DIR$/1jiar-common/pom.xml" />
+        <option value="$PROJECT_DIR$/1jiar-common/src/java/com/jk/utils/OSSClientUtil.java" />
+        <option value="$PROJECT_DIR$/1jiar-common/src/java/com/jk/model/DlrldTypeBean.java" />
         <option value="$PROJECT_DIR$/1jiar-provider-integral/src/main/resources/mapper/DlrldBeanMapper.xml" />
-        <option value="$PROJECT_DIR$/1jiar-provider-integral/src/main/java/com/jk/mapper/DlrldBeanMapper.java" />
+        <option value="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/templates/addbook.html" />
+        <option value="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/templates/index.html" />
+        <option value="$PROJECT_DIR$/1jiar-provider-integral/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/templates/booklist.html" />
+        <option value="$PROJECT_DIR$/1jiar-common/src/java/com/jk/model/DlrldBean.java" />
+        <option value="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/script/addbook.js" />
+        <option value="$PROJECT_DIR$/1jiar-provider-integral/src/main/java/com/jk/controller/DlrldBeanController.java" />
         <option value="$PROJECT_DIR$/1jiar-provider-integral/src/main/java/com/jk/service/DlrldBeanService.java" />
         <option value="$PROJECT_DIR$/1jiar-provider-integral/src/main/java/com/jk/service/DlrldBeanServiceImpl.java" />
-        <option value="$PROJECT_DIR$/1jiar-provider-integral/src/main/java/com/jk/controller/DlrldBeanController.java" />
-        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/1jiar-provider-integral/src/main/java/com/jk/mapper/DlrldBeanMapper.java" />
+        <option value="$PROJECT_DIR$/1jiar-feign-integral/src/main/java/com/jk/controller/DlrldBeanController.java" />
+        <option value="$PROJECT_DIR$/1jiar-feign-integral/src/main/java/com/jk/service/DlrldBeanService.java" />
+        <option value="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/templates/choujiang.html" />
+        <option value="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/script/index.js" />
       </list>
     </option>
   </component>
@@ -96,10 +427,9 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-39" />
-    <option name="y" value="-10" />
-    <option name="width" value="1940" />
-    <option name="height" value="1050" />
+    <option name="x" value="952" />
+    <option name="width" value="977" />
+    <option name="height" value="1038" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -109,8 +439,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -118,13 +446,233 @@
               <item name="1jiar-team" type="b2602c69:ProjectViewProjectNode" />
               <item name="1jiar-team" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="1jiar-team" type="b2602c69:ProjectViewProjectNode" />
+              <item name="1jiar-team" type="462c0819:PsiDirectoryNode" />
+              <item name="1jiar-common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="1jiar-team" type="b2602c69:ProjectViewProjectNode" />
+              <item name="1jiar-team" type="462c0819:PsiDirectoryNode" />
+              <item name="1jiar-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="1jiar-team" type="b2602c69:ProjectViewProjectNode" />
+              <item name="1jiar-team" type="462c0819:PsiDirectoryNode" />
+              <item name="1jiar-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="1jiar-team" type="b2602c69:ProjectViewProjectNode" />
+              <item name="1jiar-team" type="462c0819:PsiDirectoryNode" />
+              <item name="1jiar-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="jk" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="1jiar-team" type="b2602c69:ProjectViewProjectNode" />
+              <item name="1jiar-team" type="462c0819:PsiDirectoryNode" />
+              <item name="1jiar-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="jk" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="1jiar-team" type="b2602c69:ProjectViewProjectNode" />
+              <item name="1jiar-team" type="462c0819:PsiDirectoryNode" />
+              <item name="1jiar-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="jk" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="1jiar-team" type="b2602c69:ProjectViewProjectNode" />
+              <item name="1jiar-team" type="462c0819:PsiDirectoryNode" />
+              <item name="1jiar-feign-integral" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="1jiar-team" type="b2602c69:ProjectViewProjectNode" />
+              <item name="1jiar-team" type="462c0819:PsiDirectoryNode" />
+              <item name="1jiar-feign-integral" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="1jiar-team" type="b2602c69:ProjectViewProjectNode" />
+              <item name="1jiar-team" type="462c0819:PsiDirectoryNode" />
+              <item name="1jiar-feign-integral" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="1jiar-team" type="b2602c69:ProjectViewProjectNode" />
+              <item name="1jiar-team" type="462c0819:PsiDirectoryNode" />
+              <item name="1jiar-feign-integral" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="1jiar-team" type="b2602c69:ProjectViewProjectNode" />
+              <item name="1jiar-team" type="462c0819:PsiDirectoryNode" />
+              <item name="1jiar-feign-integral" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="jk" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="1jiar-team" type="b2602c69:ProjectViewProjectNode" />
+              <item name="1jiar-team" type="462c0819:PsiDirectoryNode" />
+              <item name="1jiar-feign-integral" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="jk" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="1jiar-team" type="b2602c69:ProjectViewProjectNode" />
+              <item name="1jiar-team" type="462c0819:PsiDirectoryNode" />
+              <item name="1jiar-feign-integral" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="jk" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="1jiar-team" type="b2602c69:ProjectViewProjectNode" />
+              <item name="1jiar-team" type="462c0819:PsiDirectoryNode" />
+              <item name="1jiar-feign-integral" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="1jiar-team" type="b2602c69:ProjectViewProjectNode" />
+              <item name="1jiar-team" type="462c0819:PsiDirectoryNode" />
+              <item name="1jiar-feign-integral" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="1jiar-team" type="b2602c69:ProjectViewProjectNode" />
+              <item name="1jiar-team" type="462c0819:PsiDirectoryNode" />
+              <item name="1jiar-feign-integral" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="script" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="1jiar-team" type="b2602c69:ProjectViewProjectNode" />
+              <item name="1jiar-team" type="462c0819:PsiDirectoryNode" />
+              <item name="1jiar-feign-integral" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="1jiar-team" type="b2602c69:ProjectViewProjectNode" />
+              <item name="1jiar-team" type="462c0819:PsiDirectoryNode" />
+              <item name="1jiar-provider-integral" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="1jiar-team" type="b2602c69:ProjectViewProjectNode" />
+              <item name="1jiar-team" type="462c0819:PsiDirectoryNode" />
+              <item name="1jiar-provider-integral" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="1jiar-team" type="b2602c69:ProjectViewProjectNode" />
+              <item name="1jiar-team" type="462c0819:PsiDirectoryNode" />
+              <item name="1jiar-provider-integral" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="1jiar-team" type="b2602c69:ProjectViewProjectNode" />
+              <item name="1jiar-team" type="462c0819:PsiDirectoryNode" />
+              <item name="1jiar-provider-integral" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="1jiar-team" type="b2602c69:ProjectViewProjectNode" />
+              <item name="1jiar-team" type="462c0819:PsiDirectoryNode" />
+              <item name="1jiar-provider-integral" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="jk" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="1jiar-team" type="b2602c69:ProjectViewProjectNode" />
+              <item name="1jiar-team" type="462c0819:PsiDirectoryNode" />
+              <item name="1jiar-provider-integral" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="jk" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="1jiar-team" type="b2602c69:ProjectViewProjectNode" />
+              <item name="1jiar-team" type="462c0819:PsiDirectoryNode" />
+              <item name="1jiar-provider-integral" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="jk" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="1jiar-team" type="b2602c69:ProjectViewProjectNode" />
+              <item name="1jiar-team" type="462c0819:PsiDirectoryNode" />
+              <item name="1jiar-provider-integral" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="jk" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="1jiar-team" type="b2602c69:ProjectViewProjectNode" />
+              <item name="1jiar-team" type="462c0819:PsiDirectoryNode" />
+              <item name="1jiar-provider-integral" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="1jiar-team" type="b2602c69:ProjectViewProjectNode" />
+              <item name="1jiar-team" type="462c0819:PsiDirectoryNode" />
+              <item name="1jiar-provider-integral" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
@@ -132,13 +680,15 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="add_unversioned_files" value="true" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555463507665" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555512531111" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+    <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
@@ -147,6 +697,10 @@
       <recent name="com.jk.controller" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\1809\1jiar-team\1jiar-feign-integral\src\main\resources\templates" />
+      <recent name="E:\1809\1jiar-team\1jiar-feign-integral\src\main\resources\static" />
+      <recent name="E:\1809\1jiar-team\1jiar-common\src\java\com\jk\utils" />
+      <recent name="E:\1809\1jiar-team\1jiar-feign-integral\src\main\resources" />
       <recent name="E:\1809\1jiar-team\1jiar-provider-integral\src\main\resources" />
     </key>
   </component>
@@ -162,7 +716,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.Application">
+  <component name="RunManager" selected="Spring Boot.Application (1)">
     <configuration name="Appintlication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="1jiar-provider-integral" />
       <extension name="coverage">
@@ -176,6 +730,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Application (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="1jiar-feign-integral" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jk.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.jk.Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="1jiar-eureka" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.jk.Appeurlication" />
@@ -185,6 +752,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.Application (1)" />
         <item itemvalue="Spring Boot.Appintlication" />
       </list>
     </recent_temporary>
@@ -205,11 +773,13 @@
       <workItem from="1555421175740" duration="5208000" />
       <workItem from="1555461292758" duration="726000" />
       <workItem from="1555462043652" duration="1385000" />
+      <workItem from="1555463530228" duration="2574000" />
+      <workItem from="1555466130881" duration="36607000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16523000" />
+    <option name="totallyTimeSpent" value="55704000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -222,8 +792,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21179625" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3652815" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -233,19 +804,20 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49932975" weight="0.32577905" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.34702548" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3512748" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3838527" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.9548023" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.39235127" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50067025" side_tool="true" weight="0.3286119" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" sideWeight="0.49932975" weight="0.3286119" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
       <window_info anchor="bottom" id="Version Control" order="13" sideWeight="0.49932975" weight="0.3286119" />
-      <window_info anchor="bottom" id="Messages" order="14" weight="0.3286119" />
+      <window_info anchor="bottom" id="Messages" order="14" weight="0.3243626" />
+      <window_info anchor="right" id="Coverage" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -261,46 +833,23 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/1jiar-feign-integral/src/main/java/com/jk/controller/DlrldBeanController.java</url>
+          <line>107</line>
+          <properties />
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
           <caret line="13" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/1jiar-common/src/java/com/jk/model/UserBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/1jiar-common/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/1jiar-common/src/java/com/jk/model/DlrldTypeBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="13" column="28" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/1jiar-common/src/java/com/jk/model/DlrldIntegrelBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/1jiar-common/src/java/com/jk/model/DlrldBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -311,40 +860,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="13" column="31" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/1jiar-feign-integral/src/main/java/com/jk/service/DlrldBeanService.java" />
     <entry file="file://$PROJECT_DIR$/1jiar-feign-integral/src/main/java/com/jk/controller/DlrldBeanController.java" />
-    <entry file="file://$PROJECT_DIR$/1jiar-feign-integral/src/main/java/com/jk/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" column="42" selection-start-line="3" selection-start-column="42" selection-end-line="3" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/1jiar-feign-integral/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
           <caret line="7" column="30" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/1jiar-provider-integral/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="41" column="21" selection-start-line="41" selection-start-column="21" selection-end-line="41" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/1jiar-eureka/src/main/java/com/jk/Appeurlication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
@@ -355,45 +875,239 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/1jiar-provider-integral/src/main/resources/mapper/DlrldBeanMapper.xml">
+    <entry file="file://$PROJECT_DIR$/.gitignore" />
+    <entry file="file://$PROJECT_DIR$/1jiar-provider-house-cu/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="598">
+          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1jiar-provider-integral/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="92">
           <caret line="4" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/1jiar-feign-integral/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1jiar-provider-integral/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="28" column="8" lean-forward="true" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="8" />
+        <state relative-caret-position="302">
+          <caret line="40" column="27" selection-start-line="40" selection-start-column="27" selection-end-line="40" selection-end-column="27" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/1jiar-provider-integral/src/main/java/com/jk/service/DlrldBeanService.java">
+    <entry file="file://$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/js/bootbox/bootbox.min.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+        <state relative-caret-position="23">
+          <caret line="1" column="12" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/1jiar-provider-integral/src/main/java/com/jk/mapper/DlrldBeanMapper.java">
+    <entry file="jar://D:/maven-jar/org/springframework/spring-webmvc/5.1.6.RELEASE/spring-webmvc-5.1.6.RELEASE.jar!/org/springframework/web/servlet/DispatcherServlet.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="9" selection-start-line="9" selection-end-line="17" selection-end-column="48" />
+        <state relative-caret-position="407">
+          <caret line="510" selection-start-line="510" selection-end-line="510" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/maven-jar/com/netflix/hystrix/hystrix-core/1.5.18/hystrix-core-1.5.18.jar!/com/netflix/hystrix/AbstractCommand.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="100" selection-start-line="100" selection-end-line="100" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/maven-jar/com/netflix/hystrix/hystrix-core/1.5.18/hystrix-core-1.5.18.jar!/com/netflix/hystrix/HystrixCommand.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="56" selection-start-line="56" selection-end-line="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/maven-jar/io/github/openfeign/feign-hystrix/10.1.0/feign-hystrix-10.1.0.jar!/feign/hystrix/HystrixInvocationHandler.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="72" selection-start-line="72" selection-end-line="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/maven-jar/org/springframework/spring-webmvc/5.1.6.RELEASE/spring-webmvc-5.1.6.RELEASE.jar!/org/springframework/web/servlet/mvc/method/annotation/RequestMappingHandlerAdapter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="519" column="27" selection-start-line="519" selection-start-column="27" selection-end-line="519" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/maven-jar/org/springframework/spring-web/5.1.6.RELEASE/spring-web-5.1.6.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="109" selection-start-line="109" selection-end-line="109" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1jiar-common/src/java/com/jk/utils/OSSClientUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/fileinput.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#36#43#1" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="e#47#53#1" expanded="true" />
+            <element signature="e#35#42#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1jiar-eureka/src/main/java/com/jk/Appeurlication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1jiar-common/src/java/com/jk/model/UserBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1jiar-common/src/java/com/jk/model/DlrldIntegrelBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="9" column="29" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1jiar-common/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="19" column="20" lean-forward="true" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1jiar-common/src/java/com/jk/model/DlrldTypeBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="29" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/1jiar-provider-integral/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="14" column="6" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
+        <state relative-caret-position="253">
+          <caret line="11" column="17" lean-forward="true" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="31" column="7" selection-start-line="31" selection-start-column="7" selection-end-line="31" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/templates/addbook.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="30" column="22" lean-forward="true" selection-end-line="88" selection-end-column="7" />
+          <folding>
+            <element signature="n#style#0;n#select#0;n#div#0;n#div#0;n#div#0;n#div#0;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1jiar-provider-integral/src/main/resources/mapper/DlrldBeanMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" column="53" selection-start-line="7" selection-start-column="53" selection-end-line="7" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/script/book.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="529">
+          <caret line="23" column="41" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/templates/booklist.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="49">
+          <caret line="25" column="47" lean-forward="true" selection-start-line="25" selection-start-column="47" selection-end-line="25" selection-end-column="47" />
+          <folding>
+            <element signature="n#style#0;n#select#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1jiar-common/src/java/com/jk/model/DlrldBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/script/addbook.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="35">
+          <caret line="64" lean-forward="true" selection-start-line="64" selection-end-line="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1jiar-feign-integral/src/main/java/com/jk/controller/DlrldBeanController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="52" column="39" lean-forward="true" selection-start-line="52" selection-start-column="39" selection-end-line="52" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#990#991#0" expanded="true" />
+            <element signature="e#1050#1051#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1jiar-feign-integral/src/main/java/com/jk/service/DlrldBeanService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="32" column="13" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/1jiar-provider-integral/src/main/java/com/jk/controller/DlrldBeanController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="25" column="51" selection-start-line="25" selection-start-column="51" selection-end-line="25" selection-end-column="51" />
+        <state relative-caret-position="271">
+          <caret line="40" column="39" selection-start-line="40" selection-start-column="39" selection-end-line="40" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1078#1079#0" expanded="true" />
+            <element signature="e#1140#1141#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1jiar-provider-integral/src/main/java/com/jk/service/DlrldBeanService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -402,10 +1116,51 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/1jiar-provider-integral/src/main/java/com/jk/service/DlrldBeanServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="12" column="14" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
+        <state relative-caret-position="354">
+          <caret line="49" column="36" selection-start-line="49" selection-start-column="36" selection-end-line="49" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#631#632#0" expanded="true" />
+            <element signature="e#692#693#0" expanded="true" />
+            <element signature="e#753#754#0" expanded="true" />
+            <element signature="e#804#805#0" expanded="true" />
+            <element signature="e#867#868#0" expanded="true" />
+            <element signature="e#916#917#0" expanded="true" />
+            <element signature="e#988#989#0" expanded="true" />
+            <element signature="e#1044#1045#0" expanded="true" />
+            <element signature="e#1102#1103#0" expanded="true" />
+            <element signature="e#1151#1152#0" expanded="true" />
+            <element signature="e#1225#1226#0" expanded="true" />
+            <element signature="e#1285#1286#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1jiar-provider-integral/src/main/java/com/jk/mapper/DlrldBeanMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="39" column="13" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/templates/choujiang.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-189">
+          <caret line="26" column="90" selection-start-line="26" selection-start-column="79" selection-end-line="26" selection-end-column="90" />
+          <folding>
+            <element signature="n#style#0;n#select#0;n#div#0;n#div#0;n#div#0;n#div#0;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1jiar-feign-integral/src/main/java/com/jk/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#503#504#0" expanded="true" />
+            <element signature="e#565#566#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -417,6 +1172,13 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/script/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1886">
+          <caret line="102" column="38" selection-start-line="102" selection-start-column="38" selection-end-line="102" selection-end-column="38" />
         </state>
       </provider>
     </entry>

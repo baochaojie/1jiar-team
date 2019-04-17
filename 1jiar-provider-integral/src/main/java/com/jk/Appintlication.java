@@ -8,7 +8,7 @@ import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
 @EnableEurekaClient
-@MapperScan("com.jk.*")
+@MapperScan("com.jk.mapper")
 @ComponentScan("com.jk.*")
 public class Appintlication {
 

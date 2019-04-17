@@ -4,7 +4,7 @@ import lombok.Data;
 
 @Data
 public class DlrldBean {
-    private Integer dlrId;
+    private Integer dlrIdId;
 
     private Integer integralAdd;
 
@@ -15,5 +15,20 @@ public class DlrldBean {
     private String takeTime;
 
     private Integer dlrldtyId;
+
+    private Integer stateId=1;
+
+    //临时字段
+    private String dltyname ;
+
+    private String dley ;
+
+    private String tame ;
+
+    private String dllid ;
+
+    private String dllname ;
+
+    private String awardImg ;
 
 }
