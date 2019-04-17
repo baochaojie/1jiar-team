@@ -4,6 +4,7 @@
     <list default="true" id="2860c424-a6dc-4038-8d9b-4fe74b1f0a24" name="Default Changelist" comment="实体类提交测试2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/1jiar-common/src/java/com/jk/model/House.java" beforeDir="false" afterPath="$PROJECT_DIR$/1jiar-common/src/java/com/jk/model/House.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1jiar-common/target/classes/com/jk/model/House.class" beforeDir="false" afterPath="$PROJECT_DIR$/1jiar-common/target/classes/com/jk/model/House.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/1jiar-feign-house-cu/src/main/resources/templates/QueryHouse.html" beforeDir="false" afterPath="$PROJECT_DIR$/1jiar-feign-house-cu/src/main/resources/templates/QueryHouse.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/1jiar-provider-house-cu/src/main/resources/mapper/HouseMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1jiar-provider-house-cu/src/main/resources/mapper/HouseMapper.xml" afterDir="false" />
     </list>
@@ -34,8 +35,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/1jiar-feign-house-cu/src/main/resources/templates/QueryHouse.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1571">
-              <caret line="114" column="56" selection-start-line="114" selection-start-column="56" selection-end-line="114" selection-end-column="56" />
+            <state relative-caret-position="107">
+              <caret line="155" column="30" lean-forward="true" selection-start-line="155" selection-start-column="30" selection-end-line="155" selection-end-column="30" />
               <folding>
                 <element signature="e#1724#1730#0" expanded="true" />
                 <element signature="e#1730#1736#0" expanded="true" />
@@ -397,7 +398,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555498354747" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555498540510" />
     <property name="ignore_missing_gitignore" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -483,7 +484,7 @@
       <workItem from="1555405757141" duration="127000" />
       <workItem from="1555407669202" duration="3881000" />
       <workItem from="1555417284527" duration="9205000" />
-      <workItem from="1555457399559" duration="28466000" />
+      <workItem from="1555457399559" duration="28793000" />
     </task>
     <task id="LOCAL-00001" summary="实体类提交测试">
       <created>1555418475716</created>
@@ -496,7 +497,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41679000" />
+    <option name="totallyTimeSpent" value="42006000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -509,9 +510,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="851" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18498659" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18498659" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -522,12 +522,12 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.47009736" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49932975" visible="true" weight="0.34353268" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49932975" weight="0.34353268" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32962447" />
       <window_info anchor="bottom" id="Spring" order="7" weight="0.32962447" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.43115437" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.43115437" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50067025" side_tool="true" weight="0.35465926" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" weight="0.32962447" />
@@ -823,8 +823,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/1jiar-feign-house-cu/src/main/resources/templates/QueryHouse.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1571">
-          <caret line="114" column="56" selection-start-line="114" selection-start-column="56" selection-end-line="114" selection-end-column="56" />
+        <state relative-caret-position="107">
+          <caret line="155" column="30" lean-forward="true" selection-start-line="155" selection-start-column="30" selection-end-line="155" selection-end-column="30" />
           <folding>
             <element signature="e#1724#1730#0" expanded="true" />
             <element signature="e#1730#1736#0" expanded="true" />
