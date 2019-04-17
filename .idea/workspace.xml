@@ -2,232 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2860c424-a6dc-4038-8d9b-4fe74b1f0a24" name="Default Changelist" comment="实体类提交测试2">
-      <change afterPath="$PROJECT_DIR$/1jiar-common/src/java/com/jk/model/Owner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootStrap-addTabs/bootstrap.addtabs.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootStrap-addTabs/bootstrap.addtabs.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-bootbox/bootbox.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-datetimepicker/css/bootstrap-datetimepicker.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-datetimepicker/js/bootstrap-datetimepicker.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.zh-CN.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.zh-TW.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-fileinput/css/fileinput.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-fileinput/css/fileinput.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-fileinput/img/loading-sm.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-fileinput/img/loading.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-fileinput/js/fileinput.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-fileinput/js/fileinput.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-fileinput/js/locales/zh-TW.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-fileinput/js/locales/zh.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-fileinput/themes/explorer/theme.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-fileinput/themes/explorer/theme.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-fileinput/themes/fa/theme.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-fileinput/themes/gly/theme.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-switch-master/css/bootstrap3/bootstrap-switch.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-switch-master/css/bootstrap3/bootstrap-switch.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-switch-master/js/bootstrap-switch.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-switch-master/js/bootstrap-switch.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/bootstrap-table-locale-all.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/bootstrap-table-locale-all.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/bootstrap-table.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/bootstrap-table.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/bootstrap-table.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/bootstrap-table.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/extensions/accent-neutralise/bootstrap-table-accent-neutralise.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/extensions/accent-neutralise/bootstrap-table-accent-neutralise.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/extensions/angular/bootstrap-table-angular.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/extensions/angular/bootstrap-table-angular.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/extensions/auto-refresh/bootstrap-table-auto-refresh.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/extensions/auto-refresh/bootstrap-table-auto-refresh.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/extensions/auto-refresh/bootstrap-table-auto-refresh.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/extensions/click-edit-row/bootstrap-table-click-edit-row.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/extensions/click-edit-row/bootstrap-table-click-edit-row.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/extensions/click-edit-row/bootstrap-table-click-edit-row.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/extensions/cookie/bootstrap-table-cookie.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/extensions/cookie/bootstrap-table-cookie.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/extensions/copy-rows/bootstrap-table-copy-rows.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/extensions/copy-rows/bootstrap-table-copy-rows.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/extensions/editable/bootstrap-table-editable.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/extensions/editable/bootstrap-table-editable.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/extensions/export/bootstrap-table-export.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/extensions/export/bootstrap-table-export.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/extensions/filter-control/bootstrap-table-filter-control.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/extensions/filter-control/bootstrap-table-filter-control.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/extensions/filter-control/bootstrap-table-filter-control.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/extensions/filter/bootstrap-table-filter.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/extensions/filter/bootstrap-table-filter.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/extensions/flat-json/bootstrap-table-flat-json.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/extensions/flat-json/bootstrap-table-flat-json.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/extensions/group-by-v2/bootstrap-table-group-by.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/extensions/group-by-v2/bootstrap-table-group-by.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/extensions/group-by-v2/bootstrap-table-group-by.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/extensions/group-by/bootstrap-table-group-by.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/extensions/group-by/bootstrap-table-group-by.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/extensions/group-by/bootstrap-table-group-by.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/extensions/i18n-enhance/bootstrap-table-i18n-enhance.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/extensions/i18n-enhance/bootstrap-table-i18n-enhance.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/extensions/key-events/bootstrap-table-key-events.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/extensions/key-events/bootstrap-table-key-events.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/extensions/mobile/bootstrap-table-mobile.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/extensions/mobile/bootstrap-table-mobile.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/extensions/multi-column-toggle/bootstrap-table-multi-toggle.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/extensions/multi-column-toggle/bootstrap-table-multi-toggle.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/extensions/multiple-search/bootstrap-table-multiple-search.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/extensions/multiple-search/bootstrap-table-multiple-search.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/extensions/multiple-selection-row/bootstrap-table-multiple-selection-row.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/extensions/multiple-selection-row/bootstrap-table-multiple-selection-row.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/extensions/multiple-selection-row/bootstrap-table-multiple-selection-row.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/extensions/multiple-sort/bootstrap-table-multiple-sort.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/extensions/multiple-sort/bootstrap-table-multiple-sort.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/extensions/natural-sorting/bootstrap-table-natural-sorting.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/extensions/natural-sorting/bootstrap-table-natural-sorting.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/extensions/print/bootstrap-table-print.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/extensions/print/bootstrap-table-print.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/extensions/reorder-columns/bootstrap-table-reorder-columns.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/extensions/reorder-columns/bootstrap-table-reorder-columns.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/extensions/reorder-rows/bootstrap-table-reorder-rows.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/extensions/reorder-rows/bootstrap-table-reorder-rows.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/extensions/reorder-rows/bootstrap-table-reorder-rows.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/extensions/resizable/bootstrap-table-resizable.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/extensions/resizable/bootstrap-table-resizable.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/extensions/select2-filter/bootstrap-table-select2-filter.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/extensions/select2-filter/bootstrap-table-select2-filter.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/extensions/sticky-header/bootstrap-table-sticky-header.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/extensions/sticky-header/bootstrap-table-sticky-header.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/extensions/sticky-header/bootstrap-table-sticky-header.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/extensions/toolbar/bootstrap-table-toolbar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/extensions/toolbar/bootstrap-table-toolbar.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/extensions/tree-column/bootstrap-table-tree-column.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/extensions/tree-column/bootstrap-table-tree-column.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/extensions/tree-column/bootstrap-table-tree-column.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/locale/bootstrap-table-af-ZA.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/locale/bootstrap-table-af-ZA.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/locale/bootstrap-table-ar-SA.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/locale/bootstrap-table-ar-SA.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/locale/bootstrap-table-ca-ES.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/locale/bootstrap-table-ca-ES.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/locale/bootstrap-table-cs-CZ.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/locale/bootstrap-table-cs-CZ.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/locale/bootstrap-table-da-DK.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/locale/bootstrap-table-da-DK.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/locale/bootstrap-table-de-DE.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/locale/bootstrap-table-de-DE.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/locale/bootstrap-table-el-GR.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/locale/bootstrap-table-el-GR.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/locale/bootstrap-table-en-US.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/locale/bootstrap-table-en-US.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/locale/bootstrap-table-es-AR.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/locale/bootstrap-table-es-AR.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/locale/bootstrap-table-es-CL.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/locale/bootstrap-table-es-CL.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/locale/bootstrap-table-es-CR.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/locale/bootstrap-table-es-CR.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/locale/bootstrap-table-es-ES.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/locale/bootstrap-table-es-ES.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/locale/bootstrap-table-es-MX.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/locale/bootstrap-table-es-MX.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/locale/bootstrap-table-es-NI.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/locale/bootstrap-table-es-NI.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/locale/bootstrap-table-es-SP.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/locale/bootstrap-table-es-SP.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/locale/bootstrap-table-et-EE.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/locale/bootstrap-table-et-EE.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/locale/bootstrap-table-fa-IR.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/locale/bootstrap-table-fa-IR.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/locale/bootstrap-table-fr-BE.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/locale/bootstrap-table-fr-BE.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/locale/bootstrap-table-fr-FR.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/locale/bootstrap-table-fr-FR.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/locale/bootstrap-table-he-IL.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/locale/bootstrap-table-he-IL.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/locale/bootstrap-table-hr-HR.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/locale/bootstrap-table-hr-HR.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/locale/bootstrap-table-hu-HU.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/locale/bootstrap-table-hu-HU.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/locale/bootstrap-table-id-ID.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/locale/bootstrap-table-id-ID.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/locale/bootstrap-table-it-IT.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/locale/bootstrap-table-it-IT.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/locale/bootstrap-table-ja-JP.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/locale/bootstrap-table-ja-JP.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/locale/bootstrap-table-ka-GE.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/locale/bootstrap-table-ka-GE.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/locale/bootstrap-table-ko-KR.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/locale/bootstrap-table-ko-KR.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/locale/bootstrap-table-ms-MY.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/locale/bootstrap-table-ms-MY.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/locale/bootstrap-table-nb-NO.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/locale/bootstrap-table-nb-NO.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/locale/bootstrap-table-nl-NL.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/locale/bootstrap-table-nl-NL.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/locale/bootstrap-table-pl-PL.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/locale/bootstrap-table-pl-PL.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/locale/bootstrap-table-pt-BR.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/locale/bootstrap-table-pt-BR.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/locale/bootstrap-table-pt-PT.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/locale/bootstrap-table-pt-PT.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/locale/bootstrap-table-ro-RO.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/locale/bootstrap-table-ro-RO.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/locale/bootstrap-table-ru-RU.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/locale/bootstrap-table-ru-RU.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/locale/bootstrap-table-sk-SK.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/locale/bootstrap-table-sk-SK.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/locale/bootstrap-table-sv-SE.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/locale/bootstrap-table-sv-SE.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/locale/bootstrap-table-th-TH.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/locale/bootstrap-table-th-TH.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/locale/bootstrap-table-tr-TR.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/locale/bootstrap-table-tr-TR.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/locale/bootstrap-table-uk-UA.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/locale/bootstrap-table-uk-UA.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/locale/bootstrap-table-ur-PK.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/locale/bootstrap-table-ur-PK.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/locale/bootstrap-table-uz-Latn-UZ.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/locale/bootstrap-table-uz-Latn-UZ.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/locale/bootstrap-table-vi-VN.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/locale/bootstrap-table-vi-VN.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/locale/bootstrap-table-zh-CN.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/locale/bootstrap-table-zh-CN.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/locale/bootstrap-table-zh-TW.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-table/locale/bootstrap-table-zh-TW.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-treeview/bootstrap-treeview.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap-treeview/bootstrap-treeview.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap3/css/bootstrap-theme.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap3/css/bootstrap-theme.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap3/css/bootstrap-theme.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap3/css/bootstrap-theme.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap3/css/bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap3/css/bootstrap.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap3/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap3/css/bootstrap.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap3/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap3/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap3/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap3/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap3/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap3/js/bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap3/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/bootstrap/bootstrap3/js/npm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/jquery.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/layer/layer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/layer/mobile/layer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/layer/mobile/need/layer.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/layer/theme/default/icon-ext.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/layer/theme/default/icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/layer/theme/default/layer.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/layer/theme/default/loading-0.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/layer/theme/default/loading-1.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/static/layer/theme/default/loading-2.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/templates/addhouseinfo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1jiar-feign-house-ad/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/java/com/jk/controller/HouseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/java/com/jk/controller/HouseController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/java/com/jk/service/HouseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/java/com/jk/service/HouseService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1jiar-provider-house-ad/src/main/java/com/jk/mapper/HouseMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/1jiar-provider-house-ad/src/main/java/com/jk/mapper/HouseMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1jiar-provider-house-ad/src/main/java/com/jk/service/HouseServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/1jiar-provider-house-ad/src/main/java/com/jk/service/HouseServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1jiar-provider-house-ad/src/main/resources/mapper/house-mapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1jiar-provider-house-ad/src/main/resources/mapper/house-mapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -267,10 +43,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/templates/addhouseinfo.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="377">
+            <state relative-caret-position="-58">
               <caret line="13" column="51" selection-start-line="13" selection-start-column="51" selection-end-line="13" selection-end-column="51" />
               <folding>
                 <element signature="e#714#720#0" expanded="true" />
@@ -278,18 +54,6 @@
                 <element signature="n#style#0;n#select#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#select#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#select#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/1jiar-feign-house-ad/src/main/java/com/jk/controller/HouseController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="25">
-              <caret line="45" column="35" selection-start-line="45" selection-start-column="21" selection-end-line="45" selection-end-column="35" />
-              <folding>
-                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -342,7 +106,6 @@
         <option value="$PROJECT_DIR$/1jiar-provider-house-cu/src/main/java/com/jk/controller/HouseController.java" />
         <option value="$PROJECT_DIR$/1jiar-feign-house-cu/src/main/java/com/jk/Application.java" />
         <option value="$PROJECT_DIR$/1jiar-common/src/java/com/jk/model/TextBean.java" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/1jiar-common/src/java/com/jk/model/Text1.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/1jiar-feign-house-ad/pom.xml" />
@@ -354,6 +117,7 @@
         <option value="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/java/com/jk/controller/HouseController.java" />
         <option value="$PROJECT_DIR$/1jiar-provider-house-ad/src/main/java/com/jk/service/HouseServiceImpl.java" />
         <option value="$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/templates/addhouseinfo.html" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -408,6 +172,11 @@
               <item name="1jiar-team" type="b2602c69:ProjectViewProjectNode" />
               <item name="1jiar-team" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="1jiar-team" type="b2602c69:ProjectViewProjectNode" />
+              <item name="1jiar-team" type="462c0819:PsiDirectoryNode" />
+              <item name="1jiar-common" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -423,7 +192,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="add_unversioned_files" value="$PROJECT_DIR$/.gitignore" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555512601915" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555512716811" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -511,7 +280,7 @@
       <workItem from="1555457399559" duration="3860000" />
       <workItem from="1555475386574" duration="4722000" />
       <workItem from="1555480835385" duration="16116000" />
-      <workItem from="1555499787203" duration="11325000" />
+      <workItem from="1555499787203" duration="11571000" />
     </task>
     <task id="LOCAL-00001" summary="实体类提交测试">
       <created>1555418475716</created>
@@ -524,7 +293,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49670000" />
+    <option name="totallyTimeSpent" value="49916000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
@@ -547,7 +316,7 @@
       <window_info anchor="bottom" id="Spring" order="7" weight="0.32962447" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5012126" side_tool="true" weight="0.42628774" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.4987874" visible="true" weight="0.77264655" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.4987874" visible="true" weight="0.5168739" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" weight="0.32962447" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
       <window_info anchor="bottom" id="Version Control" order="13" weight="0.32962447" />
@@ -651,7 +420,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_171/src.zip!/java/lang/Integer.java" />
     <entry file="file://$PROJECT_DIR$/1jiar-provider-house-cu/src/main/java/com/jk/mapper/HouseMapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
@@ -775,13 +543,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/1jiar-common/src/java/com/jk/model/Text1.java" />
     <entry file="file://$PROJECT_DIR$/1jiar-common/src/java/com/jk/model/TextBean.java" />
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="9" column="6" lean-forward="true" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/1jiar-common/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-26">
@@ -1056,9 +817,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/1jiar-common/target/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="4" column="24" lean-forward="true" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="466">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1jiar-feign-house-ad/src/main/java/com/jk/controller/HouseController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="45" column="35" selection-start-line="45" selection-start-column="21" selection-end-line="45" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/1jiar-feign-house-ad/src/main/resources/templates/addhouseinfo.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
+        <state relative-caret-position="-58">
           <caret line="13" column="51" selection-start-line="13" selection-start-column="51" selection-end-line="13" selection-end-column="51" />
           <folding>
             <element signature="e#714#720#0" expanded="true" />
@@ -1066,16 +851,6 @@
             <element signature="n#style#0;n#select#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#select#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#select#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/1jiar-feign-house-ad/src/main/java/com/jk/controller/HouseController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="45" column="35" selection-start-line="45" selection-start-column="21" selection-end-line="45" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
