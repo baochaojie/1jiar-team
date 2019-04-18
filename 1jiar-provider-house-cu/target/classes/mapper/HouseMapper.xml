@@ -18,7 +18,8 @@
     <select id="findHousePage" resultType="com.jk.model.House">
         select h.*,a.name houseQuYuName,s.subwayName houseDiTieName,hage.ageName houseAgeName,
         hdir.otName houseDirectionName,hfl.floorName houseFloorTypeName,
-        hty.houseName houseTypeName,hus.useName houseUseName from t_house h
+        hty.houseName houseTypeName,hus.useName houseUseName,hzu.ZuTypeName houseZuTypeName,
+        hfe.houseTeSeName TeSeName from t_house h
         left join t_area a on h.houseQuYuId = a.id
         left join t_subway s on h.houseDiTieId = s.subwayId
         left join house_age hage on h.houseAgeId = hage.houseAgeId
@@ -26,6 +27,8 @@
         left join house_floor hfl on h.houseFloorTypeId = hfl.houseFloorTypeId
         left join house_type hty on h.houseTypeId = hty.houseTypeId
         left join house_use hus on h.houseUseId = hus.houseUseId
+        left join house_zutype hzu on h.ZuTypeid = hzu.ZuTypeid
+        left join house_feature hfe on h.houseTeSeId = hfe.houseTeSeId
         <include refid="searchSql"></include>
         group by h.houseId
         limit #{start},#{rows}
@@ -53,12 +56,18 @@
             and (h.houseZuQi = #{house.houseZuQi})
         </if>
         /*地区街道条件查询*/
-        <if test="house.houseQuYuId!=null and house.houseQuYuId!=''">
-            and (h.houseQuYuId = #{house.houseQuYuId})
+        <if test="house.houseQuYuFuId!=null and house.houseQuYuFuId!='' and house.houseQuYuFuId!=-1 and house.houseQuYuFuId!=0 ">
+            and ( h.houseQuYuId = #{house.houseQuYuFuId} )
+        </if>
+       <if test="house.houseQuYuId!=null and house.houseQuYuId!=''and house.houseQuYuId!=-1 ">
+            and ( h.houseQuYuId = #{house.houseQuYuId }   )
         </if>
         /*是地铁站点条件查询*/
-        <if test="house.houseDiTieId!=null and house.houseDiTieId!=''">
-            and (h.houseDiTieId = #{house.houseDiTieId})
+        <if test="house.houseDiTieFuId!=null and house.houseDiTieFuId!='' and house.houseDiTieFuId!=-1 and house.houseDiTieFuId!=0 ">
+            and ( h.houseDiTieId = #{house.houseDiTieFuId} )
+        </if>
+        <if test="house.houseDiTieId!=null and house.houseDiTieId!=''and house.houseDiTieId!=-1 ">
+            and ( h.houseDiTieId = #{house.houseDiTieId }   )
         </if>
         /*开始金额*/
         <if test="house.startPrice !=null and house.startPrice!='' ">
@@ -69,12 +78,24 @@
             and h.housePrice &lt;=#{house.endPrice}
         </if>
         /*户型条件查询*/
-        <if test="house.houseTypeIds=null and house.houseTypeIds!=''">
-            and (h.houseTypeId in
-            <foreach collection="house.houseTypeIds" item="houseTypeIds" separator=",">
-              #{houseTypeIds}
-            </foreach>
-              )
+        <if test="house.houseTypeId !=null and house.houseTypeId!=''">
+            and (h.houseTypeId in (${house.houseTypeId}))
+        </if>
+        /*朝向条件查询*/
+        <if test="house.houseDirectionId !=null and house.houseDirectionId!=''">
+            and (h.houseDirectionId in (${house.houseDirectionId}))
+        </if>
+        /*楼层类型条件查询*/
+        <if test="house.houseFloorTypeId !=null and house.houseFloorTypeId!=''">
+            and (h.houseFloorTypeId in (${house.houseFloorTypeId}))
+        </if>
+        /*租房方式条件查询*/
+        <if test="house.ZuTypeid!=null and house.ZuTypeid!=''">
+            and (h.ZuTypeid = #{house.ZuTypeid})
+        </if>
+        /*房屋特色查询*/
+        <if test="house.houseTeSeId !=null and house.houseTeSeId!=''">
+            and (h.houseTeSeId in (${house.houseTeSeId}))
         </if>
     </sql>
     <!-- 根据pid获取地区数据 -->
@@ -85,4 +106,8 @@
     <select id="queryditie" parameterType="int" resultType="com.jk.model.Subway">
 		select * from t_subway s where s.subwayPid=#{pid}
 	</select>
+    <!--  删除主表~~~~也可以叫卖房子！ -->
+    <delete id="deleteItem">
+   delete from t_house where houseId in (${ids})
+  </delete>
 </mapper>
