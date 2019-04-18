@@ -24,6 +24,18 @@ public class HouseServiceImpl implements HouseService {
         //分页查询
         int start = (page-1)*rows;//开始条数
         List<House> list = houseMapper.findHousePage(start,rows,house);
+        //查询特色
+        for(int i=0;i<list.size();i++){
+            String houseTeSeIdname ="";
+            String houseTeSeId = list.get(i).getHouseTeSeId();
+            String[] split = houseTeSeId.split(",");
+            for (int j=0;j<split.length;j++){
+                Integer TeSeId = Integer.parseInt(split[j]);
+                String tesename =houseMapper.featurenamebyid(TeSeId);
+                houseTeSeIdname += houseTeSeIdname==""? tesename :","+ tesename;
+             }
+            list.get(i).setHouseTeSeId(houseTeSeIdname);
+        }
         hashMap.put("total", total);
         hashMap.put("rows", list);
         return hashMap;
@@ -37,6 +49,13 @@ public class HouseServiceImpl implements HouseService {
     @Override
     public List<Subway> queryditie(Integer pid) {
         return houseMapper.queryditie(pid);
+    }
+
+    @Override
+    public Integer deleteItem(String ids) {
+        houseMapper.deleteItem(ids);
+        return 1;
+
     }
 
 }
