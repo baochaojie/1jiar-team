@@ -22,4 +22,7 @@ public interface HouseService {
     @RequestMapping("queryditie")
     @ResponseBody
     List<Subway> queryditie(@RequestParam Integer pid);
+    @ResponseBody
+    @RequestMapping("deleteItem")
+    Integer deleteItem(@RequestParam String ids);
 }

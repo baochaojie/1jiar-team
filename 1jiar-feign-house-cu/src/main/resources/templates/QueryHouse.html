@@ -26,30 +26,30 @@
 <div id="toolbar">
     <form class="form-inline" id="query_form">
         <div class="form-group">
-            <label for="houseaheName">房屋名</label>
+            <label for="houseaheName">房屋名:</label>
             <input type="text" class="form-control" id="houseaheName" placeholder="请输入房屋名">
             <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-            <label for="housePrice">房屋价格</label>
+            <label for="housePrice">房屋价格:</label>
             <input type="text" class="form-control" id="startPrice" placeholder="请输入开始价格">~
             <input type="text" class="form-control" id="endPrice" placeholder="请输入结束价格">
         </div>
         <div class="form-select">
 
 
-            <label  >选择区域</label>
+            <label  >选择区域:</label>
             <select class="selectpicker form-control" data-live-search="true" name="quyu" id="quyu" onchange="selectOnchang(this.value)">
             </select>
 
-            <label>选择街道</label>
+            <label>选择街道:</label>
             <select class="selectpicker form-control" data-live-search="true" name="jiedao" id="jiedao" >
                 <option value='-1'>请先选择区域</option>
             </select>
             <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-            <label  >选择地铁线路</label>
+            <label  >选择地铁线路:</label>
             <select class="selectpicker form-control" data-live-search="true" name="xianlu" id="xianlu" onchange="selectDiTieOnchang(this.value)">
             </select>
 
-            <label>选择地铁站</label>
+            <label>选择地铁站:</label>
             <select class="selectpicker form-control" data-live-search="true" name="zhandian" id="zhandian">
                 <option value='-1'>请先选择线路</option>
             </select>
@@ -57,7 +57,7 @@
 
         <div class="form-radio">
             <div class="radio">
-                <label>是否有电梯</label>
+                <label>是否有电梯:</label>
                 <label>
                     <input type="radio" name="houseElevator"  value="1" > 有电梯
                     <input type="radio" name="houseElevator"  value="2" > 无电梯
@@ -65,14 +65,14 @@
             </div>
             <div class="radio">
                 <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-                <label>是否装修</label>
+                <label>是否装修:</label>
                 <label>
                     <input type="radio" name="houseFinish"  value="1" > 已装修
                     <input type="radio" name="houseFinish"  value="2" > 未装修
                 </label>
             </div>
             <div class="radio">
-                <label>是否供暖</label>
+                <label>是否供暖:</label>
                 <label>
                     <input type="radio" name="houseHeating"  value="1" > 已供暖
                     <input type="radio" name="houseHeating"  value="2" > 未供暖
@@ -80,13 +80,13 @@
             </div>
             <div class="radio">
                 <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-                <label>租期</label>
+                <label>租期:</label>
                 <label>
                     <input type="radio" name="houseZuQi"  value="1" > 月租
                     <input type="radio" name="houseZuQi"  value="2" > 年租
                 </label>
                 <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-                <label>方式</label>
+                <label>方式:</label>
                 <label>
                     <input type="radio" name="ZuTypeid"  value="" > 不限
                     <input type="radio" name="ZuTypeid"  value="1" > 整租
@@ -96,7 +96,7 @@
         </div>
         <div class="form-checkbox">
             <div class="checkbox">
-                <label>户型</label>
+                <label>户型:</label>
                 <label>
                 <input type="checkbox" name="houseTypeName" value="1">一室
                 <input type="checkbox" name="houseTypeName" value="2">二室
@@ -105,7 +105,7 @@
                 <input type="checkbox" name="houseTypeName" value="5">五室+
                 </label>
                 <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-                <label>朝向</label>
+                <label>朝向:</label>
                 <label>
                     <input type="checkbox" name="houseDirectionName" value="1">东
                     <input type="checkbox" name="houseDirectionName" value="2">南
@@ -114,13 +114,26 @@
                     <input type="checkbox" name="houseDirectionName" value="5">南北
                 </label>
                 <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-                <label>楼层</label>
+                <label>楼层:</label>
                 <label>
                     <input type="checkbox" name="houseFloorTypeName" value="1">底层
                     <input type="checkbox" name="houseFloorTypeName" value="2">低层楼
                     <input type="checkbox" name="houseFloorTypeName" value="3">中层楼
                     <input type="checkbox" name="houseFloorTypeName" value="4">高层楼
                     <input type="checkbox" name="houseFloorTypeName" value="5">顶层
+                </label>
+            </div>
+            <div class="form-checkboxTeSe">
+                <label>特色:</label>
+                <label>
+                    <input type="checkbox" name="TeSeName" value="1">近地铁
+                    <input type="checkbox" name="TeSeName" value="2">拎包入住
+                    <input type="checkbox" name="TeSeName" value="3">精装修
+                    <input type="checkbox" name="TeSeName" value="4">集中供暖
+                    <input type="checkbox" name="TeSeName" value="5">押一付一
+                    <input type="checkbox" name="TeSeName" value="6">新上
+                    <input type="checkbox" name="TeSeName" value="7">认证公寓
+                    <input type="checkbox" name="TeSeName" value="8">随时看房
                 </label>
             </div>
         </div>
@@ -191,6 +204,17 @@
                     }
                 }
                 chestr3 = chestr3.substr(0,chestr3.length-1);
+                //房屋特色条查拼接字符串
+                var box4 = document.getElementsByName("TeSeName");
+                var objArray4 = box4.length;
+                var chestr4="";
+
+                for(var i=0;i<objArray4;i++){
+                    if(box4[i].checked == true){
+                        chestr4+=box4[i].value+",";
+                    }
+                }
+                chestr4 = chestr4.substr(0,chestr4.length-1);
 
                 if ($("#jiedao option:selected").val()!=null&&$("#jiedao option:selected").val()!=-1&&$("#jiedao option:selected").val()!=""){
                     $("#quyu option:selected").val(null);
@@ -218,6 +242,7 @@
                     houseTypeId:chestr,
                     houseDirectionId:chestr2,
                     houseFloorTypeId:chestr3,
+                    houseTeSeId:chestr4,
 
                 }
             },
@@ -237,6 +262,7 @@
                 {field:"houseDirectionName",title:"房屋朝向"},
                 {field:"houseAgeName",title:"楼龄"},
                 {field:"houseZuTypeName",title:"方式"},
+                {field:"houseTeSeId",title:"特色"},
                 {field:"houseZuQi",title:"租期",
                     formatter: function(value,row,index){
                         return value==1?"月租":value==2?"年租":"";
@@ -259,9 +285,9 @@
                 {field:"tools",title:"操作",
                     formatter: function (value, row, index) {
                         //js传递字符串的时候一定要加引号!!!!
-                        var butt = '<button onclick="deleteById(\''+row.id+'\')" class="btn btn-danger glyphicon glyphicon-remove glyphicon glyphicon-trash" >删除</button>';
-                        butt+=" "
-                        butt += '<button onclick="openUpdate(\''+row.id+'\')" class="btn btn-info glyphicon glyphicon-wrench" >修改</button>';
+                        var butt = '<button onclick="deleteItem(\''+row.houseId+'\')" class="btn btn-danger glyphicon glyphicon-jpy" >确认出售</button>';
+                        //butt+=" "
+                        //butt += '<button onclick="openUpdate(\''+row.houseId+'\')" class="btn btn-info glyphicon glyphicon-wrench" >修改</button>';
 
                         return butt
                     }
@@ -334,6 +360,44 @@
                     html2 += "<option value='" + data[i].subwayId + "'>" + data[i].subwayName + "</option>";
                 }
                 $("#zhandian").html(html2);
+            }
+        })
+    }
+    //单删
+    function deleteItem(id){
+        bootbox.confirm({
+            size:'small',
+            message:"你确认要删除吗",
+            buttons:{
+                confirm:{
+                    label:'确认',
+                    className:'btn-success'
+                },
+                cancel:{
+                    label:'取消',
+                    className: 'btn-danger'
+                }
+            },
+            callback:function(result){
+                if(result){
+                    $.ajax({
+                        url:'/house/deleteItem',
+                        tpye:'post',
+                        data:{
+                            ids:id
+                        },
+                        dataType:'json',
+                        success:function(data){
+                            if(data){
+                                alert("删除成功");
+                                $('#myTable').bootstrapTable('refresh');
+                            }else{
+                                alert("删除失败")
+                            }
+                        }
+                    })
+                }
+
             }
         })
     }

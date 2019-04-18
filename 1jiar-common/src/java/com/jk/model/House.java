@@ -25,6 +25,8 @@ public class House implements Serializable {
     private  String  houseAgeName;//楼龄名
     private  Integer ZuTypeid;//租房方式id 关联一张租房表
     private  String  houseZuTypeName;//租房方式 1整租 2合租
+    private  String  houseTeSeId;//房屋特色id 关联一张房屋特色表
+    private  String  TeSeName;//房屋特色名
     private  Integer houseElevator;//有无电梯 1是有电梯，2是没有电梯
     private  Integer houseFinish;//是否装修 1是已装修，2是未装修
     private  Integer houseHeating;//是否供暖 1是供暖，2是不供暖
@@ -310,5 +312,21 @@ public class House implements Serializable {
 
     public void setHouseZuTypeName(String houseZuTypeName) {
         this.houseZuTypeName = houseZuTypeName;
+    }
+
+    public String getHouseTeSeId() {
+        return houseTeSeId;
+    }
+
+    public void setHouseTeSeId(String houseTeSeId) {
+        this.houseTeSeId = houseTeSeId;
+    }
+
+    public String getTeSeName() {
+        return TeSeName;
+    }
+
+    public void setTeSeName(String teSeName) {
+        TeSeName = teSeName;
     }
 }

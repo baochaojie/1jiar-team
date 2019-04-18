@@ -16,4 +16,6 @@ public interface HouseService {
     List<Area> findArea(Integer pid);
 
     List<Subway> queryditie(Integer pid);
+
+    Integer deleteItem(String ids);
 }
