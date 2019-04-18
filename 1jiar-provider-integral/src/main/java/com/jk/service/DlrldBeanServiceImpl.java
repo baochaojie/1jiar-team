@@ -7,6 +7,7 @@ import com.jk.model.DlrldTypeBean;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.Date;
 import java.util.List;
 
 @Service
@@ -26,8 +27,8 @@ public class DlrldBeanServiceImpl implements DlrldBeanService{
     }
 
     @Override
-    public List<DlrldTypeBean> queryprize() {
-        return dlrldBeanMapper.queryprize();
+    public List<DlrldTypeBean> queryprize(Integer dltypeid) {
+        return dlrldBeanMapper.queryprize(dltypeid);
     }
 
     @Override
@@ -49,4 +50,25 @@ public class DlrldBeanServiceImpl implements DlrldBeanService{
     public DlrldBean querydlrldId(Integer houseId) {
         return dlrldBeanMapper.querydlrldId(houseId);
     }
+
+    @Override
+    public void saveDlrldBean(DlrldBean dlrldBean) {
+        Integer intee = dlrldBean.getIntegralAdd();
+        Integer integral = 0;
+        if (dlrldBean.getPrizeTypeid()==1){
+            integral=500;
+            intee=intee-integral;
+        }else if (dlrldBean.getPrizeTypeid()==2){
+            integral=1000;
+            intee=intee-integral;
+        }else if (dlrldBean.getPrizeTypeid()==3){
+            integral=3000;
+            intee=intee-integral;
+        }
+        if(integral>=0){
+            dlrldBeanMapper.saveDlrldBean(dlrldBean,integral);
+            dlrldBeanMapper.upupDlrldBean(dlrldBean,intee);
+        }
+        }
+
 }
