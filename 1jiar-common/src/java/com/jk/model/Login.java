@@ -6,11 +6,15 @@ import lombok.Data;
 public class Login {
     private Integer id;
 
-    private String logon;
+    private String name;
+
+    private String phoneNum;
+
+    private String login;
 
     private String password;
 
-    private Integer dlrIdId;
+    private String loginimg;
 
 
 }

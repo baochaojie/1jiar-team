@@ -1,7 +1,4 @@
-$(function(){
-    initTree();
-})
-
+initTree();
 function initTree(){
     $.ajax({
         url:"../findTree",
@@ -14,7 +11,7 @@ function initTree(){
                     $.addtabs.add({
                         id:node.id,
                         title:node.text,
-                        url:".."+node.href
+                        url:"../"+node.href
                     });
                 }
             })

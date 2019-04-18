@@ -20,15 +20,13 @@ public interface UserService {
     @PostMapping("findTree")
     List<Tree> findTree();
 
-    /**
-     *
-     * @param login
-     * @return
+    @RequestMapping("savelogin")
+    Integer savelogin(@RequestBody Login login);
 
-    @RequestMapping("dengl")
-    Boolean dengl(Login login);
+    @PostMapping("login")
+    @ResponseBody
+    String login(@RequestBody Login login);
 
-    @RequestMapping("login1")
-    String login1(@RequestBody Login login);
-     */
+
+
 }

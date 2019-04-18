@@ -23,8 +23,13 @@ public class PageController {
         return "login";
     }
 
-    @RequestMapping("dengl")
+    @RequestMapping("zhuc")
     public String dengl(){
-        return "dengl";
+        return "zhuc";
+    }
+
+    @RequestMapping("login1")
+    public String login1(){
+        return "login1";
     }
 }

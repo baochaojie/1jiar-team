@@ -8,10 +8,7 @@ import org.apache.tomcat.websocket.AuthenticationException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.RestTemplate;
 
 import javax.servlet.http.HttpServletRequest;
@@ -52,27 +49,21 @@ public class UserController {
 
     /**
      * 注册
-
-
-    @ResponseBody
-    @RequestMapping("dengl")
-    public Boolean dengl(Login login){
-       System.out.println("哈哈");
-        try {
-         return userService.dengl(login);
-        }catch (Exception e){
-            e.printStackTrace();
-            return false;
-        }
-    }
-
-    //登录
-    @ResponseBody
-    @RequestMapping("login1")
-    public String login1(Login login) {
-    System.out.println("哈哈");
-        return userService.login1(login);
-    }
-
      */
+    @RequestMapping("savelogin")
+    @ResponseBody
+    public Integer savelogin(Login login){
+        return  userService.savelogin(login);
+    }
+
+    /**
+     * 登录
+     */
+    @RequestMapping("login")
+    @ResponseBody
+    public String login(Login login){
+        return userService.login(login);
+    }
+
+
 }

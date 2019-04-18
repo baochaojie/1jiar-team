@@ -21,25 +21,39 @@ public class UserController {
     @Autowired
     private UserService userService;
 
+    /**
+     * 左侧树
+     */
+    @RequestMapping("findTree")
+    @ResponseBody
+    public List<Tree> findTree(){
+        return userService.findTree();
+    }
+
+    /**
+     * 表查询
+     */
+    @RequestMapping("qureyResume")
+    @ResponseBody
+    public List<Resume> qureyResume(){
+        return userService.qureyResume();
+    }
 
     /**
      * 注册
+     */
+    @RequestMapping("savelogin")
+    @ResponseBody
+    public Integer savelogin(@RequestBody Login login){
+      return   userService.savelogin(login);
+    }
 
-
-
-//登录
+    /**
+     * 登录
+     */
     @ResponseBody
     @RequestMapping("login")
-    public String login1(@RequestBody Login login, HttpSession session) {
-
-        return userService.login(login,session);
+    public String login(@RequestBody Login login) {
+        return userService.login(login);
     }
-
-    @RequestMapping("login1")
-    @ResponseBody
-    public HashMap<String,Object> login1(@RequestBody Login login, @RequestParam String imgcode, HttpServletRequest request){
-        return userService.login1(login,imgcode,request);
-    }
-/
-     */
 }

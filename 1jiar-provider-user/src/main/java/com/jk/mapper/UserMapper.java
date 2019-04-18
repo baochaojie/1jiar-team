@@ -15,18 +15,11 @@ public interface UserMapper {
 
     List<Tree> findTreeByPid(int pid);
 
-    @Select("select * from login l where l.logon=#{value}")
-    int findCount(String logon);
 
-    /**
-     *
-     * @param login
-     * @return
+    void savelogin(Login login);
 
+    @Select("select login,password from house_man where login=#{login}")
     Login login(Login login);
 
-    @Select("select l.logon,l.password from login l where l.logon=#{logon}")
-    Login UserLogin(String logon);
 
-     */
 }
