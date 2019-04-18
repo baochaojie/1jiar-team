@@ -70,11 +70,7 @@
         </if>
         /*户型条件查询*/
         <if test="house.houseTypeIds=null and house.houseTypeIds!=''">
-            and (h.houseTypeId in
-            <foreach collection="house.houseTypeIds" item="houseTypeIds" separator=",">
-              #{houseTypeIds}
-            </foreach>
-              )
+            and (h.houseTypeId in  (#{house.houseTypeIds}))
         </if>
     </sql>
     <!-- 根据pid获取地区数据 -->
