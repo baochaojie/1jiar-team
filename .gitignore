@@ -15,6 +15,20 @@ HELP.md
 .idea
 *.iws
 *.iml
+<<<<<<< HEAD
+out
+gen
+.idea/
+1jiar-common/target/generated-sources/
+1jiar-eureka/target/generated-sources/
+1jiar-eureka/target/generated-test-sources/
+1jiar-feign-house-ad/target/generated-sources/
+1jiar-feign-house-ad/target/generated-test-sources/
+1jiar-provider-house-ad/target/generated-sources/
+1jiar-provider-house-ad/target/generated-test-sources/
+.gitignore
+generated-sources/
+=======
 *.ipr
 
 ### NetBeans ###
@@ -27,3 +41,4 @@ HELP.md
 
 ### VS Code ###
 .vscode/
+>>>>>>> 3f6fcf345dcc14d98792a7ca715d55e5f7f49ea9

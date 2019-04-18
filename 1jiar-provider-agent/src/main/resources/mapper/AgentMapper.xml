@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.jk.mapper.AgentMapper">
+	<select id="findCountAgent" parameterType="com.jk.model.AgentBean" resultType="int">
+	select count(1) from t_agent a <include refid="agentWhere"></include>
+	</select>
+	<select id="findAgent" resultType="com.jk.model.AgentBean">
+	select a.*,a1.name regionName,a2.name streetName from t_agent a
+	left join t_area a1 on a.region=a1.id
+	left join t_area a2 on a2.id=a.street
+	 <include refid="agentWhere"></include>
+	 limit #{start},#{rows}
+	</select>
+	<sql id="agentWhere">
+		where 1=1
+			<if test="agentBean.agentName!=null and agentBean.agentName!=''">
+				and a.agentName like '%${agentBean.agentName}%'
+			</if>
+	</sql>
+    <insert id="saveAgent" parameterType="com.jk.model.AgentBean">
+    insert into t_agent(agentName,agentJob,region,detail,street,agentPhone,argentImg,score)
+    values(#{agentName},#{agentJob},#{region},#{detail},#{street},#{agentPhone},#{argentImg},#{score})
+	</insert>
+    <select id="findRegion" resultType="com.jk.model.AreaBean">
+		select * from t_area where pid = #{id}
+	</select>
+	<select id="findAgentInfoById" parameterType="int"  resultType="com.jk.model.AgentBean">
+		select a.*,a1.name regionName,a2.name streetName from t_agent a
+	left join t_area a1 on a.region=a1.id
+	left join t_area a2 on a2.id=a.street where a.agentId = #{agentId}
+	</select>
+	<delete id="deleteAgent" parameterType="int">
+		delete from t_agent where agentId in(
+		<foreach collection="array" index="index" item="ids" separator=",">
+			#{ids}
+		</foreach>
+		)
+
+	</delete>
+</mapper>
