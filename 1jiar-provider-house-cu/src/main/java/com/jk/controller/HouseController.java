@@ -32,4 +32,12 @@ public class HouseController {
     public List<Subway> queryditie(@RequestParam Integer pid){
         return houseService.queryditie(pid);
     }
+
+    //删除
+    @ResponseBody
+    @RequestMapping("deleteItem")
+    public Integer deleteItem(@RequestParam String ids){
+        houseService.deleteItem(ids);
+        return 1;
+    }
 }

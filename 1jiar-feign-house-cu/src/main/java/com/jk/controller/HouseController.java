@@ -42,4 +42,11 @@ public class HouseController {
         return houseService.queryditie(pid);
 
     }
+    //删除
+    @ResponseBody
+    @RequestMapping("deleteItem")
+    public Integer deleteItem(String ids){
+        houseService.deleteItem(ids);
+        return 1;
+    }
 }
