@@ -2,6 +2,8 @@ package com.jk.controller;
 
 import com.jk.model.AgentBean;
 import com.jk.model.AreaBean;
+import com.jk.model.House;
+import com.jk.model.LabelBean;
 import com.jk.service.AgentService;
 import com.jk.utils.OSSClientUtil;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,7 +28,7 @@ public class AgentController {
     @RequestMapping("saveAgent")
     @ResponseBody
     public void saveAgent(AgentBean agentBean){
-        agentBean.setArgentImg(agentImg);
+        agentBean.setArgentImg(argentImg);
         agentService.saveAgent(agentBean);
     }
     //跳转到经济人新增的页面
@@ -60,7 +62,7 @@ public class AgentController {
     public AgentBean findAgentInfoById(Integer agentId){
         return agentService.findAgentInfoById(agentId);
     }
-    String agentImg ="";
+    String argentImg ="";
     //上传图片
     @RequestMapping("text")
     @ResponseBody
@@ -72,7 +74,7 @@ public class AgentController {
         String name = ossClient.uploadImg2Oss(file);
         String imgUrl = ossClient.getImgUrl(name);
         String[] split = imgUrl.split("\\?");
-        agentImg=split[0];
+        argentImg=split[0];
         return split[0];
     }
     @RequestMapping("src")
@@ -85,5 +87,32 @@ public class AgentController {
     public boolean deleteAgent(Integer[]ids){
         System.out.println(ids);
         return agentService.deleteAgent(ids);
+    }
+    //查询评论
+    @RequestMapping("findCommentCount")
+    @ResponseBody
+    public Integer findCommentCount(Integer agentId){
+        Integer commentCount = agentService.findCommentCount(agentId);
+        System.out.println("------------------"+commentCount);
+        return commentCount;
+    }
+    //点击评论跳转到查询经济人的页面
+    @RequestMapping("toAgent2")
+    public String toAgent2(){
+        return "toAgent2";
+    }
+    //查询小区
+    @RequestMapping("findHouse")
+    @ResponseBody
+    public List<House> findHouse(){
+        return agentService.findHouse();
+    }
+
+
+    //查询标签
+    @RequestMapping("findLabel")
+    @ResponseBody
+    public List<LabelBean> findLabel(){
+        return agentService.findLabel();
     }
 }

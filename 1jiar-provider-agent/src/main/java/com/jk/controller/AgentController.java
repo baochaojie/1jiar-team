@@ -2,6 +2,8 @@ package com.jk.controller;
 
 import com.jk.mapper.AgentMapper;
 import com.jk.model.AgentBean;
+import com.jk.model.House;
+import com.jk.model.LabelBean;
 import com.jk.utils.OSSClientUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -18,6 +20,14 @@ public class AgentController {
 
     @Autowired
     private AgentMapper agentMapper;
+
+    //查询评论
+    @RequestMapping
+    @ResponseBody
+    public Integer findCommentCount(@RequestParam Integer agentId){
+        Integer commentCount = agentMapper.findCommentCount(agentId);
+        return commentCount;
+    }
     //查询经济人
     @RequestMapping("findAgent")
     @ResponseBody
@@ -27,6 +37,10 @@ public class AgentController {
         Integer total = agentMapper.findCountAgent(agentBean);
         Integer start = (page-1)*rows;
         List<AgentBean> list = agentMapper.findAgent(start,rows,agentBean);
+        for (int i = 0 ; i < list.size() ;i++){
+            Integer commentCount = agentMapper.findCommentCount(list.get(i).getAgentId());
+            list.get(i).setCommentCount(commentCount);
+        }
         map.put("total",total);
         map.put("rows",list);
         return map;
@@ -59,5 +73,17 @@ public class AgentController {
         }else{
             return false;
         }
+    }
+    //查询小区
+    @RequestMapping("findHouse")
+    @ResponseBody
+    public List<House> findHouse(){
+        return agentMapper.findHouse();
+    }
+    //查询标签
+    @RequestMapping("findLabel")
+    @ResponseBody
+    public List<LabelBean> findLabel(){
+        return agentMapper.findLabel();
     }
 }
