@@ -32,8 +32,31 @@
             <label for="housePrice">房屋价格</label>
             <input type="text" class="form-control" id="startPrice" placeholder="请输入开始价格">~
             <input type="text" class="form-control" id="endPrice" placeholder="请输入结束价格">
+        </div>
+        <div class="form-select">
+
+
+            <label  >选择区域</label>
+            <select class="selectpicker form-control" data-live-search="true" name="quyu" id="quyu" onchange="selectOnchang(this.value)">
+            </select>
+
+            <label>选择街道</label>
+            <select class="selectpicker form-control" data-live-search="true" name="jiedao" id="jiedao" >
+                <option value='-1'>请先选择区域</option>
+            </select>
+            <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <label  >选择地铁线路</label>
+            <select class="selectpicker form-control" data-live-search="true" name="xianlu" id="xianlu" onchange="selectDiTieOnchang(this.value)">
+            </select>
+
+            <label>选择地铁站</label>
+            <select class="selectpicker form-control" data-live-search="true" name="zhandian" id="zhandian">
+                <option value='-1'>请先选择线路</option>
+            </select>
+        </div>
+
+        <div class="form-radio">
             <div class="radio">
-                <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
                 <label>是否有电梯</label>
                 <label>
                     <input type="radio" name="houseElevator"  value="1" > 有电梯
@@ -62,9 +85,17 @@
                     <input type="radio" name="houseZuQi"  value="1" > 月租
                     <input type="radio" name="houseZuQi"  value="2" > 年租
                 </label>
-            </div>
-            <div class="checkbox">
                 <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <label>方式</label>
+                <label>
+                    <input type="radio" name="ZuTypeid"  value="" > 不限
+                    <input type="radio" name="ZuTypeid"  value="1" > 整租
+                    <input type="radio" name="ZuTypeid"  value="2" > 合租
+                </label>
+            </div>
+        </div>
+        <div class="form-checkbox">
+            <div class="checkbox">
                 <label>户型</label>
                 <label>
                 <input type="checkbox" name="houseTypeName" value="1">一室
@@ -73,32 +104,35 @@
                 <input type="checkbox" name="houseTypeName" value="4">四室
                 <input type="checkbox" name="houseTypeName" value="5">五室+
                 </label>
+                <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <label>朝向</label>
+                <label>
+                    <input type="checkbox" name="houseDirectionName" value="1">东
+                    <input type="checkbox" name="houseDirectionName" value="2">南
+                    <input type="checkbox" name="houseDirectionName" value="3">西
+                    <input type="checkbox" name="houseDirectionName" value="4">北
+                    <input type="checkbox" name="houseDirectionName" value="5">南北
+                </label>
+                <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <label>楼层</label>
+                <label>
+                    <input type="checkbox" name="houseFloorTypeName" value="1">底层
+                    <input type="checkbox" name="houseFloorTypeName" value="2">低层楼
+                    <input type="checkbox" name="houseFloorTypeName" value="3">中层楼
+                    <input type="checkbox" name="houseFloorTypeName" value="4">高层楼
+                    <input type="checkbox" name="houseFloorTypeName" value="5">顶层
+                </label>
             </div>
         </div>
-        <div class="form-select">
-            <label  >选择区域</label>
-                <select class="selectpicker form-control" data-live-search="true" name="quyu" id="quyu" onchange="selectOnchang(this)">
-                </select>
-
-            <label>选择街道</label>
-                <select class="selectpicker form-control" data-live-search="true" name="jiedao" id="jiedao">
-                </select>
-            <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-            <label  >选择地铁线路</label>
-            <select class="selectpicker form-control" data-live-search="true" name="xianlu" id="xianlu" onchange="selectDiTieOnchang(this)">
-            </select>
-
-            <label>选择地铁站</label>
-            <select class="selectpicker form-control" data-live-search="true" name="zhandian" id="zhandian">
-            </select>
-        </div>
 
 
+
+        <button type="reset" class="btn btn-primary glyphicon glyphicon-search" >重置</button>
+        <button type="button" class="btn btn-primary glyphicon glyphicon-search" onclick="searchUser()">搜索</button>
 
 
     </form>
-    <button type="button" class="btn btn-primary glyphicon glyphicon-search" onclick="searchUser()">搜索</button>
-    <button type="button" class="btn btn-primary glyphicon glyphicon-search" onClick="chongzhi()">重置</button>
+
 
 </div>
 <table class="table" id="myTable"></table>
@@ -108,6 +142,9 @@
         initHouseTable();//初始化用户表格数据
         diqu();
         ditie();
+        //selectOnchang(null);
+        //selectDiTieOnchang(null);
+
     })
     function initHouseTable(){
         $('#myTable').bootstrapTable({
@@ -121,6 +158,7 @@
             sidePagination:'server',//分页方式：client客户端分页，server服务端分页
             striped:true,//显示条纹状表格
             queryParams:function(){
+                //户型条查拼接字符串
                 var box = document.getElementsByName("houseTypeName");
                 var objArray = box.length;
                 var chestr="";
@@ -131,20 +169,55 @@
                     }
                 }
                 chestr = chestr.substr(0,chestr.length-1);
+                //朝向条查拼接字符串
+                var box2 = document.getElementsByName("houseDirectionName");
+                var objArray2 = box2.length;
+                var chestr2="";
+
+                for(var i=0;i<objArray2;i++){
+                    if(box2[i].checked == true){
+                        chestr2+=box2[i].value+",";
+                    }
+                }
+                chestr2 = chestr2.substr(0,chestr2.length-1);
+                //楼层类型条查拼接字符串
+                var box3 = document.getElementsByName("houseFloorTypeName");
+                var objArray3 = box3.length;
+                var chestr3="";
+
+                for(var i=0;i<objArray3;i++){
+                    if(box3[i].checked == true){
+                        chestr3+=box3[i].value+",";
+                    }
+                }
+                chestr3 = chestr3.substr(0,chestr3.length-1);
+
+                if ($("#jiedao option:selected").val()!=null&&$("#jiedao option:selected").val()!=-1&&$("#jiedao option:selected").val()!=""){
+                    $("#quyu option:selected").val(null);
+                }
+                if ($("#zhandian option:selected").val()!=null&&$("#zhandian option:selected").val()!=-1&&$("#zhandian option:selected").val()!=""){
+                    $("#xianlu option:selected").val(null);
+                }
+
                 return {
                     page:this.pageNumber,
                     rows:this.pageSize,
 
                     houseaheName:$("#houseaheName").val(),
                     houseElevator:  $("input[name='houseElevator']:checked").val(),
+                    ZuTypeid:  $("input[name='ZuTypeid']:checked").val(),
                     houseFinish:  $("input[name='houseFinish']:checked").val(),
                     houseHeating:  $("input[name='houseHeating']:checked").val(),
                     houseZuQi:  $("input[name='houseZuQi']:checked").val(),
                     houseQuYuId:  $("#jiedao option:selected").val(),
+                    houseQuYuFuId:  $("#quyu option:selected").val(),
+                    houseDiTieFuId: $("#xianlu option:selected").val(),
                     houseDiTieId: $("#zhandian option:selected").val(),
                     startPrice:$("#startPrice").val(),
                     endPrice:$("#endPrice").val(),
-                    houseTypeIds:chestr,
+                    houseTypeId:chestr,
+                    houseDirectionId:chestr2,
+                    houseFloorTypeId:chestr3,
 
                 }
             },
@@ -163,6 +236,7 @@
                 {field:"houseFloorTypeName",title:"楼层类型"},
                 {field:"houseDirectionName",title:"房屋朝向"},
                 {field:"houseAgeName",title:"楼龄"},
+                {field:"houseZuTypeName",title:"方式"},
                 {field:"houseZuQi",title:"租期",
                     formatter: function(value,row,index){
                         return value==1?"月租":value==2?"年租":"";
@@ -207,7 +281,7 @@
             data:{pid:0},
             dataType:"json",
             success:function(data) {
-                var html ="<option value='"+0+"'>请先选择区域</option>";
+                var html ="<option value='-1'>请选择区域</option>";
                 for( var i = 0 ; i < data.length; i++ ){
                     html  +="<option value='"+data[i].id+"'>"+data[i].name+"</option>";
                 }
@@ -215,50 +289,24 @@
             }
         })
     }
-  /* $(function(){
-        //给所有checkbox添加单击事件
-        $("#definedColumns input[name='quyu']:selected").click(function(){
-              pids=  $("input[name='quyu']:selected").val();
-              alert(pids)
-            $.ajax({
-                type:"post",
-                url:"/house/queryquyu",
-                data:{pid:pids},
-                dataType:"json",
-                success:function(data) {
-                    var html2 ="<option value='"+0+"'>请选择</option>";
-                    for( var i = 0 ; i < data.length; i++ ){
-                        html2  +="<option value='"+data[i].id+"'>"+data[i].name+"</option>";
-                    }
-                    $("#jiedao").append(html2);
-                }
-            })
-        });
-    })*/
 
-    function selectOnchang(obj){
+    function selectOnchang(id){
 //获取被选中的option标签选项
-        //alert(obj.selectedIndex);
-        $("#jiedao").empty();
         $.ajax({
             type:"post",
             url:"/house/queryquyu",
-            data:{pid:obj.selectedIndex},
+            data:{pid:id},
             dataType:"json",
             success:function(data) {
-                var html2 ="";
+                var html2 ="<option value='-1'>请先选择区域</option>";
                 for( var i = 0 ; i < data.length; i++ ){
                     html2  +="<option value='"+data[i].id+"'>"+data[i].name+"</option>";
                 }
-                $("#jiedao").append(html2);
+                $("#jiedao").html(html2);
             }
         })
     }
-    //重置按钮
-    function chongzhi(){
-        $("#query_form").form('clear');
-    }
-    //初始化地区的数据
+    //初始化地铁的数据
     function ditie(){
         $.ajax({
             type:"post",
@@ -266,7 +314,7 @@
             data:{pid:0},
             dataType:"json",
             success:function(data) {
-                var html ="<option value='"+0+"'>请先选择线路</option>";
+                var html ="<option value='-1'>请选择线路</option>";
                 for( var i = 0 ; i < data.length; i++ ){
                     html  +="<option value='"+data[i].subwayId+"'>"+data[i].subwayName+"</option>";
                 }
@@ -274,21 +322,18 @@
             }
         })
     }
-    function selectDiTieOnchang(obj){
-//获取被选中的option标签选项
-        //alert(obj.selectedIndex);
-        $("#zhandian").empty();
+    function selectDiTieOnchang(id) {
         $.ajax({
-            type:"post",
-            url:"/house/queryditie",
-            data:{pid:obj.selectedIndex},
-            dataType:"json",
-            success:function(data) {
-                var html2 ="";
-                for( var i = 0 ; i < data.length; i++ ){
-                    html2  +="<option value='"+data[i].subwayId+"'>"+data[i].subwayName+"</option>";
+            type: "post",
+            url: "/house/queryditie",
+            data: {pid:id},
+            dataType: "json",
+            success: function (data) {
+                var html2 = "<option value='-1'>请先选择线路</option>";
+                for (var i = 0; i < data.length; i++) {
+                    html2 += "<option value='" + data[i].subwayId + "'>" + data[i].subwayName + "</option>";
                 }
-                $("#zhandian").append(html2);
+                $("#zhandian").html(html2);
             }
         })
     }
