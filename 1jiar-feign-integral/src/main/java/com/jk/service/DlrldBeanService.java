@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@FeignClient("springcloud-user-reg")
+@FeignClient("springcloud-user-hjk")
 public interface DlrldBeanService {
 
     @RequestMapping("QueryMembershipPoint")
@@ -17,8 +17,8 @@ public interface DlrldBeanService {
     @PostMapping("queryDlrld")
     List<DlrldBean> queryDlrld(@RequestParam Integer houseId);
 
-    @RequestMapping("queryprize")
-    List<DlrldTypeBean> queryprize();
+    @PostMapping("queryprize")
+    List<DlrldTypeBean> queryprize(@RequestParam Integer dltypeid);
 
     @RequestMapping("typelist")
     List<DlrldIntegrelBean> typelist();
@@ -31,4 +31,7 @@ public interface DlrldBeanService {
 
     @PostMapping("querydlrldId")
     DlrldBean querydlrldId(@RequestParam Integer houseId);
+
+    @RequestMapping("saveDlrldBean")
+    void saveDlrldBean(@RequestBody DlrldBean dlrldBean);
 }

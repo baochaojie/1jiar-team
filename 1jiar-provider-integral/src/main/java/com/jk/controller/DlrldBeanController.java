@@ -5,6 +5,7 @@ import com.jk.model.DlrldIntegrelBean;
 import com.jk.model.DlrldTypeBean;
 import com.jk.service.DlrldBeanService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.web.servlet.server.Session;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
@@ -41,19 +42,27 @@ public class DlrldBeanController {
         return  dlrldBeanService.querydlrldId(houseId);
     }
 
+    //抽奖
+    @RequestMapping("saveDlrldBean")
+    @ResponseBody
+    public void saveDlrldBean(@RequestBody DlrldBean DlrldBean){
+        dlrldBeanService.saveDlrldBean(DlrldBean);
+    }
+
 
     //查询奖品
     @RequestMapping("queryprize")
     @ResponseBody
-    public List<DlrldTypeBean> queryprize(){
-        return  dlrldBeanService.queryprize();
+    public List<DlrldTypeBean> queryprize(@RequestParam Integer dltypeid){
+        return  dlrldBeanService.queryprize(dltypeid);
     }
 
     //查询奖品级别
     @RequestMapping("typelist")
     @ResponseBody
     public List<DlrldIntegrelBean> typelist(){
-        return  dlrldBeanService.typelist();
+        List<DlrldIntegrelBean> list = dlrldBeanService.typelist();
+        return  list;
     }
 
     //新增奖品
