@@ -3,8 +3,17 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.jk.mapper.DlrldBeanMapper">
 
+<<<<<<< HEAD
     <!-- 新增 -->
     <insert id="saveprize" parameterType="com.jk.model.DlrldTypeBean">
     insert into dlrld_type(dlrldName,prizeId,awardImg) values(#{dlrldName},#{prizeId},#{awardImg})
 </insert>
+=======
+    <!-- 新增奖品 -->
+    <insert id="saveprize" parameterType="com.jk.model.DlrldTypeBean">
+    insert into dlrld_type(dlrldName,prizeId,awardImg) values(#{dlrldName},#{prizeId},#{awardImg})
+</insert>
+
+
+>>>>>>> f4279993763febc7556e25320e911184c3ff1b9a
 </mapper>

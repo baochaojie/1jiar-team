@@ -12,7 +12,7 @@ public interface DlrldBeanService {
 
     List<DlrldBean> QueryMembershipPoint();
 
-    List<DlrldTypeBean> queryprize();
+    List<DlrldTypeBean> queryprize(Integer dltypeid);
 
     List<DlrldIntegrelBean> typelist();
 
@@ -21,4 +21,6 @@ public interface DlrldBeanService {
     void deleteTyped(Integer ids);
 
     DlrldBean querydlrldId(Integer houseId);
+
+    void saveDlrldBean(DlrldBean dlrldBean);
 }

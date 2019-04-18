@@ -1,6 +1,9 @@
 $(function(){
     MembershipPoint();
+<<<<<<< HEAD
     inittypee();
+=======
+>>>>>>> f4279993763febc7556e25320e911184c3ff1b9a
 })
 
 
@@ -14,10 +17,18 @@ function MembershipPoint(){
         type:'post',
         columns:[
             {checkbox:true},
+<<<<<<< HEAD
             {field:'awardImg',title:'用户头像',formatter:function(data){
                     return "<img src="+data+" width='50' height='50'>";
                 }},
             {field:'dlrIdId',title:'ID'},
+=======
+            {field:'dlrIdId',title:'ID'},
+            {field:'loimg',title:'用户头像',formatter:function(data){
+                    return "<img src="+data+" width='50' height='50'>";
+                }},
+            {field:'userName',title:'用户名'},
+>>>>>>> f4279993763febc7556e25320e911184c3ff1b9a
             {field:'integralAdd',title:'剩余积分'},
             {field:'houseId',title:'用户id'},
             {field:'123',title:'操作',formatter:function(value,row,index){
@@ -46,7 +57,10 @@ function inittypee() {
 }
 //回显
     function updatebookbyid(houseId){
+<<<<<<< HEAD
     alert(houseId);
+=======
+>>>>>>> f4279993763febc7556e25320e911184c3ff1b9a
         //打开修改弹框
         openAddDlrld();
         //初始化表单数据
@@ -59,8 +73,13 @@ function inittypee() {
             data:{houseId:houseId},
             dataType:'json',
             success:function(data) {
+<<<<<<< HEAD
                 $("#dlrIdId").val(data.dlrIdId);
                 $("#prizeTypeid").val(data.prizeTypeid);
+=======
+                $("#prizeTypeid").val(data.prizeTypeid);
+                $("#dlrIdId").val(data.dlrIdId);
+>>>>>>> f4279993763febc7556e25320e911184c3ff1b9a
                 $("#integralAdd").val(data.integralAdd);
                 $("#houseId").val(data.houseId);
                 $("#dlrldtyId").val(data.dlrldtyId);
@@ -93,7 +112,11 @@ function inittypee() {
                     "className" : "btn-sm btn-success",
                     "callback" : function() {
                         $.ajax({
+<<<<<<< HEAD
                             url:'/saveprize',
+=======
+                            url:'/saveDlrldBean',
+>>>>>>> f4279993763febc7556e25320e911184c3ff1b9a
                             type:'post',
                             data:$("#upupform").serialize(),
                             dataType:'json',
@@ -140,10 +163,18 @@ function record(houseId){
         },
         columns:[
             {checkbox:true},
+<<<<<<< HEAD
             {field:'awardImg',title:'用户头像',formatter:function(data){
                     return "<img src="+data+" width='50' height='50'>";
                 }},
             {field:'dlrIdId',title:'ID'},
+=======
+            {field:'dlrIdId',title:'ID'},
+            {field:'loimg',title:'用户头像',formatter:function(data){
+                    return "<img src="+data+" width='50' height='50'>";
+                }},
+            {field:'userName',title:'用户名'},
+>>>>>>> f4279993763febc7556e25320e911184c3ff1b9a
             {field:'integralAdd',title:'剩余积分'},
             {field:'houseId',title:'用户id'},
             {field:'dltyname',title:'抽奖级别'},
@@ -170,6 +201,7 @@ function record(houseId){
         ]
     });
 }
+<<<<<<< HEAD
 /*
 function initTree(){
     $.ajax({
@@ -271,3 +303,5 @@ function initbooklist(){
     });
 }*/
 
+=======
+>>>>>>> f4279993763febc7556e25320e911184c3ff1b9a

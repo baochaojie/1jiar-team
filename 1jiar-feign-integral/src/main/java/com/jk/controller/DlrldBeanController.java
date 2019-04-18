@@ -45,12 +45,18 @@ public class DlrldBeanController {
         return "choujiang";
     }
 
-    //抽奖
+    //抽奖回显
     @RequestMapping("querydlrldId")
     @ResponseBody
     public DlrldBean querydlrldId(Integer houseId){
-        System.out.println(dlrldBeanService.querydlrldId(houseId));
         return  dlrldBeanService.querydlrldId(houseId);
+    }
+
+    //抽奖
+    @RequestMapping("saveDlrldBean")
+    @ResponseBody
+    public void saveDlrldBean(DlrldBean DlrldBean){
+        dlrldBeanService.saveDlrldBean(DlrldBean);
     }
 
     //查询奖品级别
@@ -68,8 +74,8 @@ public class DlrldBeanController {
 
     @RequestMapping("queryprize")
     @ResponseBody
-    public List<DlrldTypeBean> queryprize(){
-        return  dlrldBeanService.queryprize();
+    public List<DlrldTypeBean> queryprize(Integer dltypeid){
+        return  dlrldBeanService.queryprize(dltypeid);
     }
 
     String awardImg ="";

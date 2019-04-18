@@ -16,7 +16,11 @@ public class DlrldBean {
 
     private Integer dlrldtyId;
 
-    private Integer stateId=1;
+    private Integer stateId;
+
+    private String loimg;
+
+    private String userName;
 
     //临时字段
     private String dltyname ;

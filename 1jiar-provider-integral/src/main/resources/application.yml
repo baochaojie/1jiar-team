@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: springcloud-user-reg
+    name: springcloud-user-hjk
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     first:
