@@ -1,5 +1,5 @@
 server:
-  port: 8767
+  port: 8785
 ribbon:
   ReadTimeout: 60000
   ConnectTimeout: 60000

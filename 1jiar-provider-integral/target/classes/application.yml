@@ -1,35 +1,31 @@
 server:
-  port: 8766
+  port: 8781
 
 spring:
   application:
-<<<<<<< HEAD
-    name: springcloud-user-reg
-=======
     name: springcloud-user-hjk
->>>>>>> f4279993763febc7556e25320e911184c3ff1b9a
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     first:
       initial-size: 1
       max-active: 5
-    password: 123
-    url: jdbc:mysql://192.168.1.161:3306/shixun1
+    password: root
+    url: jdbc:mysql://localhost:3306/shixun1
     username: root
   jpa:
     database: mysql
-#
-#redis:
-#  database: 0
-#  host: 127.0.0.1
-#  port: 6379
-#  password:
-#  timeout: 5000
-#  pool:
-#  max-active: 20
-#  max-wait: -1
-#  max-idle: 8
-#  min-idle: 0
+
+redis:
+  database: 0
+  host: 127.0.0.1
+  port: 6379
+  password:
+  timeout: 5000
+  pool:
+  max-active: 20
+  max-wait: -1
+  max-idle: 8
+  min-idle: 0
 
 
 mybatis:

@@ -19,6 +19,7 @@ public interface DlrldBeanMapper {
             "                                    where hd.houseId = #{houseId} and status=2")
     List<DlrldBean> queryDlrld(Integer houseId);
 
+    //查询用户积分余额
     @Select("select hd.*,di.dltypeName as dltyname,di.dltymoney as dley,\n" +
             "                              hd.takeTime as tame,hd.dlrldtyId as dllid,\n" +
             "                              dt.dlrldName as dllname,dt.awardImg as awardImg,\n" +
@@ -26,8 +27,8 @@ public interface DlrldBeanMapper {
             "                              from house_dlrld hd left join dltle_integral di on hd.prizeTypeid=di.dltypeid\n" +
             "                                                     left join dlrld_type dt on hd.dlrldtyId=dt.dlrldtyId\n" +
             "                                                     LEFT JOIN house_man hm on hd.houseId=hm.id\n" +
-            "                                 where status=1")
-    List<DlrldBean> QueryMembershipPoint();
+            "                                 where status=1 and houseId=#{houseId}")
+    List<DlrldBean> QueryMembershipPoint(Integer houseId);
 
     @Select("select dt.*,di.dltypeName as integName from dlrld_type dt left join dltle_integral di on dt.prizeId=di.dltypeid where dltypeid = #{dltypeid}")
     List<DlrldTypeBean> queryprize(@Param("dltypeid") Integer dltypeid);

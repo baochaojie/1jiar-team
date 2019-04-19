@@ -21,16 +21,20 @@ public class DlrldBeanController {
 
 
 
-    //查询积分
+    //查询用户积分余额
     @RequestMapping("show")
     public String show(){
         return "booklist";
     }
 
+    //查询用户积分余额
     @RequestMapping("QueryMembershipPoint")
     @ResponseBody
-    public List<DlrldBean> QueryMembershipPoint(){
-        return  dlrldBeanService.QueryMembershipPoint();
+    public List<DlrldBean> QueryMembershipPoint(Integer houseId){
+        houseId=1;
+        List<DlrldBean>  list =   dlrldBeanService.QueryMembershipPoint(houseId);
+        System.out.println(list);
+        return  list;
     }
 
     //查询历史中奖纪录
@@ -72,6 +76,7 @@ public class DlrldBeanController {
         return "addbook";
     }
 
+    //查询奖品 redis
     @RequestMapping("queryprize")
     @ResponseBody
     public List<DlrldTypeBean> queryprize(Integer dltypeid){

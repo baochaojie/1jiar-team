@@ -11,15 +11,19 @@ import java.util.List;
 @FeignClient("springcloud-user-hjk")
 public interface DlrldBeanService {
 
+    //查询用户积分余额
     @RequestMapping("QueryMembershipPoint")
-    List<DlrldBean> QueryMembershipPoint();
+    List<DlrldBean> QueryMembershipPoint(@RequestParam Integer houseId);
 
+    //查询历史中奖纪录
     @PostMapping("queryDlrld")
     List<DlrldBean> queryDlrld(@RequestParam Integer houseId);
 
+    //查询奖品 redis
     @PostMapping("queryprize")
     List<DlrldTypeBean> queryprize(@RequestParam Integer dltypeid);
 
+    //查询奖品级别
     @RequestMapping("typelist")
     List<DlrldIntegrelBean> typelist();
 

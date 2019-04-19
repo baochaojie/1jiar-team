@@ -39,16 +39,6 @@
         SORT_CSS: 'file-sortable',
         STYLE_SETTING: 'style="width:{width};height:{height};"',
         OBJECT_PARAMS: '<param name="controller" value="true" />\n' +
-<<<<<<< HEAD
-        '<param name="allowFullScreen" value="true" />\n' +
-        '<param name="allowScriptAccess" value="always" />\n' +
-        '<param name="autoPlay" value="false" />\n' +
-        '<param name="autoStart" value="false" />\n' +
-        '<param name="quality" value="high" />\n',
-        DEFAULT_PREVIEW: '<div class="file-preview-other">\n' +
-        '<span class="{previewFileIconClass}">{previewFileIcon}</span>\n' +
-        '</div>',
-=======
             '<param name="allowFullScreen" value="true" />\n' +
             '<param name="allowScriptAccess" value="always" />\n' +
             '<param name="autoPlay" value="false" />\n' +
@@ -57,7 +47,6 @@
         DEFAULT_PREVIEW: '<div class="file-preview-other">\n' +
             '<span class="{previewFileIconClass}">{previewFileIcon}</span>\n' +
             '</div>',
->>>>>>> f4279993763febc7556e25320e911184c3ff1b9a
         MODAL_ID: 'kvFileinputModal',
         MODAL_EVENTS: ['show', 'shown', 'hide', 'hidden', 'loaded'],
         objUrl: window.URL || window.webkitURL,
@@ -871,11 +860,7 @@
         },
         _showUploadError: function (msg, params, event) {
             var self = this, $error = self.$errorContainer, ev = event || 'fileuploaderror', e = params && params.id ?
-<<<<<<< HEAD
-            '<li data-file-id="' + params.id + '">' + msg + '</li>' : '<li>' + msg + '</li>';
-=======
                 '<li data-file-id="' + params.id + '">' + msg + '</li>' : '<li>' + msg + '</li>';
->>>>>>> f4279993763febc7556e25320e911184c3ff1b9a
             if ($error.find('ul').length === 0) {
                 self._addError('<ul>' + e + '</ul>');
             } else {
@@ -2753,32 +2738,19 @@
                 }
                 self._raise('fileimageloaded', [previewId]);
                 self.loadedImages.push({
-<<<<<<< HEAD
-                    ind: i, 
-                    img: $img, 
-                    thumb: $thumb, 
-                    pid: previewId, 
-                    typ: ftype, 
-                    siz: fsize, 
-=======
                     ind: i,
                     img: $img,
                     thumb: $thumb,
                     pid: previewId,
                     typ: ftype,
                     siz: fsize,
->>>>>>> f4279993763febc7556e25320e911184c3ff1b9a
                     validated: false
                 });
                 self._validateAllImages();
             });
         },
         _validateAllImages: function () {
-<<<<<<< HEAD
-            var self = this, i, counter = {val: 0}, numImgs = self.loadedImages.length, config, 
-=======
             var self = this, i, counter = {val: 0}, numImgs = self.loadedImages.length, config,
->>>>>>> f4279993763febc7556e25320e911184c3ff1b9a
                 fsize, minSize = self.resizeIfSizeMoreThan;
             if (numImgs !== self.totalImagesCount) {
                 return;
@@ -2987,11 +2959,7 @@
         _renderThumbProgress: function () {
             var self = this;
             return '<div class="file-thumb-progress hide">' + self.progressTemplate.replace(/\{percent}/g, '0')
-<<<<<<< HEAD
-                    .replace(/\{status}/g, self.msgUploadBegin) + '</div>';
-=======
                 .replace(/\{status}/g, self.msgUploadBegin) + '</div>';
->>>>>>> f4279993763febc7556e25320e911184c3ff1b9a
         },
         _renderFileFooter: function (caption, size, width, isError) {
             var self = this, config = self.fileActionSettings, rem = config.showRemove, drg = config.showDrag,
