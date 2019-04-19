@@ -17,7 +17,7 @@ public interface UserService {
     @PostMapping("qureyResume")
     List<Resume> qureyResume();
 
-    @PostMapping("findTree")
+    @RequestMapping("findTree")
     List<Tree> findTree();
 
     @RequestMapping("savelogin")
