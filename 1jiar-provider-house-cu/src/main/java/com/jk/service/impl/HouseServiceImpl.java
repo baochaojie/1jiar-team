@@ -21,6 +21,7 @@ public class HouseServiceImpl implements HouseService {
         HashMap<String, Object> hashMap = new HashMap<>();
         //查询总条数
         int total = houseMapper.findHouseCount(house);
+
         //分页查询
         int start = (page-1)*rows;//开始条数
         List<House> list = houseMapper.findHousePage(start,rows,house);

@@ -1,6 +1,7 @@
 package com.jk.service;
 
 import com.jk.mapper.HouseMapper;
+import com.jk.model.Area;
 import com.jk.model.HouseAge;
 import com.jk.model.Owner;
 import com.jk.model.UserBean;
@@ -8,7 +9,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 @Controller
 public class HouseServiceImpl {
@@ -24,7 +27,6 @@ public class HouseServiceImpl {
     @GetMapping("queryHouseAge")
     @ResponseBody
     public List<HouseAge> queryHouseAge(){
-
         return houseMapper.queryHouseAge();
     }
 
@@ -37,7 +39,6 @@ public class HouseServiceImpl {
     public void addOwner(@RequestBody Owner owner){
         owner.setOwnerUserId(ownerUserId);
         houseMapper.addOwner(owner);
-
     };
     /**
      * 先添加房主userBean的信息然后返回一个ownerUserId,
@@ -51,4 +52,44 @@ public class HouseServiceImpl {
         Integer id = userBean.getId();
         ownerUserId=id;
     };
+
+    /**
+     * 此方法用于分页查询已录入的待审核信息
+     * @param map
+     * @return
+     */
+    int a = 1;
+    @PostMapping("queryOwner")
+    @ResponseBody
+    public HashMap<String, Object> queryOwner(@RequestBody Map<String, Object> map){
+        HashMap<String,Object> hashMap=new HashMap<>();
+        Integer page= (Integer) map.get("page");
+        Integer rows= (Integer) map.get("rows");
+        String name= (String) map.get("name");
+        String ownerState= (String) map.get("ownerState");
+System.out.println(a);
+a++;
+        //条查数据放到owner对象里
+        Owner owner=new Owner();
+        owner.setName(name);
+        owner.setOwnerXiaoqu(name);
+        owner.setOwnerState(ownerState);
+        //查询出总条数
+        int total=houseMapper.findHouseCount(owner);
+        //分页
+        int start = (page-1)*rows;//开始条数
+
+        //查询出房屋信息表中和房屋相关的信息
+        List<Owner> list=houseMapper.queryOwnerHouse(start,rows,owner);
+        //查询出房屋信息表中和house_man表有关的数据
+        hashMap.put("total", total);
+        hashMap.put("rows", list);
+        return hashMap;
+    }
+    @RequestMapping("initcity")
+    @ResponseBody
+    public List<Area> initcity(@RequestParam Integer pid){
+        List<Area> areas=houseMapper.initcity(pid);
+        return areas;
+    }
 }
