@@ -2,8 +2,10 @@ package com.jk.model;
 
 import lombok.Data;
 
+import java.io.Serializable;
+
 @Data
-public class DlrldTypeBean {
+public class DlrldTypeBean implements Serializable {
 
     private Integer dlrldtyId;
 
