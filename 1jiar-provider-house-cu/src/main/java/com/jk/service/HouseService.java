@@ -17,5 +17,9 @@ public interface HouseService {
 
     List<Subway> queryditie(Integer pid);
 
-    Integer deleteItem(String ids);
+    Integer deleteItem(String ids ,Integer agentId);
+
+    void LookHouse(Integer agentId);
+
+    House findHouseById(Integer houseId);
 }

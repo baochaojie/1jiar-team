@@ -22,7 +22,16 @@ public interface HouseService {
     @RequestMapping("queryditie")
     @ResponseBody
     List<Subway> queryditie(@RequestParam Integer pid);
+
     @ResponseBody
     @RequestMapping("deleteItem")
-    Integer deleteItem(@RequestParam String ids);
+    Integer deleteItem(@RequestParam String ids,@RequestParam Integer agentId);
+
+    @ResponseBody
+    @RequestMapping("LookHouse")
+    void LookHouse(@RequestParam Integer agentId);
+
+    @RequestMapping("findHouseById")
+    @ResponseBody
+    House findHouseById(@RequestParam Integer houseId);
 }

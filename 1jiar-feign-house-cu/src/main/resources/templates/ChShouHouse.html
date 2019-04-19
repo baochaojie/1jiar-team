@@ -78,31 +78,17 @@
                     <input type="radio" name="houseHeating"  value="2" > 未供暖
                 </label>
             </div>
-            <div class="radio">
-                <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-                <label>租期:</label>
-                <label>
-                    <input type="radio" name="houseZuQi"  value="1" > 月租
-                    <input type="radio" name="houseZuQi"  value="2" > 年租
-                </label>
-                <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-                <label>方式:</label>
-                <label>
-                    <input type="radio" name="ZuTypeid"  value="" > 不限
-                    <input type="radio" name="ZuTypeid"  value="1" > 整租
-                    <input type="radio" name="ZuTypeid"  value="2" > 合租
-                </label>
-            </div>
+
         </div>
         <div class="form-checkbox">
             <div class="checkbox">
                 <label>户型:</label>
                 <label>
-                <input type="checkbox" name="houseTypeName" value="1">一室
-                <input type="checkbox" name="houseTypeName" value="2">二室
-                <input type="checkbox" name="houseTypeName" value="3">三室
-                <input type="checkbox" name="houseTypeName" value="4">四室
-                <input type="checkbox" name="houseTypeName" value="5">五室+
+                    <input type="checkbox" name="houseTypeName" value="1">一室
+                    <input type="checkbox" name="houseTypeName" value="2">二室
+                    <input type="checkbox" name="houseTypeName" value="3">三室
+                    <input type="checkbox" name="houseTypeName" value="4">四室
+                    <input type="checkbox" name="houseTypeName" value="5">五室+
                 </label>
                 <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
                 <label>朝向:</label>
@@ -217,7 +203,7 @@
                     }
                 }
                 chestr4 = chestr4.substr(0,chestr4.length-1);
-               //如果街道有值那么地区就为null
+                //如果街道有值那么地区就为null
                 if ($("#jiedao option:selected").val()!=null&&$("#jiedao option:selected").val()!=-1&&$("#jiedao option:selected").val()!=""){
                     $("#quyu option:selected").val(null);
                 }
@@ -230,10 +216,10 @@
                     rows:this.pageSize,
                     houseaheName:$("#houseaheName").val(),
                     houseElevator:  $("input[name='houseElevator']:checked").val(),
-                    ZuTypeid:  $("input[name='ZuTypeid']:checked").val(),
+                    //ZuTypeid:  $("input[name='ZuTypeid']:checked").val(),
                     houseFinish:  $("input[name='houseFinish']:checked").val(),
                     houseHeating:  $("input[name='houseHeating']:checked").val(),
-                    houseZuQi:  $("input[name='houseZuQi']:checked").val(),
+                    //houseZuQi:  $("input[name='houseZuQi']:checked").val(),
                     houseQuYuId:  $("#jiedao option:selected").val(),
                     houseQuYuFuId:  $("#quyu option:selected").val(),
                     houseDiTieFuId: $("#xianlu option:selected").val(),
@@ -267,12 +253,7 @@
                 {field:"houseFloorTypeName",title:"楼层类型"},
                 {field:"houseDirectionName",title:"房屋朝向"},
                 {field:"houseAgeName",title:"楼龄"},
-                {field:"houseZuTypeName",title:"方式"},
                 {field:"houseTeSeId",title:"特色"},
-                {field:"houseZuQi",title:"租期",
-                    formatter: function(value,row,index){
-                        return value==1?"月租":value==2?"年租":"";
-                    }},
                 {field:"houseElevator",title:"有无电梯",
                     formatter: function(value,row,index){
                         return value==1?"有电梯":value==2?"没有电梯":"";
@@ -372,7 +353,7 @@
     }
     //单删
     function deleteItem(id,agentId){
-       alert(agentId)
+        alert(agentId)
         bootbox.confirm({
             size:'small',
             message:"你确认要删除吗",
@@ -431,7 +412,7 @@
                     "label" : "<i class='icon-ok'></i> 确认付款",
                     "className" : "btn-sm btn-success",
                     "callback" : function() {
-                            location.href="/goAlipay?price="+$("#housePrice").val();
+                        location.href="/goAlipay?price="+$("#housePrice").val();
                     }
                 },
                 "cancel" : {
