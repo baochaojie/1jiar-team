@@ -2,6 +2,7 @@ package com.jk.controller;
 
 import com.jk.ConstantConf;
 import com.jk.model.Login;
+import com.jk.model.Resume;
 import com.jk.model.Tree;
 import com.jk.service.UserService;
 import com.jk.utils.HttpClientUtil;
@@ -81,6 +82,13 @@ public class UserController {
         session.setAttribute(session.getId(), login1);
         return 0;
     }
+
+    @RequestMapping("qureyResume")
+    @ResponseBody
+    public List<Resume> qureyResume(){
+        return userService.qureyResume();
+    }
+
     /**
      * 左侧树
      */

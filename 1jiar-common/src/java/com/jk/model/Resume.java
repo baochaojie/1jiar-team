@@ -6,17 +6,14 @@ import lombok.Data;
 public class Resume {
 
     private Integer id;
-    private String home;
-    private String inven;
-    private String calen;
-    private String feny;
-    private String owners;
-    private String broker;
-    private String record;
-    private String entrust;
-    private String search;
-    private String quest;
-    private String consult;
+    private String name;
+    private Integer jiaxid;
+    private Integer xingb;
+    private Integer aihao;
+    private Integer jiaoyid;
+    private Integer hengyid;
+    private Integer shuozaiid;
+
 
 
 
