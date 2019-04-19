@@ -1,32 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2860c424-a6dc-4038-8d9b-4fe74b1f0a24" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-user/src/main/java/com/jk/ConstantConf.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-user/src/main/java/com/jk/utils/HttpClientUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-user/src/main/java/com/jk/utils/Md5Util.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-user/src/main/resources/templates/hah.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-user/src/main/resources/templates/login1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-provider-user/src/main/java/com/jk/ConstantConf.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1jiar-feign-user/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1jiar-feign-user/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1jiar-feign-user/src/main/java/com/jk/controller/PageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/1jiar-feign-user/src/main/java/com/jk/controller/PageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1jiar-feign-user/src/main/java/com/jk/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/1jiar-feign-user/src/main/java/com/jk/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1jiar-feign-user/src/main/java/com/jk/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/1jiar-feign-user/src/main/java/com/jk/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1jiar-feign-user/src/main/java/com/jk/shiro/CheckImgUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1jiar-feign-user/src/main/java/com/jk/shiro/FileUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1jiar-feign-user/src/main/java/com/jk/shiro/VerificationCode.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1jiar-feign-user/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/1jiar-feign-user/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1jiar-feign-user/src/main/resources/static/script/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/1jiar-feign-user/src/main/resources/static/script/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1jiar-feign-user/src/main/resources/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/1jiar-feign-user/src/main/resources/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1jiar-provider-user/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1jiar-provider-user/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1jiar-provider-user/src/main/java/com/jk/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/1jiar-provider-user/src/main/java/com/jk/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1jiar-provider-user/src/main/java/com/jk/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/1jiar-provider-user/src/main/java/com/jk/mapper/UserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1jiar-provider-user/src/main/java/com/jk/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/1jiar-provider-user/src/main/java/com/jk/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1jiar-provider-user/src/main/java/com/jk/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/1jiar-provider-user/src/main/java/com/jk/service/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1jiar-provider-user/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/1jiar-provider-user/src/main/resources/application.yml" afterDir="false" />
-    </list>
+    <list default="true" id="2860c424-a6dc-4038-8d9b-4fe74b1f0a24" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/1jiar-eureka/target/" />
@@ -93,8 +68,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/1jiar-feign-user/src/main/java/com/jk/controller/PageController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="531">
-              <caret line="42" column="1" lean-forward="true" selection-start-line="42" selection-start-column="1" selection-end-line="42" selection-end-column="1" />
+            <state relative-caret-position="432">
+              <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -110,15 +85,6 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/1jiar-feign-user/src/main/resources/templates/hah.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="6" column="20" lean-forward="true" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -653,12 +619,12 @@
       <workItem from="1555632233351" duration="429000" />
       <workItem from="1555632690689" duration="1106000" />
       <workItem from="1555634956317" duration="24400000" />
-      <workItem from="1555672913614" duration="377000" />
+      <workItem from="1555672913614" duration="650000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="116646000" />
+    <option name="totallyTimeSpent" value="116919000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -671,9 +637,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20415778" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20415778" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -683,13 +648,13 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.24295011" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4978678" visible="true" weight="0.26898047" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4978678" weight="0.2483731" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.47830802" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Spring" order="7" weight="0.329718" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49840087" weight="0.27874187" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.49840087" visible="true" weight="0.27874187" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5021322" side_tool="true" weight="0.5368764" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" sideWeight="0.49946696" weight="0.329718" />
@@ -982,23 +947,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/1jiar-feign-user/src/main/java/com/jk/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/1jiar-feign-user/src/main/resources/templates/hah.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="6" column="20" lean-forward="true" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/1jiar-feign-user/src/main/resources/templates/zhuc.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -1023,10 +971,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/1jiar-feign-user/src/main/resources/templates/hah.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="14" column="2" lean-forward="true" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
+          <folding>
+            <element signature="e#199#205#0" expanded="true" />
+            <element signature="e#206#212#0" expanded="true" />
+            <element signature="e#212#218#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1jiar-feign-user/src/main/java/com/jk/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/1jiar-feign-user/src/main/java/com/jk/controller/PageController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="531">
-          <caret line="42" column="1" lean-forward="true" selection-start-line="42" selection-start-column="1" selection-end-line="42" selection-end-column="1" />
+        <state relative-caret-position="432">
+          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
