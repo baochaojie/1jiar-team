@@ -22,5 +22,7 @@ public interface UserMapper {
     @Select("select login,password from house_man where login=#{login}")
     Login login(Login login);
 
+    @Select(" SELECT * FROM house_man  where login = #{value} ")
 
+    Login phoneVerification(String login);
 }

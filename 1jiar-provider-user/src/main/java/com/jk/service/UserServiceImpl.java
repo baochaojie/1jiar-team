@@ -47,7 +47,11 @@ public class UserServiceImpl implements UserService{
 
     }
 
+    @Override
+    public Login phoneVerification(String login) {
+        return userMapper.phoneVerification(login);
 
+    }
 
 
     @Override

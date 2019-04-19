@@ -1,6 +1,7 @@
 package com.jk.controller;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
@@ -28,8 +29,11 @@ public class PageController {
         return "zhuc";
     }
 
-    @RequestMapping("login1")
+    @RequestMapping("kjlogin")
     public String login1(){
         return "login1";
     }
+
+
+
 }

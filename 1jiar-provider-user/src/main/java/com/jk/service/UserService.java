@@ -21,4 +21,5 @@ public interface UserService {
 
     String login(Login login);
 
+    Login phoneVerification(String login);
 }

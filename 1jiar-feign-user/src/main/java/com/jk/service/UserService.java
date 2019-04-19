@@ -27,6 +27,7 @@ public interface UserService {
     @ResponseBody
     String login(@RequestBody Login login);
 
-
-
+    @RequestMapping("phoneVerification/{login}")
+    @ResponseBody
+    Login phoneVerification(@RequestParam("login")String login);
 }
