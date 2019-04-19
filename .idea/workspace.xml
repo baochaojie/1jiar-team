@@ -3,12 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="2860c424-a6dc-4038-8d9b-4fe74b1f0a24" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1jiar-common/src/java/com/jk/model/Resume.java" beforeDir="false" afterPath="$PROJECT_DIR$/1jiar-common/src/java/com/jk/model/Resume.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1jiar-feign-user/src/main/java/com/jk/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/1jiar-feign-user/src/main/java/com/jk/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1jiar-feign-user/src/main/java/com/jk/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/1jiar-feign-user/src/main/java/com/jk/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1jiar-provider-user/src/main/java/com/jk/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/1jiar-provider-user/src/main/java/com/jk/mapper/UserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1jiar-provider-user/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/1jiar-provider-user/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1jiar-provider-user/src/main/resources/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1jiar-provider-user/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -58,7 +52,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/1jiar-feign-user/src/main/resources/application.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
+            <state relative-caret-position="112">
               <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
             </state>
           </provider>
@@ -518,7 +512,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555639604073" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555639884353" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -631,12 +625,12 @@
       <workItem from="1555600946109" duration="1844000" />
       <workItem from="1555632233351" duration="429000" />
       <workItem from="1555632690689" duration="1106000" />
-      <workItem from="1555634956317" duration="4021000" />
+      <workItem from="1555634956317" duration="4263000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="95890000" />
+    <option name="totallyTimeSpent" value="96132000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -660,13 +654,13 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.24295011" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4978678" visible="true" weight="0.3004292" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4978678" weight="0.3004292" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.47830802" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Spring" order="7" weight="0.329718" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49840087" weight="0.11254019" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.49840087" visible="true" weight="0.5525751" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5021322" side_tool="true" weight="0.5368764" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" sideWeight="0.49946696" weight="0.329718" />
@@ -998,7 +992,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/1jiar-feign-user/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
+        <state relative-caret-position="112">
           <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
         </state>
       </provider>
