@@ -17,7 +17,7 @@ public interface UserService {
     @PostMapping("qureyResume")
     List<Resume> qureyResume();
 
-    @PostMapping("findTree")
+    @RequestMapping("findTree")
     List<Tree> findTree();
 
     @RequestMapping("savelogin")
@@ -27,6 +27,7 @@ public interface UserService {
     @ResponseBody
     String login(@RequestBody Login login);
 
-
-
+    @RequestMapping("phoneVerification/{login}")
+    @ResponseBody
+    Login phoneVerification(@RequestParam("login")String login);
 }

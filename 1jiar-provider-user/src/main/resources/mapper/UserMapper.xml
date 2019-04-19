@@ -3,7 +3,7 @@
 <mapper namespace="com.jk.mapper.UserMapper">
 
     <select id="findTreeByPid" parameterType="int" resultType="com.jk.model.Tree">
-		select t.id,t.text,t.pid,t.url  from login_zhuy t where t.pid=#{pid}
+		select t.id,t.text,t.pid,t.href  from login_zhuy t where t.pid=#{pid}
 	</select>
 
 	<insert id="savelogin" parameterType="com.jk.model.Login">
