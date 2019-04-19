@@ -153,11 +153,9 @@ function record(houseId){
             {field:'stateId',title:'状体',formatter:function(value,row,index){
                 if(value==1){
                     return "未领取";
-                }
-                    if(value==2){
+                }else if(value==2){
                         return "领取";
-                    }
-                    if(value==3){
+                }else if(value==3){
                         return "放弃";
                     }
                 }},
@@ -165,8 +163,53 @@ function record(houseId){
                     return "<img src="+data+" width='50' height='50'>";
                 }},
             {field:'123',title:'操作',formatter:function(value,row,index){
-                    return '<a href="javascript:shanchu('+row.id+');">领取</a>-<a href="javascript:updatebookbyid('+row.id+');">放弃</a>'
-                }}
+                if(row.stateId==1){
+                    return '<a href="javascript:lingqu('+row.dlrIdId+','+row.houseId+');">领取</a><a href="javascript:fangqi('+row.dlrIdId+','+row.houseId+');">放弃</a>';
+                }else{
+                    return "";
+                }
+                }
+            }
         ]
     });
 }
+<<<<<<< HEAD
+=======
+
+   //领取
+    function lingqu(dlrIdId,houseId){
+        $.ajax({
+            url:'lingquTyped',
+            type:'post',
+            data:{
+                dlrIdId:dlrIdId,
+                houseId:houseId
+            },
+            success:function (data) {
+                if(data){
+                    toastr.success("领取成功!");
+                    record();
+                }
+            }
+        })
+    }
+
+
+//放弃
+function fangqi(dlrIdId,houseId){
+    $.ajax({
+        url:'fangqiTyped',
+        type:'post',
+        data:{
+            dlrIdId:dlrIdId,
+            houseId:houseId
+        },
+        success:function (data) {
+            if(data){
+                toastr.success("您已放弃");
+                record();
+            }
+        }
+    })
+}
+>>>>>>> 8713299a6eb8ad5f202e5154f2938ff5df858695

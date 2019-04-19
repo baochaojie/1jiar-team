@@ -1,3 +1,5 @@
+
+//查询奖品 redis
 var arrdlrldtype = [];
 function initbooklist(){
     var prizeTypeid = $('#prizeTypeid').val();
@@ -23,6 +25,7 @@ function initbooklist(){
                     html+="</tr><tr>";
                 }
             }
+            $("#prizesuiji").html(html);
         }
     })
 }
@@ -35,7 +38,30 @@ var num =0;
 function sum (){
     k+=1;
     if (k===13){
+        $("#dlrldtyId").val(arrdlrldtype[num]);
         alert(arrdlrldtype[num]);
+        $.ajax({
+            ddddurl:'/saveDlrldBean',
+            type:'post',
+            data:$("#upupform").serialize(),
+            dataType:'json',
+            success:function(data){
+                if(data){
+                    MembershipPoint();
+                }else{
+                    bootbox.alert({
+                        size: "small",
+                        title: "提示",
+                        message: "新增失败！",
+                        buttons: {
+                            ok: {
+                                label: '确定',
+                                className: 'btn-success'
+                            }
+                        }
+                    })
+                }}
+        })
         k=0;
     }
     num = Math.floor(Math.random()*(8 - 1) + 1);

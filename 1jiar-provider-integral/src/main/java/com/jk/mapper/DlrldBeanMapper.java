@@ -10,15 +10,16 @@ import java.util.List;
 public interface DlrldBeanMapper {
 
     @Select("select hd.*,di.dltypeName as dltyname,di.dltymoney as dley,\n" +
-            "                              hd.takeTime as tame,hd.dlrldtyId as dllid,\n" +
-            "                              dt.dlrldName as dllname,dt.awardImg as awardImg,\n" +
-            "                              hm.name as userName,hm.loginimg as loimg\n" +
-            "                              from house_dlrld hd left join dltle_integral di on hd.prizeTypeid=di.dltypeid\n" +
-            "                                                     left join dlrld_type dt on hd.dlrldtyId=dt.dlrldtyId\n" +
-            "                                                     LEFT JOIN house_man hm on hd.houseId=hm.id\n" +
-            "                                    where hd.houseId = #{houseId} and status=2")
+            "                                          hd.takeTime as tame,hd.dlrldtyId as dllid,\n" +
+            "                                          dt.dlrldName as dllname,dt.awardImg as awardImg,\n" +
+            "                                          hm.name as userName,hm.loginimg as loimg\n" +
+            "                                          from house_dlrld hd left join dltle_integral di on hd.prizeTypeid=di.dltypeid\n" +
+            "                                                                 left join dlrld_type dt on hd.dlrldtyId=dt.dlrldtyId\n" +
+            "                                                                 LEFT JOIN house_man hm on hd.houseId=hm.id\n" +
+            "                                                where hd.houseId = #{value} and status=2")
     List<DlrldBean> queryDlrld(Integer houseId);
 
+    //查询用户积分余额
     @Select("select hd.*,di.dltypeName as dltyname,di.dltymoney as dley,\n" +
             "                              hd.takeTime as tame,hd.dlrldtyId as dllid,\n" +
             "                              dt.dlrldName as dllname,dt.awardImg as awardImg,\n" +
@@ -26,8 +27,8 @@ public interface DlrldBeanMapper {
             "                              from house_dlrld hd left join dltle_integral di on hd.prizeTypeid=di.dltypeid\n" +
             "                                                     left join dlrld_type dt on hd.dlrldtyId=dt.dlrldtyId\n" +
             "                                                     LEFT JOIN house_man hm on hd.houseId=hm.id\n" +
-            "                                 where status=1")
-    List<DlrldBean> QueryMembershipPoint();
+            "                                 where status=1 and houseId=#{houseId}")
+    List<DlrldBean> QueryMembershipPoint(Integer houseId);
 
     @Select("select dt.*,di.dltypeName as integName from dlrld_type dt left join dltle_integral di on dt.prizeId=di.dltypeid where dltypeid = #{dltypeid}")
     List<DlrldTypeBean> queryprize(@Param("dltypeid") Integer dltypeid);
@@ -49,4 +50,12 @@ public interface DlrldBeanMapper {
     @Update("update house_dlrld set integralAdd=#{intee} where dlrIdId=#{dlrldBean.dlrIdId}")
     void upupDlrldBean(@Param("dlrldBean") DlrldBean dlrldBean,@Param("intee")  Integer intee);
 
+    @Select("select dt.*,di.dltypeName as integName from dlrld_type dt left join dltle_integral di on dt.prizeId=di.dltypeid")
+    List<DlrldTypeBean> queryprize2();
+
+    @Update("update house_dlrld set stateId=2 where stateId=1 and dlrIdId=#{dlrIdId}")
+    void lingquTyped(Integer dlrIdId);
+
+    @Update("update house_dlrld set stateId=3 where stateId=1 and dlrIdId=#{dlrIdId}")
+    void fangqiTyped(Integer dlrIdId);
 }

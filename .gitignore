@@ -1,58 +1,63 @@
-HELP.md
-target
-!.mvn/wrapper/maven-wrapper.jar
-
-### STS ###
-.apt_generated
-.classpath
-.factorypath
-.project
-.settings
-.springBeans
-.sts4-cache
-
-### IntelliJ IDEA ###
-.idea
-*.iws
-*.iml
-<<<<<<< HEAD
-out
-gen
-.idea/
+# Created by .ignore support plugin (hsz.mobi)
+.gitignore
+.idea/compiler.xml
+.idea/encodings.xml
+.idea/inspectionProfiles/
+.idea/libraries/
+.idea/m.iml
+.idea/misc.xml
+.idea/modules.xml
+.idea/vcs.xml
+.idea/workspace.xml
+1jiar-common/1jiar-common.iml
+1jiar-common/target/classes/com/jk/model/AgentBean.class
+1jiar-common/target/classes/com/jk/model/Area.class
+1jiar-common/target/classes/com/jk/model/AreaBean.class
+1jiar-common/target/classes/com/jk/model/CommentBean.class
+1jiar-common/target/classes/com/jk/model/DlrldIntegrelBean.class
+1jiar-common/target/classes/com/jk/model/DlrldTypeBean.class
+1jiar-common/target/classes/com/jk/model/HouseAge.class
+1jiar-common/target/classes/com/jk/model/HouseDirection.class
+1jiar-common/target/classes/com/jk/model/HouseFloor.class
+1jiar-common/target/classes/com/jk/model/HouseType.class
+1jiar-common/target/classes/com/jk/model/HouseUse.class
+1jiar-common/target/classes/com/jk/model/LabelBean.class
+1jiar-common/target/classes/com/jk/model/Login.class
+1jiar-common/target/classes/com/jk/model/Owner.class
+1jiar-common/target/classes/com/jk/model/Resume.class
+1jiar-common/target/classes/com/jk/model/Subway.class
+1jiar-common/target/classes/com/jk/model/Tree.class
+1jiar-common/target/classes/com/jk/model/UserBean.class
+1jiar-common/target/classes/com/jk/utils/
 1jiar-common/target/generated-sources/
+1jiar-eureka/1jiar-eureka.iml
+1jiar-eureka/target/classes/com/
 1jiar-eureka/target/generated-sources/
 1jiar-eureka/target/generated-test-sources/
-1jiar-feign-house-ad/target/generated-sources/
-1jiar-feign-house-ad/target/generated-test-sources/
+1jiar-eureka/target/test-classes/
+1jiar-feign-agent/1jiar-feign-agent.iml
+1jiar-feign-agent/target/classes/templates/toAgent2.html
+1jiar-feign-agent/target/generated-sources/
+1jiar-feign-agent/target/generated-test-sources/
+1jiar-feign-house-ad/1jiar-feign-house-ad.iml
+1jiar-feign-house-cu/1jiar-feign-house-cu.iml
+1jiar-feign-integral/1jiar-feign-integral.iml
+1jiar-feign-integral/target/generated-sources/
+1jiar-feign-integral/target/generated-test-sources/
+1jiar-feign-user/1jiar-feign-user.iml
+1jiar-provider-agent/1jiar-provider-agent.iml
+1jiar-provider-agent/target/generated-sources/
+1jiar-provider-agent/target/generated-test-sources/
+1jiar-provider-house-ad/1jiar-provider-house-ad.iml
+1jiar-provider-house-ad/target/classes/com/jk/service/
 1jiar-provider-house-ad/target/generated-sources/
 1jiar-provider-house-ad/target/generated-test-sources/
-.gitignore
-generated-sources/
-=======
-*.ipr
-
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
-/build/
-
-### VS Code ###
-.vscode/
->>>>>>> 3f6fcf345dcc14d98792a7ca715d55e5f7f49ea9
-### Example user template template
-### Example user template
-
-# IntelliJ project files
-.idea
-*.iml
-out
-gen
-1jiar-feign-agent/target/generated-test-sources/
-1jiar-feign-house-cu/target/generated-test-sources/
-1jiar-feign-integral/target/generated-test-sources/
+1jiar-provider-house-cu/1jiar-provider-house-cu.iml
+1jiar-provider-house-cu/target/generated-sources/
 1jiar-provider-house-cu/target/generated-test-sources/
+1jiar-provider-integral/1jiar-provider-integral.iml
+1jiar-provider-integral/target/generated-sources/
 1jiar-provider-integral/target/generated-test-sources/
+1jiar-provider-user/1jiar-provider-user.iml
+1jiar-provider-user/target/generated-sources/
 1jiar-provider-user/target/generated-test-sources/

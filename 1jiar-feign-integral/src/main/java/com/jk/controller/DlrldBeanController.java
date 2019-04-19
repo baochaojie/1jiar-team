@@ -21,16 +21,21 @@ public class DlrldBeanController {
 
 
 
-    //查询积分
+    //查询用户积分余额
     @RequestMapping("show")
     public String show(){
         return "booklist";
     }
 
+    //查询用户积分余额
     @RequestMapping("QueryMembershipPoint")
     @ResponseBody
-    public List<DlrldBean> QueryMembershipPoint(){
-        return  dlrldBeanService.QueryMembershipPoint();
+    public List<DlrldBean> QueryMembershipPoint(Integer houseId){
+        if (houseId==null){
+            houseId=1;
+        }
+        List<DlrldBean>  list =   dlrldBeanService.QueryMembershipPoint(houseId);
+        return  list;
     }
 
     //查询历史中奖纪录
@@ -72,10 +77,18 @@ public class DlrldBeanController {
         return "addbook";
     }
 
+    //查询奖品 redis
     @RequestMapping("queryprize")
     @ResponseBody
     public List<DlrldTypeBean> queryprize(Integer dltypeid){
         return  dlrldBeanService.queryprize(dltypeid);
+    }
+
+    //查询奖品 redis
+    @RequestMapping("queryprize2")
+    @ResponseBody
+    public List<DlrldTypeBean> queryprize2(){
+        return  dlrldBeanService.queryprize2();
     }
 
     String awardImg ="";
@@ -91,6 +104,7 @@ public class DlrldBeanController {
         String imgUrl = ossClient.getImgUrl(name);
         String[] split = imgUrl.split("\\?");
         awardImg=split[0];
+        System.out.println(awardImg);
         return split[0];
     }
     @RequestMapping("src")
@@ -112,5 +126,18 @@ public class DlrldBeanController {
     @ResponseBody
     public void deleteTyped(Integer ids){
         dlrldBeanService.deleteTyped(ids);
+    }
+
+    //领取
+    @RequestMapping("lingquTyped")
+    @ResponseBody
+    public void lingquTyped(@RequestParam Integer dlrIdId,Integer houseId){
+        dlrldBeanService.lingquTyped(dlrIdId,houseId);
+    }
+    //放弃
+    @RequestMapping("fangqiTyped")
+    @ResponseBody
+    public void fangqiTyped(@RequestParam Integer dlrIdId,@RequestParam Integer houseId){
+        dlrldBeanService.fangqiTyped(dlrIdId,houseId);
     }
 }

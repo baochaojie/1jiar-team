@@ -24,4 +24,10 @@ public interface HouseMapper {
 
     @Select(" select houseTeSeName from  house_feature  where houseTeSeId =#{value}")
     String featurenamebyid(int teSeId);
+
+    void ZengChengJiaoLiang(@Param("agentId") Integer agentId);
+
+    void LookHouse(@Param("agentId")Integer agentId);
+
+    House findHouseById(Integer houseId);
 }

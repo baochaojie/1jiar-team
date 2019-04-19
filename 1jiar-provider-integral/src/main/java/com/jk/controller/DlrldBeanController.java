@@ -6,6 +6,7 @@ import com.jk.model.DlrldTypeBean;
 import com.jk.service.DlrldBeanService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.web.servlet.server.Session;
+import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
@@ -20,18 +21,18 @@ public class DlrldBeanController {
     private DlrldBeanService dlrldBeanService;
 
 
-    //查询历史中奖纪录
+
+    //查询用户积分余额 redis
     @RequestMapping("QueryMembershipPoint")
     @ResponseBody
-    public List<DlrldBean> QueryMembershipPoint(){
-        return  dlrldBeanService.QueryMembershipPoint();
+    public List<DlrldBean> QueryMembershipPoint(@RequestParam Integer houseId){
+        return  dlrldBeanService.QueryMembershipPoint(houseId);
     }
 
-    //查询历史中奖纪录
+    //查询历史中奖纪录 redis
     @RequestMapping("queryDlrld")
     @ResponseBody
     public List<DlrldBean> queryDlrld(@RequestParam Integer houseId){
-        System.out.println(houseId);
         return  dlrldBeanService.queryDlrld(houseId);
     }
 
@@ -50,14 +51,23 @@ public class DlrldBeanController {
     }
 
 
-    //查询奖品
+    //查询奖品 redis
     @RequestMapping("queryprize")
     @ResponseBody
     public List<DlrldTypeBean> queryprize(@RequestParam Integer dltypeid){
         return  dlrldBeanService.queryprize(dltypeid);
     }
 
-    //查询奖品级别
+
+
+    //查询奖品 redis
+    @RequestMapping("queryprize2")
+    @ResponseBody
+    public List<DlrldTypeBean> queryprize2(){
+        return  dlrldBeanService.queryprize2();
+    }
+
+    //查询奖品级别 redis
     @RequestMapping("typelist")
     @ResponseBody
     public List<DlrldIntegrelBean> typelist(){
@@ -79,6 +89,19 @@ public class DlrldBeanController {
          dlrldBeanService.deleteTyped(ids);
     }
 
+    //领取
+    @RequestMapping("lingquTyped")
+    @ResponseBody
+    public void lingquTyped(@RequestParam Integer dlrIdId,@RequestParam Integer houseId){
+        dlrldBeanService.lingquTyped(dlrIdId,houseId);
+    }
+
+    //放弃
+    @RequestMapping("fangqiTyped")
+    @ResponseBody
+    public void fangqiTyped(@RequestParam Integer dlrIdId,@RequestParam Integer houseId){
+        dlrldBeanService.fangqiTyped(dlrIdId,houseId);
+    }
 
 
 

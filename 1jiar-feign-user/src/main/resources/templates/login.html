@@ -50,11 +50,16 @@
 <div id="button">
     <a href="javascript:login()" class="easyui-linkbutton" data-options="iconCls:'icon-man'">登录</a>
     <a href="javascript:reg()" class="easyui-linkbutton" data-options="iconCls:'icon-redo'">注册</a>
+    <a href="javascript:kjlogin()" class="easyui-linkbutton" data-options="iconCls:'icon-redo'">快速登录</a>
 </div>
 
 </body>
 
+
 <script th:inline="none">
+    function kjlogin(){
+        window.location.href="../page/kjlogin"
+    }
     function login(){
         $.ajax({
             url:'../login',
