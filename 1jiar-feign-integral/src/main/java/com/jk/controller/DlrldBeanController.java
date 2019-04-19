@@ -31,9 +31,10 @@ public class DlrldBeanController {
     @RequestMapping("QueryMembershipPoint")
     @ResponseBody
     public List<DlrldBean> QueryMembershipPoint(Integer houseId){
-        houseId=1;
+        if (houseId==null){
+            houseId=1;
+        }
         List<DlrldBean>  list =   dlrldBeanService.QueryMembershipPoint(houseId);
-        System.out.println(list);
         return  list;
     }
 
@@ -83,6 +84,13 @@ public class DlrldBeanController {
         return  dlrldBeanService.queryprize(dltypeid);
     }
 
+    //查询奖品 redis
+    @RequestMapping("queryprize2")
+    @ResponseBody
+    public List<DlrldTypeBean> queryprize2(){
+        return  dlrldBeanService.queryprize2();
+    }
+
     String awardImg ="";
     //上传图片
     @RequestMapping("text")
@@ -96,6 +104,7 @@ public class DlrldBeanController {
         String imgUrl = ossClient.getImgUrl(name);
         String[] split = imgUrl.split("\\?");
         awardImg=split[0];
+        System.out.println(awardImg);
         return split[0];
     }
     @RequestMapping("src")
@@ -117,5 +126,18 @@ public class DlrldBeanController {
     @ResponseBody
     public void deleteTyped(Integer ids){
         dlrldBeanService.deleteTyped(ids);
+    }
+
+    //领取
+    @RequestMapping("lingquTyped")
+    @ResponseBody
+    public void lingquTyped(@RequestParam Integer dlrIdId,Integer houseId){
+        dlrldBeanService.lingquTyped(dlrIdId,houseId);
+    }
+    //放弃
+    @RequestMapping("fangqiTyped")
+    @ResponseBody
+    public void fangqiTyped(@RequestParam Integer dlrIdId,@RequestParam Integer houseId){
+        dlrldBeanService.fangqiTyped(dlrIdId,houseId);
     }
 }

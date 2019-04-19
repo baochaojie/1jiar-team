@@ -29,11 +29,13 @@ public class DlrldBeanServiceImpl implements DlrldBeanService{
             return dlrldBean;
         }
         List<DlrldBean> list = dlrldBeanMapper.queryDlrld(houseId);
+        System.out.println(list);
         if (list==null){
             redisTemplate.opsForList().leftPush("queryDlrld"+houseId,list);
         }else{
             redisTemplate.opsForList().leftPush("queryDlrld"+houseId,list);
         }
+
         return list;
     }
 
@@ -58,9 +60,10 @@ public class DlrldBeanServiceImpl implements DlrldBeanService{
     @Override
     public List<DlrldTypeBean> queryprize(Integer dltypeid) {
         List<DlrldTypeBean> list = dlrldBeanMapper.queryprize(dltypeid);
-        System.out.println(list);
         return list;
     }
+
+
 
     //查询奖品级别 redis
     @Override
@@ -114,5 +117,22 @@ public class DlrldBeanServiceImpl implements DlrldBeanService{
             dlrldBeanMapper.upupDlrldBean(dlrldBean,intee);
         }
         }
+
+    @Override
+    public List<DlrldTypeBean> queryprize2() {
+        return dlrldBeanMapper.queryprize2();
+    }
+
+    @Override
+    public void lingquTyped(Integer dlrIdId,Integer houseId) {
+        dlrldBeanMapper.lingquTyped(dlrIdId);
+        redisTemplate.delete("queryDlrld" + houseId);
+    }
+
+    @Override
+    public void fangqiTyped(Integer dlrIdId, Integer houseId) {
+        dlrldBeanMapper.fangqiTyped(dlrIdId);
+        redisTemplate.delete("queryDlrld" + houseId);
+    }
 
 }

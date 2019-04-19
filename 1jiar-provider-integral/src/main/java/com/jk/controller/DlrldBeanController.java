@@ -58,6 +58,15 @@ public class DlrldBeanController {
         return  dlrldBeanService.queryprize(dltypeid);
     }
 
+
+
+    //查询奖品 redis
+    @RequestMapping("queryprize2")
+    @ResponseBody
+    public List<DlrldTypeBean> queryprize2(){
+        return  dlrldBeanService.queryprize2();
+    }
+
     //查询奖品级别 redis
     @RequestMapping("typelist")
     @ResponseBody
@@ -80,6 +89,19 @@ public class DlrldBeanController {
          dlrldBeanService.deleteTyped(ids);
     }
 
+    //领取
+    @RequestMapping("lingquTyped")
+    @ResponseBody
+    public void lingquTyped(@RequestParam Integer dlrIdId,@RequestParam Integer houseId){
+        dlrldBeanService.lingquTyped(dlrIdId,houseId);
+    }
+
+    //放弃
+    @RequestMapping("fangqiTyped")
+    @ResponseBody
+    public void fangqiTyped(@RequestParam Integer dlrIdId,@RequestParam Integer houseId){
+        dlrldBeanService.fangqiTyped(dlrIdId,houseId);
+    }
 
 
 

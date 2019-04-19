@@ -38,4 +38,13 @@ public interface DlrldBeanService {
 
     @RequestMapping("saveDlrldBean")
     void saveDlrldBean(@RequestBody DlrldBean dlrldBean);
+
+    @PostMapping("queryprize2")
+    List<DlrldTypeBean> queryprize2();
+
+    @PostMapping("lingquTyped")
+    void lingquTyped(@RequestParam Integer dlrIdId,@RequestParam Integer houseId);
+
+    @PostMapping("fangqiTyped")
+    void fangqiTyped(@RequestParam Integer dlrIdId,@RequestParam Integer houseId);
 }

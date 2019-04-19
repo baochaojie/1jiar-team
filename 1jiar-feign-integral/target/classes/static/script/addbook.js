@@ -1,16 +1,16 @@
 
 $(function(){
     inittype();
-    queryprize();
+    queryprize2();
 })
 function tiaojianchaxun(){
     $('#prizeTable').bootstrapTable('refresh');
 }
 //查看奖品
-function  queryprize(){
+function  queryprize2(){
     $('#prizeTable').bootstrapTable({
         toolbar:'#toolbar',
-        url:'/queryprize',//获取数据地址
+        url:'/queryprize2',//获取数据地址
         type:'post',
         columns:[
             {checkbox:true},

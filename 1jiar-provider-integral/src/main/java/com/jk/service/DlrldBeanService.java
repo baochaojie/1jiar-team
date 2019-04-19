@@ -27,4 +27,10 @@ public interface DlrldBeanService {
     DlrldBean querydlrldId(Integer houseId);
 
     void saveDlrldBean(DlrldBean dlrldBean);
+
+    List<DlrldTypeBean> queryprize2();
+
+    void lingquTyped(Integer dlrIdId,Integer houseId);
+
+    void fangqiTyped(Integer dlrIdId, Integer houseId);
 }
