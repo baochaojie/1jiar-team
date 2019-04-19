@@ -24,14 +24,12 @@
             <div class="col-md-8">
                 <label for="city" class="col-sm-3 control-label">小区所在位置：&nbsp;&nbsp;</label>
                 <div class="input-group" id="jz">
-                    <select class="form-control" style="width: 120px" id="city" >
-                        <option>北京市</option>
+                    <select class="form-control" style="width: 30%" data-live-search="true" id="city" name="city" onchange="initxian(this.value)"></select>
+                    <select class="form-control" style="width: 30%" data-live-search="true" id="xian" name="xian" onchange="initzhen(this.value)">
+                        <option>区县</option>
                     </select>
-                    <select class="form-control" style="width: 120px">
-                        <option>海淀区</option>
-                    </select>
-                    <select class="form-control" style="width: 120px">
-                        <option>西三旗</option>
+                    <select class="form-control" style="width: 30%" data-live-search="true" id="zhen" name="zhen">
+                        <option>乡镇</option>
                     </select>
                 </div>
                 <label for="xiaoqu" class="col-sm-2 control-label">小区：</label>
@@ -44,15 +42,15 @@
                     <span class="input-group-addon">
                         <i class="glyphicon glyphicon-home"></i>
                     </span>
-                    <input style="width: 178px" type="text" class="form-control" id="loudonghao" placeholder="楼栋号" name="ownerSiteDong">
+                    <input style="width: 100%" type="text" class="form-control" id="loudonghao" placeholder="楼栋号" name="ownerSiteDong">
                     <span class="input-group-addon">
                         <i class="glyphicon glyphicon-menu-right"></i>
                     </span>
-                    <input style="width: 178px" type="text" class="form-control" id="danyuanhao" placeholder="单元号" name="ownerSiteDanyuan">
+                    <input style="width: 100%" type="text" class="form-control" id="danyuanhao" placeholder="单元号" name="ownerSiteDanyuan">
                     <span class="input-group-addon">
                         <i class="glyphicon glyphicon-menu-right"></i>
                     </span>
-                    <input style="width: 178px" type="text" class="form-control" id="menpaihao" placeholder="门牌号" name="ownerSiteMenpai">
+                    <input style="width: 100%" type="text" class="form-control" id="menpaihao" placeholder="门牌号" name="ownerSiteMenpai">
                    </div>
                 </div>
                 <label for="qiwangshoujia" class="col-sm-2 control-label">期望售价：</label>
@@ -78,6 +76,11 @@
 </center>
 </body>
 <script>
+    //页面加载城市信息，三级联动
+    $(function () {
+        initcity();
+    });
+    //向后台发送请求，添加房源信息
     function addOwner() {
         $.ajax({
             url:'/addOwner',
@@ -86,11 +89,12 @@
             dataType:'json',
             success:function (result) {
                 if (result){
-                    layer.alert('您的信息已送往审核,请耐心等待', {
+                    layer.alert('信息已送往审核,请耐心等待', {
                         skin: 'layui-layer-lan'
                         ,closeBtn: 0
                         ,anim: 1 //动画类型
                     });
+                    location.href('/toshowhouseinfo');
                 }
             },
             error:function () {
@@ -98,6 +102,64 @@
             }
         });
     }
-
+    //向后台发送请求，获取数据库中的城市信息
+    function initcity(){
+        $.ajax({
+            url:'/initcity',
+            type:'post',
+            data:{pid:0},
+            dataType:'json',
+            success:function (data) {
+                var html ="";
+                for (var i = 0 ; i < data.length; i++){
+                    html  +="<option value='"+data[i].id+"'>"+data[i].name+"</option>";
+                }
+                $("#city").append(html);
+            },
+            error:function () {
+                alert("网络异常");
+            }
+        });
+    }
+    //向后台发送请求，获取数据库中县的信息
+    function initxian(id){
+        $("#xian").empty();
+        $.ajax({
+            url:'/initcity',
+            type:'post',
+            data:{pid:id},
+            dataType:'json',
+            success:function (data) {
+                var html ="";
+                for (var i = 0 ; i < data.length; i++){
+                    html  +="<option value='"+data[i].id+"'>"+data[i].name+"</option>";
+                }
+                $("#xian").append(html);
+            },
+            error:function () {
+                alert("网络异常");
+            }
+        });
+    }
+    //向后台发送请求，获取数据库中县的信息
+    function initzhen(id){
+        $("#zhen").empty();
+        $.ajax({
+            url:'/initcity',
+            type:'post',
+            data:{pid:id},
+            dataType:'json',
+            success:function (data) {
+                var html ="";
+                for (var i = 0 ; i < data.length; i++){
+                    html  +="<option value='"+data[i].id+"'>"+data[i].name+"</option>";
+                }
+                $("#zhen").append(html);
+            },
+            error:function () {
+                alert("网络异常");
+            }
+        });
+    }
 </script>
 </html>
