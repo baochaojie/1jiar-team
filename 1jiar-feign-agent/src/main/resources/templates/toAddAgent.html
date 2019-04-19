@@ -22,13 +22,33 @@
             </div>
         </div>
         <div class="form-group">
-            <label for="detail" class="col-sm-2 control-label">经济人简介</label>
+            <label for="achievement" class="col-sm-2 control-label">个人成绩</label>
             <div class="col-sm-4">
-                <input type="text" class="form-control" id="detail" name="detail">
+                <input type="text" class="form-control" id="achievement" name="achievement">
             </div>
             <label for="agentPhone" class="col-sm-2 control-label">经济人电话</label>
             <div class="col-sm-4">
                 <input type="text" class="form-control" id="agentPhone" name="agentPhone">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="store" class="col-sm-2 control-label">所属店铺</label>
+            <div class="col-sm-4">
+                <input type="text" class="form-control" id="store" name="store">
+            </div>
+            <label for="agentYears" class="col-sm-2 control-label">工作年限</label>
+            <div class="col-sm-4">
+                <input type="text" class="form-control" id="agentYears" name="agentYears">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="detail" class="col-sm-2 control-label">个人简介</label>
+            <div class="col-sm-4">
+                <input type="text"  class="form-control" id="detail" name="detail">
+            </div>
+            <label for="houseId" class="col-sm-2 control-label">负责小区</label>
+            <div class="col-sm-4">
+                <select  class="form-control" id="houseId" name="houseId"></select>
             </div>
         </div>
         <div class="form-group">
@@ -38,8 +58,14 @@
             </div>
         </div>
         <div class="form-group">
+            <label for="labelId" class="col-sm-2 control-label">标签</label>
+            <div class="col-sm-6">
+                <select class="form-control" id="labelId" name="labelId"></select>
+            </div>
+        </div>
+        <div class="form-group">
             <span class="input-group-addon" >奖品图片</span>
-            <input type="text" id="headImg" name="agentImg"/>
+            <input type="text" id="headImg" name="argentImg"/>
             <!-- projectfile -->
             <input type="file" multiple class="projectfile" accept="image/*" name="file" id="uploadImg">
         </div>
@@ -61,6 +87,10 @@
         //初始化区域
         initRegion();
        // uploadImg();
+        //初始化小区
+        inithouseSelect();
+        //初始化标签
+        initLabelSelect();
     })
         $('#uploadImg').fileinput({
             language: 'zh', //设置语言
@@ -85,9 +115,6 @@
         }).on('fileuploaded', function(event, data, previewId, index) {
 
 
-
-
-
             var imgval = $('#headImg').val();
             if(imgval == null || imgval == "" || imgval == undefined){
                 imgval = data.response.responseText;
@@ -96,6 +123,7 @@
 		}*/
             $('#headImg').val(imgval);
         });
+
 
 </script>
 </html>

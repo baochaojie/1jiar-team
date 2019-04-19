@@ -39,11 +39,7 @@
                     <div class="col-sm-12">
                         <div class="input-group" style="width: 100%">
                             <span class="input-group-addon" >奖品图片</span>
-<<<<<<< HEAD
                             <input type="text" id="headImg" name="awardImg"/>
-=======
-                            <input type="hidden" id="headImg" name="awardImg"/>
->>>>>>> f4279993763febc7556e25320e911184c3ff1b9a
                             <!-- projectfile -->
                             <input type="file" multiple class="projectfile" accept="image/*" name="file" id="uploadImg">
                         </div>
@@ -55,10 +51,6 @@
 </div>
 <script  th:src="@{/script/book.js}"></script>
 <script  th:src="@{/script/addbook.js}"></script>
-<<<<<<< HEAD
-=======
-<script  th:src="@{/fileinput.js}"></script>
->>>>>>> f4279993763febc7556e25320e911184c3ff1b9a
 </body>
 <script type="text/javascript">
     $('#uploadImg').fileinput({
@@ -73,13 +65,8 @@
         //minImageHeight: 50,//图片的最小高度
         //maxImageWidth: 1000,//图片的最大宽度
         //maxImageHeight: 1000,//图片的最大高度
-<<<<<<< HEAD
         maxFileSize: 0,//单位为kb，如果为0表示不限制文件大小
         minFileCount: 0,
-=======
-        //maxFileSize: 0,//单位为kb，如果为0表示不限制文件大小
-        //minFileCount: 0,
->>>>>>> f4279993763febc7556e25320e911184c3ff1b9a
         maxFileCount: 2, //表示允许同时上传的最大文件个数
         enctype: 'multipart/form-data',
         validateInitialCount:true,
@@ -90,10 +77,6 @@
 
 
 
-<<<<<<< HEAD
-=======
-
->>>>>>> f4279993763febc7556e25320e911184c3ff1b9a
         var imgval = $('#headImg').val();
         if(imgval == null || imgval == "" || imgval == undefined){
             imgval = data.response.responseText;
