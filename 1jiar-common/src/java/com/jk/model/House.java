@@ -11,6 +11,7 @@ public class House implements Serializable {
     private  String houseaheName;//名字
     private  Integer housePrice;//售价
     private  Integer houseManId;//用户id 房屋拥有者 关联一张用户表
+    private  String houseManName;//用户姓名
     private  String houseJianzhuMianji;//建筑面积
     private  String houseTaoneiMianji;//套内面积
     private  String houseTypeId;//房型id 关联一张房屋类型表
@@ -27,6 +28,8 @@ public class House implements Serializable {
     private  String  houseZuTypeName;//租房方式 1整租 2合租
     private  String  houseTeSeId;//房屋特色id 关联一张房屋特色表
     private  String  TeSeName;//房屋特色名
+    private  String  agentId;//经纪人关联表id 关联一张经纪人表
+    private  String  agentName;//经纪人名
     private  Integer houseElevator;//有无电梯 1是有电梯，2是没有电梯
     private  Integer houseFinish;//是否装修 1是已装修，2是未装修
     private  Integer houseHeating;//是否供暖 1是供暖，2是不供暖
@@ -43,6 +46,7 @@ public class House implements Serializable {
     private Integer	endPrice;//结束价格
     private Integer	houseQuYuFuId;//地区临时字段
     private Integer	houseDiTieFuId;//地铁线路临时字段
+    private Integer	intid;//排序类型临时字段
 
 
 
@@ -328,5 +332,37 @@ public class House implements Serializable {
 
     public void setTeSeName(String teSeName) {
         TeSeName = teSeName;
+    }
+
+    public Integer getIntid() {
+        return intid;
+    }
+
+    public void setIntid(Integer intid) {
+        this.intid = intid;
+    }
+
+    public String getHouseManName() {
+        return houseManName;
+    }
+
+    public void setHouseManName(String houseManName) {
+        this.houseManName = houseManName;
+    }
+
+    public String getAgentId() {
+        return agentId;
+    }
+
+    public void setAgentId(String agentId) {
+        this.agentId = agentId;
+    }
+
+    public String getAgentName() {
+        return agentName;
+    }
+
+    public void setAgentName(String agentName) {
+        this.agentName = agentName;
     }
 }

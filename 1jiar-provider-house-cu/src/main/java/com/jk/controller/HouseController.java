@@ -36,8 +36,21 @@ public class HouseController {
     //删除
     @ResponseBody
     @RequestMapping("deleteItem")
-    public Integer deleteItem(@RequestParam String ids){
-        houseService.deleteItem(ids);
+    public Integer deleteItem(@RequestParam String ids ,@RequestParam Integer agentId){
+        houseService.deleteItem(ids,agentId);
         return 1;
+    }
+    //删除
+    @ResponseBody
+    @RequestMapping("LookHouse")
+    public Integer LookHouse(@RequestParam Integer agentId){
+        houseService.LookHouse(agentId);
+        return 1;
+    }
+    //回显
+    @RequestMapping("findHouseById")
+    @ResponseBody
+    public House findHouseById(Integer houseId){
+        return houseService.findHouseById(houseId);
     }
 }

@@ -53,10 +53,22 @@ public class HouseServiceImpl implements HouseService {
     }
 
     @Override
-    public Integer deleteItem(String ids) {
+    public Integer deleteItem(String ids ,Integer agentId) {
         houseMapper.deleteItem(ids);
+        houseMapper.ZengChengJiaoLiang(agentId);
         return 1;
 
+    }
+
+    @Override
+    public void LookHouse(Integer agentId) {
+        houseMapper.LookHouse(agentId);
+    }
+
+    @Override
+    public House findHouseById(Integer houseId) {
+        House houseById = houseMapper.findHouseById(houseId);
+        return houseById;
     }
 
 }
