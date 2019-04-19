@@ -1,9 +1,5 @@
 $(function(){
     MembershipPoint();
-<<<<<<< HEAD
-    inittypee();
-=======
->>>>>>> f4279993763febc7556e25320e911184c3ff1b9a
 })
 
 
@@ -17,18 +13,11 @@ function MembershipPoint(){
         type:'post',
         columns:[
             {checkbox:true},
-<<<<<<< HEAD
-            {field:'awardImg',title:'用户头像',formatter:function(data){
-                    return "<img src="+data+" width='50' height='50'>";
-                }},
-            {field:'dlrIdId',title:'ID'},
-=======
             {field:'dlrIdId',title:'ID'},
             {field:'loimg',title:'用户头像',formatter:function(data){
                     return "<img src="+data+" width='50' height='50'>";
                 }},
             {field:'userName',title:'用户名'},
->>>>>>> f4279993763febc7556e25320e911184c3ff1b9a
             {field:'integralAdd',title:'剩余积分'},
             {field:'houseId',title:'用户id'},
             {field:'123',title:'操作',formatter:function(value,row,index){
@@ -57,10 +46,6 @@ function inittypee() {
 }
 //回显
     function updatebookbyid(houseId){
-<<<<<<< HEAD
-    alert(houseId);
-=======
->>>>>>> f4279993763febc7556e25320e911184c3ff1b9a
         //打开修改弹框
         openAddDlrld();
         //初始化表单数据
@@ -73,13 +58,8 @@ function inittypee() {
             data:{houseId:houseId},
             dataType:'json',
             success:function(data) {
-<<<<<<< HEAD
-                $("#dlrIdId").val(data.dlrIdId);
-                $("#prizeTypeid").val(data.prizeTypeid);
-=======
                 $("#prizeTypeid").val(data.prizeTypeid);
                 $("#dlrIdId").val(data.dlrIdId);
->>>>>>> f4279993763febc7556e25320e911184c3ff1b9a
                 $("#integralAdd").val(data.integralAdd);
                 $("#houseId").val(data.houseId);
                 $("#dlrldtyId").val(data.dlrldtyId);
@@ -112,11 +92,7 @@ function inittypee() {
                     "className" : "btn-sm btn-success",
                     "callback" : function() {
                         $.ajax({
-<<<<<<< HEAD
-                            url:'/saveprize',
-=======
                             url:'/saveDlrldBean',
->>>>>>> f4279993763febc7556e25320e911184c3ff1b9a
                             type:'post',
                             data:$("#upupform").serialize(),
                             dataType:'json',
@@ -163,18 +139,11 @@ function record(houseId){
         },
         columns:[
             {checkbox:true},
-<<<<<<< HEAD
-            {field:'awardImg',title:'用户头像',formatter:function(data){
-                    return "<img src="+data+" width='50' height='50'>";
-                }},
-            {field:'dlrIdId',title:'ID'},
-=======
             {field:'dlrIdId',title:'ID'},
             {field:'loimg',title:'用户头像',formatter:function(data){
                     return "<img src="+data+" width='50' height='50'>";
                 }},
             {field:'userName',title:'用户名'},
->>>>>>> f4279993763febc7556e25320e911184c3ff1b9a
             {field:'integralAdd',title:'剩余积分'},
             {field:'houseId',title:'用户id'},
             {field:'dltyname',title:'抽奖级别'},
@@ -201,107 +170,3 @@ function record(houseId){
         ]
     });
 }
-<<<<<<< HEAD
-/*
-function initTree(){
-    $.ajax({
-        url:'/typelist',
-        type:'post',
-        data:{},
-        dataType:'json',
-        success:function(data){
-            var html = "";
-            for (var i = 0; i < data.length; i++) {
-                html+="<div class='ass' width='200' height='300'><div  style=\"margin: 20px 0px 0px 100px\"><a  href='javascript:typrid("+data[i].id+")' style=\" color:#666; font-size:40px;\" >"+data[i].text+"</a></div></div><br>";
-            }
-            html+="<br>";
-            $("#myTree").html(html);
-        }
-    })
-}
-function productionlist(){
-    $.ajax({
-        url:'/productionlist',
-        type:'post',
-        data:{},
-        dataType:'json',
-        success:function(data){
-            var html = "";
-            for (var i = 0; i < data.length; i++) {
-               html+="<div class='asss'  width='200' height='300'><div  style=\"margin: 20px 0px 0px 100px\"><a href='javascript:productionbyid("+data[i].id+")'  style=\" color:#666; font-size:40px;\" >"+data[i].text+"</a></div></div><br>";
-            }
-            html+="<div class='ass'  width='200' height='300'><div  style=\"margin: 20px 0px 0px 60px\"><a href='javascript:initlist()'  style=\" color:#666; font-size:40px;\" >查询全部</a></div></div>"
-            $("#myTreeto").html(html);
-        }
-    })
-}
-function typrid(id) {
-    $("#typeidbyid").val(id);
-    initbooklist();
-}
-function productionbyid(id) {
-    $("#productionidbyid").val(id);
-    initbooklist();
-}
-function initlist() {
-    $("#productionidbyid").val(null);
-    $("#typeidbyid").val(null);
-    initbooklist();
-}
-initbooklist();
-function initbooklist(){
-    var typeid = $('#typeidbyid').val();
-    var productionid = $('#productionidbyid').val();
-    $.ajax({
-        url:'/booklist',
-        type:'post',
-        data:{
-            typeid:typeid,
-            productionid:productionid
-        },
-        success:function(data){
-            var html='<tr>';
-            var int = 1;
-            for (var i = 0; i < data.length; i++) {
-                html+="<td><div  width='370' height='400'><div  style=\"margin: 0px 0px 0px 50px\"><img class='asss' src=../"+data[i].img+" width=\'320\' height=\'340\'><br>"+
-                "<div  style=\"margin: 0px 0px 0px 120px\">商品名称："+data[i].name+"<br>"+
-                "商品类型："+data[i].typeidname+"<br>"+
-                "商品产地："+data[i].productionidname+"</div></div></div></td>";
-                if (int%4==0){
-                    html+="</tr><tr>";
-                }
-                int++;
-            }
-            $("#bookTable").html(html);
-        }
-    })
-}*/
-/*
-initbooklist();
-function initbooklist(){
-    $('#bookTable').bootstrapTable({
-        toolbar:'#toolbar',
-        url:'booklist',//获取数据地址
-        clickToSelect: true, //是否启用点击选中行
-        queryParams:function(){
-            return {
-            }
-        },
-        columns:[
-            {checkbox:true},
-            {field:'id',title:'ID'},
-            {field:'name',title:'图书名称'},
-            {field:'typeidname',title:'图书类型'},
-            {field:'productionidname',title:'出版地区'},
-            {field:'img',title:'图书封面',formatter:function(data){
-                    return "<img src=../"+data+" width='50' height='50'>";
-                }},
-            {field:'123',title:'操作',formatter:function(value,row,index){
-                    return '<a href="javascript:shanchu('+row.id+');">加入购物车</a>'
-                }}
-        ]
-    });
-}*/
-
-=======
->>>>>>> f4279993763febc7556e25320e911184c3ff1b9a
