@@ -34,10 +34,5 @@ public class PageController {
         return "login1";
     }
 
-    @RequestMapping("zhil")
-    public String zhil(){
-        return "zhil";
-    }
-
 
 }

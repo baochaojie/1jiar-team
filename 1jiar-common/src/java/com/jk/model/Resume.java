@@ -14,6 +14,10 @@ public class Resume {
     private Integer hengyid;
     private Integer shuozaiid;
 
+    private String jiaxidname;
+    private String jiaoyidname;
+    private String hengyidname;
+    private String shuozaiidname;
 
 
 

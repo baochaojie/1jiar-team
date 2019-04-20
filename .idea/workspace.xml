@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2860c424-a6dc-4038-8d9b-4fe74b1f0a24" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1jiar-common/src/java/com/jk/model/Resume.java" beforeDir="false" afterPath="$PROJECT_DIR$/1jiar-common/src/java/com/jk/model/Resume.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/1jiar-feign-user/src/main/java/com/jk/controller/PageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/1jiar-feign-user/src/main/java/com/jk/controller/PageController.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -31,8 +33,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/1jiar-feign-user/src/main/java/com/jk/controller/PageController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="449">
-              <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
+            <state relative-caret-position="209">
+              <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -43,8 +45,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/1jiar-feign-user/src/main/java/com/jk/controller/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="104" column="7" lean-forward="true" selection-start-line="104" selection-start-column="7" selection-end-line="104" selection-end-column="7" />
+            <state relative-caret-position="1589">
+              <caret line="95" lean-forward="true" selection-start-line="95" selection-end-line="95" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -53,10 +55,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/1jiar-common/src/java/com/jk/model/Login.java">
+        <entry file="file://$PROJECT_DIR$/1jiar-common/src/java/com/jk/model/Resume.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="235">
-              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+            <state relative-caret-position="138">
+              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
             </state>
           </provider>
         </entry>
@@ -100,8 +102,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/1jiar-feign-user/src/main/resources/static/script/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
+            <state relative-caret-position="510">
+              <caret line="17" column="33" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -202,7 +204,6 @@
         <option value="$PROJECT_DIR$/1jiar-feign-user/src/main/resources/templates/zhuc.html" />
         <option value="$PROJECT_DIR$/1jiar-feign-user/src/main/resources/templates/login.html" />
         <option value="$PROJECT_DIR$/1jiar-feign-user/src/main/resources/templates/login1.html" />
-        <option value="$PROJECT_DIR$/1jiar-common/src/java/com/jk/model/Resume.java" />
         <option value="$PROJECT_DIR$/1jiar-feign-user/src/main/resources/static/script/index.js" />
         <option value="$PROJECT_DIR$/1jiar-feign-user/src/main/java/com/jk/controller/UserController.java" />
         <option value="$PROJECT_DIR$/1jiar-common/src/java/com/jk/model/jiaxid.java" />
@@ -212,6 +213,7 @@
         <option value="$PROJECT_DIR$/1jiar-provider-user/src/main/java/com/jk/mapper/UserMapper.java" />
         <option value="$PROJECT_DIR$/1jiar-common/src/java/com/jk/model/Login.java" />
         <option value="$PROJECT_DIR$/1jiar-feign-user/src/main/java/com/jk/controller/PageController.java" />
+        <option value="$PROJECT_DIR$/1jiar-common/src/java/com/jk/model/Resume.java" />
       </list>
     </option>
   </component>
@@ -243,7 +245,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -500,6 +501,7 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -549,7 +551,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.Applicationfeign">
+  <component name="RunManager" selected="Spring Boot.Applicationprovider">
     <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="1jiar-eureka" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.jk.Application" />
@@ -592,8 +594,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.Applicationfeign" />
         <item itemvalue="Spring Boot.Applicationprovider" />
+        <item itemvalue="Spring Boot.Applicationfeign" />
       </list>
     </recent_temporary>
   </component>
@@ -629,12 +631,13 @@
       <workItem from="1555634956317" duration="24400000" />
       <workItem from="1555672913614" duration="650000" />
       <workItem from="1555673626427" duration="3820000" />
-      <workItem from="1555683868578" duration="276000" />
+      <workItem from="1555683868578" duration="334000" />
+      <workItem from="1555720541496" duration="998000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="121015000" />
+    <option name="totallyTimeSpent" value="122071000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -647,9 +650,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20842217" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21055438" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -665,7 +667,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.329718" />
       <window_info anchor="bottom" id="Spring" order="7" weight="0.329718" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49840087" visible="true" weight="0.22559653" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.49840087" visible="true" weight="0.22342733" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5021322" side_tool="true" weight="0.5368764" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" sideWeight="0.49946696" weight="0.329718" />
@@ -921,13 +923,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/1jiar-common/src/java/com/jk/model/Resume.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="11" column="26" lean-forward="true" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/1jiar-feign-user/src/main/java/com/jk/utils/HttpClientUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="569">
@@ -942,6 +937,13 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1jiar-common/src/java/com/jk/model/Login.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>
@@ -973,13 +975,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/1jiar-feign-user/src/main/resources/static/script/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/1jiar-feign-user/src/main/java/com/jk/service/UserService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -1000,27 +995,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/1jiar-feign-user/src/main/resources/static/script/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="17" column="33" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1jiar-common/src/java/com/jk/model/Resume.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/1jiar-feign-user/src/main/java/com/jk/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="104" column="7" lean-forward="true" selection-start-line="104" selection-start-column="7" selection-end-line="104" selection-end-column="7" />
+        <state relative-caret-position="1589">
+          <caret line="95" lean-forward="true" selection-start-line="95" selection-end-line="95" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/1jiar-common/src/java/com/jk/model/Login.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/1jiar-feign-user/src/main/java/com/jk/controller/PageController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="449">
-          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
+        <state relative-caret-position="209">
+          <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
