@@ -1,8 +1,5 @@
-<<<<<<< HEAD
-=======
 
 //查询奖品 redis
->>>>>>> 8713299a6eb8ad5f202e5154f2938ff5df858695
 var arrdlrldtype = [];
 function initbooklist(){
     var prizeTypeid = $('#prizeTypeid').val();

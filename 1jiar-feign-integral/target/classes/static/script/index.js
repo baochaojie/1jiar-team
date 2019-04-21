@@ -173,8 +173,6 @@ function record(houseId){
         ]
     });
 }
-<<<<<<< HEAD
-=======
 
    //领取
     function lingqu(dlrIdId,houseId){
@@ -212,4 +210,3 @@ function fangqi(dlrIdId,houseId){
         }
     })
 }
->>>>>>> 8713299a6eb8ad5f202e5154f2938ff5df858695
