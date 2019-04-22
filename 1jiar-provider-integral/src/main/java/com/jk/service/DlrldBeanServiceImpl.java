@@ -8,7 +8,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
 
-import java.util.Date;
 import java.util.List;
 
 @Service
@@ -99,23 +98,10 @@ public class DlrldBeanServiceImpl implements DlrldBeanService{
     }
 
     @Override
-    public void saveDlrldBean(DlrldBean dlrldBean) {
-        Integer intee = dlrldBean.getIntegralAdd();
-        Integer integral = 0;
-        if (dlrldBean.getPrizeTypeid()==1){
-            integral=500;
-            intee=intee-integral;
-        }else if (dlrldBean.getPrizeTypeid()==2){
-            integral=1000;
-            intee=intee-integral;
-        }else if (dlrldBean.getPrizeTypeid()==3){
-            integral=3000;
-            intee=intee-integral;
-        }
-        if(integral>=0){
-            dlrldBeanMapper.saveDlrldBean(dlrldBean,integral);
-            dlrldBeanMapper.upupDlrldBean(dlrldBean,intee);
-        }
+    public String saveDlrldBean(DlrldBean dlrldBean,Integer intee, Integer integral) {
+                   dlrldBeanMapper.upupDlrldBean(dlrldBean,intee);
+            return dlrldBeanMapper.saveDlrldBean(dlrldBean,integral);
+
         }
 
     @Override

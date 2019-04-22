@@ -16,7 +16,7 @@ function initbooklist(){
                 html+="<td><div  width='300' height='300'><div  width='100' height='70' id="+data[i-1].dlrldtyId+" style=\"margin: 0px 0px 0px 0px\"><img  style=\"margin: 5px 5px 5px 5px\" class='asss' src="+data[i-1].awardImg+" width=\'90\' height=\'60\'><br>"+
                     "<div  style=\"margin: 0px 0px 0px 0px\">"+data[i-1].dlrldName+"</div></div></div></td>";
                 if (i==4){
-                    html+="<td><a href='javascript:initsuiji();' ><img   src=''  width='100' height='70'></img></a></td>";
+                    html+="<td><a href='javascript:initsuiji();' ><img  src='http://tableimg.oss-cn-beijing.aliyuncs.com/tableimg/1555723931320.png'  width='100' height='70'></img></a></td>";
                 }
                 if (i==3){
                     html+="</tr><tr>";
@@ -39,29 +39,24 @@ function sum (){
     k+=1;
     if (k===13){
         $("#dlrldtyId").val(arrdlrldtype[num]);
-        alert(arrdlrldtype[num]);
-        $.ajax({
-            ddddurl:'/saveDlrldBean',
-            type:'post',
-            data:$("#upupform").serialize(),
-            dataType:'json',
-            success:function(data){
-                if(data){
-                    MembershipPoint();
-                }else{
-                    bootbox.alert({
-                        size: "small",
-                        title: "提示",
-                        message: "新增失败！",
-                        buttons: {
-                            ok: {
-                                label: '确定',
-                                className: 'btn-success'
-                            }
-                        }
-                    })
-                }}
-        })
+        var r=confirm("恭喜恭喜")
+        if (r==true)
+        {
+            $.ajax({
+                url:'/saveDlrldBean',
+                type:'post',
+                data:$("#upupform").serialize(),
+                dataType:'json',
+                success:function(data){
+                    if(data){
+                        MembershipPoint();
+                    }if(data==1){
+                          alert("你的积分不足");
+                    }
+                }
+            });
+            sum.clearInterval(intervalID);
+        }
         k=0;
     }
     num = Math.floor(Math.random()*(8 - 1) + 1);

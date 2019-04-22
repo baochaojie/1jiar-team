@@ -20,35 +20,62 @@ public class DlrldBeanController {
     @Autowired
     private DlrldBeanService dlrldBeanService;
 
+    @Autowired
+    private RedisTemplate redisTemplate;
 
 
     //查询用户积分余额 redis
     @RequestMapping("QueryMembershipPoint")
     @ResponseBody
-    public List<DlrldBean> QueryMembershipPoint(@RequestParam Integer houseId){
-        return  dlrldBeanService.QueryMembershipPoint(houseId);
+    public List<DlrldBean> QueryMembershipPoint(@RequestParam Integer houseId) {
+        return dlrldBeanService.QueryMembershipPoint(houseId);
     }
 
     //查询历史中奖纪录 redis
     @RequestMapping("queryDlrld")
     @ResponseBody
-    public List<DlrldBean> queryDlrld(@RequestParam Integer houseId){
-        return  dlrldBeanService.queryDlrld(houseId);
+    public List<DlrldBean> queryDlrld(@RequestParam Integer houseId) {
+        return dlrldBeanService.queryDlrld(houseId);
     }
 
     //抽奖回显
     @RequestMapping("querydlrldId")
     @ResponseBody
-    public DlrldBean querydlrldId(@RequestParam Integer houseId){
-        return  dlrldBeanService.querydlrldId(houseId);
+    public DlrldBean querydlrldId(@RequestParam Integer houseId) {
+        return dlrldBeanService.querydlrldId(houseId);
     }
+
 
     //抽奖
     @RequestMapping("saveDlrldBean")
     @ResponseBody
-    public void saveDlrldBean(@RequestBody DlrldBean DlrldBean){
-        dlrldBeanService.saveDlrldBean(DlrldBean);
+    public String saveDlrldBean(@RequestBody DlrldBean dlrldBean) {
+        Integer intee = dlrldBean.getIntegralAdd();
+        Integer integral = 0;
+        if (dlrldBean.getPrizeTypeid()==1){
+            integral=500;
+            intee=intee-integral;
+        }else if (dlrldBean.getPrizeTypeid()==2){
+            integral=1000;
+            intee=intee-integral;
+        }else if (dlrldBean.getPrizeTypeid()==3){
+            integral=3000;
+            intee=intee-integral;
+        }
+        if(intee>=0){
+            Integer houseId = dlrldBean.getHouseId();
+            redisTemplate.delete("QueryMembershipPoint" + houseId);
+            redisTemplate.delete("queryDlrld" + houseId);
+            return dlrldBeanService.saveDlrldBean(dlrldBean,intee,integral);
+        }else{
+            return "1";
+        }
+
     }
+
+
+
+
 
 
     //查询奖品 redis

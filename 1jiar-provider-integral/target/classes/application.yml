@@ -9,8 +9,8 @@ spring:
     first:
       initial-size: 1
       max-active: 5
-    password: root
-    url: jdbc:mysql://localhost:3306/shixun1
+    password: 123
+    url: jdbc:mysql://192.168.1.123:3306/shixun1
     username: root
   jpa:
     database: mysql

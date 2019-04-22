@@ -17,7 +17,6 @@
 </style>
 <body>
 <div th:include="/index.html"></div>
-<div class="table" id="prizesuiji"></div>
 <div class="modal-dialog" >
         <form class="form-inline" id="upupform">
         <div class="form-group">
@@ -25,12 +24,12 @@
                 <div class="col-sm-12">
                     <div class="input-group">
                         <input type="hidden" class="form-control" id="dlrIdId"  name="dlrIdId" ></br>
-                        抽奖级别:
+
                         <select  class="form-control" onchange="initbooklist()"  style="width:200px"  id="prizeTypeid" name="prizeTypeid">
                         </select>
-                        积分:<input type="text" class="form-control" id="integralAdd"  name="integralAdd" ></br>
-                        用户id:<input type="hidden" class="form-control" id="houseId"  name="houseId" ></br>
-                        奖品类型:<input type="text" class="form-control" id="dlrldtyId"  name="dlrldtyId" ></br>
+                        <input type="hidden" class="form-control" id="integralAdd"  name="integralAdd" ></br>
+                        <input type="hidden" class="form-control" id="houseId"  name="houseId" ></br>
+                        <input type="hidden" class="form-control" id="dlrldtyId"  name="dlrldtyId" ></br>
 
                     </div>
                 </div>
@@ -38,6 +37,7 @@
         </div>
     </form>
 </div>
+<div class="table" id="prizesuiji"></div>
 <script  th:src="@{/script/index.js}"></script>
 <script  th:src="@{/script/addbook.js}"></script>
 <script  th:src="@{/script/book.js}"></script>
