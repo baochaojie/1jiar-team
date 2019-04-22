@@ -1,9 +1,6 @@
 package com.jk.service;
 
-import com.jk.model.Area;
-import com.jk.model.HouseAge;
-import com.jk.model.Owner;
-import com.jk.model.UserBean;
+import com.jk.model.*;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.*;
 
@@ -29,4 +26,8 @@ public interface HouseService {
     @PostMapping("initcity")
     @ResponseBody
     List<Area> initcity(@RequestParam Integer pid);
+
+    @RequestMapping("addhousemoreinfo")
+    @ResponseBody
+    void addhousemoreinfo(@RequestBody House house);
 }

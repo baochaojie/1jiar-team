@@ -24,11 +24,11 @@
             <div class="col-md-8">
                 <label for="city" class="col-sm-3 control-label">小区所在位置：&nbsp;&nbsp;</label>
                 <div class="input-group" id="jz">
-                    <select class="form-control" style="width: 30%" data-live-search="true" id="city" name="city" onchange="initxian(this.value)"></select>
-                    <select class="form-control" style="width: 30%" data-live-search="true" id="xian" name="xian" onchange="initzhen(this.value)">
+                    <select class="form-control" style="width: 30%" data-live-search="true" id="city" name="ownerCity" onchange="initxian(this.value)"></select>
+                    <select class="form-control" style="width: 30%" data-live-search="true" id="xian" name="ownerXian" onchange="initzhen(this.value)">
                         <option>区县</option>
                     </select>
-                    <select class="form-control" style="width: 30%" data-live-search="true" id="zhen" name="zhen">
+                    <select class="form-control" style="width: 30%" data-live-search="true" id="zhen" name="ownerZhen">
                         <option>乡镇</option>
                     </select>
                 </div>
@@ -89,12 +89,13 @@
             dataType:'json',
             success:function (result) {
                 if (result){
-                    layer.alert('信息已送往审核,请耐心等待', {
+                    /*layer.alert('信息已送往审核,请耐心等待', {
                         skin: 'layui-layer-lan'
                         ,closeBtn: 0
                         ,anim: 1 //动画类型
-                    });
-                    location.href('/toshowhouseinfo');
+                    });*/
+                    alert("审核通过！");
+                    location.href="http://localhost:8788/toshowhouseinfo";
                 }
             },
             error:function () {

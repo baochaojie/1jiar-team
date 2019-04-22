@@ -11,7 +11,7 @@
     <script src="../bootstrap/bootstrap-table/locale/bootstrap-table-zh-CN.js"></script>
     <script src="../bootstrap/bootstrap-treeview/bootstrap-treeview.min.js"></script>
     <link rel="stylesheet" href="../bootstrap/bootstrap-treeview/bootstrap-treeview.min.css">
-
+    <script src="../bootstrap/bootstrap-bootbox/bootbox.js"></script>
 </head>
 <body>
 <!-- 条件查询提交表单 -->
@@ -73,7 +73,7 @@
                     formatter: function (value, row, index) {
                         //js传递字符串的时候一定要加引号!!!!
                         if (value==1){
-                            var butt = '<button type="button" class="btn btn-primary btn-sm">审核</button>';
+                            var butt = '<button type="button" class="btn btn-primary btn-sm" onclick="addmoreinfo()">审核</button>';
                         }else if (value==2){
                             var butt = "";
                         } else if (value==3){
@@ -85,8 +85,53 @@
             ]
         })
     }
+    //条查重新加载bootstrop树
     function ownerInfo() {
         $('#myTable').bootstrapTable('refresh');
+    }
+    //审核弹框添加更多详情信息
+    function addmoreinfo() {
+        bootbox.dialog({
+            title:'详细信息',
+            closeButton: true,
+            message:createAddContent("/toaddhousemoreinfo"),
+            buttons : {
+            "success" : {
+                "label" : "<i class='icon-ok'></i> 确认",
+                    "className" : "btn-sm btn-success glyphicon glyphicon-check",
+                    "callback" : function() {
+                    $.ajax({
+                        url:'/addhousemoreinfo',
+                        type:'post',
+                        data:$("#myForm").serialize(),
+                        success:function(result){
+                            if (result){
+                                alert("审核通过");
+                                location.href="http://localhost:8776/house/chazhubiao";
+                            }
+                        }
+                    });
+            }
+            },
+            "cancel" : {
+                "label" : "<i class='icon-info'></i> 取消",
+                    "className" : "btn-sm btn-danger glyphicon glyphicon-trash",
+                    "callback" : function() {
+                }
+            }
+        }
+        });
+    }
+    var res;
+    function createAddContent(url){
+        $.ajax({
+            url:url,
+            async:false,
+            success:function(data){
+                res = data;
+            }
+        });
+        return res;
     }
 </script>
 </html>
