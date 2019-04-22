@@ -1,9 +1,7 @@
 package com.jk.controller;
 
 import com.jk.ConstantConf;
-import com.jk.model.Login;
-import com.jk.model.Resume;
-import com.jk.model.Tree;
+import com.jk.model.*;
 import com.jk.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -90,5 +88,53 @@ public class UserController {
     @RequestMapping("login")
     public String login(@RequestBody Login login) {
         return userService.login(login);
+    }
+
+
+    @RequestMapping("selectjiaoyid")
+    @ResponseBody
+    public List<jiaoyid> selectjiaoyid(){
+        return userService.selectjiaoyid();
+    }
+    @RequestMapping("selecthengyid")
+    @ResponseBody
+    public List<hengyid> selecthengyid(){
+        return userService.selecthengyid();
+    }
+    @RequestMapping("selectshuozaiid")
+    @ResponseBody
+    public List<shuozaiid> selectshuozaiid(){
+        return userService.selectshuozaiid();
+    }
+    @RequestMapping("shuosiname")
+    @ResponseBody
+    public List<shuosiname> shuosiname(@RequestParam Integer pid){
+        return userService.shuosiname(pid);
+    }
+
+
+    @RequestMapping("jiaxidname")
+    @ResponseBody
+    public List<jiaxid> jiaxidname(){
+        return userService.jiaxidname();
+    }
+
+    @RequestMapping("jiaoxidname")
+    @ResponseBody
+    public List<jiaoxi> jiaoxidname(@RequestParam Integer pid){
+        return userService.jiaoxidname(pid);
+
+    }
+
+    @RequestMapping("addOwner")
+    @ResponseBody
+    public void addOwner(@RequestBody Resume resume){
+        userService.addOwner(resume);
+    }
+
+    @RequestMapping("deleteuser")
+    @ResponseBody
+    public void deleteuser(Integer id) {
+         userService.deleteuser(id);
     }
 }

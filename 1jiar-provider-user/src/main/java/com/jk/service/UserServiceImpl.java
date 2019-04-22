@@ -1,9 +1,7 @@
 package com.jk.service;
 
 import com.jk.mapper.UserMapper;
-import com.jk.model.Login;
-import com.jk.model.Resume;
-import com.jk.model.Tree;
+import com.jk.model.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.stereotype.Service;
@@ -50,6 +48,48 @@ public class UserServiceImpl implements UserService{
     @Override
     public Login phoneVerification(String login) {
         return userMapper.phoneVerification(login);
+
+    }
+
+    @Override
+    public List<jiaoyid> selectjiaoyid() {
+        return userMapper.selectjiaoyid();    }
+
+    @Override
+    public List<hengyid> selecthengyid() {
+        return userMapper.selecthengyid();
+    }
+
+    @Override
+    public List<shuozaiid> selectshuozaiid() {
+        return userMapper.selectshuozaiid();
+    }
+
+    @Override
+    public List<shuosiname> shuosiname(Integer pid) {
+        return userMapper.shuosiname(pid);
+    }
+
+    @Override
+    public List<jiaxid> jiaxidname() {
+        return userMapper.jiaxidname();
+
+    }
+
+    @Override
+    public List<jiaoxi> jiaoxidname(Integer pid) {
+        return userMapper.jiaoxidname(pid);
+
+    }
+
+    @Override
+    public void addOwner(Resume resume) {
+         userMapper.addOwner(resume);
+    }
+
+    @Override
+    public void deleteuser(Integer id) {
+        userMapper.deleteuser(id);
 
     }
 

@@ -12,8 +12,7 @@
 
     <select id="UserLogin" parameterType="String" resultType="com.jk.model.Login">
      select * from house_man where login = #{login}
-  </select>
-
+    </select>
 
 
 

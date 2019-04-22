@@ -34,5 +34,10 @@ public class PageController {
         return "login1";
     }
 
+    @RequestMapping("addList")
+    public String addList(){
+        return "addList";
+    }
+
 
 }

@@ -1,8 +1,6 @@
 package com.jk.service;
 
-import com.jk.model.Login;
-import com.jk.model.Resume;
-import com.jk.model.Tree;
+import com.jk.model.*;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.*;
 
@@ -30,4 +28,31 @@ public interface UserService {
     @RequestMapping("phoneVerification/{login}")
     @ResponseBody
     Login phoneVerification(@RequestParam("login")String login);
+
+    @PostMapping("selectjiaoyid")
+    List<jiaoyid> selectjiaoyid();
+
+    @PostMapping("selecthengyid")
+    List<hengyid> selecthengyid();
+
+    @PostMapping("selectshuozaiid")
+    List<shuozaiid> selectshuozaiid();
+
+    @RequestMapping("shuosiname")
+    @ResponseBody
+    List<shuosiname> shuosiname(@RequestParam Integer pid);
+
+    @PostMapping("jiaxidname")
+    List<jiaxid> jiaxidname();
+
+    @RequestMapping("jiaoxidname")
+    @ResponseBody
+    List<jiaoxi> jiaoxidname(@RequestParam Integer pid);
+
+    @RequestMapping("addOwner")
+    @ResponseBody
+    void addOwner(@RequestBody Resume resume);
+
+    @GetMapping("deleteuser")
+    void deleteuser(@RequestParam Integer id);
 }

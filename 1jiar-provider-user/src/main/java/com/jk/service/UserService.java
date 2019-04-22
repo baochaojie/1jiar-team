@@ -1,9 +1,7 @@
 package com.jk.service;
 
 
-import com.jk.model.Login;
-import com.jk.model.Resume;
-import com.jk.model.Tree;
+import com.jk.model.*;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
@@ -22,4 +20,20 @@ public interface UserService {
     String login(Login login);
 
     Login phoneVerification(String login);
+
+    List<jiaoyid> selectjiaoyid();
+
+    List<hengyid> selecthengyid();
+
+    List<shuozaiid> selectshuozaiid();
+
+    List<shuosiname> shuosiname(Integer pid);
+
+    List<jiaxid> jiaxidname();
+
+    List<jiaoxi> jiaoxidname(Integer pid);
+
+    void addOwner(Resume resume);
+
+    void deleteuser(Integer id);
 }
