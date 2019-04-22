@@ -1,11 +1,7 @@
 package com.jk.mapper;
 
-import com.jk.model.Area;
-import com.jk.model.HouseAge;
-import com.jk.model.Owner;
-import com.jk.model.UserBean;
+import com.jk.model.*;
 import org.apache.ibatis.annotations.Param;
-import org.apache.ibatis.annotations.Select;
 
 import java.util.List;
 
@@ -23,4 +19,6 @@ public interface HouseMapper {
     int findHouseCount(@Param("owner")Owner owner);
 
     List<Area> initcity(Integer pid);
+
+    void addhousemoreinfo(House house);
 }

@@ -78,10 +78,6 @@
             and h.housePrice &lt;=#{house.endPrice}
         </if>
         /*户型条件查询*/
-<<<<<<< HEAD
-        <if test="house.houseTypeIds=null and house.houseTypeIds!=''">
-            and (h.houseTypeId in  (#{house.houseTypeIds}))
-=======
         <if test="house.houseTypeId !=null and house.houseTypeId!=''">
             and (h.houseTypeId in (${house.houseTypeId}))
         </if>
@@ -100,7 +96,6 @@
         /*房屋特色查询*/
         <if test="house.houseTeSeId !=null and house.houseTeSeId!=''">
             and (h.houseTeSeId in (${house.houseTeSeId}))
->>>>>>> dd21982c3e5d40224d9c68503ed8fa137a04d503
         </if>
     </sql>
     <!-- 根据pid获取地区数据 -->

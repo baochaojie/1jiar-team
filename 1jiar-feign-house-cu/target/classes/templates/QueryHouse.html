@@ -34,8 +34,6 @@
             <input type="text" class="form-control" id="endPrice" placeholder="请输入结束价格">
         </div>
         <div class="form-select">
-
-
             <label  >选择区域:</label>
             <select class="selectpicker form-control" data-live-search="true" name="quyu" id="quyu" onchange="selectOnchang(this.value)">
             </select>
@@ -317,7 +315,7 @@
     }
 
     function selectOnchang(id){
-//获取被选中的option标签选项
+        //获取被选中的option标签选项
         $.ajax({
             type:"post",
             url:"/house/queryquyu",

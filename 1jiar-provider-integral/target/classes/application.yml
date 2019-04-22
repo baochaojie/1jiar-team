@@ -3,11 +3,7 @@ server:
 
 spring:
   application:
-<<<<<<< HEAD
-    name: springcloud-user-reg
-=======
     name: springcloud-user-hjk
->>>>>>> f4279993763febc7556e25320e911184c3ff1b9a
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     first:
