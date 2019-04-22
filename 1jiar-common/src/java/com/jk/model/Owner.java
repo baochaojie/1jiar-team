@@ -7,7 +7,9 @@ public class Owner {
 
     private Integer ownerId;
 
-    private Integer ownerCityId;
+    private Integer ownerCity;
+    private Integer ownerXian;
+    private Integer ownerZhen;
 
     private String ownerXiaoqu;
 

@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!-- bootsrop -->
+    <script src="../jquery.min.js"></script>
+    <script src="../bootstrap/bootstrap3/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="../bootstrap/bootstrap3/css/bootstrap.css">
+</head>
+<body>
+<div class="container-fluid">
+    <form class="form-horizontal" id="myForm">
+        <!-- 添加小区 -->
+            <div class="form-group">
+                <label for="houseaheName" class="col-sm-3 control-label">小区名称：</label>
+                <div class="col-sm-4" style="width: 400px;">
+                    <input type="text" class="form-control" id="houseaheName" placeholder="请输入小区名称" name="houseaheName">
+                </div>
+            </div>
+        <!-- 期望售价 -->
+            <div class="form-group">
+                <label for="housePrice" class="col-sm-3 control-label">售价：</label>
+                <div class="col-sm-4" style="width: 400px;">
+                    <input type="text" class="form-control" id="housePrice" placeholder="您期望的价格" name="housePrice">
+                </div>
+            </div>
+        <!-- 房产者姓名 -->
+            <div class="form-group">
+                <div class="col-sm-4" style="width: 400px;">
+                    <input type="hidden" class="form-control" id="houseManId" name="houseManId">
+                </div>
+            </div>
+        <!-- 位置 -->
+            <div class="form-group">
+                <label for="quyu1" class="col-sm-3 control-label">选择区域:</label>
+                <div class="col-sm-4">
+                    <select class="selectpicker form-control"data-live-search="true" name="houseQuYuId" id="quyu1" onchange="selectOnchang(this.value)">
+                    </select>
+                </div>
+                <div class="col-sm-4">
+                    <select class="selectpicker form-control" data-live-search="true" name="jiedao" id="jiedao" >
+                        <option value='-1'>请先选择区域</option>
+                    </select>
+                </div>
+            </div>
+        <!-- 所在小区里的具体位置 -->
+            <div class="form-group">
+                <label for="ridgepoleName" class="col-sm-3 control-label">具体地址:</label>
+                <div class="col-sm-3">
+                    <select class="selectpicker form-control glyphicon glyphicon-home"data-live-search="true" name="ridgepoleName" id="ridgepoleName">
+                        <option value='1'>一栋</option>
+                        <option value='2'>二栋</option>
+                        <option value='3'>三栋</option>
+                        <option value='4'>四栋</option>
+                        <option value='5'>五栋</option>
+                        <option value='6'>六栋</option>
+                        <option value='7'>七栋</option>
+                        <option value='8'>八栋</option>
+                        <option value='9'>九栋</option>
+                    </select>
+                </div>
+                <div class="col-sm-3">
+                    <select class="selectpicker form-control" data-live-search="true" name="elementName" id="elementName">
+                        <option value='1'>一单元</option>
+                        <option value='2'>二单元</option>
+                        <option value='3'>三单元</option>
+                        <option value='4'>四单元</option>
+                        <option value='5'>五单元</option>
+                        <option value='6'>六单元</option>
+                        <option value='7'>七单元</option>
+                        <option value='8'>八单元</option>
+                        <option value='9'>九单元</option>
+                    </select>
+                </div>
+                <div class="col-sm-3">
+                    <div class="col-sm-4" style="width: 150px;">
+                        <input type="text" class="form-control" id="doorplateName" placeholder="门牌号" name="doorplateName">
+                    </div>
+                </div>
+            </div>
+        <!-- 附近地铁 -->
+            <div class="form-group">
+                <label for="xianlu" class="col-sm-3 control-label">附近地铁:</label>
+                <div class="col-sm-4">
+                    <select class="selectpicker form-control"data-live-search="true" name="houseDiTieId" id="xianlu" onchange="selectDiTieOnchang(this.value)">
+                    </select>
+                </div>
+                <div class="col-sm-4">
+                    <select class="selectpicker form-control" data-live-search="true" name="zhandian" id="zhandian" >
+                        <option value='-1'>请先选择线路</option>
+                    </select>
+                </div>
+            </div>
+        <!-- 房屋面积 -->
+            <div class="form-group">
+                <label for="houseJianzhuMianji" class="col-sm-3 control-label">建筑面积：</label>
+                <div class="col-sm-4" style="width: 400px;">
+                    <input type="text" class="form-control" id="houseJianzhuMianji" placeholder="房屋总的占地面积" name="houseJianzhuMianji">
+                </div>
+            </div>
+        <!-- 套内面积 -->
+            <div class="form-group">
+                <label for="houseTaoneiMianji" class="col-sm-3 control-label">套内面积：</label>
+                <div class="col-sm-4" style="width: 400px;">
+                    <input type="text" class="form-control" id="houseTaoneiMianji" placeholder="室内可住的面积" name="houseTaoneiMianji">
+                </div>
+            </div>
+        <!-- 房屋类型 -->
+            <div class="form-group">
+                <label for="houseUseId1" class="col-sm-3 control-label">房屋类型：</label>
+                <label class="radio-inline">
+                    <input type="radio" name="houseUseId" id="houseUseId1" value="1">普通住宅
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" name="houseUseId" id="houseUseId2" value="2">商用住宅
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" name="houseUseId" id="houseUseId3" value="3">别墅
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" name="houseUseId" id="houseUseId4" value="4">四合院
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" name="houseUseId" id="houseUseId5" value="5">其他
+                </label>
+            </div>
+        <!-- 楼层类型 -->
+            <div class="form-group">
+                <label for="houseFloorTypeName1" class="col-sm-3 control-label">楼层类型：</label>
+                <label class="radio-inline">
+                    <input type="radio" name="houseFloorTypeId" id="houseFloorTypeName1" value="1">底层
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" name="houseFloorTypeId" id="houseFloorTypeName2" value="2">中层
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" name="houseFloorTypeId" id="houseFloorTypeName3" value="3">高层
+                </label>
+            </div>
+        <!-- 户型 -->
+            <div class="form-group">
+                <label for="houseTypeName1" class="col-sm-3 control-label">户型：</label>
+                <label class="radio-inline">
+                    <input type="radio" name="houseTypeId" id="houseTypeName1" value="1">一室
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" name="houseTypeId" id="houseTypeName2" value="2">二室内
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" name="houseTypeId" id="houseTypeName3" value="3">三室
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" name="houseTypeId" id="houseTypeName4" value="4">四室
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" name="houseTypeId" id="houseTypeName5" value="option3">五室+
+                </label>
+            </div>
+        <!-- 朝向 -->
+            <div class="form-group">
+                <label for="houseDirectionName1" class="col-sm-3 control-label">房屋朝向：</label>
+                <label class="radio-inline">
+                    <input type="radio" name="houseDirectionId" id="houseDirectionName1" value="1">东
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" name="houseDirectionId" id="houseDirectionName2" value="2">南
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" name="houseDirectionId" id="houseDirectionName3" value="3">西
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" name="houseDirectionId" id="houseDirectionName4" value="4">北
+                </label>
+            </div>
+        <!-- 楼龄 -->
+            <div class="form-group">
+                <label for="houseAgeName1" class="col-sm-3 control-label">楼龄：</label>
+                <label class="radio-inline">
+                    <input type="radio" name="houseAgeId" id="houseAgeName1" value="1">5年以内
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" name="houseAgeId" id="houseAgeName2" value="2">10年以内
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" name="houseAgeId" id="houseAgeName3" value="3">10年以上
+                </label>
+            </div>
+        <!-- 租用方式 -->
+            <div class="form-group">
+                <label for="houseZuTypeName1" class="col-sm-3 control-label">外租方式：</label>
+                <label class="radio-inline">
+                    <input type="radio" name="ZuTypeid" id="houseZuTypeName1" value="1">不限
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" name="ZuTypeid" id="houseZuTypeName2" value="2">整租
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" name="ZuTypeid" id="houseZuTypeName3" value="3">合租
+                </label>
+            </div>
+        <!-- 租期 -->
+            <div class="form-group">
+                <label for="houseZuQi1" class="col-sm-3 control-label">租期：</label>
+                <label class="radio-inline">
+                    <input type="radio" name="houseZuQi" id="houseZuQi1" value="1">月租
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" name="houseZuQi" id="houseZuQi2" value="2">年租
+                </label>
+            </div>
+        <!-- 有无电梯 -->
+            <div class="form-group">
+                <label for="houseElevator1" class="col-sm-3 control-label">有无电梯：</label>
+                <label class="radio-inline">
+                    <input type="radio" name="houseElevator" id="houseElevator1" value="1">有电梯
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" name="houseElevator" id="houseElevator2" value="2">无电梯
+                </label>
+            </div>
+        <!-- 是否装修 -->
+            <div class="form-group">
+                <label for="houseFinish1" class="col-sm-3 control-label">是否装修：</label>
+                <label class="radio-inline">
+                    <input type="radio" name="houseFinish" id="houseFinish1" value="1">已装修
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" name="houseFinish" id="houseFinish2" value="2">未装修
+                </label>
+            </div>
+        <!-- 是否供暖 -->
+        <div class="form-group">
+            <label for="houseHeating1" class="col-sm-3 control-label">是否供暖：</label>
+            <label class="radio-inline">
+                <input type="radio" name="houseHeating" id="houseHeating1" value="1">已供暖
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="houseHeating" id="houseHeating2" value="2">未供暖
+            </label>
+        </div>
+        <!-- 特色 -->
+        <div class="form-group">
+            <label for="TeSeName" class="col-sm-3 control-label">房屋特色：</label>
+            <label class="checkbox-inline">
+                <input type="checkbox" name="houseTeSeId" id="TeSeName" value="1"> 近地铁
+            </label>
+            <label class="checkbox-inline">
+                <input type="checkbox" name="houseTeSeId" value="2"> 拎包入住
+            </label>
+            <label class="checkbox-inline">
+                <input type="checkbox" name="houseTeSeId" value="3"> 精装修
+            </label>
+            <label class="checkbox-inline">
+                <input type="checkbox" name="houseTeSeId" value="4"> 集中供暖
+            </label>
+            <label class="checkbox-inline">
+                <input type="checkbox" name="houseTeSeId" value="5"> 押一付一
+            </label>
+            <label class="checkbox-inline">
+                <input type="checkbox" name="houseTeSeId" value="6"> 新上
+            </label>
+            <label class="checkbox-inline">
+                <input type="checkbox" name="houseTeSeId" value="7"> 认证公寓
+            </label>
+            <label class="checkbox-inline">
+                <input type="checkbox" name="houseTeSeId" value="8"> 随时看房
+            </label>
+        </div>
+
+    </form>
+</div>
+</body>
+<script>
+    $(function () {
+        diqu();
+        ditie();
+    });
+    //初始化地区的数据
+    function diqu(){
+        $.ajax({
+            type:"post",
+            url:"http://localhost:8776/house/queryquyu?pid="+0,
+            data:{},
+            dataType:"json",
+            success:function(data) {
+                var html ="<option value='-1'>请选择区域</option>";
+                for( var i = 0 ; i < data.length; i++ ){
+                    html  +="<option value='"+data[i].id+"'>"+data[i].name+"</option>";
+                }
+                $("#quyu1").html(html);
+            }
+        })
+    }
+    function selectOnchang(id){
+        //获取被选中的option标签选项
+        $.ajax({
+            type:"post",
+            url:"http://localhost:8776/house/queryquyu",
+            data:{pid:id},
+            dataType:"json",
+            success:function(data) {
+                var html2 ="<option value='-1'>请先选择区域</option>";
+                for( var i = 0 ; i < data.length; i++ ){
+                    html2  +="<option value='"+data[i].id+"'>"+data[i].name+"</option>";
+                }
+                $("#jiedao").html(html2);
+            }
+        })
+    }
+    //初始化地铁的数据
+    function ditie(){
+        $.ajax({
+            type:"post",
+            url:"http://localhost:8776/house/queryditie",
+            data:{pid:0},
+            dataType:"json",
+            success:function(data) {
+                var html ="<option value='-1'>请选择线路</option>";
+                for( var i = 0 ; i < data.length; i++ ){
+                    html  +="<option value='"+data[i].subwayId+"'>"+data[i].subwayName+"</option>";
+                }
+                $("#xianlu").append(html);
+            }
+        })
+    }
+    function selectDiTieOnchang(id) {
+        $.ajax({
+            type: "post",
+            url: "http://localhost:8776/house/queryditie",
+            data: {pid:id},
+            dataType: "json",
+            success: function (data) {
+                var html2 = "<option value='-1'>请先选择线路</option>";
+                for (var i = 0; i < data.length; i++) {
+                    html2 += "<option value='" + data[i].subwayId + "'>" + data[i].subwayName + "</option>";
+                }
+                $("#zhandian").html(html2);
+            }
+        })
+    }
+</script>
+</html>

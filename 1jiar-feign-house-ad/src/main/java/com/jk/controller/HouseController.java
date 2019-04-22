@@ -1,9 +1,6 @@
 package com.jk.controller;
 
-import com.jk.model.Area;
-import com.jk.model.HouseAge;
-import com.jk.model.Owner;
-import com.jk.model.UserBean;
+import com.jk.model.*;
 import com.jk.service.HouseService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -57,6 +54,14 @@ public class HouseController {
     }
 
     /**
+     * 跳转到关于房源更多详情信息的页面（弹框新增）
+     * @return
+     */
+    @RequestMapping("toaddhousemoreinfo")
+    public String toaddhousemoreinfo(){
+        return "addhousemoreinfo";
+    }
+    /**
      * 分页查询已录入的待审核信息
      * @param map
      * @return
@@ -79,5 +84,11 @@ public class HouseController {
     public List<Area> initcity(Integer pid){
         List<Area> areas=houseService.initcity(pid);
         return areas;
+    }
+    @RequestMapping("addhousemoreinfo")
+    @ResponseBody
+    public Boolean addhousemoreinfo(House house){
+        houseService.addhousemoreinfo(house);
+        return true;
     }
 }
