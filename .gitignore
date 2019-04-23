@@ -1,0 +1,38 @@
+HELP.md
+target
+!.mvn/wrapper/maven-wrapper.jar
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+/build/
+
+### VS Code ###
+.vscode/
+### Example user template template
+### Example user template
+
+1jiar-feign-agent/target/generated-test-sources/
+1jiar-feign-house-cu/target/generated-test-sources/
+1jiar-feign-integral/target/generated-test-sources/
+1jiar-provider-house-cu/target/generated-test-sources/
+1jiar-provider-integral/target/generated-test-sources/
+1jiar-provider-user/target/generated-test-sources/
