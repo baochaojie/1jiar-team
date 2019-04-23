@@ -1,9 +1,7 @@
 package com.jk.controller;
 
 import com.jk.mapper.AgentMapper;
-import com.jk.model.AgentBean;
-import com.jk.model.House;
-import com.jk.model.LabelBean;
+import com.jk.model.*;
 import com.jk.utils.OSSClientUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -49,7 +47,13 @@ public class AgentController {
     @RequestMapping("saveAgent")
     @ResponseBody
     public void saveAgent(@RequestBody AgentBean agentBean){
-        agentMapper.saveAgent(agentBean);
+        Integer agentId =agentBean.getAgentId();
+        if(agentId!=null){
+            //修改
+            agentMapper.updateAgent(agentBean);
+        }else{
+            agentMapper.saveAgent(agentBean);
+        }
     }
     //查询地区
     @RequestMapping("findRegion/{id}")
@@ -85,5 +89,52 @@ public class AgentController {
     @ResponseBody
     public List<LabelBean> findLabel(){
         return agentMapper.findLabel();
+    }
+    @RequestMapping("findExhibition/{agentId}")
+    @ResponseBody
+    public List<Exhibition> findExhibition(@PathVariable("agentId") Integer agentId){
+        return agentMapper.findExhibition(agentId);
+    }
+    @RequestMapping("findGuide")
+    @ResponseBody
+    public List<DictionaryTable> findGuide() {
+        Integer pid = 100;
+        List<DictionaryTable> list = queryTree(pid);
+        return list;
+    }
+    private List<DictionaryTable> queryTree(@RequestParam Integer pid) {
+        List<DictionaryTable> list = agentMapper.queryTree(pid);
+        for (DictionaryTable dictionaryTable : list) {
+            Integer id = dictionaryTable.getId();
+            List<DictionaryTable> nodes =  queryTree(id);
+            if(nodes.size()<= 0){
+                //无子节点
+                dictionaryTable.setSelectable(true);
+            }else{
+                //有节点
+                dictionaryTable.setSelectable(false);
+                dictionaryTable.setNodes(nodes);
+            }
+        }
+        return list;
+    }
+    //新增问题
+    @RequestMapping("addProblemInfoById")
+    @ResponseBody
+    public void addProblemInfoById(@RequestBody Problem problem){
+        System.out.println(problem);
+        agentMapper.addProblemInfoById(problem);
+    }
+    //查询问题
+    @RequestMapping("findProblem")
+    @ResponseBody
+    List<Problem> findProblem(){
+        return agentMapper.findProblem();
+    }
+
+    @RequestMapping("findEcharts")
+    @ResponseBody
+    public List<House> findEcharts(Integer agentId){
+        return agentMapper.findEcharts(agentId);
     }
 }

@@ -46,13 +46,12 @@ generated-sources/
 ### Example user template
 
 # IntelliJ project files
-.idea
-*.iml
-out
-gen
 1jiar-feign-agent/target/generated-test-sources/
 1jiar-feign-house-cu/target/generated-test-sources/
 1jiar-feign-integral/target/generated-test-sources/
 1jiar-provider-house-cu/target/generated-test-sources/
 1jiar-provider-integral/target/generated-test-sources/
 1jiar-provider-user/target/generated-test-sources/
+### Example user template template
+### Example user template
+
