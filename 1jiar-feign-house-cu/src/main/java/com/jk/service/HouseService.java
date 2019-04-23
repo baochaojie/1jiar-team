@@ -34,4 +34,8 @@ public interface HouseService {
     @RequestMapping("findHouseById")
     @ResponseBody
     House findHouseById(@RequestParam Integer houseId);
+
+    @RequestMapping("queryIdhouse")
+    @ResponseBody
+    List<House> queryIdhouse(@RequestParam Integer houseId);
 }

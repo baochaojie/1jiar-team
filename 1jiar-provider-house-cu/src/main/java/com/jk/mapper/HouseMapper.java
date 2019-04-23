@@ -30,4 +30,6 @@ public interface HouseMapper {
     void LookHouse(@Param("agentId")Integer agentId);
 
     House findHouseById(Integer houseId);
+
+    List<House> queryIdhouse(Integer houseId);
 }

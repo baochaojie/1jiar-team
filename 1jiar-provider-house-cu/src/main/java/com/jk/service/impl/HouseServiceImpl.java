@@ -71,4 +71,11 @@ public class HouseServiceImpl implements HouseService {
         return houseById;
     }
 
+    @Override
+    public List<House> queryIdhouse(Integer houseId) {
+        List<House> houses = houseMapper.queryIdhouse(houseId);
+        return houses;
+
+    }
+
 }
