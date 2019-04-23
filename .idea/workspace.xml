@@ -2,8 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="478381db-8a22-4b3f-be69-cc6e13094f17" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/choujaing/img/5.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/choujaing/JSON/data.js" beforeDir="false" afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/choujaing/JSON/data.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/choujaing/css/jquery_carousel_slider.css" beforeDir="false" afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/choujaing/css/jquery_carousel_slider.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/script/addbook.js" beforeDir="false" afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/script/addbook.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/script/book.js" beforeDir="false" afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/script/book.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/script/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/script/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/templates/choujiang.html" beforeDir="false" afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/templates/choujiang.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/templates/index2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1jiar-feign-integral/target/classes/static/choujaing/css/jquery_carousel_slider.css" beforeDir="false" afterPath="$PROJECT_DIR$/1jiar-feign-integral/target/classes/static/choujaing/css/jquery_carousel_slider.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1jiar-feign-integral/target/classes/static/script/addbook.js" beforeDir="false" afterPath="$PROJECT_DIR$/1jiar-feign-integral/target/classes/static/script/addbook.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1jiar-feign-integral/target/classes/static/script/book.js" beforeDir="false" afterPath="$PROJECT_DIR$/1jiar-feign-integral/target/classes/static/script/book.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1jiar-feign-integral/target/classes/static/script/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/1jiar-feign-integral/target/classes/static/script/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1jiar-feign-integral/target/classes/templates/choujiang.html" beforeDir="false" afterPath="$PROJECT_DIR$/1jiar-feign-integral/target/classes/templates/choujiang.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1jiar-provider-integral/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/1jiar-provider-integral/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1jiar-provider-integral/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/1jiar-provider-integral/target/classes/application.yml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/1jiar-feign-user/target/" />
     <ignored path="$PROJECT_DIR$/1jiar-provider-user/target/" />
@@ -40,97 +54,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/templates/choujiang.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="42" column="36" selection-start-line="42" selection-start-column="36" selection-end-line="42" selection-end-column="36" />
-              <folding>
-                <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="158">
+              <caret line="41" column="70" selection-start-line="41" selection-start-column="70" selection-end-line="41" selection-end-column="70" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/templates/booklist.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="205">
-              <caret line="40" column="7" selection-start-line="40" selection-start-column="7" selection-end-line="40" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/script/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="80" column="25" lean-forward="true" selection-start-line="80" selection-start-column="25" selection-end-line="80" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/1jiar-provider-integral/src/main/resources/application.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="966">
-              <caret line="42" column="8" selection-start-line="42" selection-start-column="8" selection-end-line="42" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/1jiar-feign-integral/src/main/java/com/jk/controller/DlrldBeanController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="235">
-              <caret line="56" selection-start-line="56" selection-end-line="56" />
-              <folding>
-                <element signature="e#1471#1472#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/script/book.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="205">
-              <caret line="90" column="35" selection-start-line="90" selection-start-column="35" selection-end-line="90" selection-end-column="35" />
-              <folding>
-                <element signature="n#style#0;n#img#0;n#div#0;n#td#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#td#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#div#0;n#td#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#td#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#div#0;n#td#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#td#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/choujaing/img/5.jpg">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
     </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>QueryMembershipPoint</find>
-      <find>record</find>
-      <find>deleteTyped</find>
-      <find>openAdd</find>
-      <find>initbooklist</find>
-      <find>typelist</find>
-      <find>inittype</find>
-      <find>dltypeid</find>
-      <find>prizesuiji</find>
-      <find>System</find>
       <find>houseId</find>
       <find>queryDlrld</find>
       <find>fangqiTyped</find>
@@ -142,11 +83,25 @@
       <find>MembershipPoint</find>
       <find>saveprize</find>
       <find>&lt;div class ='box' id=&quot;nba&quot;&gt;&lt;/div&gt;</find>
-      <find>images</find>
       <find>queryprize</find>
       <find>saveDlrldBean</find>
       <find>updatebookbyid</find>
       <find>querydlrldId</find>
+      <find>openAdd</find>
+      <find>mydiv</find>
+      <find>codeblock</find>
+      <find>box</find>
+      <find>tri</find>
+      <find>image</find>
+      <find>imagesi</find>
+      <find>width</find>
+      <find>px</find>
+      <find>845</find>
+      <find>images</find>
+      <find>QueryMembershipPoint</find>
+      <find>123</find>
+      <find>width: 845px</find>
+      <find>nba</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -169,22 +124,22 @@
         <option value="$PROJECT_DIR$/1jiar-provider-integral/src/main/resources/mapper/DlrldBeanMapper.xml" />
         <option value="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/templates/booklist.html" />
         <option value="$PROJECT_DIR$/1jiar-feign-integral/src/main/java/com/jk/service/DlrldBeanService.java" />
-        <option value="$PROJECT_DIR$/1jiar-provider-integral/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/1jiar-common/src/java/com/jk/model/DlrldBean.java" />
-        <option value="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/script/addbook.js" />
         <option value="$PROJECT_DIR$/1jiar-provider-integral/src/main/java/com/jk/controller/DlrldBeanController.java" />
         <option value="$PROJECT_DIR$/1jiar-provider-integral/src/main/java/com/jk/service/DlrldBeanService.java" />
-        <option value="$PROJECT_DIR$/1jiar-provider-integral/src/main/java/com/jk/service/DlrldBeanServiceImpl.java" />
-        <option value="$PROJECT_DIR$/1jiar-provider-integral/src/main/java/com/jk/mapper/DlrldBeanMapper.java" />
-        <option value="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/choujaing/css/jquery_carousel_slider.css" />
-        <option value="$PROJECT_DIR$/1jiar-feign-integral/src/main/java/com/jk/controller/DlrldBeanController.java" />
         <option value="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/templates/index2.html" />
-        <option value="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/choujaing/JSON/data.js" />
         <option value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts" />
-        <option value="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/script/book.js" />
-        <option value="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/templates/choujiang.html" />
-        <option value="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/script/index.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/script/index.js" />
+        <option value="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/choujaing/css/jquery_carousel_slider.css" />
+        <option value="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/script/book.js" />
+        <option value="$PROJECT_DIR$/1jiar-feign-integral/src/main/java/com/jk/controller/DlrldBeanController.java" />
+        <option value="$PROJECT_DIR$/1jiar-provider-integral/src/main/java/com/jk/mapper/DlrldBeanMapper.java" />
+        <option value="$PROJECT_DIR$/1jiar-provider-integral/src/main/java/com/jk/service/DlrldBeanServiceImpl.java" />
+        <option value="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/script/addbook.js" />
+        <option value="$PROJECT_DIR$/1jiar-provider-integral/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/choujaing/JSON/data.js" />
+        <option value="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/templates/choujiang.html" />
       </list>
     </option>
   </component>
@@ -213,9 +168,9 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="951" />
-    <option name="width" value="978" />
-    <option name="height" value="1039" />
+    <option name="x" value="-8" />
+    <option name="width" value="977" />
+    <option name="height" value="1038" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -366,7 +321,39 @@
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
               <item name="choujaing" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="1jiar-team" type="b2602c69:ProjectViewProjectNode" />
+              <item name="1jiar-team" type="462c0819:PsiDirectoryNode" />
+              <item name="1jiar-feign-integral" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="choujaing" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="1jiar-team" type="b2602c69:ProjectViewProjectNode" />
+              <item name="1jiar-team" type="462c0819:PsiDirectoryNode" />
+              <item name="1jiar-feign-integral" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="choujaing" type="462c0819:PsiDirectoryNode" />
               <item name="JSON" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="1jiar-team" type="b2602c69:ProjectViewProjectNode" />
+              <item name="1jiar-team" type="462c0819:PsiDirectoryNode" />
+              <item name="1jiar-feign-integral" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="1jiar-team" type="b2602c69:ProjectViewProjectNode" />
@@ -484,20 +471,20 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="add_unversioned_files" value="$PROJECT_DIR$/.gitignore" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555982835443" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556001638071" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\180919\1jiar-team\1jiar-feign-integral\src\main\resources\static\choujaing\img" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\180919\1jiar-team\1jiar-feign-integral\src\main\resources\static\choujaing\img" />
       <recent name="E:\180919\1jiar-team\1jiar-feign-integral\src\main\resources\static\choujaing" />
       <recent name="E:\180919\1jiar-team\1jiar-feign-integral\src\main\resources\templates" />
-      <recent name="E:\180919\1jiar-team\1jiar-feign-integral\src\main\resources\static\choujaing\img" />
       <recent name="E:\180919\1jiar-team\1jiar-feign-integral\src\main\java\com\jk" />
       <recent name="E:\180919\1jiar-team\1jiar-feign-integral\src\main\resources\static\script" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\180919\1jiar-team\1jiar-feign-integral\src\main\resources\static\choujaing\img" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -585,18 +572,18 @@
       <workItem from="1555826709212" duration="12034000" />
       <workItem from="1555889765598" duration="9836000" />
       <workItem from="1555914822740" duration="12939000" />
-      <workItem from="1555977468144" duration="3691000" />
+      <workItem from="1555977468144" duration="16989000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="72522000" />
+    <option name="totallyTimeSpent" value="85820000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.269437" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24530831" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -606,13 +593,13 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32577905" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.10481586" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.40934843" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39943343" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.04249292" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.04249292" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.3286119" />
@@ -631,7 +618,7 @@
       <window_info anchor="right" id="Bean Validation" order="9" weight="0.3297587" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.2627346" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.57171583" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -640,14 +627,14 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.31586403" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32577905" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.41501418" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39943343" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.16288953" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.04249292" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.3286119" />
@@ -660,10 +647,10 @@
       <window_info anchor="right" id="Maven" order="3" weight="0.3297587" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Database" order="6" weight="0.3297587" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
-      <window_info anchor="right" id="Bean Validation" order="9" />
+      <window_info anchor="right" id="Bean Validation" order="9" weight="0.3297587" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -677,93 +664,14 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/1jiar-feign-integral/src/main/java/com/jk/controller/DlrldBeanController.java</url>
-          <line>63</line>
+          <line>36</line>
           <properties />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/1jiar-feign-integral/src/main/java/com/jk/controller/DlrldBeanController.java</url>
-          <line>56</line>
-          <properties />
-          <option name="timeStamp" value="4" />
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://D:/maven-jar/org/mybatis/mybatis/3.5.1/mybatis-3.5.1.jar!/org/apache/ibatis/binding/MapperProxy.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-145">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/1jiar-provider-integral/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="54" column="24" selection-start-line="54" selection-start-column="24" selection-end-line="54" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-526" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/1jiar-eureka/src/main/java/com/jk/Appeurlication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/1jiar-feign-integral/src/main/java/com/jk/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/maven-jar/org/springframework/spring-web/5.1.6.RELEASE/spring-web-5.1.6.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="101" selection-start-line="101" selection-end-line="101" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://F:/jdk/jdk1.8.0_171/src.zip!/java/io/PrintStream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="811" column="41" lean-forward="true" selection-start-line="811" selection-start-column="41" selection-end-line="811" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/script/choujiang.jpg" />
-    <entry file="file://$PROJECT_DIR$/1jiar-provider-integral/src/main/resources/mapper/DlrldBeanMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" column="9" lean-forward="true" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/1jiar-provider-integral/src/main/java/com/jk/Appintlication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
-          <folding>
-            <element signature="e#489#490#0" expanded="true" />
-            <element signature="e#554#555#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/1jiar-common/src/java/com/jk/model/AgentBean.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-92">
@@ -878,13 +786,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/1jiar-feign-integral/src/main/java/com/jk/config/CorsMapping.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="14" column="30" lean-forward="true" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/1jiar-feign-integral/src/main/java/com/jk/service/DlrldBeanService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="70">
@@ -896,40 +797,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="440">
           <caret line="41" column="60" selection-start-line="41" selection-start-column="53" selection-end-line="41" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/1jiar-provider-integral/src/main/java/com/jk/controller/DlrldBeanController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="108" column="37" selection-start-line="108" selection-start-column="37" selection-end-line="108" selection-end-column="37" />
-          <folding>
-            <element signature="e#1265#1266#0" expanded="true" />
-            <element signature="e#1326#1327#0" expanded="true" />
-            <element signature="e#2543#2544#0" expanded="true" />
-            <element signature="e#2597#2598#0" expanded="true" />
-            <element signature="e#2948#2949#0" expanded="true" />
-            <element signature="e#3009#3010#0" expanded="true" />
-            <element signature="e#2942#2943#0" expanded="true" />
-            <element signature="e#2999#3000#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/1jiar-provider-integral/src/main/java/com/jk/mapper/DlrldBeanMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="409">
-          <caret line="61" column="68" selection-start-line="61" selection-start-column="13" selection-end-line="61" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/choujaing/css/demo.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/1jiar-provider-integral/src/main/java/com/jk/service/DlrldBeanServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="108" column="51" lean-forward="true" selection-start-line="108" selection-start-column="51" selection-end-line="108" selection-end-column="51" />
         </state>
       </provider>
     </entry>
@@ -946,22 +813,6 @@
     <entry file="file://$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/choujaing/img/angle.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/choujaing/img/1.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/choujaing/img/2.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/choujaing/css/jquery_carousel_slider.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2859">
-          <caret line="180" column="1" selection-start-line="180" selection-start-column="1" selection-end-line="180" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/choujaing/js/jquery-1.11.0.min.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/templates/index2.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="346">
@@ -969,49 +820,53 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="966">
+          <caret line="42" column="8" selection-start-line="42" selection-start-column="8" selection-end-line="42" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1jiar-provider-integral/src/main/java/com/jk/controller/DlrldBeanController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="108" column="37" selection-start-line="108" selection-start-column="37" selection-end-line="108" selection-end-column="37" />
+          <folding>
+            <element signature="e#1265#1266#0" expanded="true" />
+            <element signature="e#1326#1327#0" expanded="true" />
+            <element signature="e#2543#2544#0" expanded="true" />
+            <element signature="e#2597#2598#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/choujaing/css/demo.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-53" />
+      </provider>
+    </entry>
     <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4142">
-          <caret line="4043" column="56" selection-start-line="4043" selection-start-column="56" selection-end-line="4043" selection-end-column="56" />
+        <state relative-caret-position="200">
+          <caret line="4632" column="18" selection-start-line="4632" selection-start-column="18" selection-end-line="4632" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/choujaing/JSON/data.js">
+    <entry file="file://$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/choujaing/js/jquery-1.11.0.min.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/choujaing/js/jquery_carousel_slider.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" column="70" lean-forward="true" selection-start-line="11" selection-start-column="70" selection-end-line="11" selection-end-column="70" />
-        </state>
+        <state relative-caret-position="-53" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/script/addbook.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" selection-end-line="4" selection-end-column="2" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/choujaing/css/normalize.css">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/script/book.js">
+    <entry file="file://$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/script/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="205">
-          <caret line="90" column="35" selection-start-line="90" selection-start-column="35" selection-end-line="90" selection-end-column="35" />
-          <folding>
-            <element signature="n#style#0;n#img#0;n#div#0;n#td#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#td#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#0;n#td#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#td#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#0;n#td#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#td#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/1jiar-feign-integral/src/main/java/com/jk/controller/DlrldBeanController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="56" selection-start-line="56" selection-end-line="56" />
-          <folding>
-            <element signature="e#1471#1472#0" expanded="true" />
-          </folding>
+          <caret line="78" column="2" selection-start-line="78" selection-start-column="2" selection-end-line="78" selection-end-column="2" />
         </state>
       </provider>
     </entry>
@@ -1022,34 +877,126 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/templates/choujiang.html">
+    <entry file="file://$PROJECT_DIR$/1jiar-feign-integral/src/main/java/com/jk/config/CorsMapping.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="42" column="36" selection-start-line="42" selection-start-column="36" selection-end-line="42" selection-end-column="36" />
+        <state relative-caret-position="19">
+          <caret line="14" column="30" lean-forward="true" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1jiar-provider-integral/src/main/java/com/jk/mapper/DlrldBeanMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="29" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/maven-jar/org/springframework/spring-web/5.1.6.RELEASE/spring-web-5.1.6.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1718">
+          <caret line="107" selection-start-line="107" selection-end-line="107" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1jiar-feign-integral/src/main/java/com/jk/controller/DlrldBeanController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="123">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
           <folding>
-            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#1409#1410#0" expanded="true" />
+            <element signature="e#1471#1472#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/script/index.js">
+    <entry file="file://$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/script/book.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="80" column="25" lean-forward="true" selection-start-line="80" selection-start-column="25" selection-end-line="80" selection-end-column="25" />
+        <state relative-caret-position="69">
+          <caret line="19" column="186" selection-start-line="19" selection-start-column="186" selection-end-line="19" selection-end-column="186" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#div#0;n#td#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#td#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#td#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#td#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#td#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#td#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/script/addbook.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="28" column="61" selection-start-line="28" selection-start-column="61" selection-end-line="28" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1jiar-provider-integral/src/main/java/com/jk/service/DlrldBeanServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="47" column="9" lean-forward="true" selection-start-line="47" selection-start-column="9" selection-end-line="47" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/1jiar-provider-integral/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+        <state relative-caret-position="157">
+          <caret line="24" column="16" lean-forward="true" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/choujaing/css/jquery_carousel_slider.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="966">
-          <caret line="42" column="8" selection-start-line="42" selection-start-column="8" selection-end-line="42" selection-end-column="8" />
+        <state relative-caret-position="-851">
+          <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/choujaing/JSON/data.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="111">
+          <caret line="22" column="7" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/choujaing/img/1.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/choujaing/img/5.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/choujaing/img/6.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/choujaing/img/7.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/choujaing/img/3.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/choujaing/img/2.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/choujaing/img/4.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/choujaing/img/4.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/choujaing/img/5.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/templates/choujiang.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="41" column="70" selection-start-line="41" selection-start-column="70" selection-end-line="41" selection-end-column="70" />
         </state>
       </provider>
     </entry>

@@ -21,12 +21,12 @@ function  queryprize2(){
                     return "<img src="+data+" width='50' height='50'>";
                 }},
             {field:'123',title:'操作',formatter:function(value,row,index){
-                    return '<a href="javascript:shanchu('+row.dlrldtyId+');">删除</a>+<a href="javascript:xuigaitype('+row.dlrldtyId+');">修改</a>'
+                    return '<a href="javascript:shanchu('+row.dlrldtyId+');">删除</a>'
                 }}
         ]
     });
 }
-
+//+<a href="javascript:xuigaitype('+row.dlrldtyId+');">修改</a>
 
 //回显
 function xuigaitype(dlrldtyId){

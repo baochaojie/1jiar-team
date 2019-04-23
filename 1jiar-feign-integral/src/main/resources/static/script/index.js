@@ -72,10 +72,13 @@ function inittypee() {
 
 
 function openAddDlrld(){
-    location.href="choujiang";
+    bootbox.dialog({
+    title:'添加商品',
+        message: createAddContent("/choujiang"),
+        closeButton: true,
+})
+
 }
-
-
 
 //查看抽奖记录
 function record(houseId){

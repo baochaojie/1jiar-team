@@ -69,32 +69,16 @@ function inittypee() {
     }
 
 //抽奖
-    var res;
-    function createAddContent(url){
-        $.ajax({
-            url:url,
-            async:false,
-            success:function(data){
-                res = data;
-            }
-        });
-        return res;
-    }
 
 
-    function openAddDlrld(){
-        bootbox.dialog({
-            title:'抽奖',
-            message: createAddContent("/choujiang"),
-            closeButton: true,
-            buttons : {
+function openAddDlrld(){
+    bootbox.dialog({
+    title:'添加商品',
+        message: createAddContent("/choujiang"),
+        closeButton: true,
+})
 
-            }
-
-        });
-    }
-
-
+}
 
 //查看抽奖记录
 function record(houseId){
