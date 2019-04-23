@@ -17,7 +17,7 @@ import java.util.List;
 public class HouseController {
     @Autowired
     private HouseService houseService;
-    //跳转查询页面
+    //跳转出租房屋页面
     @RequestMapping("chazhubiao")
     public String chazhubiao() {
         return "queryHouse";
@@ -26,6 +26,21 @@ public class HouseController {
     @RequestMapping("chuzuFuKuan")
     public String chuzuFuKuan() {
         return "chuzuFuKuan";
+    }//跳转出租付款页面
+
+    @RequestMapping("chushouFuKuan")
+    public String chushouFuKuan() {
+        return "chushouFuKuan";
+    }
+    @RequestMapping("qiantai")
+    public String qiantai() {
+        return "qiantai";
+    }
+
+    //跳转出售房屋页面
+    @RequestMapping("Chushouhouse")
+    public String ChuShouHouse() {
+        return "ChShouHouse";
     }
     //房屋主表查询
     @RequestMapping("queryhouse")
