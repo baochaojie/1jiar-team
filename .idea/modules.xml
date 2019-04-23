@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/1jiar-common/1jiar-common.iml" filepath="$PROJECT_DIR$/1jiar-common/1jiar-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/1jiar-common/1jiar-common.iml" filepath="$PROJECT_DIR$/1jiar-common/1jiar-common.iml" />
       <module fileurl="file://$PROJECT_DIR$/1jiar-eureka/1jiar-eureka.iml" filepath="$PROJECT_DIR$/1jiar-eureka/1jiar-eureka.iml" />
       <module fileurl="file://$PROJECT_DIR$/1jiar-feign-agent/1jiar-feign-agent.iml" filepath="$PROJECT_DIR$/1jiar-feign-agent/1jiar-feign-agent.iml" />
       <module fileurl="file://$PROJECT_DIR$/1jiar-feign-house-ad/1jiar-feign-house-ad.iml" filepath="$PROJECT_DIR$/1jiar-feign-house-ad/1jiar-feign-house-ad.iml" />
