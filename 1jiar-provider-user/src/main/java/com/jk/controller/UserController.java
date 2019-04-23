@@ -61,6 +61,22 @@ public class UserController {
     }
 
 
+    @RequestMapping("queryhouse")
+    @ResponseBody
+    public HashMap<String, Object> findHousePage(@RequestParam Integer page, @RequestParam Integer rows, @RequestBody House house){
+        HashMap<String, Object> housePage=null;
+        // List<Object> range = redisTemplate.opsForList().range(CommonConf.SMS_QUERYHOUSE+"_"+page+"_"+rows, 0, -1);
+        //if(range == null || range.size()<=0){
+        housePage = userservice.findHousePage(page, rows, house);
+        //  redisTemplate.opsForList().leftPush(CommonConf.SMS_QUERYHOUSE+"_"+page+"_"+rows, housePage);
+        // redisTemplate.expire(CommonConf.SMS_QUERYHOUSE+"_"+page+"_"+rows,1, TimeUnit.MINUTES);
+
+        // }else{
+        //   housePage = (HashMap<String, Object>) range.get(0);
+        //  }
+        return  housePage;
+
+    }
     /**
      * 左侧树
      */

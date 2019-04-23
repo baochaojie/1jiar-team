@@ -217,4 +217,12 @@ public class UserController {
     }
 
 
+
+    @RequestMapping("queryhouse")
+    @ResponseBody
+    public HashMap<String, Object> findUserPage(Integer page, Integer rows, House house ){
+
+        return userService.findHousePage(page,rows,house);
+    }
+
 }

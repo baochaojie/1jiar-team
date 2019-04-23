@@ -62,4 +62,8 @@ public interface UserService {
     @RequestMapping("phoneVerificat/{login}")
     @ResponseBody
     Login phoneVerificat(@RequestParam("login")String login);
+
+    @RequestMapping("queryhouse")
+    @ResponseBody
+    HashMap<String, Object> findHousePage(@RequestParam Integer page, @RequestParam Integer rows, @RequestBody House house);
 }

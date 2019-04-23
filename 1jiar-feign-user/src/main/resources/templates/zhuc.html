@@ -74,11 +74,10 @@
 
 
 function addLog() {
-    alert(1)
     $.ajax({
         url:'../savelogin',
         type:'post',
-        data:$("form").serialize(),
+        data:{login:$("#login").val(),password:$("#password").val()},
         dataType:'json',
         success:function (result) {
             if (result){

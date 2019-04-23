@@ -40,4 +40,6 @@ public interface UserService {
     List<zenghe> zenghe();
 
     Login phoneVerificat(String login);
+
+    HashMap<String, Object> findHousePage(Integer page, Integer rows, House house);
 }

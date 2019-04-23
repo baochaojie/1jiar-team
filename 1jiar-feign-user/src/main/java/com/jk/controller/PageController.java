@@ -29,15 +29,28 @@ public class PageController {
         return "zhuc";
     }
 
-    @RequestMapping("kjlogin")
-    public String login1(){
-        return "login1";
-    }
-
     @RequestMapping("addList")
     public String addList(){
         return "addList";
     }
+    @RequestMapping("shouc")
+    public String shouc(){
+        return "shouc";
+    }
+    @RequestMapping("loginsj")
+    public String loginsj(){
+        return "loginsj";
+    }
+    @RequestMapping("shouye")
+    public String shouye(){
+        return "shouye";
+    }
+    @RequestMapping("zenghe")
+    public String zenghe(){
+        return "zenghe";
+    }
+
+
     @RequestMapping("quangbu")
     public String addList(String url){
         return url;
