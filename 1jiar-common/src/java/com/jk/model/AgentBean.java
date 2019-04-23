@@ -14,7 +14,7 @@ public class AgentBean {
     private String agentYears;//经纪人工作年限
     private Integer houseId;//关联房子id
     private String achievement;//个人成绩
-    private Integer labelId;//关联标签id
+    private String labelId;//关联标签id
     //添加临时字段
     private String regionName;//区域名称
     private String streetName;//街道名称
@@ -46,11 +46,11 @@ public class AgentBean {
         this.achievement = achievement;
     }
 
-    public Integer getLabelId() {
+    public String getLabelId() {
         return labelId;
     }
 
-    public void setLabelId(Integer labelId) {
+    public void setLabelId(String labelId) {
         this.labelId = labelId;
     }
 
@@ -190,7 +190,7 @@ public class AgentBean {
                 ", agentYears='" + agentYears + '\'' +
                 ", houseId=" + houseId +
                 ", achievement='" + achievement + '\'' +
-                ", labelId=" + labelId +
+                ", labelId='" + labelId + '\'' +
                 ", regionName='" + regionName + '\'' +
                 ", streetName='" + streetName + '\'' +
                 ", commentCount=" + commentCount +
