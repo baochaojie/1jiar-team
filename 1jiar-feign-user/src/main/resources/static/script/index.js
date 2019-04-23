@@ -29,10 +29,16 @@ function initbooklist(){
 
 
             {field:'123',formatter:function(value,row,index){
-                    return '<a href="javascript:shanchu('+row.id+');">删除</a>'
+                    return '<a href="javascript:shanchu('+row.id+');">删除</a>-<a href="javascript:hjk('+row.name+');">删除222</a>'
                 }}
         ]
+
     });
+}
+
+//没做好
+function hjk(name){
+    alert(123);
 }
 
 function shanchu(id){
