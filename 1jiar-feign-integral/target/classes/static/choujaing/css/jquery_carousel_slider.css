@@ -27,7 +27,6 @@ html, body
 .box h3
 {
 	width:0px;
-	padding: 20px 30px 15px;   /* using padding to adjust title's postion */
 	font-size: 24px;
 	cursor: pointer;
 
@@ -39,24 +38,11 @@ html, body
 
 .tri
 {
-	z-index:1;
-	position: relative;
-	margin-bottom: -2px;
-
-	left: 50px;
-	background-image: url(../img/zqfSZk8C8h7.png);
-	background-repeat: no-repeat;
-	background-size: auto;
-	background-position: 0 -8px;
-	height: 8px;
 }
 
 .slide-wrap
 {
 	position: relative;
-	background:#d3d7dc;
-	/*	height: 230px;*/
-	border: 1px solid #bdc1c9;
 	width: 100%;
 }
 .border
@@ -98,8 +84,6 @@ html, body
 }
 .shift-active
 {
-	width:66px;
-	opacity: .65;
 }
 .left
 {
