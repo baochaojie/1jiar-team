@@ -62,8 +62,15 @@ public class House implements Serializable {
     private Integer	endPrice;//结束价格
     private Integer	houseQuYuFuId;//地区临时字段
     private Integer	houseDiTieFuId;//地铁线路临时字段
+    private Integer	intid;//排序类型临时字段
 
+    public Integer getIntid() {
+        return intid;
+    }
 
+    public void setIntid(Integer intid) {
+        this.intid = intid;
+    }
 
     public static long getSerialVersionUID() {
         return serialVersionUID;

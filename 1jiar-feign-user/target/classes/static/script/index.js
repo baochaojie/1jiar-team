@@ -3,29 +3,67 @@ $(function(){
 })
 
 function initbooklist(){
-    alert("1")
     $('#bookTable').bootstrapTable({
         toolbar:'#toolbar',
-        url:'../qureyResume',//获取数据地址
+        url:'../qureyResume',
         type:'post',
         columns:[
-            {checkbox:true},
-            {field:'id',title:'ID'},
-            {field:'home',title:'剩余积分'},
-            {field:'inven',title:'用户id'},
-            {field:'calen',title:'抽奖级别'},
-            {field:'feny',title:'剩余积分'},
-            {field:'owners',title:'用户id'},
-            {field:'broker',title:'抽奖级别'},
-            {field:'record',title:'剩余积分'},
-            {field:'entrust',title:'抽奖级别'},
-            {field:'search',title:'剩余积分'},
-            {field:'quest',title:'用户id'},
-            {field:'consult',title:'抽奖级别'},
 
-            {field:'123',title:'操作',formatter:function(value,row,index){
-                    return '<a href="javascript:shanchu('+row.id+');">删除</a>-<a href="javascript:updatebookbyid('+row.id+');">修改</a>'
+            {field:'name'},
+            {field:'jiaxidname'},
+            {field:'jiaoxidname'},
+
+            {field:'xingb',
+
+                formatter: function(value,row,index){
+                    return value==1?"男":value==2?"女":value==3?"人妖":"";
+                }},
+            {field:'aihao',
+                formatter: function(value,row,index){
+                    return value==1?"游泳":value==2?"机车":value==3?"看书":value==4?"打球":value==5?"慢跑":value==6?"极限":value==7?"交流":value==8?"玩":"";
+                }},
+            {field:'jiaoyidname'},
+            {field:'hengyidname'},
+            {field:'shuozaiidname'},
+            {field:'shuosiname'},
+
+
+            {field:'123',formatter:function(value,row,index){
+                    return '<a href="javascript:shanchu('+row.id+');">删除</a>'
                 }}
         ]
     });
+}
+
+function shanchu(id){
+    bootbox.confirm({
+        size: "small",
+        message: "删除的数据",
+        callback:function(result){
+            if(result){
+                $.ajax({
+                    url:"../deleteuser",
+                    type:'post',
+                    data:{
+                        id:id
+                    },
+                    dataType:'json',
+                    success:function(data){
+                        if(data){
+                            tiaojianchaxun();
+                        }else{
+                            bootbox.alert({
+                                size:"small",
+                                title:"提示",
+                                message:"删除失败",
+                            });
+                        }
+
+                    }
+
+                })
+            }
+        }
+    })
+
 }

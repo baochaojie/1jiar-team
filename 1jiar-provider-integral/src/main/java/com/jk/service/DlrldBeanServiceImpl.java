@@ -41,7 +41,7 @@ public class DlrldBeanServiceImpl implements DlrldBeanService{
     //查询用户积分余额
     @Override
     public List<DlrldBean> QueryMembershipPoint(Integer houseId) {
-        List<DlrldBean> range = redisTemplate.opsForList().range("QueryMembershipPoint" + houseId, 0, -1);
+        List range = redisTemplate.opsForList().range("QueryMembershipPoint" + houseId, 0, -1);
         if (range != null && range.size() > 0){
             List<DlrldBean> dlrldBean = (List<DlrldBean>) range.get(0);
             return dlrldBean;

@@ -30,8 +30,8 @@ public class DlrldBeanController {
     //查询用户积分余额
     @RequestMapping("QueryMembershipPoint")
     @ResponseBody
-    public List<DlrldBean> QueryMembershipPoint(Integer houseId){
-        if (houseId==null){
+        public List<DlrldBean> QueryMembershipPoint(Integer houseId){
+        if (houseId==null||houseId==0){
             houseId=1;
         }
         List<DlrldBean>  list =   dlrldBeanService.QueryMembershipPoint(houseId);
