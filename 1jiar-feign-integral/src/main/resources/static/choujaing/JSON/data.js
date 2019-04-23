@@ -19,7 +19,9 @@
         {"title":"Mavericks","des":"Dallas","imgpath":"choujaing/img/6.png"},
         {"title":"Hawks","des":"Atlanta","imgpath":"choujaing/img/7.png"},
         {"title":"Grizzlies","des":"Memphis","imgpath":"choujaing/img/1.png"},
-        {"title":"Raptors","des":"Toronto","imgpath":"choujaing/img/2.png"}
+        {"title":"Raptors","des":"Toronto","imgpath":"choujaing/img/2.png"},
+        {"title":"Hawks","des":"Atlanta","imgpath":"choujaing/img/7.png"},
+        {"title":"Celtics","des":"Boston","imgpath":"choujaing/img/3.png"}
         ],
     "Movie":[
         {
@@ -41,6 +43,8 @@
         {"title":"Mavericks","des":"Dallas","imgpath":"choujaing/img/6.png"},
         {"title":"Hawks","des":"Atlanta","imgpath":"choujaing/img/7.png"},
         {"title":"Grizzlies","des":"Memphis","imgpath":"choujaing/img/1.png"},
-        {"title":"Raptors","des":"Toronto","imgpath":"choujaing/img/2.png"}
+        {"title":"Raptors","des":"Toronto","imgpath":"choujaing/img/2.png"},
+        {"title":"Hawks","des":"Atlanta","imgpath":"choujaing/img/7.png"},
+        {"title":"Celtics","des":"Boston","imgpath":"choujaing/img/3.png"}
         ]
 }

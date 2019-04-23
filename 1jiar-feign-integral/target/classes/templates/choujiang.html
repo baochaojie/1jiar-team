@@ -39,19 +39,23 @@
 </head>
 <body>
 <div th:include="/index.html"></div>
-<div style="width:1920px; height:1080px; background:url('choujaing/img/4.jpg');background-size:cover">
-    <button onclick="initbooklist()">普通</button> <button onclick="initbooklist2()">VIP</button> <button onclick="initbooklist3()">至尊</button>
-<div class="modal-dialog" >
+<div style="width:570px; height:680px; background:url('choujaing/img/5.jpg');">
+    <a href='javascript:initbooklist()'><img src="choujaing/img/t.jpg">1</a>
+    <a href='javascript:initbooklist2()'><img src="choujaing/img/y.jpg">2</a>
+    <a href='javascript:initbooklist3()'><img src="choujaing/img/j.jpg">3</a>
+    <center><div class="table" id="prizesuiji"></div></center>
+    <div class ='box' id="nba"></div>
+    <div class="modal-dialog" >
         <form class="form-inline" id="upupform">
         <div class="form-group">
             <div class="row">
                 <div class="col-sm-12">
                     <div class="input-group">
-                        <input type="text" class="form-control" id="dlrIdId"  name="dlrIdId" ></br>
-                        <input type="text" class="form-control" id="prizeTypeid"  name="prizeTypeid" ></br>
-                        <input type="text" class="form-control" id="integralAdd"  name="integralAdd" ></br>
-                        <input type="text" class="form-control" id="houseId"  name="houseId" ></br>
-                        <input type="text" class="form-control" id="dlrldtyId"  name="dlrldtyId" ></br>
+                        <input type="hidden" class="form-control" id="dlrIdId"  name="dlrIdId" ></br>
+                        <input type="hidden" class="form-control" id="prizeTypeid"  name="prizeTypeid" ></br>
+                        <input type="hidden" class="form-control" id="integralAdd"  name="integralAdd" ></br>
+                        <input type="hidden" class="form-control" id="houseId"  name="houseId" ></br>
+                        <input type="hidden" class="form-control" id="dlrldtyId"  name="dlrldtyId" ></br>
 
                     </div>
                 </div>
@@ -59,8 +63,6 @@
         </div>
     </form>
 </div>
-    <div class="table" id="prizesuiji"></div>
-    <div class ='box' id="nba"></div>
 </div>
 <script  th:src="@{/script/index.js}"></script>
 <script  th:src="@{/script/addbook.js}"></script>
@@ -86,8 +88,8 @@
             var setting = {
                 subject:'images',
                 cardw : 145,	//page card's width .
-                cardh : 145,
-                cardn : 7,		//the number of visible page card .
+                cardh : 70,
+                cardn : 5,		//the number of visible page card .
                 margin : 9,		//margin between cards .
                 JSON :result
             };

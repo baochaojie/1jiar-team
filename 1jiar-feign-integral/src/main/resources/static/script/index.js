@@ -12,14 +12,11 @@ function MembershipPoint(){
         url:'/QueryMembershipPoint',//获取数据地址
         type:'post',
         columns:[
-            {checkbox:true},
-            {field:'dlrIdId',title:'ID'},
             {field:'loimg',title:'用户头像',formatter:function(data){
                     return "<img src="+data+" width='50' height='50'>";
                 }},
             {field:'userName',title:'用户名'},
             {field:'integralAdd',title:'剩余积分'},
-            {field:'houseId',title:'用户id'},
             {field:'123',title:'操作',formatter:function(value,row,index){
                     return '<a href="javascript:record('+row.houseId+');">查看抽奖记录</a>-<a href="javascript:updatebookbyid('+row.houseId+');">抽奖</a>'
                 }}
@@ -72,10 +69,13 @@ function inittypee() {
 
 
 function openAddDlrld(){
-    location.href="choujiang";
+    bootbox.dialog({
+    title:'添加商品',
+        message: createAddContent("/choujiang"),
+        closeButton: true,
+})
+
 }
-
-
 
 //查看抽奖记录
 function record(houseId){
@@ -86,16 +86,12 @@ function record(houseId){
         data:{
         },
         columns:[
-            {checkbox:true},
-            {field:'dlrIdId',title:'ID'},
             {field:'loimg',title:'用户头像',formatter:function(data){
                     return "<img src="+data+" width='50' height='50'>";
                 }},
             {field:'userName',title:'用户名'},
             {field:'integralAdd',title:'剩余积分'},
-            {field:'houseId',title:'用户id'},
             {field:'dltyname',title:'抽奖级别'},
-            {field:'dley',title:'抽奖所用积分'},
             {field:'tame',title:'抽奖时间'},
             {field:'dllname',title:'奖品'},
             {field:'stateId',title:'状体',formatter:function(value,row,index){

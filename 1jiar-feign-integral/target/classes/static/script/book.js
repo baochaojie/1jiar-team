@@ -17,7 +17,7 @@ function initbooklist(){
             var html='<tr>';
             for (var i = 1; i < data.length+1; i++) {
                 arrdlrldtype.push(data[i-1].dlrldtyId);
-                html+="<td><div  width='300' height='300'><div  width='100' height='70' id="+data[i-1].dlrldtyId+" style=\"margin: 0px 0px 0px 0px\"><img  style=\"margin: 5px 5px 5px 5px\" class='asss' src="+data[i-1].awardImg+" width=\'90\' height=\'60\'><br>"+
+                html+="<td><div  width='300' height='300'><div  width='100' height='70' id="+data[i-1].dlrldtyId+" style=\"margin: 0px 0px 0px 0px\"><img  style=\"margin: 8px 8px 8px 8px\" class='asss' src="+data[i-1].awardImg+" width=\'90\' height=\'60\'><br>"+
                     "<div  style=\"margin: 0px 0px 0px 0px\">"+data[i-1].dlrldName+"</div></div></div></td>";
                 if (i==4){
                     html+="<td><a href='javascript:initsuiji();' ><img  src='http://tableimg.oss-cn-beijing.aliyuncs.com/tableimg/1555723931320.png'  width='100' height='70'></img></a></td>";
@@ -46,7 +46,7 @@ function initbooklist2(){
             var html='<tr>';
             for (var i = 1; i < data.length+1; i++) {
                 arrdlrldtype.push(data[i-1].dlrldtyId);
-                html+="<td><div  width='300' height='300'><div  width='100' height='70' id="+data[i-1].dlrldtyId+" style=\"margin: 0px 0px 0px 0px\"><img  style=\"margin: 5px 5px 5px 5px\" class='asss' src="+data[i-1].awardImg+" width=\'90\' height=\'60\'><br>"+
+                html+="<td><div  width='300' height='300'><div  width='100' height='70' id="+data[i-1].dlrldtyId+" style=\"margin: 0px 0px 0px 0px\"><img  style=\"margin: 8px 8px 8px 8px\" class='asss' src="+data[i-1].awardImg+" width=\'90\' height=\'60\'><br>"+
                     "<div  style=\"margin: 0px 0px 0px 0px\">"+data[i-1].dlrldName+"</div></div></div></td>";
                 if (i==4){
                     html+="<td><a href='javascript:initsuiji();' ><img  src='http://tableimg.oss-cn-beijing.aliyuncs.com/tableimg/1555723931320.png'  width='100' height='70'></img></a></td>";
@@ -75,7 +75,7 @@ function initbooklist3(){
             var html='<tr>';
             for (var i = 1; i < data.length+1; i++) {
                 arrdlrldtype.push(data[i-1].dlrldtyId);
-                html+="<td><div  width='300' height='300'><div  width='100' height='70' id="+data[i-1].dlrldtyId+" style=\"margin: 0px 0px 0px 0px\"><img  style=\"margin: 5px 5px 5px 5px\" class='asss' src="+data[i-1].awardImg+" width=\'90\' height=\'60\'><br>"+
+                html+="<td><div  width='300' height='300'><div  width='100' height='70' id="+data[i-1].dlrldtyId+" style=\"margin: 0px 0px 0px 0px\"><img  style=\"margin: 8px 8px 8px 8px\" class='asss' src="+data[i-1].awardImg+" width=\'90\' height=\'60\'><br>"+
                     "<div  style=\"margin: 0px 0px 0px 0px\">"+data[i-1].dlrldName+"</div></div></div></td>";
                 if (i==4){
                     html+="<td><a href='javascript:initsuiji();' ><img  src='http://tableimg.oss-cn-beijing.aliyuncs.com/tableimg/1555723931320.png'  width='100' height='70'></img></a></td>";
