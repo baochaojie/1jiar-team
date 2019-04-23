@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.springframework.org/schema/jdbc">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!-- 引入jequery -->
+    <script type="text/javascript" src="/js/jquery.min.js"></script>
+    <!-- 引入bootstrap的css、js文件 -->
+    <link rel="stylesheet" href="/bootstrap3/css/bootstrap.css">
+    <script type="text/javascript" src="/bootstrap3/js/bootstrap.js"></script>
+    <!-- 引入table的css、js -->
+    <link rel="stylesheet" href="/js/bootstrap-table/bootstrap-table.css">
+    <script type="text/javascript" src="/js/bootstrap-table/bootstrap-table.js"></script>
+    <script type="text/javascript" src="/js/bootstrap-table/locale/bootstrap-table-zh-CN.js"></script>
+    <script src="/js/bootstrap-bootbox/bootbox.js"></script>
+    <!-- 引入date日期的css、js -->
+    <link rel="stylesheet" href="/js/bootstrap-datetimepicker/css/bootstrap-datetimepicker.css">
+    <script type="text/javascript" src="/js/bootstrap-datetimepicker/js/bootstrap-datetimepicker.js"></script>
+    <script type="text/javascript" src="/js/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.zh-CN.js"></script>
+    <!-- 引入文件上传的css、js -->
+    <link rel="stylesheet" href="/js/bootstrap-fileinput/css/fileinput.css">
+    <script type="text/javascript" src="/js/bootstrap-fileinput/js/fileinput.js"></script>
+    <script type="text/javascript" src="/js/bootstrap-fileinput/js/locales/zh.js"></script>
+</head>
+<body>
+<div id="toolbar">
+    <center><font size="5px">房屋详情</font></center>
+</div>
+<table class="table" id="myTable"></table>
+</body>
+<script type="text/javascript" th:inline="none">
+    var ids=window.localStorage.getItem("id")
+alert(ids)
+    $(function() {
+        queryIdhouse(ids);//初始化用户表格数据
+
+    })
+    function queryIdhouse(ids){
+        $('#myTable').bootstrapTable({
+            toolbar:'#toolbar',
+            url:"/house/queryIdhouse?houseId="+ids,
+            type:"post",
+           /* pagination:true, //是否展示分页
+            pageList:[3, 10, 20, 50],//分页组件
+            pageNumber:1,
+            pageSize:3,//默认每页条数
+            sidePagination:'server',//分页方式：client客户端分页，server服务端分页*/
+            striped:true,//显示条纹状表格
+            columns:[
+                {field:"check",checkbox:true},
+                {field:"houseId",title:"id"},
+                {field:"houseaheName",title:"房名"},
+                {field:"housePrice",title:"每月价格",
+                    formatter: function(value,row,index){
+                        return "人民币"+value+"元";
+                    }},
+                {field:"houseManName",title:"用户名"},
+                {field:"agentName",title:"经纪人"},
+                {field:"houseJianzhuMianji",title:"建筑面积"},
+                {field:"houseTaoneiMianji",title:"套内面积"},
+                {field:"houseTypeName",title:"户型"},
+                {field:"houseUseName",title:"房屋类型"},
+                {field:"houseFloorTypeName",title:"楼层类型"},
+                {field:"houseDirectionName",title:"房屋朝向"},
+                {field:"houseAgeName",title:"楼龄"},
+                {field:"houseZuTypeName",title:"方式"},
+                {field:"houseTeSeId",title:"特色"},
+                {field:"houseZuQi",title:"租期",
+                    formatter: function(value,row,index){
+                        return value==1?"月租":value==2?"年租":"";
+                    }},
+                {field:"houseElevator",title:"有无电梯",
+                    formatter: function(value,row,index){
+                        return value==1?"有电梯":value==2?"没有电梯":"";
+                    }},
+                {field:"houseFinish",title:"是否装修",
+                    formatter: function(value,row,index){
+                        return value==1?"已装修":value==2?"未装修":"";
+                    }},
+                {field:"houseHeating",title:"是否供暖",
+                    formatter: function(value,row,index){
+                        return value==1?"已供暖":value==2?"未供暖":"";
+                    }},
+                {field:"ridgepoleName",title:"楼栋"},
+                {field:"elementName",title:"单元"},
+                {field:"doorplateName",title:"门牌号"},
+
+            ]
+        })
+    }
+
+
+</script>
+</html>

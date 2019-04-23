@@ -83,4 +83,17 @@ public class HouseController {
         return houseService.findHouseById(houseId);
     }
 
+    //跳转出租房屋页面
+    @RequestMapping("chaIdHouse")
+    public String chaIdHouse() {
+        return "chaIdHouse";
+    }
+    //根据id查询
+    @RequestMapping("queryIdhouse")
+    @ResponseBody
+    public List<House> queryIdhouse(Integer houseId){
+        return houseService.queryIdhouse(houseId);
+
+    }
+
 }

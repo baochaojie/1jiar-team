@@ -69,4 +69,13 @@ public class HouseController {
     public House findHouseById(Integer houseId){
         return houseService.findHouseById(houseId);
     }
+
+   //根据id查询
+    @RequestMapping("queryIdhouse")
+    @ResponseBody
+    public List<House> queryIdhouse(@RequestParam Integer houseId){
+        return houseService.queryIdhouse(houseId);
+
+    }
+
 }

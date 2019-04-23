@@ -22,4 +22,6 @@ public interface HouseService {
     void LookHouse(Integer agentId);
 
     House findHouseById(Integer houseId);
+
+    List<House> queryIdhouse(Integer houseId);
 }

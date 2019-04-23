@@ -30,7 +30,7 @@ public class House implements Serializable {
         this.phoneNum = phoneNum;
     }
 
-    private  String houseJianzhuMianji;//建筑面积
+    private  Integer houseJianzhuMianji;//建筑面积
     private  String houseTaoneiMianji;//套内面积
     private  String houseTypeId;//房型id 关联一张房屋类型表
     private  String  houseTypeName;//房型名
@@ -108,11 +108,11 @@ public class House implements Serializable {
         this.houseManId = houseManId;
     }
 
-    public String getHouseJianzhuMianji() {
+    public Integer getHouseJianzhuMianji() {
         return houseJianzhuMianji;
     }
 
-    public void setHouseJianzhuMianji(String houseJianzhuMianji) {
+    public void setHouseJianzhuMianji(Integer houseJianzhuMianji) {
         this.houseJianzhuMianji = houseJianzhuMianji;
     }
 

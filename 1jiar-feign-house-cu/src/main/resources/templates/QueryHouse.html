@@ -71,6 +71,7 @@
                 </label>
             </div>
             <div class="radio">
+                <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
                 <label>是否供暖:</label>
                 <label>
                     <input type="radio" name="houseHeating"  value="1" > 已供暖
@@ -293,12 +294,19 @@
                         var butt = '<button onclick="chuzuTan(\''+row.houseId+'\',\''+row.agentId+'\')" class="btn btn-danger glyphicon glyphicon-jpy" >确认出租</button>';
                         //butt+=" "
                         butt += '<button onclick="LookHouse(\''+row.agentId+'\')" class="btn btn-info glyphicon glyphicon-eye-open" >看房子</button>';
+                        butt += '<button onclick="chaIdHouse(\''+row.houseId+'\')" class="btn btn-info glyphicon glyphicon-eye-open" >详情</button>';
 
                         return butt
                     }
                 }
             ]
         })
+    }
+    //跳转详情页面
+    function chaIdHouse(ids){
+        window.localStorage.setItem("id", ids);
+        location.href="/house/chaIdHouse";
+
     }
     //条件查询
     function searchUser(id){
