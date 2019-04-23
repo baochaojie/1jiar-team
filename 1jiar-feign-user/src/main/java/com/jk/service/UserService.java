@@ -55,4 +55,7 @@ public interface UserService {
 
     @GetMapping("deleteuser")
     void deleteuser(@RequestParam Integer id);
+
+    @RequestMapping("zenghe")
+    List<zenghe> zenghe();
 }

@@ -25,22 +25,41 @@
 
 <div th:include="/index.html"></div>
 
-<div class="each-show-login on">
-    <div class="login-ipt-box js-login-box">
-        <div class="login-ipt type-phone">
-            <input type="text" id="login" value="15525858286" placeholder="请输入手机号">
-        </div>
-        <p class="ipt-err js-ipt-err"></p>
-        <div class="login-ipt code-line type-code">
-            <input class="ipt-code js-code" id="Verification" type="text" placeholder="请输入短信验证码">
-            <input class="code-btn js-code-btn" onclick="selectVerification()" type="button" value="获取验证码">
-        </div>
-        <p class="ipt-err js-ipt-err"></p>
 
-    </div>
-    <div class="login-btn">
-        <a class="js-login-btn" href="javascript:phoneDialog();">登录</a>
-    </div>
+
+<div class="easyui-dialog" data-options="width:330,height:200,closable:false,title:'系统登录',iconCls:'icon-tip',buttons:'#button'">
+    <center style="margin-top: 12%" >
+        <form  method="post">
+            <table>
+                <tr>
+                    <td>用户名:</td>
+                    <td>
+                        <input class="easyui-textbox" id="login" data-options="required:true,iconCls:'icon-man'">
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>验证码:</td>
+                    <td>
+                        <input class="easyui-textbox" type="text" id="Verification" data-options="required:true" size="5">
+                        <a onclick="selectVerification()" type="button"  class="easyui-linkbutton">获取验证码</a>
+                    </td>
+
+                </tr>
+
+                <tr>
+                    <td>登录:</td>
+                    <td>
+                        <a href="javascript:phoneDialog()" class="easyui-linkbutton" data-options="iconCls:'icon-ok'">登录</a>
+
+                    </td>
+
+                </tr>
+            </table>
+
+        </form>
+
+    </center>
 </div>
 </body>
 

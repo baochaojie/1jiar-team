@@ -187,5 +187,14 @@ public class UserController {
          userService.deleteuser(id);
     }
 
+    /**
+     * 整合
+     */
+    @RequestMapping("zenghe")
+    @ResponseBody
+    public List<zenghe> zenghe(){
+        return userService.zenghe();
+    }
+
 
 }

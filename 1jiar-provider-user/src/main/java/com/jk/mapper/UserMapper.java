@@ -58,4 +58,5 @@ public interface UserMapper {
     @Delete("DELETE from login_resumen where id=#{id}")
     void deleteuser(Integer id);
 
+    List<zenghe> findTreeByP(@Param("pid")int pid);
 }

@@ -137,4 +137,11 @@ public class UserController {
     public void deleteuser(Integer id) {
          userService.deleteuser(id);
     }
+
+    @RequestMapping("zenghe")
+    @ResponseBody
+    public List<zenghe> zenghe(){
+        return userService.zenghe();
+    }
+
 }

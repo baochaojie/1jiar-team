@@ -38,6 +38,9 @@ public class PageController {
     public String addList(){
         return "addList";
     }
-
+    @RequestMapping("quangbu")
+    public String addList(String url){
+        return url;
+    }
 
 }

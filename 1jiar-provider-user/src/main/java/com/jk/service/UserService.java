@@ -36,4 +36,6 @@ public interface UserService {
     void addOwner(Resume resume);
 
     void deleteuser(Integer id);
+
+    List<zenghe> zenghe();
 }

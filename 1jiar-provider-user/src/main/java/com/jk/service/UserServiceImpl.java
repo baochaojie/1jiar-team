@@ -93,6 +93,36 @@ public class UserServiceImpl implements UserService{
 
     }
 
+    @Override
+    public List<zenghe> zenghe() {
+        int pid=0;
+        List<zenghe> list = findNode(pid);
+        return list;
+    }
+    private List<zenghe> findNode(int pid) {
+        List<zenghe> list = userMapper.findTreeByP(pid);
+        for (zenghe tree : list) {
+            Integer id = tree.getId();
+            List<zenghe> nodes = findNode(id);
+            if(nodes.size()<=0){
+
+                tree.setSelectable(true);
+            }else{
+
+
+
+                tree.setSelectable(false);
+                tree.setNodes(nodes);
+            }
+        }
+        return list;
+    }
+
+
+
+
+
+
 
     @Override
     public List<Tree> findTree() {
