@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2860c424-a6dc-4038-8d9b-4fe74b1f0a24" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1jiar-feign-user/src/main/resources/templates/treelist.html" beforeDir="false" afterPath="$PROJECT_DIR$/1jiar-feign-user/src/main/resources/templates/treelist.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1jiar-feign-user/src/main/resources/templates/zenghe.html" beforeDir="false" afterPath="$PROJECT_DIR$/1jiar-feign-user/src/main/resources/templates/zenghe.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -40,11 +41,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/1jiar-feign-user/src/main/resources/templates/addList.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="94" lean-forward="true" selection-start-line="94" selection-end-line="94" />
+            <state relative-caret-position="360">
+              <caret line="95" column="18" lean-forward="true" selection-start-line="95" selection-start-column="18" selection-end-line="95" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -52,8 +53,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/1jiar-feign-user/src/main/resources/templates/shouye.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="174">
-              <caret line="272" lean-forward="true" selection-start-line="272" selection-end-line="272" />
+            <state relative-caret-position="361">
+              <caret line="801" column="29" lean-forward="true" selection-start-line="801" selection-start-column="29" selection-end-line="801" selection-end-column="29" />
               <folding>
                 <element signature="n#style#0;n#iframe#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -81,6 +82,15 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/1jiar-feign-user/src/main/resources/templates/treelist.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="426">
+              <caret line="18" column="14" lean-forward="true" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/1jiar-provider-house-ad/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
@@ -100,19 +110,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/1jiar-feign-user/src/main/resources/templates/loginsj.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1560">
-              <caret line="52" column="31" selection-start-line="52" selection-start-column="31" selection-end-line="52" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/1jiar-feign-user/src/main/resources/templates/zenghe.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1200">
-              <caret line="40" column="31" selection-start-line="40" selection-start-column="31" selection-end-line="40" selection-end-column="31" />
+            <state relative-caret-position="300">
+              <caret line="19" column="34" lean-forward="true" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -183,6 +184,7 @@
       <find>login</find>
       <find>Verification</find>
       <find>工具</find>
+      <find>登录</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -207,7 +209,6 @@
         <option value="$PROJECT_DIR$/1jiar-eureka/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/1jiar-feign-user/src/main/resources/templates/userlist.html" />
         <option value="$PROJECT_DIR$/1jiar-feign-user/src/main/resources/static/script/tree.js" />
-        <option value="$PROJECT_DIR$/1jiar-feign-user/src/main/resources/templates/treelist.html" />
         <option value="$PROJECT_DIR$/1jiar-feign-user/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/1jiar-feign-user/src/main/java/com/jk/shiro/Md5Util.java" />
         <option value="$PROJECT_DIR$/1jiar-feign-user/src/main/java/com/jk/shiro/HttpGet.java" />
@@ -242,11 +243,12 @@
         <option value="$PROJECT_DIR$/1jiar-provider-user/src/main/java/com/jk/mapper/UserMapper.java" />
         <option value="$PROJECT_DIR$/1jiar-provider-user/src/main/java/com/jk/service/UserServiceImpl.java" />
         <option value="$PROJECT_DIR$/1jiar-provider-user/src/main/resources/mapper/UserMapper.xml" />
-        <option value="$PROJECT_DIR$/1jiar-feign-user/src/main/resources/templates/zenghe.html" />
         <option value="$PROJECT_DIR$/1jiar-feign-user/src/main/resources/templates/loginsj.html" />
         <option value="$PROJECT_DIR$/1jiar-feign-user/src/main/resources/templates/login.html" />
         <option value="$PROJECT_DIR$/1jiar-feign-user/src/main/resources/templates/shouye.html" />
         <option value="$PROJECT_DIR$/1jiar-feign-user/src/main/resources/templates/addList.html" />
+        <option value="$PROJECT_DIR$/1jiar-feign-user/src/main/resources/templates/zenghe.html" />
+        <option value="$PROJECT_DIR$/1jiar-feign-user/src/main/resources/templates/treelist.html" />
       </list>
     </option>
   </component>
@@ -650,12 +652,12 @@
       <workItem from="1555836321599" duration="4883000" />
       <workItem from="1555892967384" duration="7544000" />
       <workItem from="1555911806781" duration="25711000" />
-      <workItem from="1555978883229" duration="3211000" />
+      <workItem from="1555978883229" duration="3711000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="164801000" />
+    <option name="totallyTimeSpent" value="165301000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -670,7 +672,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13432837" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13432837" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -680,13 +682,13 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.24295011" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4978678" visible="true" weight="0.1670282" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4978678" weight="0.1670282" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39696312" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.329718" />
       <window_info anchor="bottom" id="Spring" order="7" weight="0.329718" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49840087" weight="0.28741866" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49840087" visible="true" weight="0.28741866" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5021322" side_tool="true" weight="0.5368764" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" sideWeight="0.49946696" weight="0.329718" />
@@ -729,7 +731,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/1jiar-feign-user/src/main/resources/templates/dengluyemian.html" />
     <entry file="file://$PROJECT_DIR$/.gitignore" />
     <entry file="file://$PROJECT_DIR$/1jiar-feign-user/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
@@ -1013,13 +1014,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/1jiar-feign-user/src/main/resources/templates/zenghe.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1200">
-          <caret line="40" column="31" selection-start-line="40" selection-start-column="31" selection-end-line="40" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/1jiar-feign-user/src/main/java/com/jk/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4590">
@@ -1065,10 +1059,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/1jiar-feign-user/src/main/resources/templates/addList.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="95" column="18" lean-forward="true" selection-start-line="95" selection-start-column="18" selection-end-line="95" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/1jiar-feign-user/src/main/resources/templates/shouye.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="272" lean-forward="true" selection-start-line="272" selection-end-line="272" />
+        <state relative-caret-position="361">
+          <caret line="801" column="29" lean-forward="true" selection-start-line="801" selection-start-column="29" selection-end-line="801" selection-end-column="29" />
           <folding>
             <element signature="n#style#0;n#iframe#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -1105,10 +1106,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/1jiar-feign-user/src/main/resources/templates/addList.html">
+    <entry file="file://$PROJECT_DIR$/1jiar-feign-user/src/main/resources/templates/zenghe.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="94" lean-forward="true" selection-start-line="94" selection-end-line="94" />
+        <state relative-caret-position="300">
+          <caret line="19" column="34" lean-forward="true" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1jiar-feign-user/src/main/resources/templates/treelist.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="426">
+          <caret line="18" column="14" lean-forward="true" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
         </state>
       </provider>
     </entry>
