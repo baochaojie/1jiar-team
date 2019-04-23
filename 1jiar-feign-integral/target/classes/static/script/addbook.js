@@ -13,8 +13,6 @@ function  queryprize2(){
         url:'/queryprize2',//获取数据地址
         type:'post',
         columns:[
-            {checkbox:true},
-            {field:'dlrldtyId',title:'ID'},
             {field:'integName',title:'奖品级别'},
             {field:'dlrldName',title:'奖品类型'},
             {field:'awardImg',title:'用户头像',formatter:function(data){
