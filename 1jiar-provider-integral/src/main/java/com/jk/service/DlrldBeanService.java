@@ -25,12 +25,14 @@ public interface DlrldBeanService {
     void deleteTyped(Integer ids);
 
     DlrldBean querydlrldId(Integer houseId);
-
-    void saveDlrldBean(DlrldBean dlrldBean);
-
+    
     List<DlrldTypeBean> queryprize2();
 
     void lingquTyped(Integer dlrIdId,Integer houseId);
 
     void fangqiTyped(Integer dlrIdId, Integer houseId);
+
+    String saveDlrldBean(DlrldBean dlrldBean, Integer intee, Integer integral);
+
+    DlrldTypeBean querytype(Integer dlrldtyId);
 }

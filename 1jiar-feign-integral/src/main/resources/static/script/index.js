@@ -69,63 +69,11 @@ function inittypee() {
     }
 
 //抽奖
-    var res;
-    function createAddContent(url){
-        $.ajax({
-            url:url,
-            async:false,
-            success:function(data){
-                res = data;
-            }
-        });
-        return res;
-    }
 
-    function openAddDlrld(){
-        bootbox.dialog({
-            title:'抽奖',
-            message: createAddContent("/choujiang"),
-            closeButton: true,
-            buttons : {
-                "success" : {
-                    "label" : "<i class='icon-ok'></i> 保存",
-                    "className" : "btn-sm btn-success",
-                    "callback" : function() {
-                        $.ajax({
-                            url:'/saveDlrldBean',
-                            type:'post',
-                            data:$("#upupform").serialize(),
-                            dataType:'json',
-                            success:function(data){
-                                if(data){
-                                        MembershipPoint();
-                                }else{
-                                    bootbox.alert({
-                                        size: "small",
-                                        title: "提示",
-                                        message: "新增失败！",
-                                        buttons: {
-                                            ok: {
-                                                label: '确定',
-                                                className: 'btn-success'
-                                            }
-                                        }
-                                    })
-                                }}
-                        });
-                    }
-                },
-                "cancel" : {
-                    "label" : "<i class='icon-info'></i> 取消",
-                    "className" : "btn-sm btn-danger",
-                    "callback" : function() {
-                            MembershipPoint();
-                    }
-                }
-            }
 
-        });
-    }
+function openAddDlrld(){
+    location.href="choujiang";
+}
 
 
 

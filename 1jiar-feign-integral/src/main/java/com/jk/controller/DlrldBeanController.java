@@ -60,8 +60,25 @@ public class DlrldBeanController {
     //抽奖
     @RequestMapping("saveDlrldBean")
     @ResponseBody
-    public void saveDlrldBean(DlrldBean DlrldBean){
-        dlrldBeanService.saveDlrldBean(DlrldBean);
+    public String saveDlrldBean(DlrldBean dlrldBean){
+        Integer intee = dlrldBean.getIntegralAdd();
+        Integer integral = 0;
+        if (dlrldBean.getPrizeTypeid()==1){
+            integral=500;
+            intee=intee-integral;
+        }else if (dlrldBean.getPrizeTypeid()==2){
+            integral=1000;
+            intee=intee-integral;
+        }else if (dlrldBean.getPrizeTypeid()==3){
+            integral=3000;
+            intee=intee-integral;
+        }
+        if(intee>=0){
+            Integer houseId = dlrldBean.getHouseId();
+            return dlrldBeanService.saveDlrldBean(dlrldBean,intee,integral);
+        }else{
+            return "1";
+        }
     }
 
     //查询奖品级别
@@ -140,4 +157,7 @@ public class DlrldBeanController {
     public void fangqiTyped(@RequestParam Integer dlrIdId,@RequestParam Integer houseId){
         dlrldBeanService.fangqiTyped(dlrIdId,houseId);
     }
+
+
+
 }
