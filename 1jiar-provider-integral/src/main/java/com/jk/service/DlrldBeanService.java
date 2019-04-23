@@ -33,4 +33,6 @@ public interface DlrldBeanService {
     void fangqiTyped(Integer dlrIdId, Integer houseId);
 
     String saveDlrldBean(DlrldBean dlrldBean, Integer intee, Integer integral);
+
+    DlrldTypeBean querytype(Integer dlrldtyId);
 }

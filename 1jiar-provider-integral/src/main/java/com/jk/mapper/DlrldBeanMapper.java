@@ -58,4 +58,7 @@ public interface DlrldBeanMapper {
 
     @Update("update house_dlrld set stateId=3 where stateId=1 and dlrIdId=#{dlrIdId}")
     void fangqiTyped(Integer dlrIdId);
+
+    @Select("select * from dlrld_type where dlrldtyId = #{dlrldtyId}")
+    DlrldTypeBean querytype(Integer dlrldtyId);
 }

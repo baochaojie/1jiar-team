@@ -88,7 +88,7 @@ function inittypee() {
             message: createAddContent("/choujiang"),
             closeButton: true,
             buttons : {
-                
+
             }
 
         });

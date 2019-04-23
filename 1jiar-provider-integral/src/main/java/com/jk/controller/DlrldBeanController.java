@@ -102,6 +102,13 @@ public class DlrldBeanController {
         return  list;
     }
 
+    //回显奖品
+    @RequestMapping("querytype")
+    @ResponseBody
+    public DlrldTypeBean querytype(@RequestParam Integer dlrldtyId) {
+        return dlrldBeanService.querytype(dlrldtyId);
+    }
+
     //新增奖品
     @RequestMapping("saveprize")
     @ResponseBody

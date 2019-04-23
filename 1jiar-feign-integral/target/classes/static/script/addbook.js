@@ -21,10 +21,32 @@ function  queryprize2(){
                     return "<img src="+data+" width='50' height='50'>";
                 }},
             {field:'123',title:'操作',formatter:function(value,row,index){
-                    return '<a href="javascript:shanchu('+row.dlrldtyId+');">删除</a>'
+                    return '<a href="javascript:shanchu('+row.dlrldtyId+');">删除</a>+<a href="javascript:xuigaitype('+row.dlrldtyId+');">修改</a>'
                 }}
         ]
     });
+}
+
+
+//回显
+function xuigaitype(dlrldtyId){
+    //打开修改弹框
+    openAdd();
+    //初始化表单数据
+    inittype();
+    //查询回显数据
+    $.ajax({
+        url:'/saveprize',
+        type:'post',
+        async:false,//同步
+        data:{dlrldtyId:dlrldtyId},
+        dataType:'json',
+        success:function(data) {
+            $("#prizeId").val(data.prizeId);
+            $("#dlrldName").val(data.dlrldName);
+            $("#headImg").val(data.headImg);
+        }
+    })
 }
 
 //单删

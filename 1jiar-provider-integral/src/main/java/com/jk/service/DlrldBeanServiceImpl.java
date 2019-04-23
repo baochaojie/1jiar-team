@@ -105,6 +105,12 @@ public class DlrldBeanServiceImpl implements DlrldBeanService{
         }
 
     @Override
+    public DlrldTypeBean querytype(Integer dlrldtyId) {
+        DlrldTypeBean list = dlrldBeanMapper.querytype(dlrldtyId);
+        return list;
+    }
+
+    @Override
     public List<DlrldTypeBean> queryprize2() {
         return dlrldBeanMapper.queryprize2();
     }
