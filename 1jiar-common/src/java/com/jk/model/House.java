@@ -11,6 +11,24 @@ public class House implements Serializable {
     private  String houseaheName;//名字
     private  Integer housePrice;//售价
     private  Integer houseManId;//用户id 房屋拥有者 关联一张用户表
+    private  String name;       //房主名字
+    private  String phoneNum;   //房主的联系方式
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getPhoneNum() {
+        return phoneNum;
+    }
+
+    public void setPhoneNum(String phoneNum) {
+        this.phoneNum = phoneNum;
+    }
     private  String houseManName;//用户姓名
     private  Integer houseJianzhuMianji;//建筑面积
     private  String houseTaoneiMianji;//套内面积
@@ -41,6 +59,7 @@ public class House implements Serializable {
     private  Integer houseDiTieId;//地铁关联表id
     private  String houseDiTieName;//地铁名
     private  Integer houseZuQi;//租期 1月租 2年租
+    private  String houseImg;//图片
     //临时
     private Integer	startPrice;//开始价格
     private Integer	endPrice;//结束价格
@@ -49,6 +68,13 @@ public class House implements Serializable {
     private Integer	intid;//排序类型临时字段
 
 
+    public String getHouseImg() {
+        return houseImg;
+    }
+
+    public void setHouseImg(String houseImg) {
+        this.houseImg = houseImg;
+    }
 
     public static long getSerialVersionUID() {
         return serialVersionUID;
