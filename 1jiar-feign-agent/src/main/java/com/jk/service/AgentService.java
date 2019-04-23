@@ -59,5 +59,5 @@ public interface AgentService {
 
     @RequestMapping("findEcharts")
     @ResponseBody
-    public List<House> findEcharts(Integer agentId);
+    public List<House> findEcharts();
 }

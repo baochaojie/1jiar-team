@@ -1,6 +1,9 @@
 package com.jk.model;
 
-public class AreaBean {
+import java.io.Serializable;
+
+public class AreaBean implements Serializable {
+    private static final long serialVersionUID = 1033197068421985073L;
     private Integer id;
     private String name;
     private Integer pid;

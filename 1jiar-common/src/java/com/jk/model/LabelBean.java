@@ -1,6 +1,9 @@
 package com.jk.model;
 
-public class LabelBean {
+import java.io.Serializable;
+
+public class LabelBean implements Serializable {
+    private static final long serialVersionUID = 4136310465792550128L;
     private Integer labelId;
     private String labelName;
 

@@ -38,7 +38,7 @@ public class AgentController {
     public String toAddAgent(){
         return "toAddAgent";
     }
-   //查询经济人
+   //分页查询经济人
     @RequestMapping("findAgent")
     @ResponseBody
     private HashMap<String,Object> findAgent( Integer page, Integer rows, AgentBean agentBean){
@@ -167,7 +167,8 @@ public class AgentController {
     }
     @RequestMapping("findEcharts")
     @ResponseBody
-    public List<House> findEcharts(Integer agentId){
-        return agentService.findEcharts(agentId);
+    public List<House> findEcharts(){
+        System.out.println(1234);
+        return agentService.findEcharts();
     }
 }

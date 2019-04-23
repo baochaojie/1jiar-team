@@ -25,7 +25,7 @@
     <div class="panel-body">
         <form class="form-inline">
             <div class="form-group">
-                <label for="name">图书名</label>
+                <label for="name">经纪人名称</label>
                 <input type="text" class="form-control" id="name" placeholder="请输入经济人名称">
             </div>
             <button type="button" class="btn btn-primary glyphicon glyphicon-search" onclick="searchAgent()">搜索</button>
@@ -60,9 +60,6 @@
                     rows:this.pageSize,
                     agentName:$("#name").val(),
 
-                    //chubanshe:$("#chubanshes").val(),
-                    //startTime:$("#startTime").val(),
-                    //endTime:$("#endTime").val()
                 }
             },
             columns:[//commentCount(agentId);
@@ -81,13 +78,7 @@
                     }},
                 {field:"tools",title:"操作",
                     formatter: function (value, row, index) {
-                        //js传递字符串的时候一定要加引号!!!!
-                        var butt = '<button onclick="deleteOne(\''+row.agentId+'\')" class="btn btn-danger glyphicon glyphicon-remove glyphicon glyphicon-trash" >删除</button>';
-                        butt+=" "
-
-                        butt += '<a onclick="commentCount(\''+row.agentId+'\')">评论'+row.commentCount+'条数</a>"';
-
-                        return butt
+                        return '<a onclick="commentCount(\''+row.agentId+'\')">评论'+row.commentCount+'条数</a>"';
                     }
                 }
             ]

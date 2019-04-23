@@ -1,6 +1,9 @@
 package com.jk.model;
 
-public class Problem {
+import java.io.Serializable;
+
+public class Problem implements Serializable {
+    private static final long serialVersionUID = -2147261851084265560L;
     private Integer id;//主键
     private Integer agentId;//关联经纪人id
     private String problem;//一句话描述您的疑问（必填）

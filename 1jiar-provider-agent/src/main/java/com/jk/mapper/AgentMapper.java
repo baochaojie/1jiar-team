@@ -26,8 +26,6 @@ public interface AgentMapper {
 
     void updateAgent(AgentBean agentBean);
 
-
-
     List<Exhibition> findExhibition(Integer agentId);
 
     List<DictionaryTable> queryTree(Integer pid);
@@ -36,5 +34,6 @@ public interface AgentMapper {
 
     List<Problem> findProblem();
 
-    List<House> findEcharts(Integer agentId);
+    List<House> findEcharts();
+
 }

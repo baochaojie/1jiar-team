@@ -8,7 +8,7 @@
    <table id="villageTable2"></table>
    <script type="text/javascript" th:inline="none">
            initagentId()
-           initVillageTable2(agentId);
+           initVillageTable2();
        function initagentId(){
            $.ajax({
                url:'/initagentId',
@@ -20,8 +20,9 @@
                }
            })
        }
+           var agentId = 0;
        //查询成交小区
-       function initVillageTable2(agentId){
+       function initVillageTable2(){
            $('#villageTable2').bootstrapTable({
                url:"/findExhibition?agentId="+agentId,
                type:"post",

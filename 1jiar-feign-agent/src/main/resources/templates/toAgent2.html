@@ -48,7 +48,15 @@
                 {field:"check",checkbox:true},
                 {field:"agentId",title:"id"},
                 {field:"agentName",title:"经济人名称"},
-                {field:"detail",title:"经济人简介"},
+                {field:"detail",title:"经济人简介",formatter:function(value,row,index){
+                        //判断长度是否超过自己预定义的值
+                        if(value.length>5){
+                            //长度超过后截取自己想要显示的字符串，其余的以...显示
+                            value = value.substring(0, 4) + "...";
+                        }
+                        //返回组装后的值
+                        return value;
+                    }},
                 {field:"agentPhone",title:"经济人电话"},
                 {field:"agentJob",title:"经纪人职位"},
                 {field:"store",title:"所属店铺"},
@@ -364,7 +372,10 @@
             message: createAddContent("/toVillage2?agentId="+agentId),
 
         });
+
     }
+
+
     </script>
 </body>
 </html>

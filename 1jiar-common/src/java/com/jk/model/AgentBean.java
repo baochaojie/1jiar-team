@@ -1,6 +1,9 @@
 package com.jk.model;
 
-public class AgentBean {
+import java.io.Serializable;
+
+public class AgentBean implements Serializable {
+    private static final long serialVersionUID = -6487977238499462756L;
     private Integer agentId;//经纪人id
     private String agentName;//经济人名称
     private String agentJob;//经济人职位
