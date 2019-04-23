@@ -1,0 +1,43 @@
+HELP.md
+target
+!.mvn/wrapper/maven-wrapper.jar
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+<<<<<<< HEAD
+out
+gen
+.idea/
+1jiar-common/target/generated-sources/
+1jiar-eureka/target/generated-sources/
+1jiar-eureka/target/generated-test-sources/
+1jiar-feign-house-ad/target/generated-sources/
+1jiar-feign-house-ad/target/generated-test-sources/
+1jiar-provider-house-ad/target/generated-sources/
+1jiar-provider-house-ad/target/generated-test-sources/
+.gitignore
+generated-sources/
+=======
+*.ipr
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+/build/
+
+### VS Code ###
+.vscode/
