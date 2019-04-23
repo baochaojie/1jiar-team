@@ -22,6 +22,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="1jiar-common" target="1.5" />
       <module name="1jiar-provider-house-su (1)" target="1.8" />
       <module name="1jiar-provider-house-su (2)" target="1.8" />
     </bytecodeTargetLevel>

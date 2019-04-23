@@ -12,13 +12,21 @@
 <body>
 
 <div th:include="/index.html"></div>
+<nav class="navbar navbar-inverse">
+    <div class="navbar-inner">
+        <div class="container-fluid">
+            <div  id="myTree">
+            </div>
+        </div>
+    </div>
+</nav>
 
 <form role="form" name="form">
 
 
         <div class="form-group">
-            <label for="bookname" class="col-sm-2 control-label">姓名</label>
-            <div class="col-sm-4">
+            <label for="bookname" class="col-sm-1 control-label">姓名</label>
+            <div class="col-sm-2">
 
                 <input type="text" id="bookname" name="name" class="form-control"/>
             </div>
@@ -27,19 +35,22 @@
 
 
 
-        <div class="control-group city-group"><br>
-            <label  class="controls-label">出生地：</label>
-            <div class="controls">
-
-                <select class="form-control" onchange="initProvIdSelect(this.value)" id="jiaxidname" name="jiaxid" style="width:150px">
-                </select>
-                <select class="form-control" id="jiaoxidname" name="jiaoxid" style="width:150px">
-                </select>
-
-            </div>
+    <div class="form-group"><br>
+        <label for="booktype" class="col-sm-1 control-label">出生地:</label>
+        <div class="col-sm-1">
+            <select class="form-control" onchange="initProvIdSelect(this.value)" id="jiaxidname" name="jiaxid" style="width:150px">
+            </select>
         </div>
+        <div class="col-sm-1">
+            <select class="form-control" id="jiaoxidname" name="jiaoxid" style="width:150px">
+            </select>
+        </div>
+
+    </div><br>
+
+
         <div class="form-group">
-            <label for="houseZuTypeName1" class="col-sm-3 control-label">性别：</label>
+            <label for="houseZuTypeName1" class="col-sm-1 control-label">性别：</label>
             <label class="radio-inline">
                 <input type="radio" name="xingb" id="houseZuTypeName1" value="1">男
             </label>
@@ -52,7 +63,7 @@
         </div>
         <!-- 特色 -->
         <div class="form-group">
-            <label for="TeSeName" class="col-sm-3 control-label">爱好：</label>
+            <label for="TeSeName" class="col-sm-1 control-label">爱好：</label>
             <label class="checkbox-inline">
                 <input type="checkbox" name="aihao" id="TeSeName" value="1"> 游泳
             </label>
@@ -68,48 +79,58 @@
             <label class="checkbox-inline">
                 <input type="checkbox" name="aihao" value="5"> 慢跑
             </label>
-            <label class="checkbox-inline">
-                <input type="checkbox" name="aihao" value="6"> 极限
-            </label>
-            <label class="checkbox-inline">
-                <input type="checkbox" name="aihao" value="7"> 交流
-            </label>
-            <label class="checkbox-inline">
-                <input type="checkbox" name="aihao" value="8"> 玩
-            </label>
+
+
         </div>
         <div class="form-group">
-            <label for="booktype" class="col-sm-2 control-label">教育:</label>
-            <div class="col-sm-4">
+            <label for="booktype" class="col-sm-1 control-label">教育:</label>
+            <div class="col-sm-2">
                 <select id="booktype" name="jiaoyid" class="form-control">
                 </select>
             </div>
 
         </div><br>
         <div class="form-group"><br>
-            <label for="booktype" class="col-sm-2 control-label">行业:</label>
-            <div class="col-sm-4">
+            <label for="booktype" class="col-sm-1 control-label">行业:</label>
+            <div class="col-sm-2">
                 <select id="hengyid" name="hengyid" class="form-control">
                 </select>
             </div>
 
         </div><br>
-        <div class="control-group city-group"><br>
-            <label  class="controls-label">所在城市：</label>
-            <div class="controls">
-
-                <select class="form-control" onchange="initProvCityIdSelect(this.value)" id="shuozaiidname" name="shuozaisiid" style="width:150px">
-                </select>
-                <select class="form-control" id="shuosiname" name="shuozaiid" style="width:150px">
-                </select>
-
-            </div>
+    <div class="form-group"><br>
+        <label for="booktype" class="col-sm-1 control-label">所在城市</label>
+        <div class="col-sm-1">
+            <select class="form-control" onchange="initProvCityIdSelect(this.value)" id="shuozaiidname" name="shuozaisiid"  style="width:150px">
+            </select>
+        </div>
+        <div class="col-sm-1">
+            <select class="form-control" id="shuosiname" name="shuozaiid" style="width:150px">
+            </select>
         </div>
 
+    </div><br>
+
+
+
+
+
+
+
+
+
+
+
+
     </form>
-<center>
+<div class="form-group"><br>
+    <label for="booktype" class="col-sm-1 control-label"></label>
+
+<div class="col-sm-1">
     <button type="button" class="btn btn-primary btn-lg" onclick="addOwner()">上交个人资料</button>
-</center>
+    </select>
+</div>
+</div>
 
 </body>
 <script th:inline="none">

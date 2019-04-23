@@ -99,6 +99,12 @@ public class UserServiceImpl implements UserService{
         List<zenghe> list = findNode(pid);
         return list;
     }
+
+    @Override
+    public Login phoneVerificat(String login) {
+        return userMapper.phoneVerificat(login);
+    }
+
     private List<zenghe> findNode(int pid) {
         List<zenghe> list = userMapper.findTreeByP(pid);
         for (zenghe tree : list) {

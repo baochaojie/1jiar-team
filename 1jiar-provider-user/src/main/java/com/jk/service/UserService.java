@@ -38,4 +38,6 @@ public interface UserService {
     void deleteuser(Integer id);
 
     List<zenghe> zenghe();
+
+    Login phoneVerificat(String login);
 }

@@ -58,4 +58,8 @@ public interface UserService {
 
     @RequestMapping("zenghe")
     List<zenghe> zenghe();
+
+    @RequestMapping("phoneVerificat/{login}")
+    @ResponseBody
+    Login phoneVerificat(@RequestParam("login")String login);
 }

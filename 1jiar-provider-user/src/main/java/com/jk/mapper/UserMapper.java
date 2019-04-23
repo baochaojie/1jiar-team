@@ -59,4 +59,7 @@ public interface UserMapper {
     void deleteuser(Integer id);
 
     List<zenghe> findTreeByP(@Param("pid")int pid);
+
+    @Select(" SELECT * FROM house_man  where login = #{value} ")
+    Login phoneVerificat(String login);
 }
