@@ -12,9 +12,11 @@
 
     <select id="UserLogin" parameterType="String" resultType="com.jk.model.Login">
      select * from house_man where login = #{login}
-  </select>
+    </select>
 
-
+    <select id="findTreeByP" parameterType="int" resultType="com.jk.model.zenghe">
+		select t.id,t.text,t.pid,t.href  from zenghe t where t.pid=#{pid}
+	</select>
 
 
 </mapper>

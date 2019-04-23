@@ -34,10 +34,13 @@ public class PageController {
         return "login1";
     }
 
-    @RequestMapping("zhil")
-    public String zhil(){
-        return "zhil";
+    @RequestMapping("addList")
+    public String addList(){
+        return "addList";
     }
-
+    @RequestMapping("quangbu")
+    public String addList(String url){
+        return url;
+    }
 
 }

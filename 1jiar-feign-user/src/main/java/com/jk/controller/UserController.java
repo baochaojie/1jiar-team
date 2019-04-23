@@ -1,9 +1,7 @@
 package com.jk.controller;
 
 import com.jk.ConstantConf;
-import com.jk.model.Login;
-import com.jk.model.Resume;
-import com.jk.model.Tree;
+import com.jk.model.*;
 import com.jk.service.UserService;
 import com.jk.utils.HttpClientUtil;
 import com.jk.utils.Md5Util;
@@ -120,6 +118,83 @@ public class UserController {
         return userService.login(login);
     }
 
+
+    /**
+     * 教育
+     */
+    @RequestMapping("selectjiaoyid")
+    @ResponseBody
+    public List<jiaoyid> selectjiaoyid(){
+        return userService.selectjiaoyid();
+    }
+    /**
+     * 行业
+     */
+    @RequestMapping("selecthengyid")
+    @ResponseBody
+    public List<hengyid> selecthengyid(){
+        return userService.selecthengyid();
+    }
+    /**
+     * 地址市
+     */
+    @RequestMapping("selectshuozaiid")
+    @ResponseBody
+    public List<shuozaiid> selectshuozaiid(){
+        return userService.selectshuozaiid();
+    }
+    /**
+     * 地址省
+     */
+    @RequestMapping("shuosiname")
+    @ResponseBody
+    public List<shuosiname> shuosiname(Integer pid){
+        return userService.shuosiname(pid);
+
+    }
+    /**
+     * 地址市
+     */
+    @RequestMapping("jiaxidname")
+    @ResponseBody
+    public List<jiaxid> jiaxidname(){
+        return userService.jiaxidname();
+    }
+    /**
+     * 地址省
+     */
+    @RequestMapping("jiaoxidname")
+    @ResponseBody
+    public List<jiaoxi> jiaoxidname(Integer pid){
+        return userService.jiaoxidname(pid);
+
+    }
+    /**
+     * 新增
+     */
+
+    @RequestMapping("addOwner")
+    @ResponseBody
+    public void addOwner(Resume resume){
+        userService.addOwner(resume);
+    }
+    /**
+     * 删除
+     */
+    @RequestMapping("deleteuser")
+    @ResponseBody
+    public void deleteuser(Integer id) {
+         userService.deleteuser(id);
+    }
+
+    /**
+     * 整合
+     */
+    @RequestMapping("zenghe")
+    @ResponseBody
+    public List<zenghe> zenghe(){
+        return userService.zenghe();
+    }
 
 
 }
