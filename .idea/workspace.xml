@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="478381db-8a22-4b3f-be69-cc6e13094f17" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/choujaing/img/j.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/choujaing/img/t.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/static/choujaing/img/y.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/templates/choujiang.html" beforeDir="false" afterPath="$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/templates/choujiang.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1jiar-feign-integral/target/classes/templates/choujiang.html" beforeDir="false" afterPath="$PROJECT_DIR$/1jiar-feign-integral/target/classes/templates/choujiang.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/1jiar-feign-user/target/" />
     <ignored path="$PROJECT_DIR$/1jiar-provider-user/target/" />
@@ -43,42 +38,10 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/templates/choujiang.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="44" column="66" selection-start-line="44" selection-start-column="66" selection-end-line="44" selection-end-column="66" />
-              <folding>
-                <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/1jiar-provider-integral/src/main/resources/application.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="65">
-              <caret line="17" column="5" selection-start-line="17" selection-end-line="17" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/1jiar-provider-integral/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="103">
-              <caret line="54" column="54" lean-forward="true" selection-start-line="54" selection-start-column="24" selection-end-line="54" selection-end-column="54" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>fangqiTyped</find>
       <find>alert</find>
       <find>openAddDlrld</find>
       <find>upupform</find>
@@ -108,6 +71,7 @@
       <find>nba</find>
       <find>.slide-wrap</find>
       <find>.tri</find>
+      <find>redis</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -173,10 +137,11 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="width" value="977" />
-    <option name="height" value="1038" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="697" />
+    <option name="y" value="65" />
+    <option name="width" value="978" />
+    <option name="height" value="1039" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -480,7 +445,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="add_unversioned_files" value="$PROJECT_DIR$/.gitignore" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556007296316" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556008333722" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
@@ -581,17 +546,17 @@
       <workItem from="1555826709212" duration="12034000" />
       <workItem from="1555889765598" duration="9836000" />
       <workItem from="1555914822740" duration="12939000" />
-      <workItem from="1555977468144" duration="20189000" />
+      <workItem from="1555977468144" duration="21135000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="89020000" />
+    <option name="totallyTimeSpent" value="89966000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="558" y="52" width="782" height="831" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24530831" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.5055249" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -607,7 +572,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.28895184" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.95708156" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.3286119" />
@@ -987,13 +952,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/templates/choujiang.html">
+    <entry file="file://$PROJECT_DIR$/1jiar-provider-integral/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="44" column="66" selection-start-line="44" selection-start-column="66" selection-end-line="44" selection-end-column="66" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="103">
+          <caret line="54" column="54" lean-forward="true" selection-start-line="54" selection-start-column="24" selection-end-line="54" selection-end-column="54" />
         </state>
       </provider>
     </entry>
@@ -1004,10 +966,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/1jiar-provider-integral/pom.xml">
+    <entry file="file://$PROJECT_DIR$/1jiar-feign-integral/src/main/resources/templates/choujiang.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="103">
-          <caret line="54" column="54" lean-forward="true" selection-start-line="54" selection-start-column="24" selection-end-line="54" selection-end-column="54" />
+        <state relative-caret-position="184">
+          <caret line="44" column="66" selection-start-line="44" selection-start-column="66" selection-end-line="44" selection-end-column="66" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
