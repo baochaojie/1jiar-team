@@ -99,6 +99,38 @@ public class UserServiceImpl implements UserService{
         List<zenghe> list = findNode(pid);
         return list;
     }
+
+    @Override
+    public Login phoneVerificat(String login) {
+        return userMapper.phoneVerificat(login);
+    }
+
+    @Override
+    public HashMap<String, Object> findHousePage(Integer page, Integer rows, House house) {
+        HashMap<String, Object> hashMap = new HashMap<>();
+        //查询总条数
+        int total = userMapper.findHouseCount(house);
+
+        //分页查询
+        int start = (page-1)*rows;//开始条数
+        List<House> list = userMapper.findHousePage(start,rows,house);
+        //查询特色
+        for(int i=0;i<list.size();i++){
+            String houseTeSeIdname ="";
+            String houseTeSeId = list.get(i).getHouseTeSeId();
+            String[] split = houseTeSeId.split(",");
+            for (int j=0;j<split.length;j++){
+                Integer TeSeId = Integer.parseInt(split[j]);
+                String tesename =userMapper.featurenamebyid(TeSeId);
+                houseTeSeIdname += houseTeSeIdname==""? tesename :","+ tesename;
+            }
+            list.get(i).setHouseTeSeId(houseTeSeIdname);
+        }
+        hashMap.put("total", total);
+        hashMap.put("rows", list);
+        return hashMap;
+    }
+
     private List<zenghe> findNode(int pid) {
         List<zenghe> list = userMapper.findTreeByP(pid);
         for (zenghe tree : list) {

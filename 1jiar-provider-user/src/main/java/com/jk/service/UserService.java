@@ -38,4 +38,8 @@ public interface UserService {
     void deleteuser(Integer id);
 
     List<zenghe> zenghe();
+
+    Login phoneVerificat(String login);
+
+    HashMap<String, Object> findHousePage(Integer page, Integer rows, House house);
 }

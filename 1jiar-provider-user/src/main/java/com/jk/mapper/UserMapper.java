@@ -31,7 +31,6 @@ public interface UserMapper {
     Login login(Login login);
 
     @Select(" SELECT * FROM house_man  where login = #{value} ")
-
     Login phoneVerification(String login);
 
     @Select("select * from login_jiaoyid")
@@ -52,11 +51,24 @@ public interface UserMapper {
     @Select("select * from login_jiaoxidname j where j.pid=#{value}")
     List<jiaoxi> jiaoxidname(Integer pid);
 
-    @Insert("insert into login_resumen(name,jiaxid,jiaoxid,xingb,aihao,jiaoyid,hengyid,shuozaisiid,shuozaiid) values(#{name},#{jiaxid},#{jiaoxid},#{xingb},#{aihao},#{jiaoyid},#{hengyid},#{shuozaisiid},#{shuozaiid})" )
+    @Insert("insert into login_resumen(name,jiaxid,jiaoxid,xingb,aihao,jiaoyid,hengyid,shuozaisiid,shuozaiid) values(#{name},#{jiaxid},#{jiaoxid},#{xingb},#{aihao},#{jiaoyid},#{hengyid},#{shuozaisiid},#{shuozaiid})")
     void addOwner(Resume resume);
 
     @Delete("DELETE from login_resumen where id=#{id}")
     void deleteuser(Integer id);
 
-    List<zenghe> findTreeByP(@Param("pid")int pid);
+    List<zenghe> findTreeByP(@Param("pid") int pid);
+
+    @Select(" SELECT * FROM house_man  where login = #{value} ")
+    Login phoneVerificat(String login);
+
+    int findHouseCount(@Param("house") House house);
+
+    List<House> findHousePage(@Param("start") int start, @Param("rows") Integer rows, @Param("house") House house);
+
+
+    @Select(" select houseTeSeName from  house_feature  where houseTeSeId =#{value}")
+    String featurenamebyid(int teSeId);
+
+
 }

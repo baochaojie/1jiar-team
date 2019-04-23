@@ -80,7 +80,26 @@ public class UserController {
         session.setAttribute(session.getId(), login1);
         return 0;
     }
+    @RequestMapping("phoneVerificat")
+    @ResponseBody
+    public Integer phoneVerificat(String login,String password ,HttpServletRequest request) {
+        System.out.println(login);
+        System.out.println(password);
+        HttpSession session = request.getSession();
+        String attribute = session.getAttribute("password").toString();
+        System.out.println(attribute);
+        //String attribute = redisTemplate.opsForValue().get(ConstantConf.STRINGDXYZ+"Verification").toString();
+        if (!attribute.equals(password)) {
+            return 2;
+        }
+        Login login1  =  userService.phoneVerificat(login);
+        if (login1==null) {
+            return 1;
+        }
 
+        session.setAttribute(session.getId(), login1);
+        return 0;
+    }
     @RequestMapping("qureyResume")
     @ResponseBody
     public List<Resume> qureyResume(){
@@ -106,6 +125,7 @@ public class UserController {
     @RequestMapping("savelogin")
     @ResponseBody
     public Integer savelogin(Login login){
+        System.out.println("大声大声道");
         return  userService.savelogin(login);
     }
 
@@ -196,5 +216,13 @@ public class UserController {
         return userService.zenghe();
     }
 
+
+
+    @RequestMapping("queryhouse")
+    @ResponseBody
+    public HashMap<String, Object> findUserPage(Integer page, Integer rows, House house ){
+
+        return userService.findHousePage(page,rows,house);
+    }
 
 }
