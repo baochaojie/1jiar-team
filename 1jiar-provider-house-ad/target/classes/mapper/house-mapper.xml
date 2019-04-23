@@ -20,8 +20,8 @@
             ownerState,
             ownerXian,
             ownerZhen)
-        VALUES
-            (#{ownerXiaoqu},
+        VALUES(
+            #{ownerXiaoqu},
             #{ownerSiteDong},
             #{ownerSiteDanyuan},
             #{ownerSiteMenpai},
@@ -71,7 +71,7 @@
           AND hm.`name` LIKE '%${owner.name}%'
           OR o.ownerXiaoqu LIKE '%${owner.name}%'
       </if>
-      <if test="owner.ownerState!=null and owner.ownerState!=''">
+      <if test="owner.ownerState!=null">
           AND o.ownerState=#{owner.ownerState}
       </if>
     </sql>
