@@ -1,0 +1,1041 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/1jiar-provider-agent/src/main/resources/mapper/AgentMapper.xml" description="&lt;select id=&quot;queryTree&quot; resultType=&quot;com.jk.model.Di..." line="73" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="615e4efb-1719-49d0-b855-b3a2a07e7d09" name="Default Changelist" comment="" />
+    <ignored path="$PROJECT_DIR$/1jiar-feign-house-cu/target/" />
+    <ignored path="$PROJECT_DIR$/1jiar-provider-integral/target/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/1jiar-common/target/" />
+    <ignored path="$PROJECT_DIR$/1jiar-provider-agent/target/" />
+    <ignored path="$PROJECT_DIR$/1jiar-eureka/target/" />
+    <ignored path="$PROJECT_DIR$/1jiar-feign-integral/target/" />
+    <ignored path="$PROJECT_DIR$/1jiar-feign-user/target/" />
+    <ignored path="$PROJECT_DIR$/1jiar-provider-user/target/" />
+    <ignored path="$PROJECT_DIR$/1jiar-feign-agent/target/" />
+    <ignored path="$PROJECT_DIR$/1jiar-provider-house-cu/target/" />
+    <ignored path="$PROJECT_DIR$/1jiar-provider-house-ad/target/" />
+    <ignored path="$PROJECT_DIR$/1jiar-feign-house-ad/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="1jiar-team3" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/1jiar-feign-agent/src/main/resources/templates/toVillage2.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="550">
+              <caret line="22" column="10" selection-start-line="11" selection-start-column="7" selection-end-line="22" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/1jiar-feign-agent/src/main/java/com/jk/controller/AgentController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="125">
+              <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+              <folding>
+                <element signature="e#619#620#0" expanded="true" />
+                <element signature="e#645#646#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/1jiar-feign-agent/src/main/resources/templates/toAgent2.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="9425">
+              <caret line="377" selection-start-line="377" selection-end-line="377" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/1jiar-provider-agent/src/main/java/com/jk/mapper/AgentMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="15" lean-forward="true" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/1jiar-provider-agent/src/main/java/com/jk/Application.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="200">
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/1jiar-feign-agent/src/main/java/com/jk/Application.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="200">
+              <caret line="12" column="10" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/1jiar-provider-agent/src/main/resources/application.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="172">
+              <caret line="18" column="16" lean-forward="true" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/1jiar-provider-agent/src/main/java/com/jk/controller/AgentController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="45" column="51" lean-forward="true" selection-start-line="45" selection-start-column="51" selection-end-line="45" selection-end-column="51" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/1jiar-feign-agent/src/main/java/com/jk/service/AgentService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1400">
+              <caret line="61" selection-start-line="61" selection-end-line="62" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/1jiar-eureka/src/main/java/com/jk/Appeurlication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="FxmlFile" />
+        <option value="Class" />
+        <option value="JavaScript File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>page-box house-lst-page-box</find>
+      <find>https://image1.ljcdn.com/usercenter/images/uc_ehr_avatar/f8b1692b-40fd-42df-ae80-56ad8679b588.jpg.120x160.j</find>
+      <find>initinteri</find>
+      <find>getEnv</find>
+      <find>.agent-lst</find>
+      <find>'_rd'</find>
+      <find>body</find>
+      <find>agentId</find>
+      <find>agent-lst</find>
+      <find>&lt;div class=&quot;page-box house-lst-page-box&quot; comp-module=&quot;page&quot; page-url=&quot;/jingjiren/pg{page}/&quot; page-data=&quot;{&amp;quot;totalPage&amp;quot;:100,&amp;quot;curPage&amp;quot;:1}&quot;&gt;&lt;a href=&quot;javascript:fanye('+result.total+',1)&quot; data-page=&quot;2&quot;&gt;上一页&lt;/a&gt;</find>
+      <find>22274</find>
+      <find>message</find>
+      <find>message con-box</find>
+      <find>请选择留言类型</find>
+      <find>async</find>
+      <find>agent_info</find>
+      <find>贾冬冬</find>
+      <find>info_head</find>
+      <find>findEcharts</find>
+      <find>&lt;span&gt;1</find>
+      <find>&lt;body&gt;</find>
+      <find>&lt;div class=&quot;count&quot;&gt;</find>
+      <find>jdd</find>
+      <find>上一</find>
+      <find>initjdd</find>
+      <find>findAgent</find>
+      <find>up</find>
+      <find>echarts</find>
+      <find>setOption</find>
+      <find>myChart</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/1jiar-provider-agent/src/main/java/com/jk/controller/AgentController.java" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/1jiar-feign-agent/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/1jiar-common/src/java/com/jk/model/LagelAgentBean.java" />
+        <option value="$PROJECT_DIR$/1jiar-feign-agent/src/main/resources/templates/toVillage.fxml" />
+        <option value="$PROJECT_DIR$/1jiar-common/src/java/com/jk/model/Exhibition.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/1jiar-common/src/java/com/jk/model/LiuyeBean.java" />
+        <option value="$PROJECT_DIR$/1jiar-feign-agent/src/main/resources/templates/aaa.html" />
+        <option value="$PROJECT_DIR$/1jiar-feign-agent/src/main/resources/templates/ss.html" />
+        <option value="$PROJECT_DIR$/1jiar-common/src/java/com/jk/model/DictionaryTable.java" />
+        <option value="$PROJECT_DIR$/1jiar-feign-agent/src/main/resources/templates/toAddAgent.html" />
+        <option value="$PROJECT_DIR$/1jiar-feign-agent/src/main/resources/templates/toEditAgent.html" />
+        <option value="$PROJECT_DIR$/1jiar-feign-agent/src/main/resources/templates/toAddProblem.html" />
+        <option value="$PROJECT_DIR$/1jiar-feign-agent/src/main/resources/templates/guide.html" />
+        <option value="$PROJECT_DIR$/1jiar-feign-agent/src/main/java/com/jk/Application.java" />
+        <option value="$PROJECT_DIR$/1jiar-feign-agent/src/main/resources/templates/guides.html" />
+        <option value="$PROJECT_DIR$/1jiar-provider-agent/pom.xml" />
+        <option value="$PROJECT_DIR$/1jiar-common/src/java/com/jk/model/AgentBean.java" />
+        <option value="$PROJECT_DIR$/1jiar-common/src/java/com/jk/model/AreaBean.java" />
+        <option value="$PROJECT_DIR$/1jiar-common/src/java/com/jk/model/LabelBean.java" />
+        <option value="$PROJECT_DIR$/1jiar-common/src/java/com/jk/model/Problem.java" />
+        <option value="$PROJECT_DIR$/1jiar-feign-agent/src/main/resources/templates/agent.html" />
+        <option value="$PROJECT_DIR$/1jiar-feign-agent/src/main/resources/templates/jingjiren.html" />
+        <option value="$PROJECT_DIR$/1jiar-feign-agent/src/main/resources/static/agentjs.js" />
+        <option value="$PROJECT_DIR$/1jiar-feign-agent/src/main/resources/templates/toAgent.html" />
+        <option value="$PROJECT_DIR$/1jiar-feign-agent/src/main/resources/templates/toVillage.html" />
+        <option value="$PROJECT_DIR$/1jiar-feign-agent/src/main/resources/templates/toVillage2.html" />
+        <option value="$PROJECT_DIR$/1jiar-feign-agent/src/main/resources/templates/echarts.html" />
+        <option value="$PROJECT_DIR$/1jiar-feign-agent/src/main/java/com/jk/controller/AgentController.java" />
+        <option value="$PROJECT_DIR$/1jiar-feign-agent/src/main/java/com/jk/service/AgentService.java" />
+        <option value="$PROJECT_DIR$/1jiar-provider-agent/src/main/java/com/jk/mapper/AgentMapper.java" />
+        <option value="$PROJECT_DIR$/1jiar-provider-agent/src/main/resources/mapper/AgentMapper.xml" />
+        <option value="$PROJECT_DIR$/1jiar-feign-agent/src/main/resources/templates/toAgent2.html" />
+        <option value="$PROJECT_DIR$/1jiar-provider-agent/src/main/java/com/jk/controller/AgentController.java" />
+        <option value="$PROJECT_DIR$/1jiar-provider-agent/src/main/resources/application.yml" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="userSettingsFile" value="D:\software\Maven\apache-maven-3.5.4\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="273" />
+    <option name="y" value="9" />
+    <option name="width" value="1080" />
+    <option name="height" value="960" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="1jiar-team3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="1jiar-team3" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="1jiar-team3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="1jiar-team3" type="462c0819:PsiDirectoryNode" />
+              <item name="1jiar-common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="1jiar-team3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="1jiar-team3" type="462c0819:PsiDirectoryNode" />
+              <item name="1jiar-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="1jiar-team3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="1jiar-team3" type="462c0819:PsiDirectoryNode" />
+              <item name="1jiar-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="1jiar-team3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="1jiar-team3" type="462c0819:PsiDirectoryNode" />
+              <item name="1jiar-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="1jiar-team3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="1jiar-team3" type="462c0819:PsiDirectoryNode" />
+              <item name="1jiar-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="jk" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="1jiar-team3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="1jiar-team3" type="462c0819:PsiDirectoryNode" />
+              <item name="1jiar-eureka" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="1jiar-team3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="1jiar-team3" type="462c0819:PsiDirectoryNode" />
+              <item name="1jiar-eureka" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="1jiar-team3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="1jiar-team3" type="462c0819:PsiDirectoryNode" />
+              <item name="1jiar-eureka" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="1jiar-team3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="1jiar-team3" type="462c0819:PsiDirectoryNode" />
+              <item name="1jiar-eureka" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="1jiar-team3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="1jiar-team3" type="462c0819:PsiDirectoryNode" />
+              <item name="1jiar-eureka" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="1jiar-team3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="1jiar-team3" type="462c0819:PsiDirectoryNode" />
+              <item name="1jiar-eureka" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="jk" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="1jiar-team3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="1jiar-team3" type="462c0819:PsiDirectoryNode" />
+              <item name="1jiar-feign-agent" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="1jiar-team3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="1jiar-team3" type="462c0819:PsiDirectoryNode" />
+              <item name="1jiar-feign-agent" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="1jiar-team3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="1jiar-team3" type="462c0819:PsiDirectoryNode" />
+              <item name="1jiar-feign-agent" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="1jiar-team3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="1jiar-team3" type="462c0819:PsiDirectoryNode" />
+              <item name="1jiar-feign-agent" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="1jiar-team3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="1jiar-team3" type="462c0819:PsiDirectoryNode" />
+              <item name="1jiar-feign-agent" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="1jiar-team3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="1jiar-team3" type="462c0819:PsiDirectoryNode" />
+              <item name="1jiar-feign-agent" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="jk" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="1jiar-team3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="1jiar-team3" type="462c0819:PsiDirectoryNode" />
+              <item name="1jiar-feign-agent" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="jk" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="1jiar-team3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="1jiar-team3" type="462c0819:PsiDirectoryNode" />
+              <item name="1jiar-feign-agent" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="jk" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="1jiar-team3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="1jiar-team3" type="462c0819:PsiDirectoryNode" />
+              <item name="1jiar-feign-agent" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="1jiar-team3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="1jiar-team3" type="462c0819:PsiDirectoryNode" />
+              <item name="1jiar-feign-agent" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="1jiar-team3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="1jiar-team3" type="462c0819:PsiDirectoryNode" />
+              <item name="1jiar-provider-agent" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="1jiar-team3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="1jiar-team3" type="462c0819:PsiDirectoryNode" />
+              <item name="1jiar-provider-agent" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="1jiar-team3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="1jiar-team3" type="462c0819:PsiDirectoryNode" />
+              <item name="1jiar-provider-agent" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="1jiar-team3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="1jiar-team3" type="462c0819:PsiDirectoryNode" />
+              <item name="1jiar-provider-agent" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="1jiar-team3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="1jiar-team3" type="462c0819:PsiDirectoryNode" />
+              <item name="1jiar-provider-agent" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="1jiar-team3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="1jiar-team3" type="462c0819:PsiDirectoryNode" />
+              <item name="1jiar-provider-agent" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="jk" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="1jiar-team3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="1jiar-team3" type="462c0819:PsiDirectoryNode" />
+              <item name="1jiar-provider-agent" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="jk" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="1jiar-team3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="1jiar-team3" type="462c0819:PsiDirectoryNode" />
+              <item name="1jiar-provider-agent" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="jk" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="1jiar-team3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="1jiar-team3" type="462c0819:PsiDirectoryNode" />
+              <item name="1jiar-provider-agent" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="1jiar-team3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="1jiar-team3" type="462c0819:PsiDirectoryNode" />
+              <item name="1jiar-provider-agent" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="add_unversioned_files" value="$PROJECT_DIR$/.gitignore" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556031066083" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\idea\1809\1jiar-team3\1jiar-feign-agent\src\main\java\com\jk" />
+      <recent name="D:\idea\1809\1jiar-team3\1jiar-feign-agent\src\main\resources\templates" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.Application (1)">
+    <configuration name="Appeurlication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="1jiar-eureka" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jk.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.jk.Appeurlication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Appintlication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="1jiar-provider-integral" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.jk.Appintlication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Application (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="1jiar-feign-agent" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jk.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.jk.Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="1jiar-provider-agent" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jk.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.jk.Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.Application (1)" />
+        <item itemvalue="Spring Boot.Application" />
+        <item itemvalue="Spring Boot.Appeurlication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="615e4efb-1719-49d0-b855-b3a2a07e7d09" name="Default Changelist" comment="" />
+      <created>1555651104250</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1555651104250</updated>
+      <workItem from="1555651105615" duration="4836000" />
+      <workItem from="1555656067698" duration="23536000" />
+      <workItem from="1555717273531" duration="597000" />
+      <workItem from="1555822782096" duration="8149000" />
+      <workItem from="1555831497691" duration="7971000" />
+      <workItem from="1555892603433" duration="29443000" />
+      <workItem from="1555978869198" duration="12087000" />
+      <workItem from="1555995337063" duration="5834000" />
+      <workItem from="1556001276556" duration="4721000" />
+      <workItem from="1556006335616" duration="1931000" />
+      <workItem from="1556008427785" duration="3077000" />
+      <workItem from="1556011637555" duration="4231000" />
+      <workItem from="1556019244353" duration="3257000" />
+      <workItem from="1556022605979" duration="5015000" />
+      <workItem from="1556027714764" duration="668000" />
+      <workItem from="1556029077032" duration="1979000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="117332000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49848023" visible="true" weight="0.3031528" />
+      <window_info id="Designer" order="1" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Capture Tool" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" sideWeight="0.5026455" side_tool="true" weight="0.2934519" />
+      <window_info id="Web" order="6" side_tool="true" />
+      <window_info id="Structure" order="7" sideWeight="0.4973545" weight="0.2934519" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.651865" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3232682" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Spring" order="7" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.3285968" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.42095914" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" />
+      <window_info anchor="bottom" id="Database Changes" order="13" />
+      <window_info anchor="bottom" id="Version Control" order="14" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.32983023" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="Bean Validation" order="9" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/1jiar-feign-agent/src/main/java/com/jk/controller/AgentController.java</url>
+          <line>63</line>
+          <properties class="com.jk.controller.AgentController" method="findAgentInfoById">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/1jiar-common/src/java/com/jk/model/LagelAgentBean.java" />
+    <entry file="file://$PROJECT_DIR$/1jiar-feign-agent/src/main/resources/templates/toVillage.fxml" />
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="71">
+          <caret line="49" column="51" lean-forward="true" selection-start-line="49" selection-start-column="51" selection-end-line="49" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1jiar-feign-agent/src/main/resources/templates/aaa.html" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/attoparser/attoparser/2.0.5.RELEASE/attoparser-2.0.5.RELEASE.jar!/org/attoparser/MarkupParser.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-672">
+          <caret line="148" selection-start-line="148" selection-end-line="148" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1jiar-common/src/java/com/jk/model/LiuyeBean.java" />
+    <entry file="file://$PROJECT_DIR$/1jiar-common/src/java/com/jk/model/DictionaryTable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1150">
+          <caret line="70" column="1" selection-start-line="70" selection-start-column="1" selection-end-line="70" selection-end-column="1" />
+          <folding>
+            <element signature="e#308#309#0" expanded="true" />
+            <element signature="e#333#334#0" expanded="true" />
+            <element signature="e#370#371#0" expanded="true" />
+            <element signature="e#398#399#0" expanded="true" />
+            <element signature="e#429#430#0" expanded="true" />
+            <element signature="e#456#457#0" expanded="true" />
+            <element signature="e#496#497#0" expanded="true" />
+            <element signature="e#528#529#0" expanded="true" />
+            <element signature="e#559#560#0" expanded="true" />
+            <element signature="e#586#587#0" expanded="true" />
+            <element signature="e#626#627#0" expanded="true" />
+            <element signature="e#658#659#0" expanded="true" />
+            <element signature="e#689#690#0" expanded="true" />
+            <element signature="e#715#716#0" expanded="true" />
+            <element signature="e#754#755#0" expanded="true" />
+            <element signature="e#784#785#0" expanded="true" />
+            <element signature="e#831#832#0" expanded="true" />
+            <element signature="e#859#860#0" expanded="true" />
+            <element signature="e#916#917#0" expanded="true" />
+            <element signature="e#950#951#0" expanded="true" />
+            <element signature="e#988#989#0" expanded="true" />
+            <element signature="e#1021#1022#0" expanded="true" />
+            <element signature="e#1074#1075#0" expanded="true" />
+            <element signature="e#1118#1119#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1jiar-common/src/java/com/jk/model/Exhibition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="68" column="18" selection-start-line="68" selection-start-column="18" selection-end-line="68" selection-end-column="18" />
+          <folding>
+            <element signature="e#281#282#0" expanded="true" />
+            <element signature="e#312#313#0" expanded="true" />
+            <element signature="e#360#361#0" expanded="true" />
+            <element signature="e#400#401#0" expanded="true" />
+            <element signature="e#776#777#0" expanded="true" />
+            <element signature="e#814#815#0" expanded="true" />
+            <element signature="e#848#849#0" expanded="true" />
+            <element signature="e#877#878#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1jiar-feign-agent/src/main/resources/templates/toEditAgent.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="95" column="28" selection-start-line="95" selection-start-column="28" selection-end-line="95" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1jiar-feign-agent/src/main/resources/templates/toAddProblem.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26">
+          <caret line="15" column="47" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-impl.jar!/resources/html5-schema/html5chars.ent">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="63" column="10" selection-start-line="63" selection-start-column="10" selection-end-line="63" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1jiar-feign-agent/src/main/resources/templates/toAddAgent.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="64" column="14" lean-forward="true" selection-start-line="59" selection-start-column="7" selection-end-line="64" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1jiar-provider-agent/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="37" column="54" selection-start-line="37" selection-start-column="54" selection-end-line="37" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="17250" column="17" selection-start-line="17250" selection-start-column="17" selection-end-line="17250" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1jiar-common/src/java/com/jk/model/House.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1jiar-common/src/java/com/jk/model/AreaBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1jiar-common/src/java/com/jk/model/LabelBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" column="14" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1jiar-common/src/java/com/jk/model/Problem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1jiar-feign-agent/src/main/resources/templates/jingjiren.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="627" column="17" selection-start-line="627" selection-start-column="17" selection-end-line="627" selection-end-column="17" />
+          <folding>
+            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
+            <element signature="e#77#83#0" expanded="true" />
+            <element signature="e#83#89#0" expanded="true" />
+            <element signature="e#76#82#1" expanded="true" />
+            <element signature="e#160#166#0" expanded="true" />
+            <element signature="e#166#172#0" expanded="true" />
+            <element signature="e#172#178#0" expanded="true" />
+            <element signature="e#14#20#1" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1jiar-feign-agent/src/main/resources/static/agentjs.js" />
+    <entry file="jar://$MAVEN_REPOSITORY$/io/github/openfeign/feign-core/10.1.0/feign-core-10.1.0.jar!/feign/SynchronousMethodHandler.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3200">
+          <caret line="140" selection-start-line="140" selection-end-line="140" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1jiar-feign-agent/src/main/resources/static/js/jquery.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1jiar-common/src/java/com/jk/model/Area.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1jiar-feign-agent/src/main/resources/templates/agent.html" />
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_172/src.zip!/java/lang/Integer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="51" column="19" selection-start-line="51" selection-start-column="19" selection-end-line="51" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1jiar-feign-agent/src/main/resources/templates/guide.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="23" selection-start-line="23" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../springcloud/springcloud-provider/src/main/java/com/jk/controller/BookController.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/github/openfeign/feign-core/10.1.0/feign-core-10.1.0.jar!/feign/FeignException.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="28">
+          <caret line="61" selection-start-line="61" selection-end-line="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1jiar-feign-agent/src/main/resources/templates/toVillage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="775">
+          <caret line="31" column="23" selection-start-line="31" selection-start-column="7" selection-end-line="31" selection-end-column="23" />
+          <folding>
+            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1jiar-feign-agent/src/main/resources/templates/guides.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="681" column="4" selection-start-line="681" selection-end-line="713" selection-end-column="17" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1jiar-feign-agent/src/main/resources/templates/toAgent.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="95" column="13" lean-forward="true" selection-start-line="95" selection-start-column="13" selection-end-line="95" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1jiar-feign-agent/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_172/src.zip!/java/util/HashMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="121">
+          <caret line="610" column="13" selection-start-line="610" selection-start-column="13" selection-end-line="610" selection-end-column="13" />
+          <folding>
+            <element signature="e#24329#24330#0" expanded="true" />
+            <element signature="e#24394#24395#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/9.0.17/tomcat-embed-core-9.0.17.jar!/javax/servlet/http/HttpServlet.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="232" selection-start-line="232" selection-end-line="232" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1jiar-common/src/java/com/jk/model/AgentBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1jiar-provider-agent/src/main/resources/mapper/AgentMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2175">
+          <caret line="87" column="78" selection-start-line="87" selection-start-column="78" selection-end-line="87" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1jiar-feign-agent/src/main/resources/templates/echarts.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1jiar-feign-agent/src/main/resources/templates/toVillage2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="22" column="10" selection-start-line="11" selection-start-column="7" selection-end-line="22" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1jiar-feign-agent/src/main/java/com/jk/controller/AgentController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <folding>
+            <element signature="e#619#620#0" expanded="true" />
+            <element signature="e#645#646#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1jiar-feign-agent/src/main/resources/templates/toAgent2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9425">
+          <caret line="377" selection-start-line="377" selection-end-line="377" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1jiar-feign-agent/src/main/java/com/jk/service/AgentService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1400">
+          <caret line="61" selection-start-line="61" selection-end-line="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1jiar-eureka/src/main/java/com/jk/Appeurlication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1jiar-provider-agent/src/main/java/com/jk/controller/AgentController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="45" column="51" lean-forward="true" selection-start-line="45" selection-start-column="51" selection-end-line="45" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1jiar-provider-agent/src/main/java/com/jk/mapper/AgentMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="15" lean-forward="true" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1jiar-provider-agent/src/main/java/com/jk/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1jiar-feign-agent/src/main/java/com/jk/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="12" column="10" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1jiar-provider-agent/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="18" column="16" lean-forward="true" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
