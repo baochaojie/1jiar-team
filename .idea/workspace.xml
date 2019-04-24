@@ -2,38 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2860c424-a6dc-4038-8d9b-4fe74b1f0a24" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/1jiar-common/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1jiar-common/1jiar-common.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1jiar-common/target/classes/com/jk/model/House.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1jiar-common/target/classes/com/jk/model/Login.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1jiar-common/target/classes/com/jk/model/Resume.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1jiar-common/target/classes/com/jk/model/Tree.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1jiar-common/target/classes/com/jk/model/UserBean.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1jiar-common/target/classes/com/jk/model/hengyid.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1jiar-common/target/classes/com/jk/model/jiaoxi.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1jiar-common/target/classes/com/jk/model/jiaoyid.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1jiar-common/target/classes/com/jk/model/jiaxid.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1jiar-common/target/classes/com/jk/model/shuosiname.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1jiar-common/target/classes/com/jk/model/shuozaiid.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1jiar-common/target/classes/com/jk/model/zenghe.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1jiar-feign-user/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1jiar-feign-user/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1jiar-feign-user/src/main/java/com/jk/config/CorsMapping.java" beforeDir="false" afterPath="$PROJECT_DIR$/1jiar-feign-user/src/main/java/com/jk/config/CorsMapping.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1jiar-feign-user/src/main/java/com/jk/controller/PageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/1jiar-feign-user/src/main/java/com/jk/controller/PageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1jiar-feign-user/src/main/java/com/jk/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/1jiar-feign-user/src/main/java/com/jk/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1jiar-feign-user/src/main/java/com/jk/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/1jiar-feign-user/src/main/java/com/jk/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1jiar-feign-user/src/main/resources/templates/loginsj.html" beforeDir="false" afterPath="$PROJECT_DIR$/1jiar-feign-user/src/main/resources/templates/loginsj.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1jiar-feign-user/src/main/resources/templates/shouye.html" beforeDir="false" afterPath="$PROJECT_DIR$/1jiar-feign-user/src/main/resources/templates/shouye.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1jiar-provider-user/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1jiar-provider-user/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1jiar-provider-user/src/main/java/com/jk/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/1jiar-provider-user/src/main/java/com/jk/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1jiar-provider-user/src/main/java/com/jk/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/1jiar-provider-user/src/main/java/com/jk/mapper/UserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1jiar-provider-user/src/main/java/com/jk/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/1jiar-provider-user/src/main/java/com/jk/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1jiar-provider-user/src/main/java/com/jk/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/1jiar-provider-user/src/main/java/com/jk/service/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1jiar-provider-user/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/1jiar-provider-user/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1jiar-provider-user/src/main/resources/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1jiar-provider-user/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -71,13 +41,28 @@
     <expand />
     <select />
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="1jiar-team" />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/1jiar-eureka/src/main/java/com/jk/Application.java">
+        <entry file="file://$PROJECT_DIR$/1jiar-feign-user/src/main/java/com/jk/controller/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="9" selection-start-line="9" selection-end-line="9" />
+            <state relative-caret-position="413">
+              <caret line="139" column="29" selection-start-line="139" selection-start-column="29" selection-end-line="139" selection-end-column="29" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/1jiar-feign-user/src/main/java/com/jk/Application.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="15" selection-start-line="15" selection-end-line="15" />
             </state>
           </provider>
         </entry>
@@ -91,7 +76,19 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/1jiar-feign-user/src/main/java/com/jk/controller/PageController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1146">
+              <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/1jiar-provider-user/src/main/java/com/jk/mapper/UserMapper.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-570">
@@ -118,24 +115,6 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/1jiar-common/src/java/com/jk/model/jiaoxi.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="7" column="23" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/1jiar-common/src/java/com/jk/model/jiaxid.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="7" column="29" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/1jiar-common/src/java/com/jk/model/jiaoyid.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="120">
@@ -144,14 +123,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/1jiar-common/src/java/com/jk/model/zenghe.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="158">
+              <caret line="42" column="8" lean-forward="true" selection-start-line="42" selection-start-column="8" selection-end-line="42" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -246,7 +222,6 @@
         <option value="$PROJECT_DIR$/1jiar-feign-user/src/main/java/com/jk/shiro/Md5Util.java" />
         <option value="$PROJECT_DIR$/1jiar-feign-user/src/main/java/com/jk/shiro/HttpGet.java" />
         <option value="$PROJECT_DIR$/1jiar-feign-user/src/main/java/com/jk/shiro/HttpClientUtil.java" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/1jiar-provider-user/pom.xml" />
         <option value="$PROJECT_DIR$/1jiar-provider-user/src/main/java/com/jk/ConstantConf.java" />
         <option value="$PROJECT_DIR$/1jiar-feign-user/src/main/resources/templates/login1.html" />
@@ -290,6 +265,7 @@
         <option value="$PROJECT_DIR$/1jiar-feign-user/src/main/java/com/jk/controller/UserController.java" />
         <option value="$PROJECT_DIR$/1jiar-common/src/java/com/jk/model/zenghe.java" />
         <option value="$PROJECT_DIR$/1jiar-common/pom.xml" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -343,97 +319,6 @@
               <item name="1jiar-team" type="b2602c69:ProjectViewProjectNode" />
               <item name="1jiar-team" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="1jiar-team" type="b2602c69:ProjectViewProjectNode" />
-              <item name="1jiar-team" type="462c0819:PsiDirectoryNode" />
-              <item name="1jiar-common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="1jiar-team" type="b2602c69:ProjectViewProjectNode" />
-              <item name="1jiar-team" type="462c0819:PsiDirectoryNode" />
-              <item name="1jiar-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="1jiar-team" type="b2602c69:ProjectViewProjectNode" />
-              <item name="1jiar-team" type="462c0819:PsiDirectoryNode" />
-              <item name="1jiar-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="1jiar-team" type="b2602c69:ProjectViewProjectNode" />
-              <item name="1jiar-team" type="462c0819:PsiDirectoryNode" />
-              <item name="1jiar-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="1jiar-team" type="b2602c69:ProjectViewProjectNode" />
-              <item name="1jiar-team" type="462c0819:PsiDirectoryNode" />
-              <item name="1jiar-provider-user" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="1jiar-team" type="b2602c69:ProjectViewProjectNode" />
-              <item name="1jiar-team" type="462c0819:PsiDirectoryNode" />
-              <item name="1jiar-provider-user" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="1jiar-team" type="b2602c69:ProjectViewProjectNode" />
-              <item name="1jiar-team" type="462c0819:PsiDirectoryNode" />
-              <item name="1jiar-provider-user" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="1jiar-team" type="b2602c69:ProjectViewProjectNode" />
-              <item name="1jiar-team" type="462c0819:PsiDirectoryNode" />
-              <item name="1jiar-provider-user" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="1jiar-team" type="b2602c69:ProjectViewProjectNode" />
-              <item name="1jiar-team" type="462c0819:PsiDirectoryNode" />
-              <item name="1jiar-provider-user" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="jk" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="1jiar-team" type="b2602c69:ProjectViewProjectNode" />
-              <item name="1jiar-team" type="462c0819:PsiDirectoryNode" />
-              <item name="1jiar-provider-user" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="jk" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="1jiar-team" type="b2602c69:ProjectViewProjectNode" />
-              <item name="1jiar-team" type="462c0819:PsiDirectoryNode" />
-              <item name="1jiar-provider-user" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="jk" type="462c0819:PsiDirectoryNode" />
-              <item name="mapper" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="1jiar-team" type="b2602c69:ProjectViewProjectNode" />
-              <item name="1jiar-team" type="462c0819:PsiDirectoryNode" />
-              <item name="1jiar-provider-user" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="jk" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -450,7 +335,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="add_unversioned_files" value="true" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556097373770" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556097765728" />
     <property name="ignore_missing_gitignore" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -490,7 +375,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.Applicationprovider">
+  <component name="RunManager" selected="Spring Boot.Applicationfeign">
     <configuration name="1jiar-feign-user [package]" type="MavenRunConfiguration" factoryName="Maven" temporary="true">
       <MavenSettings>
         <option name="myGeneralSettings" />
@@ -559,9 +444,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.Applicationfeign" />
         <item itemvalue="Spring Boot.Applicationprovider" />
         <item itemvalue="Maven.1jiar-feign-user [package]" />
-        <item itemvalue="Spring Boot.Applicationfeign" />
       </list>
     </recent_temporary>
   </component>
@@ -606,12 +491,12 @@
       <workItem from="1555983088775" duration="5318000" />
       <workItem from="1555990293092" duration="30423000" />
       <workItem from="1556065406260" duration="11716000" />
-      <workItem from="1556096927070" duration="439000" />
+      <workItem from="1556096927070" duration="837000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="213651000" />
+    <option name="totallyTimeSpent" value="214049000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -624,30 +509,31 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1" y="0" width="1918" height="1030" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14101183" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4992272" visible="true" weight="0.14208826" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Capture Tool" order="4" />
       <window_info id="UI Designer" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Favorites" order="6" sideWeight="0.5007728" side_tool="true" weight="0.14101183" />
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.24295011" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4978678" weight="0.30580357" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4967707" weight="0.30580357" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.5824295" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.329718" />
       <window_info anchor="bottom" id="Spring" order="7" weight="0.329718" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49784714" visible="true" weight="0.2779018" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.4967707" weight="0.2779018" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Event Log" order="10" sideWeight="0.50215286" side_tool="true" visible="true" weight="0.2779018" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50161463" side_tool="true" visible="true" weight="0.45982143" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" sideWeight="0.49946696" weight="0.329718" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
       <window_info anchor="bottom" id="Version Control" order="13" />
-      <window_info anchor="bottom" id="Messages" order="14" weight="0.19308035" />
+      <window_info anchor="bottom" id="Messages" order="14" sideWeight="0.49838537" visible="true" weight="0.45982143" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -664,20 +550,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/1jiar-common/src/java/com/jk/model/shuozaiid.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="7" column="32" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/1jiar-common/src/java/com/jk/model/shuosiname.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="6" column="3" lean-forward="true" selection-start-line="6" selection-start-column="3" selection-end-line="8" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://E:/jdk/jdk1.8.0_171/src.zip!/java/lang/Thread.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="406">
@@ -792,16 +664,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
           <caret line="801" selection-start-line="801" selection-end-line="801" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/1jiar-feign-user/src/main/java/com/jk/controller/PageController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="14" column="26" lean-forward="true" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -930,16 +792,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/1jiar-feign-user/src/main/java/com/jk/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="543">
-          <caret line="232" column="5" lean-forward="true" selection-start-line="232" selection-start-column="5" selection-end-line="232" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/1jiar-feign-user/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2190">
@@ -979,13 +831,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="7" column="29" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/1jiar-common/src/java/com/jk/model/jiaoyid.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="4" column="5" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -1037,13 +882,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/1jiar-provider-user/src/main/java/com/jk/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/1jiar-provider-user/src/main/java/com/jk/mapper/UserMapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-570">
@@ -1051,6 +889,54 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1jiar-provider-user/src/main/java/com/jk/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1jiar-feign-user/src/main/java/com/jk/controller/PageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1146">
+          <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1jiar-feign-user/src/main/java/com/jk/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1jiar-feign-user/src/main/java/com/jk/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="413">
+          <caret line="139" column="29" selection-start-line="139" selection-start-column="29" selection-end-line="139" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1jiar-common/src/java/com/jk/model/jiaoyid.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="4" column="5" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="42" column="8" lean-forward="true" selection-start-line="42" selection-start-column="8" selection-end-line="42" selection-end-column="8" />
         </state>
       </provider>
     </entry>

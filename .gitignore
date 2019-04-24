@@ -1,0 +1,50 @@
+HELP.md
+target
+!.mvn/wrapper/maven-wrapper.jar
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+<<<<<<< HEAD
+out
+gen
+.idea/
+1jiar-common/target/generated-sources/
+1jiar-eureka/target/generated-sources/
+1jiar-eureka/target/generated-test-sources/
+1jiar-feign-house-ad/target/generated-sources/
+1jiar-feign-house-ad/target/generated-test-sources/
+1jiar-provider-house-ad/target/generated-sources/
+1jiar-provider-house-ad/target/generated-test-sources/
+.gitignore
+generated-sources/
+=======
+*.ipr
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+/build/
+
+### VS Code ###
+.vscode/
+.idea/libraries/Maven__avalon_framework_avalon_framework_4_1_3.xml
+.idea/libraries/Maven__com_alipay_api_k12_alipay_sdk_0_0_1_beta.xml
+.idea/libraries/Maven__commons_logging_commons_logging_1_1.xml
+.idea/libraries/Maven__javax_servlet_servlet_api_2_3.xml
+.idea/libraries/Maven__log4j_log4j_1_2_12.xml
+.idea/libraries/Maven__logkit_logkit_1_0_1.xml
+.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_2.xml
