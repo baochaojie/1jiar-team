@@ -41,11 +41,13 @@ generated-sources/
 
 ### VS Code ###
 .vscode/
-.idea/libraries/Maven__avalon_framework_avalon_framework_4_1_3.xml
-.idea/libraries/Maven__com_alipay_api_k12_alipay_sdk_0_0_1_beta.xml
-.idea/libraries/Maven__commons_logging_commons_logging_1_1.xml
-.idea/libraries/Maven__javax_servlet_servlet_api_2_3.xml
-.idea/libraries/Maven__log4j_log4j_1_2_12.xml
-.idea/libraries/Maven__logkit_logkit_1_0_1.xml
-.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_2.xml
-1jiar-common/1jiar-common.iml
+>>>>>>> 3f6fcf345dcc14d98792a7ca715d55e5f7f49ea9
+### Example user template template
+### Example user template
+
+1jiar-feign-agent/target/generated-test-sources/
+1jiar-feign-house-cu/target/generated-test-sources/
+1jiar-feign-integral/target/generated-test-sources/
+1jiar-provider-house-cu/target/generated-test-sources/
+1jiar-provider-integral/target/generated-test-sources/
+1jiar-provider-user/target/generated-test-sources/

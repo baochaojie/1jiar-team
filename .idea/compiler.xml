@@ -22,8 +22,21 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="1jiar-common" target="1.5" />
+      <module name="1jiar-eureka" target="1.8" />
+      <module name="1jiar-feign-agent" target="1.8" />
+      <module name="1jiar-feign-house-ad" target="1.8" />
+      <module name="1jiar-feign-house-cu" target="1.8" />
+      <module name="1jiar-feign-integral" target="1.8" />
+      <module name="1jiar-feign-user" target="1.8" />
+      <module name="1jiar-provider-agent" target="1.8" />
+      <module name="1jiar-provider-house-ad" target="1.8" />
+      <module name="1jiar-provider-house-cu" target="1.8" />
       <module name="1jiar-provider-house-su (1)" target="1.8" />
       <module name="1jiar-provider-house-su (2)" target="1.8" />
+      <module name="1jiar-provider-integral" target="1.8" />
+      <module name="1jiar-provider-user" target="1.8" />
+      <module name="SSSS" target="1.5" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
