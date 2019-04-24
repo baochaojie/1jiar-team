@@ -70,5 +70,6 @@ public interface UserMapper {
     @Select(" select houseTeSeName from  house_feature  where houseTeSeId =#{value}")
     String featurenamebyid(int teSeId);
 
-
+    @Select("select * from house_man ")
+    List<Login> inituserphone();
 }

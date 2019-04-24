@@ -105,6 +105,14 @@ public class UserController {
         return userService.qureyResume();
     }
 
+    @RequestMapping("inituserphone")
+    @ResponseBody
+    public List<Login> inituserphone(){
+        return userService.inituserphone();
+    }
+
+
+
     /**
      * 左侧树
      */

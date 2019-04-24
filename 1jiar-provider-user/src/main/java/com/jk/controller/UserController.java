@@ -167,4 +167,11 @@ public class UserController {
         return userService.zenghe();
     }
 
+
+    @RequestMapping("inituserphone")
+    @ResponseBody
+    public List<Login> inituserphone(){
+        return userService.inituserphone();
+    }
+
 }

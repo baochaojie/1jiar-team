@@ -66,4 +66,7 @@ public interface UserService {
     @RequestMapping("queryhouse")
     @ResponseBody
     HashMap<String, Object> findHousePage(@RequestParam Integer page, @RequestParam Integer rows, @RequestBody House house);
+
+    @PostMapping("inituserphone")
+    List<Login> inituserphone();
 }

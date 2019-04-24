@@ -42,4 +42,6 @@ public interface UserService {
    /* Login phoneVerificat(String login);*/
 
     HashMap<String, Object> findHousePage(Integer page, Integer rows, House house);
+
+    List<Login> inituserphone();
 }

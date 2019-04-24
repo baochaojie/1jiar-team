@@ -1,4 +1,19 @@
 initTree();
+
+//初始化用户名称展示
+initusername();
+function initusername(){
+
+    $.ajax({
+        url:'../inituserphone',
+        type:'post',
+        data:{},
+        success:function(data){
+            $("#mingz").text(data);
+        }
+    })
+
+}
 function initTree(){
     $.ajax({
         url:"../findTree",

@@ -131,6 +131,11 @@ public class UserServiceImpl implements UserService{
         return hashMap;
     }
 
+    @Override
+    public List<Login> inituserphone() {
+        return userMapper.inituserphone();
+    }
+
     private List<zenghe> findNode(int pid) {
         List<zenghe> list = userMapper.findTreeByP(pid);
         for (zenghe tree : list) {
