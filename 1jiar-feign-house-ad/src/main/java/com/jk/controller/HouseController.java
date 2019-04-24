@@ -61,6 +61,15 @@ public class HouseController {
     public String toaddhousemoreinfo(){
         return "addhousemoreinfo";
     }
+
+    /**
+     * 跳转到前台链家新增页面
+     * @return
+     */
+    @RequestMapping("lianjiacp")
+    public String tolianjiacp(){
+        return "lianjiacp";
+    }
     /**
      * 分页查询已录入的待审核信息
      * @param map

@@ -68,10 +68,3 @@ gen
 1jiar-provider-user/target/classes/
 1jiar-provider-user/target/generated-sources/
 1jiar-provider-user/target/generated-test-sources/
-classes/
-generated-sources/
-generated-test-sources/
-classes/com/jk/config/
-classes/static/lianjiajs/
-classes/templates/addhousemoreinfo.html
-classes/templates/lianjiacp.html

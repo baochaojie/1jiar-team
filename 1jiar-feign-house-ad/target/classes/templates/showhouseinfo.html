@@ -17,7 +17,7 @@
 <!-- 条件查询提交表单 -->
 <form class="form-inline" role="form">
     <div class="form-group">
-        <input type="text" class="form-control" id="ownername" placeholder="请输入小区或者房产人" name="name">
+        <input type="text" class="form-control" id="ownername" placeholder="请输入房产人姓名" name="name">
     </div>
     <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
     <div class="radio">
@@ -73,7 +73,7 @@
                     formatter: function (value, row, index) {
                         //js传递字符串的时候一定要加引号!!!!
                         if (value==1){
-                            var butt = '<button type="button" class="btn btn-primary btn-sm" onclick="addmoreinfo()">审核</button>';
+                            var butt = '<button type="button" class="btn btn-primary btn-sm" onclick="addmoreinfo('+row.ownerId+')">审核</button>';
                         }else if (value==2){
                             var butt = "";
                         } else if (value==3){
@@ -90,7 +90,8 @@
         $('#myTable').bootstrapTable('refresh');
     }
     //审核弹框添加更多详情信息
-    function addmoreinfo() {
+    function addmoreinfo(id) {
+        $("#ownerId").val(id);
         bootbox.dialog({
             title:'详细信息',
             closeButton: true,
@@ -104,6 +105,7 @@
                         url:'/addhousemoreinfo',
                         type:'post',
                         data:$("#myForm").serialize(),
+                        //data:{id:id},
                         success:function(result){
                             if (result){
                                 alert("审核通过");
