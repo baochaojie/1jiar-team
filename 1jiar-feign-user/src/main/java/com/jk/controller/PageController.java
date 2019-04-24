@@ -76,7 +76,7 @@ public class PageController {
     /**
      * url
      */
-    @RequestMapping("quangbu")
+        @RequestMapping("quangbu")
     public String addList(String url){
         return url;
     }

@@ -141,6 +141,7 @@ public class UserController {
         userService.phoneVerification(login2);
         if (login1.equals("0")){
             redisTemplate.opsForValue().set(session1.getId(),login2);
+            redisTemplate.expire(session1.getId(),30 , TimeUnit.MINUTES);
         }
         return login1;
     }
@@ -233,16 +234,16 @@ public class UserController {
     }
     @RequestMapping("inituser")
     @ResponseBody
-    public Integer findUserPage(HttpServletRequest request){
+    public String findUserPage(HttpServletRequest request){
         HttpSession session = request.getSession();
         System.out.println(session.getId());
-        List<Object> range = redisTemplate.opsForList().range(session.getId(), 0, -1);
-        if (range==null||range.size()<=0){
-            //2说明没登入
-            return 2;
+        Boolean aBoolean = redisTemplate.hasKey(session.getId());
+        if (aBoolean){
+            //1说明以登入
+            return session.getId();
         }
-        //1说明以登入
-        return 1;
+        //2说明没登入
+        return "";
     }
 
 }
