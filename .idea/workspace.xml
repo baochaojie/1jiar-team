@@ -335,7 +335,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="add_unversioned_files" value="true" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556097765728" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556097766001" />
     <property name="ignore_missing_gitignore" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -375,7 +375,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.Applicationfeign">
+  <component name="RunManager" selected="Spring Boot.Applicationprovider">
     <configuration name="1jiar-feign-user [package]" type="MavenRunConfiguration" factoryName="Maven" temporary="true">
       <MavenSettings>
         <option name="myGeneralSettings" />
@@ -444,8 +444,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.Applicationfeign" />
         <item itemvalue="Spring Boot.Applicationprovider" />
+        <item itemvalue="Spring Boot.Applicationfeign" />
         <item itemvalue="Maven.1jiar-feign-user [package]" />
       </list>
     </recent_temporary>
