@@ -53,12 +53,12 @@ public class UserController {
         Login qlogin  =  userservice.phoneVerification(login);
         return qlogin;
     }
-    @RequestMapping("phoneVerificat/{login}")
+    /*@RequestMapping("phoneVerificat/{login}")
     @ResponseBody
     public Login phoneVerificat(@RequestParam("login")String login) {
         Login qlogin  =  userservice.phoneVerificat(login);
         return qlogin;
-    }
+    }*/
 
 
     @RequestMapping("queryhouse")

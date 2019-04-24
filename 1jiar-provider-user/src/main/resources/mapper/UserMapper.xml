@@ -31,6 +31,8 @@
         left join house_feature hfe on h.houseTeSeId = hfe.houseTeSeId
         left join house_man hman on h.houseManId = hman.id
         left join t_agent tage on h.agentId = tage.agentId
+        				where h.houseShoucang=2
+
         )  a
 
     </select>

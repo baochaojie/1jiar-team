@@ -34,7 +34,6 @@ public class UserController {
     @ResponseBody
     public String duanxinyanzheng(String login,HttpServletRequest request) {
 
-
         HashMap<String, Object> hashMap = new HashMap<>();
         hashMap.put("accountSid", ConstantConf.STRINGW);
         hashMap.put("to", login);
@@ -80,7 +79,7 @@ public class UserController {
         session.setAttribute(session.getId(), login1);
         return 0;
     }
-    @RequestMapping("phoneVerificat")
+   /* @RequestMapping("phoneVerificat")
     @ResponseBody
     public Integer phoneVerificat(String login,String password ,HttpServletRequest request) {
         System.out.println(login);
@@ -99,7 +98,7 @@ public class UserController {
 
         session.setAttribute(session.getId(), login1);
         return 0;
-    }
+    }*/
     @RequestMapping("qureyResume")
     @ResponseBody
     public List<Resume> qureyResume(){
@@ -134,8 +133,16 @@ public class UserController {
      */
     @RequestMapping("login")
     @ResponseBody
-    public String login(Login login){
-        return userService.login(login);
+    public String login(Login login,HttpServletRequest request) {
+        String login1 = userService.login(login);
+        HttpSession session1 = request.getSession();
+        System.out.println(session1.getId());
+        String login2 = login.getLogin();
+        userService.phoneVerification(login2);
+        if (login1.equals("0")){
+            redisTemplate.opsForValue().set(session1.getId(),login2);
+        }
+        return login1;
     }
 
 
@@ -223,6 +230,19 @@ public class UserController {
     public HashMap<String, Object> findUserPage(Integer page, Integer rows, House house ){
 
         return userService.findHousePage(page,rows,house);
+    }
+    @RequestMapping("inituser")
+    @ResponseBody
+    public Integer findUserPage(HttpServletRequest request){
+        HttpSession session = request.getSession();
+        System.out.println(session.getId());
+        List<Object> range = redisTemplate.opsForList().range(session.getId(), 0, -1);
+        if (range==null||range.size()<=0){
+            //2说明没登入
+            return 2;
+        }
+        //1说明以登入
+        return 1;
     }
 
 }

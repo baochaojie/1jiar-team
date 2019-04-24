@@ -59,8 +59,8 @@ public interface UserMapper {
 
     List<zenghe> findTreeByP(@Param("pid") int pid);
 
-    @Select(" SELECT * FROM house_man  where login = #{value} ")
-    Login phoneVerificat(String login);
+   /* @Select(" SELECT * FROM house_man  where login = #{value} ")
+    Login phoneVerificat(String login);*/
 
     int findHouseCount(@Param("house") House house);
 
