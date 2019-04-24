@@ -7,7 +7,7 @@ function initTree(){
             $('#myTree').treeview({
                 data:data,
                 onNodeSelected:function(event, node) {
-                    $.addtabs({iframeHeight: 550});
+                    $.addtabs({iframeHeight: 820});
                     $.addtabs.add({
                         id:node.id,
                         title:node.text,
