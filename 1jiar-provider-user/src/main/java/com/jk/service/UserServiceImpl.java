@@ -100,10 +100,10 @@ public class UserServiceImpl implements UserService{
         return list;
     }
 
-    @Override
+ /*   @Override
     public Login phoneVerificat(String login) {
         return userMapper.phoneVerificat(login);
-    }
+    }*/
 
     @Override
     public HashMap<String, Object> findHousePage(Integer page, Integer rows, House house) {

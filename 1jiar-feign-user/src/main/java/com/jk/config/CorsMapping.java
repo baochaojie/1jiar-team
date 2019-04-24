@@ -18,7 +18,7 @@ public class CorsMapping implements WebMvcConfigurer {
                 //设置跨域 域名权限 规定由某一个指定的域名+端口能访问跨域项目
                 .allowedOrigins("*")
                 //是否开启cookie跨域
-                .allowCredentials(false)
+                .allowCredentials(true)
                 //规定能够跨域访问的方法类型
                 .allowedMethods("GET","POST","DELETE","PUT","OPTIONS")
                 //添加验证头信息  token
