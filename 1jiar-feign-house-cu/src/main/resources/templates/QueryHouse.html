@@ -297,6 +297,7 @@
                         //butt+=" "
                         butt += '<button onclick="LookHouse(\''+row.agentId+'\')" class="btn btn-info glyphicon glyphicon-eye-open" >看房子</button>';
                         butt += '<button onclick="chaIdHouse(\''+row.houseId+'\')" class="btn btn-info glyphicon glyphicon-eye-open" >详情</button>';
+                        butt += '<button onclick="shouCang(\''+row.houseId+'\')" class="btn btn-warning glyphicon glyphicon-heart" >收藏</button>';
 
                         return butt
                     }
@@ -309,6 +310,18 @@
         window.localStorage.setItem("id", ids);
         location.href="/house/chaIdHouse";
 
+    }
+    //初始化地区的数据
+    function shouCang(id){
+        $.ajax({
+            type:"post",
+            url:"/house/shouCang",
+            data:{pid:id},
+            dataType:"json",
+            success:
+                alert("您已成功收藏！")
+
+        })
     }
     //条件查询
     function searchUser(id){

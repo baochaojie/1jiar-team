@@ -98,39 +98,12 @@
   }
 })();
 </script>
-<div class="wrapper">
+<div     class="wrapper">
    
 <!-- <link href='//s1.ljcdn.com/feroot/pc/asset/lianjiaIM/css/lianjiaim.css?v=15212312340214' property='stylesheet' rel="stylesheet"> -->
 
 <div>
-  <div class="header ">
-  <ul class="header__wrapper w1150 clear typeUserInfo" id="top">
-                      <li class="header__item fl "><a href="https://bj.lianjia.com/" target="_blank">首页</a></li>
-                        <li class="header__item fl "><a href="https://bj.lianjia.com/ershoufang/" target="_blank">二手房</a></li>
-                        <li class="header__item fl "><a href="https://bj.fang.lianjia.com/loupan/" target="_blank">新房</a></li>
-                        <li class="header__item fl cur"><a href="https://bj.lianjia.com/zufang/" target="_blank">租房</a></li>
-                        <li class="header__item fl "><a href="https://us.lianjia.com/" target="_blank">海外</a></li>
-                        <li class="header__item fl "><a href="https://bj.lianjia.com/xiaoqu/" target="_blank">小区</a></li>
-                        <li class="header__item fl "><a href="https://bj.lianjia.com/jingjiren/" target="_blank">经纪人</a></li>
-                        <li class="header__item fl "><a href="https://bj.lianjia.com/wenda/" target="_blank">指南</a></li>
-                        <li class="header__item fl "><a href="https://bj.lianjia.com/fangjia/" target="_blank">房价</a></li>
-                        <li class="header__item fl "><a href="https://bj.lianjia.com/tool.html" target="_blank">工具</a></li>
-                        <li class="header__item fl "><a href="https://news.lianjia.com/bj/jingyan/" target="_blank">经验</a></li>
-                        <li class="header__item fl "><a href="https://bj.lianjia.com/yezhu/" target="_blank">发布房源</a></li>
-                        <li class="header__item fl "><a href="https://bj.lianjia.com/vip/" target="_blank">企业汇</a></li>
-                  <li class="header__aside fr pointer typeShowUser" data-el="login" data-event_id="10794" data-event_action="target=login">
-      <span data-el="login_box">
-        <span data-el="btn_login" data-id="dialog_tel" class="btn-login">登录</span>/<span class="btn-resgiter" data-el="register" data-id="dialog_reg">注册</span>
-      </span>
-    </li>
-    <li class="top__aside fr hide" data-el="user_box">
-      <a href="" data-el="userName"></a>
-      <a data-el="logout_btn">退出</a>
-    </li>
 
-  </ul>
-
-</div>
   <div class="search__area">
   <div class="beike__nav">
   <a class="beike__nav--logo" href="https://bj.lianjia.com/zufang/"></a>
@@ -491,15 +464,17 @@
        },
     dataType:"json",
     success:function(result) {
+
         var html2 ="<ul class=\"sellListContent\" log-mod=\"list\">";
         $.each(result.rows,function(index,obj){
+                id= obj.houseId;
             html2  +='<li class="clear LOGCLICKDATA">'+
                 '<div class="content__list--item">'+
-                '<a class="content__list--item--aside" target="_blank" href="#">'+
-                '<img  src='+obj.houseImg+' data-src='+obj.houseImg+'  class="lazyloaded" data-expand="400" </a>'+
+                '<a class="content__list--item--aside" target="_blank" href="http://localhost:8776/house/chaxiangqing?id='+id+'"'+
+                '<img  src='+obj.houseImg+' data-expand="400" /> </a>'+
                 '<div class="content__list--item--main">'+
                 '<p class="content__list--item--title twoline">'+
-                '<a target="_blank"'+ 'href="https://bj.lianjia.com/zufang/BJ2206348185062866944.html">'+
+                '<a target="_blank"'+ 'href="http://localhost:8776/house/chaxiangqing?id='+id+'">'+
                 obj.houseaheName+' '+obj.houseTypeName+' '+obj.housePrice+'元 '+'</a>'+
                 '</p>'+
                 '<p class="content__list--item--des">'+
@@ -770,7 +745,7 @@
   document.getElementById('clearUrl').href = '/zufang/brp{min}erp{max}rs%E4%B8%8A%E6%B5%B7/'.split('zufang/')[0] + 'zufang/';
 </script>
 </div>
-
+<!--
 <div class="fix-right-v3" id="back-top" log-mod="sidebar">
   <table>
     <tbody>
@@ -819,7 +794,7 @@
   <ul>
     <li class="gotop sidebar-item" id="gotop" style="display: none;"><a title="返回顶部">返回顶部</a><span class="popup"><i></i>返回顶部</span></li>
   </ul>
-</div>
+</div>-->
 <div class="footer">
   <div class="footer__wrapper w1150">
 

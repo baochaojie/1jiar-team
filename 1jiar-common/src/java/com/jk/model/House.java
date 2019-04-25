@@ -48,6 +48,9 @@ public class House implements Serializable {
     private  String  TeSeName;//房屋特色名
     private  String  agentId;//经纪人关联表id 关联一张经纪人表
     private  String  agentName;//经纪人名
+    private  String  argentImg;//经纪人头像
+    private  String  detail;//经纪人简介
+    private  String  agentPhone;//经纪人电话
     private  Integer houseElevator;//有无电梯 1是有电梯，2是没有电梯
     private  Integer houseFinish;//是否装修 1是已装修，2是未装修
     private  Integer houseHeating;//是否供暖 1是供暖，2是不供暖
@@ -60,6 +63,7 @@ public class House implements Serializable {
     private  String houseDiTieName;//地铁名
     private  Integer houseZuQi;//租期 1月租 2年租
     private  String houseImg;//图片
+    private  Integer houseShoucang;//用户收藏
     //临时
     private Integer	startPrice;//开始价格
     private Integer	endPrice;//结束价格
@@ -67,6 +71,37 @@ public class House implements Serializable {
     private Integer	houseDiTieFuId;//地铁线路临时字段
     private Integer	intid;//排序类型临时字段
 
+    public String getDetail() {
+        return detail;
+    }
+
+    public void setDetail(String detail) {
+        this.detail = detail;
+    }
+
+    public String getArgentImg() {
+        return argentImg;
+    }
+
+    public void setArgentImg(String argentImg) {
+        this.argentImg = argentImg;
+    }
+
+    public String getAgentPhone() {
+        return agentPhone;
+    }
+
+    public void setAgentPhone(String agentPhone) {
+        this.agentPhone = agentPhone;
+    }
+
+    public Integer getHouseShoucang() {
+        return houseShoucang;
+    }
+
+    public void setHouseShoucang(Integer houseShoucang) {
+        this.houseShoucang = houseShoucang;
+    }
 
     public String getHouseImg() {
         return houseImg;

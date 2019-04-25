@@ -6,7 +6,11 @@ import com.jk.model.Subway;
 import com.jk.service.HouseService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.ui.ModelMap;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.util.HashMap;
@@ -93,6 +97,26 @@ public class HouseController {
     @ResponseBody
     public List<House> queryIdhouse(Integer houseId){
         return houseService.queryIdhouse(houseId);
+
+    }
+    //收藏
+    @RequestMapping("shouCang")
+    @ResponseBody
+    public void shouCang(House house,Integer pid){
+        house.setHouseId(pid);
+        houseService.shouCang(house);
+    }
+    //跳转前台详情页面
+    @RequestMapping("chaxiangqing")
+    public String chaxiangqing(Model model, Integer id) {
+        model.addAttribute("ids",id);
+        return "XiangQing";
+    }
+    //跳转详情页面
+    @RequestMapping("queryXiangQing")
+    @ResponseBody
+    public House queryXiangQing( Integer houseId){
+        return houseService.queryXiangQing(houseId);
 
     }
 

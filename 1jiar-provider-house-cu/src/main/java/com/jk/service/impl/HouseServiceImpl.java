@@ -78,4 +78,16 @@ public class HouseServiceImpl implements HouseService {
 
     }
 
+    @Override
+    public void shouCang(House house) {
+       houseMapper.shouCang(house);
+
+
+    }
+
+    @Override
+    public House queryXiangQing(Integer houseId) {
+        return houseMapper.queryXiangQing(houseId);
+    }
+
 }
