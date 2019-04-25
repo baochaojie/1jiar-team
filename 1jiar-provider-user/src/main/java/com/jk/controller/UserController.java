@@ -29,7 +29,6 @@ public class UserController {
     @RequestMapping("duanxinyanzheng")
     @ResponseBody
     public String duanxinyanzheng(String login,HttpServletRequest request) {
-
         Object object = redisTemplate.opsForValue().get(ConstantConf.STRINGDXYZ+"Verification");
         if (object!=null) {
             return "sss";
@@ -53,13 +52,13 @@ public class UserController {
         Login qlogin  =  userservice.phoneVerification(login);
         return qlogin;
     }
+
     /*@RequestMapping("phoneVerificat/{login}")
     @ResponseBody
     public Login phoneVerificat(@RequestParam("login")String login) {
         Login qlogin  =  userservice.phoneVerificat(login);
         return qlogin;
     }*/
-
 
     @RequestMapping("queryhouse")
     @ResponseBody
@@ -77,6 +76,8 @@ public class UserController {
         return  housePage;
 
     }
+
+
     /**
      * 左侧树
      */
@@ -91,10 +92,12 @@ public class UserController {
      */
     @RequestMapping("qureyResume")
     @ResponseBody
-    public List<Resume> qureyResume(){
-        return userService.qureyResume();
-    }
+    public HashMap<String, Object> qureyResume(@RequestParam Integer page, @RequestParam Integer rows, @RequestBody Login login){
+        HashMap<String, Object> housePage=null;
+        housePage = userservice.qureyResume(page, rows, login);
+        return  housePage;
 
+    }
     /**
      * 注册
      */
@@ -151,7 +154,7 @@ public class UserController {
 
     @RequestMapping("addOwner")
     @ResponseBody
-    public void addOwner(@RequestBody Resume resume){
+    public void addOwner(@RequestBody Login resume){
         userService.addOwner(resume);
     }
 
@@ -159,6 +162,12 @@ public class UserController {
     @ResponseBody
     public void deleteuser(Integer id) {
          userService.deleteuser(id);
+    }
+
+    @RequestMapping("deleteshouc")
+    @ResponseBody
+    public void deleteshouc(Integer houseId) {
+        userService.deleteshouc(houseId);
     }
 
     @RequestMapping("zenghe")

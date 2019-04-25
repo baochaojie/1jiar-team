@@ -58,4 +58,30 @@
 
         limit #{start},#{rows}
     </select>
+
+
+    <select id="qureyCount" parameterType="com.jk.model.Login" resultType="int">
+select count(*)from(select  m.id
+             from house_man m
+            left join login_jiaxid j on m.jiaxid=j.id
+            left join login_jiaoyid y on m.jiaoyid=y.id
+            left join login_hengyid h on m.hengyid=h.id
+            left join login_shuozaiid s on m.shuozaiid=s.id
+            join login_jiaoxidname o on m.jiaoxid=o.id
+            join login_shuosiname n on m.shuozaisiid=n.id
+						)l
+    </select>
+
+    <select id="qureyResume" resultType="com.jk.model.Login">
+select  m.*,j.jiaxidname as jiaxidname , y.jiaoyidname as jiaoyidname , h.hengyidname as hengyidname , s.shuozaiidname as shuozaiidname ,
+            o.jiaoxidname as jiaoxidname ,  n.shuosiname as shuosiname
+             from house_man m
+            left join login_jiaxid j on m.jiaxid=j.id
+            left join login_jiaoyid y on m.jiaoyid=y.id
+            left join login_hengyid h on m.hengyid=h.id
+            left join login_shuozaiid s on m.shuozaiid=s.id
+            join login_jiaoxidname o on m.jiaoxid=o.id
+            join login_shuosiname n on m.shuozaisiid=n.id
+            limit #{start},#{rows}
+    </select>
 </mapper>

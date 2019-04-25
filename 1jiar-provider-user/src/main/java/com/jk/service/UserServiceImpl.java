@@ -21,10 +21,6 @@ public class UserServiceImpl implements UserService{
     @Autowired
     private UserMapper userMapper;
 
-    @Override
-    public List<Resume> qureyResume(){
-        return userMapper.qureyResume();
-    }
 
     @Override
     public Integer savelogin(Login login) {
@@ -83,7 +79,7 @@ public class UserServiceImpl implements UserService{
     }
 
     @Override
-    public void addOwner(Resume resume) {
+    public void addOwner(Login resume) {
          userMapper.addOwner(resume);
     }
 
@@ -104,6 +100,11 @@ public class UserServiceImpl implements UserService{
     public Login phoneVerificat(String login) {
         return userMapper.phoneVerificat(login);
     }*/
+
+
+
+
+
 
     @Override
     public HashMap<String, Object> findHousePage(Integer page, Integer rows, House house) {
@@ -136,6 +137,13 @@ public class UserServiceImpl implements UserService{
         return userMapper.inituserphone();
     }
 
+    @Override
+    public void deleteshouc(Integer houseId) {
+        userMapper.deleteshouc(houseId);
+    }
+
+
+
     private List<zenghe> findNode(int pid) {
         List<zenghe> list = userMapper.findTreeByP(pid);
         for (zenghe tree : list) {
@@ -156,7 +164,22 @@ public class UserServiceImpl implements UserService{
     }
 
 
+    @Override
+    public HashMap<String, Object> qureyResume(Integer page, Integer rows, Login login) {
+        HashMap<String,Object> hashMap = new HashMap<>();
+        int total = userMapper.qureyCount(login);
+        int start = (page-1)*rows;
+        List<Login> list=userMapper.qureyResume(start,rows,login);
 
+        hashMap.put("total" , total);
+        hashMap.put("rows" , list);
+        return hashMap;
+
+
+
+
+
+    }
 
 
 

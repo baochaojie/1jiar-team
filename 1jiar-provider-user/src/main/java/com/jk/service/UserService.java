@@ -13,7 +13,6 @@ public interface UserService {
 
     List<Tree> findTree();
 
-    List<Resume> qureyResume();
 
     Integer savelogin(Login login);
 
@@ -33,7 +32,7 @@ public interface UserService {
 
     List<jiaoxi> jiaoxidname(Integer pid);
 
-    void addOwner(Resume resume);
+    void addOwner(Login resume);
 
     void deleteuser(Integer id);
 
@@ -44,4 +43,8 @@ public interface UserService {
     HashMap<String, Object> findHousePage(Integer page, Integer rows, House house);
 
     List<Login> inituserphone();
+
+    void deleteshouc(Integer houseId);
+
+    HashMap<String, Object> qureyResume(Integer page, Integer rows, Login login);
 }

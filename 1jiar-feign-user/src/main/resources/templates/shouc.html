@@ -87,11 +87,55 @@
                 {field:"ridgepoleName",title:"楼栋"},
                 {field:"elementName",title:"单元"},
                 {field:"doorplateName",title:"门牌号"},
-
+                {field:'123',formatter:function(value,row,index){
+                        return '<a href="javascript:shanchu('+row.houseId+');">删除</a>'
+                    }}
             ]
         })
     }
+    //单删
+    function shanchu(houseId){
+        bootbox.confirm({
+            size:'small',
+            message:"你确认要取消收藏吗",
+            buttons:{
+                confirm:{
+                    label:'确认',
+                    className:'btn-success'
+                },
+                cancel:{
+                    label:'取消',
+                    className: 'btn-danger'
+                }
+            },
+            callback:function(result){
+                if(result){
+                    $.ajax({
+                        url:"../deleteshouc",
+                        type:'post',
+                        data:{
+                            houseId:houseId
+                        },
+                        dataType:'json',
+                        success:function(data){
+                            if(data){
+                                tiaojianchaxun();
+                            }else{
+                                bootbox.alert({
+                                    size:"small",
+                                    title:"提示",
+                                    message:"删除失败",
+                                });
+                            }
 
+                        }
+
+                    })
+                }
+            }
+        })
+
+    }
 
 </script>
 </html>

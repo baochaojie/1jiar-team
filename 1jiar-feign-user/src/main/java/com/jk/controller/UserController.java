@@ -101,8 +101,10 @@ public class UserController {
     }*/
     @RequestMapping("qureyResume")
     @ResponseBody
-    public List<Resume> qureyResume(){
-        return userService.qureyResume();
+
+    public HashMap<String, Object> qureyResume(Integer page, Integer rows, Login login ){
+
+        return userService.qureyResume(page,rows,login);
     }
 
     @RequestMapping("inituserphone")
@@ -110,14 +112,9 @@ public class UserController {
     public List<Login> inituserphone(){
         return userService.inituserphone();
     }
-
-
-
     /**
      * 左侧树
      */
-
-
 
     @RequestMapping("findTree")
     @ResponseBody
@@ -211,7 +208,7 @@ public class UserController {
 
     @RequestMapping("addOwner")
     @ResponseBody
-    public void addOwner(Resume resume){
+    public void addOwner(Login resume){
         userService.addOwner(resume);
     }
     /**
@@ -223,6 +220,11 @@ public class UserController {
          userService.deleteuser(id);
     }
 
+    @RequestMapping("deleteshouc")
+    @ResponseBody
+    public void deleteshouc(Integer houseId) {
+        userService.deleteshouc(houseId);
+    }
     /**
      * 整合
      */
@@ -231,8 +233,6 @@ public class UserController {
     public List<zenghe> zenghe(){
         return userService.zenghe();
     }
-
-
 
     @RequestMapping("queryhouse")
     @ResponseBody

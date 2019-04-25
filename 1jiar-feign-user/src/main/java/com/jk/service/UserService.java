@@ -12,8 +12,6 @@ import java.util.List;
 @FeignClient("1jiar-provider-user")
 public interface UserService {
 
-    @PostMapping("qureyResume")
-    List<Resume> qureyResume();
 
     @RequestMapping("findTree")
     List<Tree> findTree();
@@ -51,7 +49,7 @@ public interface UserService {
 
     @RequestMapping("addOwner")
     @ResponseBody
-    void addOwner(@RequestBody Resume resume);
+    void addOwner(@RequestBody Login resume);
 
     @GetMapping("deleteuser")
     void deleteuser(@RequestParam Integer id);
@@ -69,4 +67,10 @@ public interface UserService {
 
     @PostMapping("inituserphone")
     List<Login> inituserphone();
+
+    @GetMapping("deleteshouc")
+    void deleteshouc(@RequestParam Integer houseId);
+
+    @PostMapping("qureyResume")
+    HashMap<String, Object> qureyResume(@RequestParam Integer page, @RequestParam Integer rows,@RequestBody Login login);
 }
