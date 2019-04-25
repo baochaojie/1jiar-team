@@ -2,6 +2,10 @@ $(function(){
     initbooklist();
 })
 
+function tiaojianchaxun(){
+    $('#bookTable').bootstrapTable('refresh')
+
+}
 function initbooklist(){
 
 
@@ -16,11 +20,13 @@ function initbooklist(){
         sidePagination:'server',//分页方式：client客户端分页，server服务端分页
         striped:true,//显示条纹状表格
         queryParams:function(){
-
+            var boname = $("#namea").val();
+            var mlogin = $("#login").val();
             return {
                 page:this.pageNumber,
                 rows:this.pageSize,
-
+                namea:boname,
+                login:mlogin,
             }
         },
         columns:[
@@ -53,6 +59,14 @@ function initbooklist(){
 
     });
 }
+
+
+
+
+
+
+
+
 
 
 

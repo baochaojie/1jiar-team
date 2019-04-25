@@ -107,6 +107,9 @@
         $.ajax({
             url:'../login',
             type:'post',
+            xhrFields: {
+                withCredentials: true
+            },
             data:{
                 login:login,
                 password:password

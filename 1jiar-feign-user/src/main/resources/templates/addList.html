@@ -23,7 +23,22 @@
 
 <form role="form" name="form">
 
+    <div class="form-group">
+        <label for="login" class="col-sm-1 control-label">手机号</label>
+        <div class="col-sm-2">
+            <input type="hidden" id="id" name="id" class="form-control"/>
 
+            <input type="text" id="login" name="login" class="form-control"/>
+        </div><br>
+
+    </div><br> <div class="form-group">
+    <label for="password" class="col-sm-1 control-label">密码</label>
+    <div class="col-sm-2">
+
+        <input type="text" id="password" name="password" class="form-control"/>
+    </div><br>
+
+</div><br>
         <div class="form-group">
             <label for="bookname" class="col-sm-1 control-label">姓名</label>
             <div class="col-sm-2">
@@ -36,7 +51,7 @@
 
 
     <div class="form-group"><br>
-        <label for="booktype" class="col-sm-1 control-label">出生地:</label>
+        <label for="jiaxidname" class="col-sm-1 control-label">出生地:</label>
         <div class="col-sm-1">
             <select class="form-control" onchange="initProvIdSelect(this.value)" id="jiaxidname" name="jiaxid" style="width:150px">
             </select>
@@ -91,7 +106,7 @@
 
         </div><br>
         <div class="form-group"><br>
-            <label for="booktype" class="col-sm-1 control-label">行业:</label>
+            <label for="hengyid" class="col-sm-1 control-label">行业:</label>
             <div class="col-sm-2">
                 <select id="hengyid" name="hengyid" class="form-control">
                 </select>
@@ -99,7 +114,7 @@
 
         </div><br>
     <div class="form-group"><br>
-        <label for="booktype" class="col-sm-1 control-label">所在城市</label>
+        <label for="shuozaiidname" class="col-sm-1 control-label">所在城市</label>
         <div class="col-sm-1">
             <select class="form-control" onchange="initProvCityIdSelect(this.value)" id="shuozaiidname" name="shuozaisiid"  style="width:150px">
             </select>
@@ -110,14 +125,6 @@
         </div>
 
     </div><br>
-
-
-
-
-
-
-
-
 
 
 
@@ -135,45 +142,30 @@
 </body>
 <script th:inline="none">
     $(function(){
-        openUpdate();
+
         selectjiaoyid();
         selecthengyid();
 
         initProvinceidSelect();
         initProvidSelect();
+        openUpdate(28);
     })
 
 
     //修改
     function openUpdate(id){
 
-        //教育回显
-        selecthengyid
-        //教育
-        selectjiaoyid();
-        //工作回显
-        initProvinceidSelect();
-        //省回显
-        initProvidSelect();
-        //查询回显数据
         $.ajax({
-            url:'/queryId',
+            url:'../queryhunx',
             type:'post',
             async:false,//同步
             data:{id:id},
             dataType:'json',
             success:function(data) {
                 $("#id").val(data.id);
-                $("#namea").val(data.namea);
-                $("#jiaxidname").val(data.jiaxidname);
-                $("#jiaoxidname").val(data.jiaoxidname);
-                $("#xingb").val(data.xingb);
-                $("#aihao").val(data.aihao);
-                $("#jiaoyid").val(data.jiaoyid);
-                $("#hengyid").val(data.hengyid);
-                $("#shuozaisiid").val(data.shuozaisiid);
+                $("#login").val(data.login);
+                $("#password").val(data.password);
 
-                $("#shuozaiid").val(data.shuozaiid);
 
             }
         })

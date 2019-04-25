@@ -1,10 +1,7 @@
 package com.jk.mapper;
 
 import com.jk.model.*;
-import org.apache.ibatis.annotations.Delete;
-import org.apache.ibatis.annotations.Insert;
-import org.apache.ibatis.annotations.Param;
-import org.apache.ibatis.annotations.Select;
+import org.apache.ibatis.annotations.*;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -67,4 +64,11 @@ public interface UserMapper {
     int qureyCount(@Param("login") Login login);
 
     List<Login> qureyResume(@Param("start") int start,@Param("rows") Integer rows,@Param("login") Login login);
+
+    @Select("select m.id ,m.login, m.password from house_man m where m.id=#{value}")
+    Login queryhunx(Integer id);
+
+    @Update("update house_man set login=#{login},password=#{password},namea=#{namea},jiaxid=#{jiaxid},jiaoxid=#{jiaoxid},xingb=#{xingb},aihao=#{aihao},jiaoyid=#{jiaoyid},hengyid=#{hengyid},shuozaisiid=#{shuozaisiid},shuozaiid=#{shuozaiid} where id=#{id}")
+
+    void updatewner(Login resume);
 }

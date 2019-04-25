@@ -49,7 +49,7 @@ public interface UserService {
 
     @RequestMapping("addOwner")
     @ResponseBody
-    void addOwner(@RequestBody Login resume);
+    void updatewner(@RequestBody Login resume);
 
     @GetMapping("deleteuser")
     void deleteuser(@RequestParam Integer id);
@@ -73,4 +73,7 @@ public interface UserService {
 
     @PostMapping("qureyResume")
     HashMap<String, Object> qureyResume(@RequestParam Integer page, @RequestParam Integer rows,@RequestBody Login login);
+
+    @RequestMapping("queryhunx")
+    Login queryhunx(@RequestParam Integer id);
 }

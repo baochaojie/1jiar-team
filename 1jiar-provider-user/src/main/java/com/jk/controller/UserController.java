@@ -122,16 +122,19 @@ public class UserController {
     public List<jiaoyid> selectjiaoyid(){
         return userService.selectjiaoyid();
     }
+
     @RequestMapping("selecthengyid")
     @ResponseBody
     public List<hengyid> selecthengyid(){
         return userService.selecthengyid();
     }
+
     @RequestMapping("selectshuozaiid")
     @ResponseBody
     public List<shuozaiid> selectshuozaiid(){
         return userService.selectshuozaiid();
     }
+
     @RequestMapping("shuosiname")
     @ResponseBody
     public List<shuosiname> shuosiname(@RequestParam Integer pid){
@@ -154,8 +157,8 @@ public class UserController {
 
     @RequestMapping("addOwner")
     @ResponseBody
-    public void addOwner(@RequestBody Login resume){
-        userService.addOwner(resume);
+    public void updatewner(@RequestBody Login resume){
+        userService.updatewner(resume);
     }
 
     @RequestMapping("deleteuser")
@@ -181,6 +184,13 @@ public class UserController {
     @ResponseBody
     public List<Login> inituserphone(){
         return userService.inituserphone();
+    }
+
+
+    @RequestMapping("queryhunx")
+    @ResponseBody
+    public Login queryhunx(@RequestParam Integer id){
+       return userService.queryhunx(id);
     }
 
 }

@@ -32,7 +32,7 @@ public interface UserService {
 
     List<jiaoxi> jiaoxidname(Integer pid);
 
-    void addOwner(Login resume);
+    void updatewner(Login resume);
 
     void deleteuser(Integer id);
 
@@ -47,4 +47,6 @@ public interface UserService {
     void deleteshouc(Integer houseId);
 
     HashMap<String, Object> qureyResume(Integer page, Integer rows, Login login);
+
+    Login queryhunx(Integer id);
 }

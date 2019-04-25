@@ -79,8 +79,9 @@ public class UserServiceImpl implements UserService{
     }
 
     @Override
-    public void addOwner(Login resume) {
-         userMapper.addOwner(resume);
+    public void updatewner(Login resume) {
+        userMapper.updatewner(resume);
+
     }
 
     @Override
@@ -181,7 +182,10 @@ public class UserServiceImpl implements UserService{
 
     }
 
-
+    @Override
+    public Login queryhunx(Integer id) {
+        return userMapper.queryhunx(id);
+    }
 
 
     @Override

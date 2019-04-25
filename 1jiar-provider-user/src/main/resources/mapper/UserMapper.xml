@@ -32,6 +32,7 @@
         left join house_man hman on h.houseManId = hman.id
         left join t_agent tage on h.agentId = tage.agentId
 				where h.houseShoucang=2
+        <include refid="searchSql"></include>
         )  a
 
     </select>
@@ -55,7 +56,7 @@
         left join house_man hman on h.houseManId = hman.id
         left join t_agent tage on h.agentId = tage.agentId
 				where h.houseShoucang=2
-
+        <include refid="searchSql"></include>
         limit #{start},#{rows}
     </select>
 
@@ -69,7 +70,9 @@ select count(*)from(select  m.id
             left join login_shuozaiid s on m.shuozaiid=s.id
             join login_jiaoxidname o on m.jiaoxid=o.id
             join login_shuosiname n on m.shuozaisiid=n.id
-						)l
+        <include refid="bookWhere"></include>
+
+        )l
     </select>
 
     <select id="qureyResume" resultType="com.jk.model.Login">
@@ -82,6 +85,55 @@ select  m.*,j.jiaxidname as jiaxidname , y.jiaoyidname as jiaoyidname , h.hengyi
             left join login_shuozaiid s on m.shuozaiid=s.id
             join login_jiaoxidname o on m.jiaoxid=o.id
             join login_shuosiname n on m.shuozaisiid=n.id
-            limit #{start},#{rows}
+
+        <include refid="bookWhere"></include>
+
+        limit #{start},#{rows}
     </select>
+
+
+    <sql id="bookWhere">
+        <where>
+            <if test="login.namea != null and login.namea != ''">
+                and m.namea like '%${login.namea}%'
+            </if>
+            <if test="login.login != null and login.login != ''">
+                and m.login like '%${login.login}%'
+            </if>
+        </where>
+    </sql>
+
+
+    <sql id="searchSql">
+
+        /*房屋名条件查询*/
+        <if test="house.houseaheName!=null and house.houseaheName!=''">
+           and (h.houseaheName like '%${house.houseaheName}%')
+        </if>
+        /*开始金额*/
+        <if test="house.startPrice !=null and house.startPrice!='' ">
+            and h.housePrice &gt;=#{house.startPrice}
+        </if>
+        /*结束金额*/
+        <if test="house.endPrice !=null and house.endPrice!=''">
+            and h.housePrice &lt;=#{house.endPrice}
+        </if>
+        /*是否有电梯条件查询*/
+        <if test="house.houseElevator!=null and house.houseElevator!=''">
+            and (h.houseElevator = #{house.houseElevator})
+        </if>
+        /*是否装修条件查询*/
+        <if test="house.houseFinish!=null and house.houseFinish!=''">
+            and (h.houseFinish = #{house.houseFinish})
+        </if>
+        /*是否供暖条件查询*/
+        <if test="house.houseHeating!=null and house.houseHeating!=''">
+            and (h.houseHeating = #{house.houseHeating})
+        </if>
+        /*租期条件查询*/
+        <if test="house.houseZuQi!=null and house.houseZuQi!=''">
+            and (h.houseZuQi = #{house.houseZuQi})
+        </if>
+
+    </sql>
 </mapper>
