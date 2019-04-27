@@ -1,9 +1,7 @@
 package com.jk.controller;
 
 import com.jk.ConstantConf;
-import com.jk.model.Login;
-import com.jk.model.Resume;
-import com.jk.model.Tree;
+import com.jk.model.*;
 import com.jk.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -31,7 +29,6 @@ public class UserController {
     @RequestMapping("duanxinyanzheng")
     @ResponseBody
     public String duanxinyanzheng(String login,HttpServletRequest request) {
-
         Object object = redisTemplate.opsForValue().get(ConstantConf.STRINGDXYZ+"Verification");
         if (object!=null) {
             return "sss";
@@ -56,6 +53,31 @@ public class UserController {
         return qlogin;
     }
 
+    /*@RequestMapping("phoneVerificat/{login}")
+    @ResponseBody
+    public Login phoneVerificat(@RequestParam("login")String login) {
+        Login qlogin  =  userservice.phoneVerificat(login);
+        return qlogin;
+    }*/
+
+    @RequestMapping("queryhouse")
+    @ResponseBody
+    public HashMap<String, Object> findHousePage(@RequestParam Integer page, @RequestParam Integer rows, @RequestBody House house){
+        HashMap<String, Object> housePage=null;
+        // List<Object> range = redisTemplate.opsForList().range(CommonConf.SMS_QUERYHOUSE+"_"+page+"_"+rows, 0, -1);
+        //if(range == null || range.size()<=0){
+        housePage = userservice.findHousePage(page, rows, house);
+        //  redisTemplate.opsForList().leftPush(CommonConf.SMS_QUERYHOUSE+"_"+page+"_"+rows, housePage);
+        // redisTemplate.expire(CommonConf.SMS_QUERYHOUSE+"_"+page+"_"+rows,1, TimeUnit.MINUTES);
+
+        // }else{
+        //   housePage = (HashMap<String, Object>) range.get(0);
+        //  }
+        return  housePage;
+
+    }
+
+
     /**
      * 左侧树
      */
@@ -70,10 +92,12 @@ public class UserController {
      */
     @RequestMapping("qureyResume")
     @ResponseBody
-    public List<Resume> qureyResume(){
-        return userService.qureyResume();
-    }
+    public HashMap<String, Object> qureyResume(@RequestParam Integer page, @RequestParam Integer rows, @RequestBody Login login){
+        HashMap<String, Object> housePage=null;
+        housePage = userservice.qureyResume(page, rows, login);
+        return  housePage;
 
+    }
     /**
      * 注册
      */
@@ -91,4 +115,82 @@ public class UserController {
     public String login(@RequestBody Login login) {
         return userService.login(login);
     }
+
+
+    @RequestMapping("selectjiaoyid")
+    @ResponseBody
+    public List<jiaoyid> selectjiaoyid(){
+        return userService.selectjiaoyid();
+    }
+
+    @RequestMapping("selecthengyid")
+    @ResponseBody
+    public List<hengyid> selecthengyid(){
+        return userService.selecthengyid();
+    }
+
+    @RequestMapping("selectshuozaiid")
+    @ResponseBody
+    public List<shuozaiid> selectshuozaiid(){
+        return userService.selectshuozaiid();
+    }
+
+    @RequestMapping("shuosiname")
+    @ResponseBody
+    public List<shuosiname> shuosiname(@RequestParam Integer pid){
+        return userService.shuosiname(pid);
+    }
+
+
+    @RequestMapping("jiaxidname")
+    @ResponseBody
+    public List<jiaxid> jiaxidname(){
+        return userService.jiaxidname();
+    }
+
+    @RequestMapping("jiaoxidname")
+    @ResponseBody
+    public List<jiaoxi> jiaoxidname(@RequestParam Integer pid){
+        return userService.jiaoxidname(pid);
+
+    }
+
+    @RequestMapping("addOwner")
+    @ResponseBody
+    public void updatewner(@RequestBody Login resume){
+        userService.updatewner(resume);
+    }
+
+    @RequestMapping("deleteuser")
+    @ResponseBody
+    public void deleteuser(Integer id) {
+         userService.deleteuser(id);
+    }
+
+    @RequestMapping("deleteshouc")
+    @ResponseBody
+    public void deleteshouc(Integer houseId) {
+        userService.deleteshouc(houseId);
+    }
+
+    @RequestMapping("zenghe")
+    @ResponseBody
+    public List<zenghe> zenghe(){
+        return userService.zenghe();
+    }
+
+
+    @RequestMapping("inituserphone")
+    @ResponseBody
+    public List<Login> inituserphone(){
+        return userService.inituserphone();
+    }
+
+
+    @RequestMapping("queryhunx")
+    @ResponseBody
+    public Login queryhunx(@RequestParam Integer id){
+       return userService.queryhunx(id);
+    }
+
 }

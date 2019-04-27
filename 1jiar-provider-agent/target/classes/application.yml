@@ -1,31 +1,26 @@
 server:
-  port: 8766
+  port: 8762
 
 spring:
   application:
     name: 1jiar-provider-agent
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    password: 123
-    url: jdbc:mysql://192.168.1.161:3306/shixun1?useUnicode=true&characterEncoding=utf-8&serverTimezone=GMT%2B8
+    password: root
+    url: jdbc:mysql://192.168.1.119:3306/shixun1?useUnicode=true&characterEncoding=utf-8&serverTimezone=GMT%2B8
     username: root
-    #redis:
-    # database: 0
-    # host: 127.0.0.1
-    # port: 6379
-    # password:
-    # timeout: 5000
-    #  pool:
-    # max-active: 20
-    #  max-wait: -1
-    # max-idle: 8
-    #  min-idle: 0
-    # data:
-    # MongoDB:
-    #   host: 127.0.0.1
-    #  mongodb:
-    #  database: 1809a
-    #  port: 27017
+redis:
+  database: 0
+  host: 127.0.0.1
+  port: 6379
+  password:
+  timeout: 5000
+  pool:
+  max-active: 20
+  max-wait: -1
+  max-idle: 8
+  min-idle: 0
+
 eureka:
   client:
     service-url:

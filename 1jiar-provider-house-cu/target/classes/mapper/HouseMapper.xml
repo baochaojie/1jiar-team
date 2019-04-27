@@ -111,8 +111,6 @@
         /*房屋特色查询*/
         <if test="house.houseTeSeId !=null and house.houseTeSeId!=''">
             and (h.houseTeSeId in (${house.houseTeSeId}))
-<<<<<<< HEAD
-=======
         </if>
         /*根据前台传过来的int类的值排序 */
         <if test="house.intid ==1 and  house.intid==null">
@@ -123,7 +121,6 @@
         </if>
         <if test="house.intid ==3 ">
             group by h.houseJianzhuMianji
->>>>>>> 8713299a6eb8ad5f202e5154f2938ff5df858695
         </if>
     </sql>
     <!-- 根据pid获取地区数据 -->

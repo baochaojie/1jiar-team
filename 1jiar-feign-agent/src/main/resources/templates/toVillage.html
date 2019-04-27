@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.springframework.org/schema/jdbc">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body style="height: 400%; margin: 0">
+<div id="container" style="height: 400%"></div>
+<script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/echarts.min.js"></script>
+<script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts-gl/echarts-gl.min.js"></script>
+<script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts-stat/ecStat.min.js"></script>
+<script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/extension/dataTool.min.js"></script>
+<script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/map/js/china.js"></script>
+<script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/map/js/world.js"></script>
+<script type="text/javascript" src="https://api.map.baidu.com/api?v=2.0&ak=xfhhaTThl11qYVrqLZii6w8qE5ggnhrY&__ec_v__=20190126"></script>
+   <table id="villageTable"></table>
+   <script type="text/javascript" th:inline="none">
+           initagentId()
+           initVillageTable();
+       function initagentId(){
+           $.ajax({
+               url:'/initagentId',
+               tpye:'post',
+               data:{},
+               dataType:'json',
+               success:function(data){
+                   agentId=data;
+               }
+           })
+       }
+       var agentId = 0;
+       //查询成交小区
+       function initVillageTable(){
+           $('#villageTable').bootstrapTable({
+               url:"/findExhibition?agentId="+agentId,
+               type:"post",
+               striped:true,//显示条纹状表格
+
+               columns:[//commentCount(agentId);
+                   {field:"check",checkbox:true},
+                   {field:"agentId",title:"id"},
+                   {field:"village",title:"小区名称"},
+                   {field:"streetName",title:"所属区域"},
+                   {field:"volume",title:"成交量"}
+               ]
+           })
+       }
+
+
+       </script>
+</body>
+</html>

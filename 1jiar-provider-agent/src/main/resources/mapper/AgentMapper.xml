@@ -22,10 +22,15 @@
 			</if>
 	</sql>
 	<!-- 新增经纪人 -->
-    <insert id="saveAgent" parameterType="com.jk.model.AgentBean">
+    <insert id="saveAgent" parameterType="com.jk.model.AgentBean"  useGeneratedKeys="true" keyProperty="id">
     insert into t_agent(agentName,agentJob,region,achievement,street,agentPhone,argentImg,score,detail,labelId,houseId,agentYears,store)
     values(#{agentName},#{agentJob},#{region},#{achievement},#{street},#{agentPhone},#{argentImg},#{score},#{detail},#{labelId},#{houseId},#{agentYears},#{store})
 	</insert>
+	<!-- 修改经纪人 -->
+	<update id="updateAgent" parameterType="com.jk.model.AgentBean">
+		update t_agent set agentName=#{agentName},agentJob=#{agentJob},region=#{region},achievement=#{achievement},street=#{street},agentPhone=#{agentPhone},
+		argentImg=#{argentImg},score=#{score},detail=#{detail},labelId=#{labelId},houseId=#{houseId},agentYears=#{agentYears},store=#{store} where agentId = #{agentId}
+	</update>
 	<!-- 查询地区表 -->
     <select id="findRegion" resultType="com.jk.model.AreaBean">
 		select * from t_area where pid = #{id}
@@ -58,5 +63,35 @@
 	<!-- 查询标签 -->
 	<select id="findLabel" resultType="com.jk.model.LabelBean">
 			select * from t_label
+	</select>
+	<!-- 查询成交小区-->
+	<select id="findExhibition" resultType="com.jk.model.AgentBean">
+		 select e.*,a.name streetName,a2.agentName,a2.detail from t_exhibition e
+	left join t_area a on e.areaId=a.id
+	left join t_agent a2 on e.agentId=a2.agentId where  a2.agentId=#{agentId} order by e.volume desc
+	</select>
+
+	<select id="queryTree" resultType="com.jk.model.DictionaryTable">
+		select s.mainid id, s.content text,s.fatherid pid from  t_dictionarytable s  where s.fatherid=#{pid}
+	</select>
+	<!-- 向他提问 -->
+	<insert id="addProblemInfoById" >
+    insert into t_problem(agentId,problem,proDescription,proType)
+    values(#{agentId},#{problem},#{proDescription},#{proType})
+	</insert>
+	<!-- 查询问题 -->
+	<select id="findProblem" resultType="com.jk.model.Problem">
+		select * from t_problem
+	</select>
+	<!-- Echarts -->
+	<select id="findEcharts" resultType="com.jk.model.House">
+		select h.* from t_house h left join t_agent a on h.agentId = a.agentId
+	</select>
+    <select id="findAgents" resultType="com.jk.model.AgentBean">
+		select a.*,a1.name regionName,a2.name streetName,h.houseaheName houseName,l.labelName from t_agent a
+		left join t_area a1 on a.region=a1.id
+		left join t_area a2 on a2.id=a.street
+		left join t_house h on h.houseId = a.houseId
+		left join t_label l on a.labelId = l.labelId where a.agentId=#{id}
 	</select>
 </mapper>

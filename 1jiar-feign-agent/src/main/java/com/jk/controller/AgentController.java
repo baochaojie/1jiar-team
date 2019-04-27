@@ -1,13 +1,11 @@
 package com.jk.controller;
 
-import com.jk.model.AgentBean;
-import com.jk.model.AreaBean;
-import com.jk.model.House;
-import com.jk.model.LabelBean;
+import com.jk.model.*;
 import com.jk.service.AgentService;
 import com.jk.utils.OSSClientUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
@@ -19,6 +17,14 @@ import java.util.List;
 public class AgentController {
     @Autowired
     private AgentService agentService;
+    @RequestMapping("quanbu")
+    public String aa(String url){
+        return url;
+    }
+    @RequestMapping("quanbu2")
+    public String aa(String url,Integer id){
+        return url;
+    }
    //跳转到查询经济人的页面
     @RequestMapping("toAgent")
     public String toAgent(){
@@ -36,7 +42,7 @@ public class AgentController {
     public String toAddAgent(){
         return "toAddAgent";
     }
-   //查询经济人
+   //分页查询经济人
     @RequestMapping("findAgent")
     @ResponseBody
     private HashMap<String,Object> findAgent( Integer page, Integer rows, AgentBean agentBean){
@@ -115,4 +121,80 @@ public class AgentController {
     public List<LabelBean> findLabel(){
         return agentService.findLabel();
     }
+
+    Integer initinterid = 0;
+    @RequestMapping("toVillage")
+     public String  toVillage(Integer agentId){
+        initinterid=agentId;
+        return  "toVillage";
+    }
+    @RequestMapping("toVillage2")
+    public String  toVillage2(Integer agentId){
+        initinterid=agentId;
+        return  "toVillage2";
+    }
+    //查询成交小区
+    @RequestMapping("findExhibition")
+    @ResponseBody
+    public List<AgentBean> findExhibition(Integer agentId){
+        return agentService.findExhibition(agentId);
+    }
+    @RequestMapping("initagentId")
+    @ResponseBody
+    public Integer initagentId(){
+        System.out.println(initinterid);
+        return initinterid;
+    }
+    //查询树
+    @RequestMapping("findGuide")
+    @ResponseBody
+    public List<DictionaryTable> findGuide() {
+        List<DictionaryTable> list = agentService.findGuide();
+        return list;
+    }
+    //新增问题
+    @RequestMapping("addProblemInfoById")
+    @ResponseBody
+    public void addProblemInfoById(Problem problem){
+        agentService.addProblemInfoById(problem);
+    }
+    @RequestMapping("toAddProblem")
+    public String toAddProblem(){
+        return "toAddProblem";
+    }
+    //查询树
+    @RequestMapping("findProblem")
+    @ResponseBody
+    public List<Problem> findProblem() {
+        List<Problem> list = agentService.findProblem();
+        return list;
+    }
+    @RequestMapping("findEcharts")
+    @ResponseBody
+    public List<House> findEcharts(){
+        System.out.println(1234);
+        return agentService.findEcharts();
+    }
+
+    @RequestMapping("findAgents")
+    @ResponseBody
+    public AgentBean findAgents(String id){
+        System.out.println(id);
+        AgentBean  agents = agentService.findAgents(id);
+        System.out.println(agents);
+        return agents;
+    }
+    //查询区域
+    @RequestMapping("queryArea")
+    @ResponseBody
+    public List<Area> queryArea(Integer  pid){
+        return agentService.queryArea(pid);
+    }
+    //地区条查
+   @RequestMapping("findAgents2")
+    @ResponseBody
+    public List<AgentBean> findAgents2(Integer  id){
+        return agentService.findAgents2(id);
+    }
+
 }
