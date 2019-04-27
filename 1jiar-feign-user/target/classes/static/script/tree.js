@@ -1,4 +1,17 @@
 initTree();
+initusername();
+function initusername(){
+alert(1)
+    $.ajax({
+        url:'../qureyResume',
+        type:'post',
+        data:{},
+        success:function(data){
+            $("#name").text(data);
+        }
+    })
+
+}
 function initTree(){
     $.ajax({
         url:"../findTree",

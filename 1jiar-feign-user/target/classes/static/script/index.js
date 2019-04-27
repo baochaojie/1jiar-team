@@ -53,7 +53,7 @@ function shanchu(id){
                     dataType:'json',
                     success:function(data){
                         if(data){
-                            tiaojianchaxun();
+                            initbooklist();
                         }else{
                             bootbox.alert({
                                 size:"small",
