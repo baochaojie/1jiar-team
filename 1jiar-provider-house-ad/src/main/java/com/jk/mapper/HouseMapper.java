@@ -21,4 +21,5 @@ public interface HouseMapper {
     List<Area> initcity(Integer pid);
 
     void addhousemoreinfo(House house);
+
 }

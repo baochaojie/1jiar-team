@@ -30,4 +30,5 @@ public interface HouseService {
     @RequestMapping("addhousemoreinfo")
     @ResponseBody
     void addhousemoreinfo(@RequestBody House house);
+
 }
