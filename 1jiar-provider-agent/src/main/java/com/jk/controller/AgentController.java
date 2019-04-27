@@ -138,7 +138,8 @@ public class AgentController {
     }
     @RequestMapping("findExhibition/{agentId}")
     @ResponseBody
-    public List<Exhibition> findExhibition(@PathVariable("agentId") Integer agentId){
+    public List<AgentBean> findExhibition(@PathVariable("agentId") Integer agentId){
+
         return agentMapper.findExhibition(agentId);
     }
     @RequestMapping("findGuide")
@@ -199,5 +200,22 @@ public class AgentController {
 
         return list;
     }
+    @RequestMapping("findAgents")
+    @ResponseBody
+    public AgentBean findAgents(@RequestParam(value = "id") String id){
+        System.out.println(44444);
+       return agentMapper.findAgents(id);
+    }
+    @RequestMapping("queryArea")
+    @ResponseBody
+    List<Area> queryArea(@RequestParam  Integer pid){
+        return agentMapper.queryArea(pid);
+    };
+    //地区条查
+   @RequestMapping("findAgents2")
+  @ResponseBody
+    List<AgentBean> findAgents2(@RequestParam Integer id){
+       return  agentMapper.findAgents2(id);
 
+   };
 }

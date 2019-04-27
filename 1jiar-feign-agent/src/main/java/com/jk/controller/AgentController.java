@@ -21,6 +21,10 @@ public class AgentController {
     public String aa(String url){
         return url;
     }
+    @RequestMapping("quanbu2")
+    public String aa(String url,Integer id){
+        return url;
+    }
    //跳转到查询经济人的页面
     @RequestMapping("toAgent")
     public String toAgent(){
@@ -132,7 +136,7 @@ public class AgentController {
     //查询成交小区
     @RequestMapping("findExhibition")
     @ResponseBody
-    public List<Exhibition> findExhibition(Integer agentId){
+    public List<AgentBean> findExhibition(Integer agentId){
         return agentService.findExhibition(agentId);
     }
     @RequestMapping("initagentId")
@@ -171,4 +175,26 @@ public class AgentController {
         System.out.println(1234);
         return agentService.findEcharts();
     }
+
+    @RequestMapping("findAgents")
+    @ResponseBody
+    public AgentBean findAgents(String id){
+        System.out.println(id);
+        AgentBean  agents = agentService.findAgents(id);
+        System.out.println(agents);
+        return agents;
+    }
+    //查询区域
+    @RequestMapping("queryArea")
+    @ResponseBody
+    public List<Area> queryArea(Integer  pid){
+        return agentService.queryArea(pid);
+    }
+    //地区条查
+   @RequestMapping("findAgents2")
+    @ResponseBody
+    public List<AgentBean> findAgents2(Integer  id){
+        return agentService.findAgents2(id);
+    }
+
 }

@@ -24,6 +24,42 @@ public class AgentBean implements Serializable {
     private Integer commentCount;//评论条数
     private String houseName;//小区
     private String labelName;//标签
+    private Integer exhiId;//关联看房子
+    private Integer volume;//成交量
+    private Integer daiKanliang;//带看量
+    private String village;//小区名称
+
+    public String getVillage() {
+        return village;
+    }
+
+    public void setVillage(String village) {
+        this.village = village;
+    }
+
+    public Integer getExhiId() {
+        return exhiId;
+    }
+
+    public void setExhiId(Integer exhiId) {
+        this.exhiId = exhiId;
+    }
+
+    public Integer getVolume() {
+        return volume;
+    }
+
+    public void setVolume(Integer volume) {
+        this.volume = volume;
+    }
+
+    public Integer getDaiKanliang() {
+        return daiKanliang;
+    }
+
+    public void setDaiKanliang(Integer daiKanliang) {
+        this.daiKanliang = daiKanliang;
+    }
 
     public String getHouseName() {
         return houseName;
@@ -199,6 +235,10 @@ public class AgentBean implements Serializable {
                 ", commentCount=" + commentCount +
                 ", houseName='" + houseName + '\'' +
                 ", labelName='" + labelName + '\'' +
+                ", exhiId=" + exhiId +
+                ", volume=" + volume +
+                ", daiKanliang=" + daiKanliang +
+                ", village='" + village + '\'' +
                 '}';
     }
 }

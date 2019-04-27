@@ -1,0 +1,1148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" async=""
+            src="https://s1.ljcdn.com/feroot/pc/asset/common/advert.js?_v=20190418174907"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Cache-Control" content="no-transform">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <meta name="applicable-device" content="pc">
+    <script type="text/javascript" async="" charset="utf-8"
+            src="https://c.cnzz.com/core.php?web_id=1255633284&amp;t=q"></script>
+    <script type="text/javascript" async="" src="https://static-ssl.mediav.com/mv.js"></script>
+    <script type="text/javascript" async="" src="https://material-ssl.mediav.com/bjjs/mba.js"></script>
+    <script type="text/javascript" async="" charset="utf-8"
+            src="https://c.cnzz.com/core.php?web_id=1254525948&amp;t=q"></script>
+    <script type="text/javascript" async="" src="https://static-ssl.mediav.com/mvl.js"></script>
+    <script async="" src="//www.google-analytics.com/analytics.js"></script>
+    <script>
+        ljConf = {
+            city_id: '110000',
+            city_abbr: 'bj',
+            city_name: '北京',
+            channel: 'shop',
+            page: 'shop_index',
+            feroot: 'http://s1.ljcdn.com/',
+            pageConfig: {
+                "ajaxroot": "\/\/ajax.api.lianjia.com\/",
+                "imAppid": "LIANJIA_WEB_20160624",
+                "imAppkey": "6dfdcee27d78b1107fceeca55d80b7bd"
+            }
+        };
+    </script>
+    <title>【贾冬冬_北京房产经纪人】贾冬冬电话-北京链家网</title>
+    <meta name="description" content="链家北京房地产经纪人贾冬冬房屋交易店铺信息，提供最真实的贾冬冬经纪人店铺用户评价等信息，链家官方认证贾冬冬电话号码等信息。">
+    <meta name="keywords" content="贾冬冬,贾冬冬房产经纪人, 房产经纪人贾冬冬">
+    <link href="/favicon.ico" type="image/x-icon" rel="icon">
+    <link href="/favicon.ico" type="image/x-icon" rel="shortcut icon">
+    <link rel="stylesheet" href="https://s1.ljcdn.com/feroot/pc/asset/common.css?_v=20190418174907">
+    <link rel="stylesheet" href="https://s1.ljcdn.com/feroot/pc/asset/jingjiren/css/detail.css?_v=20190418174907">
+    <link rel="stylesheet" href="https://s1.ljcdn.com/feroot/pc/asset/jingjiren/css/webuploader.css?_v=20190418174907">
+    <link rel="stylesheet" href="https://s1.ljcdn.com/feroot/pc/asset/list.css?_v=20190418174907">
+    <link rel="stylesheet" href="https://s1.ljcdn.com/feroot/pc/asset/common.css?_v=20190418174907">
+    <link rel="stylesheet" href="https://s1.ljcdn.com/feroot/pc/asset/xiaoqu/css/main.css?_v=20190418174907">
+
+    <!--[if lt IE 9]>
+    <script type="text/javascript"
+            src="https://s1.ljcdn.com/feroot/dep/common-require/html5.js?_v=20190418174907"></script><![endif]-->
+    <script>
+        function RESIZEIMG(b, k, l, m) {
+            var c = b.parentNode;
+            var d = parseInt(c.offsetWidth) || k;
+            var e = parseInt(c.offsetHeight) || l;
+            var f = d / e;
+            var g = b.naturalWidth || b.width;
+            var h = b.naturalHeight || b.height;
+            var i = g / h;
+            var j = "width";
+            if (f < i) {
+                j = "height";
+                try {
+                    b.style["left"] = "-" + parseInt(Math.abs((d - (g * e / h)) / 2)) + "px"
+                } catch (e) {
+                }
+            } else if (m) {
+                try {
+                    b.style["top"] = "-" + parseInt(Math.abs((e - (h * d / g)) / 2)) + "px"
+                } catch (e) {
+                }
+            }
+            ;b.style[j] = "100%";
+        };
+    </script>
+    <script type="application/javascript" src="https://dlswbr.baidu.com/heicha/mw/abclite-2011-s2.js"></script>
+    <script src="//s1.ljcdn.com/dig-log/static/lianjiaUlog.js?t=20190424"></script>
+    <script src="//s1.ljcdn.com/lianjia-track/js/1.4.4/index.js" async=""></script>
+    <script src="/js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $("[name=\"search\"]").val("");
+
+            function getQueryString(name) {
+                var reg = new RegExp('(^|&)' + name + '=([^&]*)(&|$)', 'i');
+                var r = window.location.search.substr(1).match(reg);
+                if (r != null) {
+                    return decodeURI(r[2]);
+                }
+                return null;
+            }
+
+            var id = getQueryString("id");
+            findAgents(id);
+            initVillageTable(id);
+        })
+
+        function findAgents(id) {
+            $.ajax({
+                url: "/findAgents",
+                type: "post",
+                data: {id: id},
+                success: function (result) {
+                    // alert(result.argentImg);
+
+
+                    var count1 = "";
+                    count1 += '<div class="pic_panel">' +
+                        '<a href="#">' +
+                        '<img onerror="this.src=\'https://s1.ljcdn.com/feroot/pc/asset/img/jingjiren/noimg.jpg?_v=20190418174907\';" src="' + result.argentImg + '" width="50px" height="100px" >' +
+                        '</a>' +
+                        '</div>';
+                    count1 += '<div class="info-panel"><div class="agent-name clear-fl" data-id="3"><a href="#" class="h1 fl">' + result.agentName + '</a>';
+                    count1 += '<span class="position fl">' + result.agentJob + '</span>';
+                    count1 += '<a class="lianjiaim-createtalkAll im-talk fl" data-role="lianjiaim-createtalk" title="在线咨询" data-ucid="1000000010094773" data-source-port="PC:ershou_jingjiren_shop"></a>';
+                    count1 += '</div><div class="col-1"><div class="main-plate"><span class="mp-title">所属门店:&nbsp;<i id="icon_pin"></i></span><a data-coord="116.328224,39.776006" id="mapShow"><span>' + result.store + '</span></a></div>';
+                    count1 += '<div class="achievement"><span>联系电话:&nbsp;&nbsp;' + result.agentPhone + '</span></div>';
+                    count1 += '<div class="label"><span class="owner_trust_mark">' + result.labelName + '</span></div>';
+                    count1 += '</div><div class="m-qrcode" data-show="1"><div class="num">综合评分：' + result.score + '</div>';
+                    count1 += '<div class="icon-qrcode" data-url="https://m.link.lianjia.com/store/share/resume?agentId=1000000010094773&amp;from=dianpu" style="display: block;"><canvas width="75" height="75"></canvas></div><div class="txt" style="display: block;">我比您看到的更有料</div></div></div></div>';
+
+                    count1 += '<div class="info_agent_card"><div class="info_agent_card_title"><span>3项平台认证</span></div><ul class="info_agent_card_content"><li class="info_agent_card_entry" data-component="C_agentProfCard" data-list="[{&quot;title&quot;:&quot;\u4ece\u4e1a\u4eba\u5458\u5de5\u4f5c\u724c&quot;,&quot;code&quot;:&quot;&quot;,&quot;text&quot;:&quot;&quot;,&quot;pic_url&quot;:&quot;https:\/\/image1.ljcdn.com\/ehr-personnel\/20180824102704346P30236LG.jpg!m_original,lg_north_west,lx_0,ly_0,l_rorate_logo,f_jpg,ls_70,o_auto&quot;}]">从业人员工作牌</li><li class="info_agent_card_entry" data-component="C_agentProfCard" data-list="[{&quot;title&quot;:&quot;\u8425\u4e1a\u6267\u7167&quot;,&quot;code&quot;:&quot;&quot;,&quot;text&quot;:&quot;\u4f01\u4e1a\u4fe1\u7528\u4fe1\u606f\u67e5\u8be2\u7f51\u5740\uff1ahttp:\/\/www.gsxt.gov.cn\/index.html&quot;,&quot;pic_url&quot;:&quot;https:\/\/image1.ljcdn.com\/ehr-personnel\/201808281115124830ZEKMGFR.jpg!m_original,lg_north_west,lx_0,ly_0,l_rorate_logo,f_jpg,ls_70,o_auto&quot;}]">营业执照</li><li class="info_agent_card_entry" data-component="C_agentProfCard" data-list="[{&quot;title&quot;:&quot;\u7ecf\u7eaa\u5907\u6848&quot;,&quot;code&quot;:&quot;&quot;,&quot;text&quot;:&quot;&quot;,&quot;pic_url&quot;:&quot;https:\/\/image1.ljcdn.com\/ehr-personnel\/20181221193700673VC20TWQM.jpg!m_original,lg_north_west,lx_0,ly_0,l_rorate_logo,f_jpg,ls_70,o_auto&quot;}]">经纪备案</li></ul></div>';
+                    count1 += '<div class="info_bottom"><p><span class="congye">入职年限:&nbsp;&nbsp;</span>' + result.agentYears + '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>个人成绩:&nbsp;&nbsp;</span><!-- 暂时下线经纪人店铺二手房源功能入口 --><span class="zu_sold">' + result.achievement + '，</span><!--<a target="_blank" href="?w=dujia">独家委托0套</a>，--></p><p><span>主营版块:&nbsp;&nbsp;</span><a target="_blank" href="#">' + result.regionName + '</a>&nbsp;&nbsp;<a target="_blank" href="#">' + result.streetName + '</a>&nbsp;&nbsp;</p><p><span>重点小区:&nbsp;&nbsp;</span><a target="_blank" href="https://bj.lianjia.com/xiaoqu/1111043031661/">' + result.houseName + '</a></p></div></div>';
+
+
+                    $(".info_head").append(count1);
+                }
+            })
+        }
+
+        function initVillageTable(id) {
+            $.ajax({
+                url: "/findExhibition",
+                type: "post",
+                data: {agentId: id},
+                success: function (result) {
+                    var count = "";
+                        for (var i = 0;i<result.length ;i++ ){
+                            if(i==0){
+                        count += '<div class="comment_tab con-box"><div class="tab"><ul class="tab-lst">';
+                        count += '<li data-id="1" class="on"><a href="?w=baseinfo"><span class="LOGCLICKEVTID" data-log_evt_id="10660" data-log_title="概况">&nbsp;&nbsp;概况&nbsp;&nbsp;</span></a></li>';
+                        count += '<li data-id="3"><a href="?w=nengli"><span class="LOGCLICKEVTID" data-log_evt_id="10660" data-log_title="能力总结">能力总结</span></a></li></ul>';
+                        count += '</div>';
+                        count += '<div id="main_wrapper" class="mainWrapper"><div class="self_rating"><h2>经纪人自评</h2> ';
+                        count += '<p class="text-comment" style="display:block;">&nbsp;' + result[i].detail + '<span class="more"></span></p>';
+                        count += '<p class="text-comment-all" style="display: none;">&nbsp;<br><span class="Hidemore">收起全部</span></p></div>';
+                        count += '<div class="high_praise"><h2>能力概览</h2>';
+                        count += '<div class="hp_detail bn_w"><div class="chart_w fuwux chart_tl"><h2>' + result[i].agentName + '服务最多的小区</h2>';
+                            count += '<ul class="summary-lst"><li data-id="1"><span class="LOGCLICKEVTID on" data-log_evt_id="10662" data-log_title="成交小区">业绩</span></li></ul>';
+                                count += ' <div class="r_kuang"><ul class="top-title"><li class="districtName">小区名称</li><li class="region">所属区域</li><li class="seeNum">业绩</li></ul>';
+                            }
+                            count += '<ul class="top-dl"><li class="ranking"></li><li class="districtName"><a target="_blank" href="https://bj.lianjia.com/xiaoqu/1111045269268/">' + result[i].village + '</a></li><li class="region">' + result[i].streetName + '</li><li class="seeNum"><p>' + result[i].volume + '套</p></li></ul>';
+                        if ((result.length-1)==i){
+                            count += '<div class="rankHide" id="rank_sold">';
+                            count += '</div></div></div></div><div class="mo_ck mo_wi"></div></div></div>';
+                            }
+                        }
+                    $("#initjjr").html(count);
+                }
+            })
+        }
+    </script>
+</head>
+<body>
+
+<script>
+    __STAT_LJ_CONF = {
+        params: {
+            ljweb_group: ['SEARCH', 'BIGDATA_PC'],
+            ljweb_id: '',
+            ljweb_mod: '',
+            ljweb_bl: '',
+            ljweb_el: '',
+            ljweb_index: '',
+            ljweb_value: '',
+            ljweb_url: '',
+            ljweb_ljref: (document.cookie.match(/(?:^| )ljref=([^;]*)(?:;|$)/) || ['', ''])[1],
+            ljweb_sample: (document.cookie.match(/(?:^| )sample_traffic_test=([^;]*)(?:;|$)/) || ['', ''])[1],
+            ljweb_ref: document.referrer,
+            ljweb_cid: '110000',
+            ljweb_channel: 'shop',
+            ljweb_page: 'shop_index'
+        }
+    };
+
+
+    var UT = {
+        send: function () {
+
+        }
+    };
+    var LjUserTrack = {
+        log: [],
+        initInterval: false,
+        intervalLog: function () {
+            setTimeout(function () {
+                if (window.$ULOG && $ULOG.send) {
+                    for (var i = 0, l = LjUserTrack.log.length; i < l; i++) {
+                        LjUserTrack.__send(LjUserTrack.log[i]);
+                    }
+
+                    for (var m = 0, n = LjUserTrack.logIds.length; m < n; m++) {
+                        LjUserTrack.__sendId(LjUserTrack.logIds[m]);
+                    }
+                    for (var j = 0, k = LjUserTrack.logDatas.length; j < k; j++) {
+                        LjUserTrack.__sendData(LjUserTrack.logDatas[j].id, LjUserTrack.logDatas[j].data);
+                    }
+                } else {
+                    LjUserTrack.intervalLog();
+                }
+            }, 16.7);
+        },
+        _start_time: +new Date,
+        logDatas: [],
+        __sendData: function (id, data) {
+            if (id && (typeof (data) == 'object')) {
+                data.pid = (window.__UDL_CONFIG && window.__UDL_CONFIG.pid && window.__UDL_CONFIG.pid) || "lianjiaweb";
+                data.key = window.location.href;
+                window.$ULOG && $ULOG.send(id, data);
+            }
+        },
+        sendData: function (id, data) {
+            if (window.$ULOG && $ULOG.send) {
+                LjUserTrack.__sendData(id, data);
+            } else {
+                LjUserTrack.logDatas.push({id: id, data: data});
+
+                LjUserTrack.initInterval || (LjUserTrack.initInterval = true, LjUserTrack.intervalLog());
+
+            }
+        },
+        __send: function (data) {
+            var evt_id = data.evt_id || '10043';
+            if ('evt_id' in data) {
+                delete data.evt_id;
+            }
+
+            window.$ULOG && $ULOG.send(evt_id, {
+                "pid": (window.__UDL_CONFIG && window.__UDL_CONFIG.pid && window.__UDL_CONFIG.pid) || "lianjiaweb",
+                "key": window.location.href,
+                "action": $.extend(__ocpc ? {'ad_loginurl': __ocpc.getValue()} : {}, data)
+            });
+        },
+        logIds: [],
+        __sendId: function (id) {
+            id && window.$ULOG && $ULOG.send(id, {
+                "pid": (window.__UDL_CONFIG && window.__UDL_CONFIG.pid && window.__UDL_CONFIG.pid) || "lianjiaweb",
+                "key": window.location.href
+            });
+        },
+        sendId: function (id) {
+            if (window.$ULOG && $ULOG.send) {
+                LjUserTrack.__sendId(id);
+            } else {
+                LjUserTrack.logIds.push(id);
+
+                LjUserTrack.initInterval || (LjUserTrack.initInterval = true, LjUserTrack.intervalLog());
+
+            }
+        },
+        send: function (data, el, config) {
+
+            var utConf = __STAT_LJ_CONF;
+            var params = config || utConf.params,
+                win = window,
+                j;
+
+            data.groupIndex = data.ljweb_group || 0;
+
+            if (params) {
+                for (var d in params) {
+                    if (params[d] !== j && data[d] === j) {
+                        data[d] = params[d];
+                    }
+                }
+            }
+
+            if (el) {
+                this.checkClick(el, data);
+            }
+
+            data.ljweb_group = params['ljweb_group'][data.groupIndex || 0];
+
+            delete data.groupIndex;
+
+            if (data.typ) {
+                data.ljweb_bl = (data.ljweb_bl || '') + '_' + data.typ;
+                delete data.typ;
+            }
+
+            if (window.$ULOG && $ULOG.send) {
+                LjUserTrack.__send(data);
+            } else {
+                LjUserTrack.log.push(data);
+
+                LjUserTrack.initInterval || (LjUserTrack.initInterval = true, LjUserTrack.intervalLog());
+
+            }
+
+        },
+        checkClick: function (el, data) {
+
+            var TAG_LINK = 'A';
+            var href = '';
+            var elParent = null;
+
+            href = (el.tagName.toUpperCase() === TAG_LINK ? el.getAttribute("href", 2) : '');
+            if (!href && (elParent = el.parentNode) && elParent.nodeType === 1) {
+                href = (elParent.tagName.toUpperCase() === TAG_LINK ? elParent.getAttribute("href", 2) : '');
+            }
+
+            if (href) {
+                data.ljweb_url = href;
+            } else {
+                data.ljweb_url = data.ljweb_url
+                    || el.getAttribute("data-log_url")
+                    || (elParent = el.parentNode || el).getAttribute("data-log_url")
+                    || (
+                        (elParent = elParent.parentNode || elParent)
+                        && (elParent.nodeType === 1)
+                        && elParent.getAttribute("data-log_url")
+                    )
+                    || "";
+            }
+
+            this.attr(el, data);
+
+        },
+        path: function () {
+
+        },
+        attr: function (el, data) {
+            var modId = el.getAttribute("log-mod");
+            var blAttr = el.getAttribute("data-bl");
+            var elAttr = el.getAttribute("data-el");
+            var InAttr = el.getAttribute("data-log_index");
+            var valAttr = el.getAttribute("data-log_value");
+            var idAttr = el.getAttribute("data-log_id");
+            var groupAttr = el.getAttribute("data-log_group");
+            var evtId = el.getAttribute("data-log_evtid");
+
+            data.ljweb_bl = data.ljweb_bl || blAttr || '';
+            data.ljweb_el = data.ljweb_el || elAttr || '';
+            data.ljweb_index = data.ljweb_index || InAttr || '';
+            data.ljweb_value = data.ljweb_value || valAttr || '';
+            data.ljweb_id = data.ljweb_id || idAttr || '';
+            data.groupIndex = data.groupIndex || groupAttr || 0;
+            data.evt_id = data.evt_id || evtId || '';
+
+            if (!modId) {
+                if (el.parentNode && el.parentNode.nodeType === 1 && el.parentNode.tagName.toUpperCase() !== 'BODY') {
+                    this.attr(el.parentNode, data);
+                }
+            } else {
+                data.ljweb_mod = modId;
+            }
+        }
+    };
+
+    ;
+    ;(function () {
+        var isW3c = !!document.addEventListener;
+
+        LjUserTrack.send({
+            ljweb_mod: 'pv',
+            ljweb_group: 1
+        });
+
+        /*window[isW3c ? 'addEventListener' : 'attachEvent'](
+            (isW3c ? '': 'on') + 'beforeunload',
+            function(e) {
+                var _end_time = +new Date;
+                UT.send({type: 'show', subtype: 'stay', time: (_end_time-UT._start_time)/1000});
+            },
+            false);*/
+    })();
+
+
+</script>
+
+<header class="lianjia-header">
+    <div class="nav-wrap">
+        <div class="wrapper">
+            <div class="fl"><a class="logo" href="//www.lianjia.com/" title="链家房产网">
+                <!-- <img src="https://s1.ljcdn.com/feroot/pc/asset/img/new-version/logo.png?_v=20190418174907"> --></a>
+            </div>
+            <div class="fr nav">
+                <div class="fl">
+                    <ul>
+                        <li>
+                            <a class="" href="https://bj.lianjia.com/ershoufang/">二手房</a>
+                        </li>
+                        <li>
+                            <a class="" href="https://bj.fang.lianjia.com/">新房</a>
+                        </li>
+                        <li>
+                            <a class="" href="https://bj.lianjia.com/zufang/">租房</a>
+                        </li>
+                        <li>
+                            <a class="" href="https://us.lianjia.com">海外</a>
+                        </li>
+                        <li>
+                            <a class="" href="https://shang.lianjia.com/bj">商业办公</a>
+                        </li>
+                        <li>
+                            <a class="" href="https://bj.lianjia.com/xiaoqu/">小区</a>
+                        </li>
+                        <li>
+                            <a class="on" href="https://bj.lianjia.com/jingjiren/">经纪人</a>
+                        </li>
+                        <li class="hover">
+                            <a class="" href="https://bj.lianjia.com/wenda/">
+                                指南
+                            </a>
+                            <div class="nav-list">
+                                <dd>
+                                    <i></i>
+                                    <dl>
+                                        <a href="https://bj.lianjia.com/wenda/">问答</a>
+                                    </dl>
+                                    <dl>
+                                        <a href="https://news.lianjia.com/bj/baike/">百科</a>
+                                    </dl>
+                                </dd>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="" href="https://bj.lianjia.com/fangjia/">房价</a>
+                        </li>
+                        <li>
+                            <a class="" href="https://bj.lianjia.com/tool.html" target="_blank">工具</a>
+                        </li>
+                        <li>
+                            <a class="" href="https://bj.lianjia.com/yezhu/" target="_blank">发布房源</a>
+                        </li>
+                        <li>
+                            <a class="" href="https://bj.lianjia.com/vip/" target="_blank">企业汇</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="fr login">
+                    <div class="login-panel typeUserInfo">
+                        <script type="text/template" class="template">
+                            <%if(data && data.username){%>
+                            <%if(data.isAgent){%>
+                            <a href="<%=$.env.fixedUrl('//agent.lianjia.com/')%>"><span><%=data.username%>&nbsp;&nbsp;</span></a>
+                            <%}else{%>
+                            <a href="<%=$.env.fixedUrl('//user.lianjia.com/')%>" rel="nofollow"><span><%=data.username%>&nbsp;&nbsp;</span></a>
+                            <%}%>
+                            <%if(data.isAgent){%>
+                            <span class="welcome"><a class="reg" href="<%=data.logoutUrl%>">退出</a></span>
+                            <%}else{%>
+                            <span class="welcome"><a class="reg" href="<%=data.logoutUrl%>">退出</a></span>
+                            <%}%>
+                            <%}else{%>
+                            <span class="welcome"><a href="<%=data.registerUrl%>" class="registerBtn"><span class="log">注册</span></a>|<a
+                                    class="btn-login bounceIn actLoginBtn" href="<%=data.loginUrl%>"><span class="reg">登录</span></a></span>
+                            <%}%>
+                        </script>
+                        <div class="typeShowUser"><a href="https://user.lianjia.com" rel="nofollow"><span>16****14&nbsp;&nbsp;</span></a>
+
+
+                            <span class="welcome"><a class="reg"
+                                                     href="https://upassport.lianjia.com/logout?service=https%3A%2F%2Fwww.lianjia.com%2Fuser%2Fchecklogin%3Fredirect%3Dhttps%253A%252F%252Fdianpu.lianjia.com%252F1000000010092765">退出</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- 面包屑模块 -->
+<div class="download_layer">
+    <div class="download_layer_ewmframe"><span class="close black">×</span><img
+            src="//ajax.api.lianjia.com/qr/getDownloadQr?location=list&amp;ljweb_channel_key=jingjirenchengjiao">
+        <p class="gray">查看最新成交价格</p>
+        <p class="gray">下载链家APP</p></div>
+</div>
+<div class="intro clear" mod-id="lj-common-bread">
+    <div class="container">
+        <div class="fl l-txt"><i class="icon"></i>&nbsp;<a href="http://www.lianjia.com/">链家网北京站</a><span class="stp">&nbsp;&gt;&nbsp;</span><a
+                href="https://bj.lianjia.com/">北京链家网</a><span class="stp">&nbsp;&gt;&nbsp;</span><a
+                href="https://bj.lianjia.com/jingjiren/">北京房产经纪人</a><span class="stp">&nbsp;&gt;&nbsp;</span><a
+                href="https://bj.lianjia.com/jingjiren/fangshan/">房山房产经纪人</a><span class="stp">&nbsp;&gt;&nbsp;</span><a
+                href="https://bj.lianjia.com/jingjiren/changyang1/">长阳房产经纪人</a><span class="stp">&nbsp;&gt;&nbsp;</span><a
+                href="https://dianpu.lianjia.com/1000000010092765">贾冬冬房屋交易店铺</a></div>
+    </div>
+</div><!-- 地图浮层 -->
+<div id="ditufloat" style="display:none;  position: fixed;z-index: 1001;">
+    <div class="floatmap clear">
+        <div class="close-btn"><img
+                src="https://s1.ljcdn.com/feroot/pc/asset/img/jingjiren/close.png?_v=20190418174907"></div>
+        <div class="top"><i class="icon3"></i>
+            <div class="top-text"><h2>加州店</h2>
+                <p>房山区长阳镇加州水郡150号楼17号</p></div>
+        </div>
+        <div class="mapcon">
+            <div class="map" id="mapPos"></div>
+        </div>
+    </div>
+</div><!-- 留言和投诉的浮层，部分可共用 -->
+<div class="mblack_overlay"></div><!-- 留言和投诉的浮层，提示成功与否 -->
+<div class="mwhite_content">
+    <div class="circle_pic"><img src="https://s1.ljcdn.com/feroot/pc/asset/img/jingjiren/mail.png?_v=20190418174907">
+    </div>
+    <div class="remainder"><h2 id="is_success"></h2>
+        <p><span id="second">5</span>秒后关闭窗口</p><input id="close_m" type="submit" class="button" value="马上关闭"></div>
+</div><!-- 投诉内容填写 -->
+<div class="cwhite_content">
+    <div class="tclose-btn"><img src="https://s1.ljcdn.com/feroot/pc/asset/img/jingjiren/close.png?_v=20190418174907">
+    </div>
+    <div class="title"><h2>向链家投诉经纪人<span>贾冬冬</span><i>客服热线&nbsp;4007&nbsp;001&nbsp;001</i></h2></div>
+    <div class="content">
+        <div class="text"><h2>请输入投诉内容<span>*</span><span class="error_c">投诉内容不能为空</span></h2>
+            <div class="tousu_k"><textarea maxlength="200" onchange="this.value=this.value.substring(0, 200)"
+                                           onkeydown="this.value=this.value.substring(0, 200)"
+                                           onkeyup="this.value=this.value.substring(0, 200)" id="tousu_content"
+                                           name="c_content" class="comment-txt"
+                                           placeholder="请详细描述经纪人对您没有服务好的地方，不超过200字"></textarea><span
+                    class="count actShowNumText"><span id="ts_word">0</span>/200</span></div>
+        </div>
+        <div class="pic"><h2>上传图片</h2>
+            <p>如有需要，请上传相关图片，最多5张，仅支持JPG,PNG格式，每张大小不超过5M。</p><!--dom结构部分-->
+            <div id="uploader-demo">
+                <div id="fileList" class="uploader-list"></div>
+                <div id="filePicker">浏览...</div>
+                <div class="uploader_pic"></div>
+            </div>
+            <div class="contact_method"><h2>请留下联系方式<span>*</span></h2>
+                <div class="tousul">
+                    <div class="cdropdown"><span id="shoujihao">手机号/座机</span></div>
+                </div>
+                <div class="tousur"><input type="text" class="toushu_method" id="toushu_method"
+                                           placeholder="请输入联系方式"><span class="error_m">联系方式不能为空</span><span
+                        class="error_p">请输入正确的手机号</span><span class="error_e">请输入正确的邮箱</span></div>
+            </div>
+            <div class="tousubutton">
+                <div id="uploadBtn" class="uploadBtn"><p>提交投诉</p></div>
+                <div id="uploadCanel" class="uploadCanel"><p>取消</p></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="wrapper">
+    <div class="main-box clear" style="margin-top:0px;">
+        <div class="left l_wrapper">
+            <div class="agent_info con-box">
+                <div class="info_head">
+
+                </div>
+                <div class="comment_tab con-box">
+                    <div class="tab">
+
+                        <div class="loading"><p>loading...</p></div>
+                        <div id="main_wrapper" class="mainWrapper">
+
+                            <div id="high_praise" class="high_praise">
+                                <span id="initjjr"></span>
+                            </div>
+                        </div>
+                        <div class="pager" id="pager" pany="1" style="display: none;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <script src="https://s1.ljcdn.com/feroot/pc/asset/base/fe.js?_v=20190418174907"></script>
+        <script src="https://s1.ljcdn.com/feroot/pc/asset/common/common.js?_v=20190418174907"></script>
+        <div style="display:none">
+            <script src="https://s1.ljcdn.com/feroot/dep/ljanalytics.js?_v=20190418174907"></script>
+            <span id="cnzz_stat_icon_1254525948"></span>
+            <script src=" https://w.cnzz.com/c.php?id=1254525948" type="text/javascript"></script>
+            <span id="cnzz_stat_icon_1255633284"></span>
+            <script src=" https://w.cnzz.com/c.php?id=1255633284" type="text/javascript"></script>
+            <span id="cnzz_stat_icon_1255604082"><a href="https://www.cnzz.com/stat/website.php?web_id=1255604082"
+                                                    target="_blank" title="站长统计">站长统计</a></span>
+            <script src=" https://s95.cnzz.com/z_stat.php?id=1255604082" type="text/javascript"></script>
+            <script src="https://c.cnzz.com/core.php?web_id=1255604082&amp;t=z" charset="utf-8"
+                    type="text/javascript"></script>
+        </div>
+        <div id="only" data-city="bj" data-page="shop_index"></div>
+        <div class="loninContaner">
+            <div class="overlay_bg"></div>
+            <div class="panel_login animated" id="dialog">
+                <div class="panel_info"><i class="close_login">×</i>
+                    <div class="panel_tab">
+                        <div class="title">
+                            <div class="fl">账号密码登录</div>
+                        </div>
+                        <div class="clear"></div>
+                        <div id="con_login_user">
+                            <form action="" method="post">
+                                <ul>
+                                    <li class="item border-t userName"><input type="text"
+                                                                              class="the_input topSpecial users"
+                                                                              placeholder="请输入手机号" maxlength="11"></li>
+                                    <li class="item border-b pwd"><input type="password" class="the_input password"
+                                                                         maxlength="20" placeholder="请输入登录密码"><em
+                                            class="password-view"></em></li>
+                                    <li class="item checkVerimg" style="display:none;"><input type="text"
+                                                                                              class="the_input ver-img"
+                                                                                              maxlength="6"
+                                                                                              placeholder="请输入验证码"><img
+                                            class="verImg"></li>
+                                    <li class="item drag" style="display:none;">
+                                        <div id="drag"></div>
+                                    </li>
+                                    <li class="show-error">
+                                        <dd>用户名或密码错误</dd>
+                                    </li>
+                                    <li class="li_01"><label class="checkbox-btn"><span class="active"><input
+                                            type="checkbox" name="remember" value="1" class="mind-login"
+                                            checked=""></span>7天内免登录</label><a href="javascript:;" rel="nofollow"
+                                                                               class="toforget">忘记密码</a></li>
+                                    <li class="li_btn"><a class="login-user-btn">登录</a></li>
+                                    <li class="footer-link"><a href="javascript:;" rel="nofollow" class="totellogin">手机快捷登录</a>
+                                    </li>
+                                </ul>
+                            </form>
+                        </div>
+                        <div id="con_login_agent" class="undis">
+                            <form action="" method="post">
+                                <ul>
+                                    <li class="item">
+                                        <dd></dd>
+                                        <input type="text" class="the_input users" placeholder="输入经纪人ID号码"></li>
+                                    <li class="item"><input type="password" class="the_input password"
+                                                            placeholder="登录密码"></li>
+                                    <li class="li_01"><label class="checkbox-btn"><span class="active"><input
+                                            type="checkbox" name="remember" value="1" class="mind-login"
+                                            checked=""></span>7天内免登录</label><a
+                                            href="https://passport.lianjia.com/register/resources/lianjia/forget.html?service=http://bj.lianjia.com/"
+                                            rel="nofollow">忘记密码</a></li>
+                                    <li><input class="login-agent-btn" value="立即登录"></li>
+                                </ul>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="registered"></div>
+            </div>
+            <div class="panel_login animated" id="dialog_tel">
+                <div class="panel_info"><i class="close_login">×</i>
+                    <div class="panel_tab">
+                        <div class="title">
+                            <div class="fl">手机快捷登录</div>
+                            <div class="register_text_tel">别担心，无账号自动注册不会导致手机号被泄露</div>
+                        </div>
+                        <div class="clear"></div>
+                        <div id="con_login_user_tel">
+                            <form action="" method="post">
+                                <ul>
+                                    <li class="item border-t userName"><input type="text"
+                                                                              class="the_input topSpecial users_tel"
+                                                                              maxlength="11" placeholder="请输入手机号"></li>
+                                    <!-- <li class="item pwd"><input type="password" class="the_input password_tel"  placeholder="请输入短信验证码"/></li> -->
+                                    <li class="item checkVerimg" style=""><input type="text" class="the_input ver-img"
+                                                                                 maxlength="6" placeholder="请输入验证码"><img
+                                            class="verImg"></li>
+                                    <li class="item border-b Verify"><input type="text" class="the_input verifycode"
+                                                                            maxlength="6" placeholder="请输入短信验证码"><a
+                                            class="send_verify_code" id="send_verify_code_tel" href="javascript:;"
+                                            rel="nofollow"><em>获取验证码</em></a></li>
+                                    <li class="send_verify_code_s" id="send_verify_code_tel_s" href="javascript:;"
+                                        rel="nofollow"><em>没有收到验证码？</em><a class="voice_a">发送语音验证码</a></li>
+                                    <li class="show-error">
+                                        <dd>用户名或密码错误</dd>
+                                    </li>
+                                    <li class="li_01"><label class="checkbox-btn"><span class="active"><input
+                                            type="checkbox" name="remember" value="1" class="mind-login"
+                                            checked=""></span>7天内免登录</label></li>
+                                    <li class="li_btn"><a class="login-user-tel-btn">登录</a></li>
+                                    <li class="footer-link"><a href="javascript:;" rel="nofollow"
+                                                               class="tologin">账号密码登录</a></li>
+                                </ul>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="registered"></div>
+            </div>
+            <div class="panel_login animated" id="dialog_reg">
+                <div class="panel_info"><i class="close_login">×</i>
+                    <div class="panel_tab">
+                        <div class="title">
+                            <div class="fl">手机号码注册</div>
+                            <label class="fr register_text">已有账号？<a href="javascript:;" rel="nofollow" class="tologin">去登录</a></label>
+                        </div>
+                        <div class="clear"></div>
+                        <div id="con_login_user_reg">
+                            <form action="" method="post">
+                                <ul>
+                                    <li class="item border-t userName"><input type="text"
+                                                                              class="the_input topSpecial users_reg"
+                                                                              maxlength="11" placeholder="请输入手机号"></li>
+                                    <li class="item checkVerimg" style=""><input type="text" class="the_input ver-img"
+                                                                                 maxlength="6" placeholder="请输入验证码"><img
+                                            class="verImg"></li>
+                                    <li class="item border-c Verify"><input type="text" class="the_input verifycode"
+                                                                            maxlength="6" placeholder="请输入短信验证码"><a
+                                            class="send_verify_code" id="send_verify_code_reg" href="javascript:;"
+                                            rel="nofollow"><em>获取验证码</em></a></li>
+                                    <li class="item border-b pwd"><input type="password" class="the_input password_reg"
+                                                                         maxlength="20" placeholder="请输入密码（最少8位，数字+字母）"><em
+                                            class="password-view"></em></li>
+                                    <li class="send_verify_code_s" id="send_verify_code_reg_s" href="javascript:;"
+                                        rel="nofollow"><em>没有收到验证码？</em><a class="voice_a">发送语音验证码</a></li>
+                                    <li class="show-error">
+                                        <dd>用户名或密码错误</dd>
+                                    </li>
+                                    <li class="li_01"><label class="checkbox-btn"><span class="active"><input
+                                            type="checkbox" name="read" value="1" class="read-protocol"
+                                            checked=""></span>我已阅读并同意</label><a class="toprotocol"
+                                                                                href="//www.lianjia.com/zhuanti/protocol"
+                                                                                target="_blank">《链家用户使用协议》</a></li>
+                                    <li class="li_btn"><a class="register-user-btn">注册</a></li>
+                                </ul>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="registered"></div>
+            </div>
+            <div class="panel_login animated" id="dialog_forget">
+                <div class="panel_info"><i class="close_login">×</i>
+                    <div class="panel_tab">
+                        <div class="title">
+                            <div class="fl">找回密码</div>
+                        </div>
+                        <div class="clear"></div>
+                        <div id="con_forget_user_tel" class="con_forget_user_tel">
+                            <form action="" method="post">
+                                <ul>
+                                    <li class="item border-t userName"><input type="text"
+                                                                              class="the_input topSpecial user_forget_phone"
+                                                                              placeholder="请输入手机号" maxlength="11"></li>
+                                    <li class="item checkVerimg" style=""><input type="text" class="the_input ver-img"
+                                                                                 maxlength="6" placeholder="请输入验证码"><img
+                                            class="verImg"></li>
+                                    <li class="item border-b Verify"><input type="text" class="the_input verifycode"
+                                                                            maxlength="6" placeholder="请输入短信验证码"><a
+                                            class="send_verify_code" id="send_verify_code_forget" href="javascript:;"
+                                            rel="nofollow"><em>获取验证码</em></a></li>
+                                    <li class="item border-t pwd" style="margin-top:-1px;"><input type="password"
+                                                                                                  class="the_input password_reg"
+                                                                                                  maxlength="20"
+                                                                                                  placeholder="请输入密码（最少8位，数字+字母）"><em
+                                            class="password-view"></em></li>
+                                    <li class="send_verify_code_s" id="send_verify_code_forget_s"><em>没有收到验证码？</em><a
+                                            class="voice_a">发送语音验证码</a></li>
+                                    <li class="show-error">
+                                        <dd>用户名或密码错误</dd>
+                                    </li>
+                                    <li class="li_btn"><a class="user-forget">修改密码</a></li>
+                                </ul>
+                            </form>
+                        </div>
+                        <div id="con_forget_user_pw" class="con_forget_user_pw">
+                            <form action="" method="post">
+                                <ul>
+                                    <li class="item border-t pwd"><input type="password" class="the_input password_reg"
+                                                                         maxlength="20" placeholder="请输入密码（最少8位，数字+字母）"><em
+                                            class="password-view"></em></li>
+                                    <li class="show-error">
+                                        <dd>用户名或密码错误</dd>
+                                    </li>
+                                    <li class="li_btn"><a class="modify-user-pswd">修改密码</a></li>
+                                </ul>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="registered"></div>
+            </div>
+        </div>
+
+        <script>var path = 'https://s1.ljcdn.com/feroot/pc/asset?_v=20190418174907'.split("?");
+        require.config({
+            baseUrl: path[0],
+            paths: {
+                'echarts': '../../dep/echarts-1.4.1/build/echarts',
+                'echarts/chart/bar': '../../dep/echarts-1.4.1/build/echarts',
+                'echarts/chart/line': '../../dep/echarts-1.4.1/build/echarts',
+                'echarts/chart/pie': '../../dep/echarts-1.4.1/build/echarts',
+                'common': 'common',
+                'jquery-ui': '../../dep/jquery-ui/jquery-ui.min',
+                'webuploader': '../../dep/webuploader/webuploader'
+            },
+            urlArgs: path[1]
+        });
+        var feData = {
+            "cityName": "北京",
+            "getFavHouseUrl": "/api/gethousefav",
+            "setFavHouseUrl": "/api/sethousefav",
+            "getLastSearch": "/api/getlastsearch",
+            "getCommunityHistory": "/api/getcommunityhistory",
+            "verifyHouse": "/api/verifyHouse",
+            "getUser": "/api/getUser",
+            "verifyCode": "/verifycode/getVerifyCode",
+            "complaint": "/api/complaint",
+            "getDecoration": "/api/getDecoration",
+            "trendData": "/site/getpicinfo"
+        }</script>
+
+
+        <script type="text/template" id="imgBannerTpl">
+            <div data-component="C_agentProfCard__imgbanner">
+                <div class="agent_prof_card__mask"></div>
+                <div class="agent_prof_card__list">
+                    <img src="" alt=""/>
+                    <div class="desc"></div>
+                    <div class="loading"></div>
+                    <div class="pre"><span></span></div>
+                    <div class="next"><span></span></div>
+                </div>
+                <div class="agent_prof_card__close"></div>
+                <div class="slide">
+                    <ul>
+                        <% for (var i = 0;i < list.length;i++){ %>
+                        <% var item = list[i];
+                        item.pic_url = item.pic_url;
+                        %>
+                        <li data-src="<%= item.pic_url %>" data-uri="<%= item.pic_url %>"
+                            data-desc='<%= noDom + descDom %>'
+                            data-pic="<%= item.pic_url %>">
+                            <img src="<%= item.pic_url %>" alt=""/>
+                        </li>
+                        <% } %>
+                    </ul>
+                </div>
+            </div>
+        </script>
+
+
+        <script src="https://s1.ljcdn.com/feroot/pc/asset/jingjiren/jquery.qrcode.min.js?_v=20190418174907"></script>
+        <script>
+            require(['jingjiren/main'], function (main) {
+                main.init({
+                    ucid: '2000000066788240'
+                });
+            });
+            require(['common/initTalk'], function (initTalk) {
+                initTalk()
+            });
+            require(['common/backtopV3'], function (main) {
+                main({
+                    ucid: '2000000066788240',
+                    uuid: 'bc1933b9-c249-4f8b-b835-0d80b28e68c8',
+                    loadingImg: 'https://s1.ljcdn.com/feroot/pc/asset/ershoufang/sellDetail/img/loading.gif?_v=20190418174907',
+                    qrImg: '//ajax.api.lianjia.com/qr/getDownloadQr'
+                });
+            });
+            require(['ershoufang/component/banner'], function (main) {
+            });
+        </script>
+        <script>require(['common/suggestion'], function (suggestion) {
+            suggestion.init({
+                requestOptions: {cityId: '0', cityName: ''},
+                url: '/api/headerSearch?channel=shop&q=',
+                main: '#keyword-box',
+                appendTo: '#suggest-cont'
+            });
+        });</script>
+        <!-- LianjiaIM Style -->
+        <link property="stylesheet" rel="stylesheet"
+              href="https://s1.ljcdn.com/feroot/pc/asset/lianjiaIM/css/lianjiaim.css?_v=20190418174907">
+        <script src="//s1.ljcdn.com/web-im-sdk/static/1.1/lianjiaim1.1.min.js?v=20190424"></script>
+        <style>.im-housecard img {
+            vertical-align: baseline;
+        }</style>
+        <script>(function () {
+            var imConf = {
+                "ajaxroot": "\/\/ajax.api.lianjia.com\/",
+                "imAppid": "LIANJIA_WEB_20160624",
+                "imAppkey": "6dfdcee27d78b1107fceeca55d80b7bd"
+            };
+            let login = require('common/login');
+            $.listener.on('userInfo', function (data) {
+                if (data.code === 1) {
+                    data.ucid = '2000000066788240';
+                }
+                window.LJIM = new LianjiaIM({
+                    appid: imConf.imAppid,
+                    appkey: imConf.imAppkey,
+                    login: login.openLoginDialog,
+                    is_ljbb: true,
+                    userData: data,
+                    downAppUrl: '//www.lianjia.com/client/',
+                    appDesc: '立即下载链家APP，随时随地聊~',
+                    staticRoot: 'https://s1.ljcdn.com/feroot/?_v=20190418174907'
+                })
+            });
+        })();</script>
+        <script type="text/javascript">var advert = 'https://s1.ljcdn.com/feroot/pc/asset/common/advert.js?_v=20190418174907';
+        $.listener.on('userInfo', function (data) {
+            window.loginData = data;
+        });
+        var mvl = document.createElement('script');
+        mvl.type = 'text/javascript';
+        mvl.async = true;
+        mvl.src = advert;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(mvl, s);
+        </script>
+        <div class="fix-right-v3" id="back-top" log-mod="sidebar">
+            <table>
+                <tbody>
+                <tr>
+                    <td>
+                        <div class="sidebar-wrap">
+                            <ul>
+                                <li class="mycart sidebar-item"><a title="待看清单"
+                                                                   data-url="//user.lianjia.com/site/seeList/"
+                                                                   data-bl="mycart">带看清单</a>
+                                    <div class="popup" style="display: none; opacity: 0; right: 48px;"><i></i>
+                                        <div class="head-line"><span class="title"><a
+                                                href="//user.lianjia.com/site/seeList/"
+                                                target="_blank">待看清单</a></span><span class="explain"><a
+                                                href="//user.lianjia.com/site/seeList/"
+                                                target="_blank">一次可以选择多套房源预约带看</a></span></div>
+                                        <ul class="zones hide" style="display: none;"></ul>
+                                        <div class="zone-loading hide" style="display: none;">
+                                            <div class="msg">加载中...</div>
+                                        </div>
+                                        <div class="book-btn hide" style="display: none;"><a
+                                                href="//user.lianjia.com/site/seeList/" target="_blank">立即预约</a></div>
+                                        <div class="empty-cart hide" style="display: block;">
+                                            <div class="empty-img"></div>
+                                            <div class="msg">暂无待看房源</div>
+                                            <a class="link-btn" href="//bj.lianjia.com/ershoufang"
+                                               target="_blank">去选房<i></i></a></div>
+                                        <div class="failed-cart hide" style="display: none;">
+                                            <div class="failed-img"></div>
+                                            <div class="msg">加载失败，请重试</div>
+                                        </div>
+                                        <div class="loading" style="display: none;"><img class="loading-img"
+                                                                                         src="https://s1.ljcdn.com/feroot/pc/asset/ershoufang/sellDetail/img/loading.gif?_v=20190418174907">
+                                            <div class="msg">加载中，请稍后</div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="sidebar-line"></div>
+                            <ul>
+                                <li class="myfav sidebar-item"><a title="我关注的房源"
+                                                                  data-url="//user.lianjia.com/site/favorHouse/"
+                                                                  data-bl="myfav">我关注的房源</a><span class="popup"><i></i>我关注的房源</span>
+                                </li>
+                                <li class="bannerCompare sidebar-item"><a class="bannerCompareIcon" data-bl="compare">房源对比</a>
+                                    <div class="popup" id="bannerComparePopup">
+                                        <i></i>
+                                        <div class="bannerCompareContainer">
+                                            <div class="empty-cart">
+                                                <div class="empty-img"></div>
+                                                <div class="msg">暂无对比房源</div>
+                                                <a class="link-btn CLICKDATA" data-click-event="WebClick"
+                                                   data-click-evtid="18852" data-action="source_type=工具栏房源对比-去选房"
+                                                   href="http://bj.lianjia.com/ershoufang" target="_blank">
+                                                    去选房<i></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="sidebar-line"></div>
+                        <ul>
+                            <li class="sell sidebar-item"><a title="在线卖房" href="//bj.lianjia.com/yezhu/" target="_blank"
+                                                             data-bl="sell">在线卖房</a><span
+                                    class="popup"><i></i>在线卖房</span></li>
+                            <li class="tool sidebar-item"><a title="房贷计算器" href="//bj.lianjia.com/tool.html?sub=0"
+                                                             target="_blank">房贷计算器</a><span class="popup"
+                                                                                            style="display: none; opacity: 0; right: 48px;"><i></i>房贷计算器</span>
+                            </li>
+                            <ul>
+                                <li class="baodan sidebar-item"><a href="//bj.lianjia.com/anxinchengnuo" title="安心服务承诺"
+                                                                   target="_blank" data-bl="baodan">安心服务承诺</a><span
+                                        class="popup"><i></i>安心服务承诺</span></li>
+                                <li class="download sidebar-item"><a href="//www.lianjia.com/client/" title=""
+                                                                     target="_blank" data-bl="client">下载掌上链家</a><span
+                                        class="popup popup-qr"><i></i><img
+                                        src="http://s1.ljcdn.com/pc/asset/img/wxapp.jpg" alt="下载掌上链家" width="94"><em
+                                        class="qr-title">链家微信小程序</em></span></li>
+                                <li class="phone sidebar-item"><a title="官方客服">官方客服</a><span
+                                        class="popup"><i></i>官方客服</span></li>
+                                <li class="miandarao sidebar-item"><a href="//www.lianjia.com/zhuanti/avoid-disturbing"
+                                                                      target="_blank" title="开通免电话营销"
+                                                                      data-bl="miandarao"></a><span
+                                        class="popup"><i></i>开通免电话营销</span></li>
+                                <li class="feedback sidebar-item"><a
+                                        href="https://helper.lianjia.com/it/index2#/feedbackForC?channel=lj-pc&amp;city=110000"
+                                        title="反馈/投诉" data-bl="feedback"></a><span class="popup"><i></i>反馈/投诉</span>
+                                </li>
+                            </ul>
+                        </ul>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            <ul>
+                <li class="gotop sidebar-item" id="gotop" style="display: none;"><a title="返回顶部">返回顶部</a><span
+                        class="popup"><i></i>返回顶部</span></li>
+            </ul>
+        </div>
+        <div class="feedback-box animated"><p>您对新版链家网有任何意见和建议，或使用中遇到的问题，请在本页面反馈。我们会每天关注并不断优化产品，为您提供更好的服务！</p>
+            <div class="tab"><span class="check">意见反馈</span><span class="ent">我要投诉</span></div>
+            <div class="complain">
+                <div class="tab-box">
+                    <div class="box"><span>反馈内容<label class="erro-tips">请输入反馈内容</label></span><textarea id="count"
+                                                                                                        placeholder="我们非常乐意收到您使用网站过程中的感受和意见"
+                                                                                                        autofocus=""></textarea>
+                    </div>
+                    <div class="box"><span>联系方式<i>(选填)</i></span><input type="text" id="tel"
+                                                                        placeholder="手机号、Email、QQ均可"></div>
+                    <div class="clear"></div>
+                    <div class="fl">
+                        <button id="sub">提交反馈</button>
+                        <span id="tips"></span></div>
+                </div>
+                <div class="tab-box appeal" style="display:none;">
+                    <div class="tel"><i></i>投诉热线/1010 9666</div>
+                    <b>处理流程</b>
+                    <p>您可以通过链家网投诉热线提交投诉，我们会在24小时内（工作时间）反馈解决方案</p>
+                    <div id="tousu"><b>投诉公示</b>
+                        <ul id="list"></ul>
+                        <a class="btn-more" href="/report/tousu/" target="_blank" rel="nofollow">点击查看全部详情</a></div>
+                </div>
+            </div>
+            <div class="closebok"><img src="//s1.ljcdn.com/feroot/pc/asset/img/jingjiren/close.png?_v=20150721"></div>
+        </div>
+        <div class="lianjiaim im-fold" data-role="lianjiaim">
+            <div class="lianjiaim-shandow clear">
+                <div class="lianjiaim-wrap" data-role="im-wrap">
+                    <div class="lianjiaim-head" data-role="im-head"><span data-role="im-title">在线咨询</span><span
+                            class="lianjiaim-head-num" data-role="im-unread" data-unread="0"
+                            style="display: none;">0</span><a class="lianjiaim-head-closebtn" title="收起"
+                                                              data-role="im-foldbtn">收起</a></div>
+                    <div class="lianjiaim-body" data-role="im-body">
+                        <ul class="lianjiaim-service" data-role="im-serviceitem-container">
+                            <li class="lianjiaim-body-item">
+                                <div class="im-item-show clear">
+                                    <table>
+                                        <tbody>
+                                        <tr>
+                                            <td class="im-item-avatar"><img
+                                                    src="https://s1.ljcdn.com/feroot/pc/asset/lianjiaIM/img/imgV2/icon_serv@2xV2.png"
+                                                    alt="" width="40" height="40" data-role="im-listitem-item-avatar"><i
+                                                    data-role="im-listitem-item-newmsg" style="display: none;"
+                                                    data-newmsg="0">0</i></td>
+                                            <td class="im-item-cont"><span class="name"
+                                                                           data-role="im-listitem-item-name">链家帮帮</span><span
+                                                    class="text" data-role="im-listitem-item-text">链家网官方人工客服</span></td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul data-role="im-listitem-container" style="display: none;"></ul>
+                        <div class="lianjiaim-noagent" data-role="im-noagent-container" style="">
+                            <div class="noagent-title">没有聊过的经纪人</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lianjiaim-window im-online" data-role="im-window" data-agentid="" style="display: none;">
+                    <div class="lianjiaim-wintitle"><i>在线</i><span class="im-wt-name"
+                                                                   data-role="im-window-name">链家帮帮</span><a
+                            class="im-wt-closebtn" title="关闭" data-role="im-window-closebtn">关闭</a></div>
+                    <div class="lianjiaim-wincont">
+                        <div class="im-wc-hint"><span data-role="im-window-offlinename"></span>当前不在线，您可以在线留言</div>
+                        <div class="im-wc-chat" data-role="im-window-chatcontainer"><p class="chat-tophint">
+                            聊天的时候，经纪人无法知道您的手机号！</p>
+                            <div data-role="im-logtrigger"></div>
+                            <ul data-role="im-window-msgcontainer"></ul>
+                        </div>
+                        <div class="im-wc-input">
+                            <div class="im-input-container" data-role="im-input-container"><textarea
+                                    placeholder="点击输入您想要咨询的问题…" data-role="im-input-textarea"></textarea><a
+                                    class="im-input-insertpic" title="插入图片" data-role="im-input-picbtn">插入图片</a><input
+                                    type="file" style="display: none;" accept=".gif,.jpg,.jpeg,.png,.bmp"
+                                    data-role="im-input-picupload"><span class="im-errorlog" data-role="im-errorlog"
+                                                                         style="display: none;"></span></div>
+                            <div class="im-btn-container"><a href="//www.lianjia.com/client/" target="_blank"
+                                                             title="下载链家APP">立即下载链家APP，随时随地聊~</a><input type="button"
+                                                                                                        value="发送"
+                                                                                                        class="send"
+                                                                                                        data-role="im-input-sendbtn">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lianjiaim-window im-online disabled" data-role="im-bang" style="display: none;">
+                    <div class="lianjiaim-wintitle"><i>在线</i><span class="im-wt-name">链家帮帮</span><span
+                            class="im-wt-time">在线人工服务时间：9:00 - 22:00</span><a class="im-wt-closebtn" title="关闭"
+                                                                              data-role="bang-close">关闭</a></div>
+                    <div class="lianjiaim-wincont">
+                        <div class="im-wc-chat bang-chatcontainer" data-role="bang-chatcontainer">
+                            <ul data-role="bang-msgcontainer"></ul>
+                        </div>
+                        <div class="im-wc-input">
+                            <div class="im-input-container" data-role="im-input-container"><textarea
+                                    placeholder="点击输入您想要咨询的问题…" data-role="bang-textarea"></textarea><a
+                                    class="im-input-insertpic" title="插入图片" data-role="bang-picbtn">插入图片</a><input
+                                    type="file" style="display: none;" accept=".gif,.jpg,.jpeg,.png,.bmp"
+                                    data-role="bang-picupload"></div>
+                            <div class="im-btn-container"><input type="button" value="发送" class="send"
+                                                                 data-role="bang-send"><input type="button" value="结束对话"
+                                                                                              class="end"
+                                                                                              data-role="bang-end"
+                                                                                              style="display: none;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="lianjiaim-personcard" data-role="im-pcard" style="display: none; top: 9999em; left: 9999em;">
+                <div class="im-personcard-top clear">
+                    <div class="im-personcard-avatar"><img src="" alt="" width="78" height="78"
+                                                           data-role="im-pcard-avatar"></div>
+                    <div class="im-personcard-detail">
+                        <div class="im-personname-wrap"><span class="im-personname"
+                                                              data-role="im-pcard-name"></span><span class="im-gray"
+                                                                                                     data-role="im-pcard-grade"></span>
+                        </div>
+                        <div><span class="im-gray">主营商圈：</span><span data-role="im-pcard-district"></span></div>
+                        <div><span class="im-gray">所属门店：</span><span data-role="im-pcard-store"></span></div>
+                        <div><span class="im-gray">从业年限：</span><span data-role="im-pcard-workage"></span></div>
+                    </div>
+                </div>
+                <div class="im-personcard-bottom">
+                    <table>
+                        <tbody>
+                        <tr>
+                            <td><span>累计成交：</span><span class="im-red" data-role="im-pcard-totaldeal"></span></td>
+                            <td><span>月总带看：</span><span class="im-red" data-role="im-pcard-monthshow"></span></td>
+                            <td><span>好评率：</span><span class="im-red" data-role="im-pcard-praiserate"></span></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <a class="im-personcard-shopbtn" href="" target="_blank" title="进入店铺"
+                   data-role="im-pcard-shoplink">进入店铺</a></div>
+        </div>
+</body>
+</html>

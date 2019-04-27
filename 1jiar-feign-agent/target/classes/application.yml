@@ -1,11 +1,9 @@
+
 server:
-  port: 8767
-ribbon:
-  ReadTimeout: 60000
-  ConnectTimeout: 60000
+  port: 8765
 spring:
   application:
-    name: springcloud-feign
+    name: 1jiar-feign-agent
 
 eureka:
   client:

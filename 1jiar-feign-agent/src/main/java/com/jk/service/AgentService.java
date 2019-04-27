@@ -44,7 +44,7 @@ public interface AgentService {
     //查询成交小区
     @RequestMapping("findExhibition/{agentId}")
     @ResponseBody
-    public List<Exhibition> findExhibition(@PathVariable("agentId") Integer agentId);
+    public List<AgentBean> findExhibition(@PathVariable("agentId") Integer agentId);
     @RequestMapping("findGuide")
     @ResponseBody
     public List<DictionaryTable> findGuide();
@@ -60,4 +60,15 @@ public interface AgentService {
     @RequestMapping("findEcharts")
     @ResponseBody
     public List<House> findEcharts();
+    @RequestMapping("findAgents")
+    @ResponseBody
+    AgentBean findAgents(@RequestParam(value = "id") String id);
+//查询区域
+    @RequestMapping("queryArea")
+    @ResponseBody
+    List<Area> queryArea(@RequestParam  Integer pid);
+   //地区条查
+    @RequestMapping("findAgents2")
+    @ResponseBody
+    List<AgentBean> findAgents2(@RequestParam Integer id);
 }
