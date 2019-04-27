@@ -1,26 +1,13 @@
 package com.jk.mapper;
 
 import com.jk.model.*;
-import org.apache.ibatis.annotations.Delete;
-import org.apache.ibatis.annotations.Insert;
-import org.apache.ibatis.annotations.Param;
-import org.apache.ibatis.annotations.Select;
+import org.apache.ibatis.annotations.*;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 public interface UserMapper {
 
-    @Select("select r.*,j.jiaxidname as jiaxidname , y.jiaoyidname as jiaoyidname , h.hengyidname as hengyidname , s.shuozaiidname as shuozaiidname ,\n" +
-            "           o.jiaoxidname as jiaoxidname ,  n.shuosiname as shuosiname\n" +
-            "            from login_resumen r \n" +
-            "            left join login_jiaxid j on r.jiaxid=j.id\n" +
-            "            left join login_jiaoyid y on r.jiaoyid=y.id\n" +
-            "            left join login_hengyid h on r.hengyid=h.id\n" +
-            "            left join login_shuozaiid s on r.shuozaiid=s.id\n" +
-            "\t\t\t\t\t\tleft join login_jiaoxidname o on r.jiaoxid=o.id\n" +
-            "\t\t\t\t\t\tleft join login_shuosiname n on r.shuozaisiid=n.id")
-    List<Resume> qureyResume();
 
     List<Tree> findTreeByPid(@Param("pid") int pid);
 
@@ -51,10 +38,10 @@ public interface UserMapper {
     @Select("select * from login_jiaoxidname j where j.pid=#{value}")
     List<jiaoxi> jiaoxidname(Integer pid);
 
-    @Insert("insert into login_resumen(name,jiaxid,jiaoxid,xingb,aihao,jiaoyid,hengyid,shuozaisiid,shuozaiid) values(#{name},#{jiaxid},#{jiaoxid},#{xingb},#{aihao},#{jiaoyid},#{hengyid},#{shuozaisiid},#{shuozaiid})")
-    void addOwner(Resume resume);
+    @Insert("insert into house_man(namea,jiaxid,jiaoxid,xingb,aihao,jiaoyid,hengyid,shuozaisiid,shuozaiid) values(#{namea},#{jiaxid},#{jiaoxid},#{xingb},#{aihao},#{jiaoyid},#{hengyid},#{shuozaisiid},#{shuozaiid})")
+    void addOwner(Login resume);
 
-    @Delete("DELETE from login_resumen where id=#{id}")
+    @Delete("DELETE from house_man where id=#{id}")
     void deleteuser(Integer id);
 
     List<zenghe> findTreeByP(@Param("pid") int pid);
@@ -66,9 +53,22 @@ public interface UserMapper {
 
     List<House> findHousePage(@Param("start") int start, @Param("rows") Integer rows, @Param("house") House house);
 
-
     @Select(" select houseTeSeName from  house_feature  where houseTeSeId =#{value}")
     String featurenamebyid(int teSeId);
 
+    @Select("select * from house_man ")
+    List<Login> inituserphone();
+    @Delete("Delete from t_house where houseId=#{houseId}")
+    void deleteshouc(Integer houseId);
 
+    int qureyCount(@Param("login") Login login);
+
+    List<Login> qureyResume(@Param("start") int start,@Param("rows") Integer rows,@Param("login") Login login);
+
+    @Select("select m.id ,m.login, m.password from house_man m where m.id=#{value}")
+    Login queryhunx(Integer id);
+
+    @Update("update house_man set login=#{login},password=#{password},namea=#{namea},jiaxid=#{jiaxid},jiaoxid=#{jiaoxid},xingb=#{xingb},aihao=#{aihao},jiaoyid=#{jiaoyid},hengyid=#{hengyid},shuozaisiid=#{shuozaisiid},shuozaiid=#{shuozaiid} where id=#{id}")
+
+    void updatewner(Login resume);
 }

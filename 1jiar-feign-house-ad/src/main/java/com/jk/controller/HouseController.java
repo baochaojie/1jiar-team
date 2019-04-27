@@ -17,7 +17,7 @@ public class HouseController {
     private HouseService houseService;
     /**
      * 此方法用来查询房龄信息
-     * 这里用作测试是否连到MySQL数据库
+     * 这里用作测试是否连到MySQL数据库5
      * @return
      */
     @GetMapping("queryHouseAge")
@@ -60,6 +60,16 @@ public class HouseController {
     @RequestMapping("toaddhousemoreinfo")
     public String toaddhousemoreinfo(){
         return "addhousemoreinfo";
+    }
+
+    /**
+     * 跳转到前台链家新增页面
+     * @return
+     */
+    @RequestMapping("tozhinan")
+    public String tolianjiacp(){
+
+        return "zhinan";
     }
     /**
      * 分页查询已录入的待审核信息

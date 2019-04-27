@@ -24,4 +24,8 @@ public interface HouseService {
     House findHouseById(Integer houseId);
 
     List<House> queryIdhouse(Integer houseId);
+
+    void shouCang(House house);
+
+    House queryXiangQing(Integer houseId);
 }

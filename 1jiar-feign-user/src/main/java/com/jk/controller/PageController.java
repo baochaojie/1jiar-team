@@ -30,6 +30,11 @@ public class PageController {
     public String login(){
         return "login";
     }
+
+    @RequestMapping("hhlogin")
+    public String hhlogin(){
+        return "hhlogin";
+    }
     /**
      * 注册
      */
@@ -58,6 +63,11 @@ public class PageController {
     public String loginsj(){
         return "loginsj";
     }
+
+    @RequestMapping("hloginsj")
+    public String hloginsj(){
+        return "hloginsj";
+    }
     /**
      * 主页
      */
@@ -76,7 +86,7 @@ public class PageController {
     /**
      * url
      */
-    @RequestMapping("quangbu")
+        @RequestMapping("quangbu")
     public String addList(String url){
         return url;
     }

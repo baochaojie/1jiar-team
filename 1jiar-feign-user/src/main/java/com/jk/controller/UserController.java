@@ -101,15 +101,20 @@ public class UserController {
     }*/
     @RequestMapping("qureyResume")
     @ResponseBody
-    public List<Resume> qureyResume(){
-        return userService.qureyResume();
+
+    public HashMap<String, Object> qureyResume(Integer page, Integer rows, Login login ){
+
+        return userService.qureyResume(page,rows,login);
     }
 
+    @RequestMapping("inituserphone")
+    @ResponseBody
+    public List<Login> inituserphone(){
+        return userService.inituserphone();
+    }
     /**
      * 左侧树
      */
-
-
 
     @RequestMapping("findTree")
     @ResponseBody
@@ -138,9 +143,10 @@ public class UserController {
         HttpSession session1 = request.getSession();
         System.out.println(session1.getId());
         String login2 = login.getLogin();
-        userService.phoneVerification(login2);
+        Login login3 = userService.phoneVerification(login2);
         if (login1.equals("0")){
-            redisTemplate.opsForValue().set(session1.getId(),login2);
+            redisTemplate.opsForValue().set(session1.getId(),login3);
+            redisTemplate.expire(session1.getId(),30 , TimeUnit.MINUTES);
         }
         return login1;
     }
@@ -202,8 +208,9 @@ public class UserController {
 
     @RequestMapping("addOwner")
     @ResponseBody
-    public void addOwner(Resume resume){
-        userService.addOwner(resume);
+    public void updatewner(Login resume){
+
+        userService.updatewner(resume);
     }
     /**
      * 删除
@@ -214,6 +221,11 @@ public class UserController {
          userService.deleteuser(id);
     }
 
+    @RequestMapping("deleteshouc")
+    @ResponseBody
+    public void deleteshouc(Integer houseId) {
+        userService.deleteshouc(houseId);
+    }
     /**
      * 整合
      */
@@ -223,8 +235,6 @@ public class UserController {
         return userService.zenghe();
     }
 
-
-
     @RequestMapping("queryhouse")
     @ResponseBody
     public HashMap<String, Object> findUserPage(Integer page, Integer rows, House house ){
@@ -233,16 +243,23 @@ public class UserController {
     }
     @RequestMapping("inituser")
     @ResponseBody
-    public Integer findUserPage(HttpServletRequest request){
+    public String findUserPage(HttpServletRequest request){
         HttpSession session = request.getSession();
         System.out.println(session.getId());
-        List<Object> range = redisTemplate.opsForList().range(session.getId(), 0, -1);
-        if (range==null||range.size()<=0){
-            //2说明没登入
-            return 2;
+        Boolean aBoolean = redisTemplate.hasKey(session.getId());
+        if (aBoolean){
+            //1说明以登入
+            return session.getId();
         }
-        //1说明以登入
-        return 1;
+        //2说明没登入
+        return "";
+    }
+
+    @RequestMapping("queryhunx")
+    @ResponseBody
+    public Login queryhunx(Integer id){
+
+        return userService.queryhunx(id);
     }
 
 }

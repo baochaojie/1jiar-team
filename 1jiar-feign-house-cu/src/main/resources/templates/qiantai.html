@@ -99,6 +99,7 @@
     })();
 </script>
 <div     class="wrapper">
+<<<<<<< HEAD
 
     <!-- <link href='//s1.ljcdn.com/feroot/pc/asset/lianjiaIM/css/lianjiaim.css?v=15212312340214' property='stylesheet' rel="stylesheet"> -->
 
@@ -114,6 +115,23 @@
                         <img data-el="dutyPic" src="/qiantaiJs/businessLicenceCard.jpg">
                     </div>
                 </div>
+=======
+   
+<!-- <link href='//s1.ljcdn.com/feroot/pc/asset/lianjiaIM/css/lianjiaim.css?v=15212312340214' property='stylesheet' rel="stylesheet"> -->
+
+<div>
+
+  <div class="search__area">
+  <div class="beike__nav">
+  <a class="beike__nav--logo" href="https://bj.lianjia.com/zufang/"></a>
+    <div class="duty-entry">
+    <span class="duty-icon"></span>
+    <span class="duty-title">营业执照</span>
+    <div class="duty-pop">
+      <img data-el="dutyPic" src="/qiantaiJs/businessLicenceCard.jpg">
+    </div>
+  </div>
+>>>>>>> d4dce33e0d3a5a4d6549271c7fd88daddea9a7ac
 
             </div>
         </div>
@@ -256,6 +274,7 @@
 
 
 
+<<<<<<< HEAD
                 <button type="reset" class="btn btn-primary glyphicon glyphicon-refresh" >重置</button>
                 <button type="button" class="btn btn-primary glyphicon glyphicon-search" onclick="searchUser(1)">搜索</button>
                 <!-- <button type="button"  class="btn btn-success "  onclick="searchUser(1)">综合排序</button>
@@ -273,6 +292,33 @@
                 <div class="content__list" >
 
 
+=======
+        <button type="reset" class="btn btn-primary glyphicon glyphicon-refresh" >重置</button>
+        <button type="button" class="btn btn-primary glyphicon glyphicon-search" onclick="searchUser(1)">搜索</button>
+       <!-- <button type="button"  class="btn btn-success "  onclick="searchUser(1)">综合排序</button>
+        <button type="button"  class="btn btn-info " onclick="searchUser(2)">价格</button>
+        <button type="button"  class="btn btn-warning " onclick="searchUser(3)">面积</button>-->
+    </form>
+    </div>
+  <div class="content w1150" id="content">
+    <div class="content__article">
+      <p class="content__title">
+        已为您找到 <span class="content__title--hl" id="inittable"></span> 套 北京租房
+
+      </p>
+
+                   <div class="content__list" >
+                            
+						 
+                               
+                    </div>
+    <script>
+        var initrows = 1;
+    $(function() {
+    initHouseTable(initrows);//初始化用户表格数据
+        diqu();
+        ditie();
+>>>>>>> d4dce33e0d3a5a4d6549271c7fd88daddea9a7ac
 
                 </div>
                 <script>
@@ -410,6 +456,7 @@
                         var objArray3 = box3.length;
                         var chestr3="";
 
+<<<<<<< HEAD
                         for(var i=0;i<objArray3;i++){
                             if(box3[i].checked == true){
                                 chestr3+=box3[i].value+",";
@@ -464,6 +511,111 @@
                             },
                             dataType:"json",
                             success:function(result) {
+=======
+        for(var i=0;i<objArray4;i++){
+            if(box4[i].checked == true){
+                chestr4+=box4[i].value+",";
+            }
+        }
+        chestr4 = chestr4.substr(0,chestr4.length-1);
+        //如果街道有值那么地区就为null
+        if ($("#jiedao option:selected").val()!=null&&$("#jiedao option:selected").val()!=-1&&$("#jiedao option:selected").val()!=""){
+            $("#quyu option:selected").val(null);
+        }
+        //如果站点有值那么线路就为null
+        if ($("#zhandian option:selected").val()!=null&&$("#zhandian option:selected").val()!=-1&&$("#zhandian option:selected").val()!=""){
+            $("#xianlu option:selected").val(null);
+        }
+    $.ajax({
+    type:"get",
+    url:"/house/queryhouse",
+    pagination:true, //是否展示分页
+    pageList:[10],//分页组件
+    pageSize:10,//默认每页条数
+    //sidePagination:'server',//分页方式：client客户端分页，server服务端分页
+    data:{page:initrows,
+        rows:10,
+        houseaheName:$("#houseaheName").val(),
+        houseElevator:  $("input[name='houseElevator']:checked").val(),
+        ZuTypeid:  $("input[name='ZuTypeid']:checked").val(),
+        houseFinish:  $("input[name='houseFinish']:checked").val(),
+        houseHeating:  $("input[name='houseHeating']:checked").val(),
+        houseZuQi:  $("input[name='houseZuQi']:checked").val(),
+        houseQuYuId:  $("#jiedao option:selected").val(),
+        houseQuYuFuId:  $("#quyu option:selected").val(),
+        houseDiTieFuId: $("#xianlu option:selected").val(),
+        houseDiTieId: $("#zhandian option:selected").val(),
+        startPrice:$("#startPrice").val(),
+        endPrice:$("#endPrice").val(),
+        houseTypeId:chestr,
+        houseDirectionId:chestr2,
+        houseFloorTypeId:chestr3,
+        houseTeSeId:chestr4
+        //intid:intid
+       },
+    dataType:"json",
+    success:function(result) {
+
+        var html2 ="<ul class=\"sellListContent\" log-mod=\"list\">";
+        $.each(result.rows,function(index,obj){
+                id= obj.houseId;
+            html2  +='<li class="clear LOGCLICKDATA">'+
+                '<div class="content__list--item">'+
+                '<a class="content__list--item--aside" target="_blank" href="http://localhost:8776/house/chaxiangqing?id='+id+'"'+
+                '<img  src='+obj.houseImg+' data-expand="400" /> </a>'+
+                '<div class="content__list--item--main">'+
+                '<p class="content__list--item--title twoline">'+
+                '<a target="_blank"'+ 'href="http://localhost:8776/house/chaxiangqing?id='+id+'">'+
+                obj.houseaheName+' '+obj.houseTypeName+' '+obj.housePrice+'元 '+'</a>'+
+                '</p>'+
+                '<p class="content__list--item--des">'+
+                '<a target="_blank" href="#">'+obj.houseQuYuName+'</a>'+
+                '<i>/</i>'+obj.houseJianzhuMianji +
+                '<i>㎡ /</i>'+obj.houseDirectionName+'<i>/</i>'+
+                obj.houseTypeName +'<span class="hide">'+
+                '<i>/</i>'+
+                obj.houseFloorTypeName+
+                '</span>'+
+                '</p>'+
+                '<p class="content__list--item--brand oneline">'+
+                '链家 </p>'+
+                ' <p class="content__list--item--bottom oneline">'+
+                ' <i class="content__item__tag--central_heating">'+obj.houseTeSeId+'</i>'+
+            '</p>'+
+            '<span class="content__list--item-price"><em>'+obj.housePrice+'</em> 元/月</span>'+
+            '</div>'+
+            '</div></li>';
+        })
+        html2+='</ul><div class="contentBottom clear"><div class="page-box fr"><button type="button" onclick="shangyiye()">上一页</button><input id="yeshu" style="width: 40px;height: 30px;text-align: center;" type="text" value="'+initrows+'" > <button  type="button" onclick="xiayiyie()" >下一页</button></div>';
+
+        $(".content__list").html(html2);
+        $("#total").val(result.total)
+        $("#inittable").text(result.total)
+    }
+    })
+    }
+    </script>
+        <input type="hidden" id="total" >
+      <div class="content__pg" data-el="page_navigation" data-url="/zufang/pg{page}rs%E4%B8%8A%E6%B5%B7/" data-totalpage="1" data-curpage="1">
+      </div>
+          </div>
+        <div class="content__aside">
+      <div class="download">
+  <div class="title">下载依家人APP</div>
+  <div class="qr-code"><img width="94" height="94" src="/qiantaiJs/getDownloadQr(1)" alt="下载贝壳APP">
+    <div class="text">
+      <p>扫描上方二维码</p>
+      <p>随时查看新房源</p>
+      <p class="get-more">
+        <a href="https://www.lianjia.com/client/">了解更多
+          <img width="9" height="9" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgBAMAAACBVGfHAAAAGFBMVEUAAACcn6Gfn5+an5+bnqCbnqGfn5+cn6EV6DbuAAAAB3RSTlMA0BAw8LAgvf5k9AAAAEdJREFUKM9jIBOkBqMJhBcqoAmUC6EKmJSjKWEWR1eiiK6ECZsSA3QlzuhKSihRghDA0EJ/BWIoCgzh4YMIZALRYBrMQAkAAF5bGMBkrwzqAAAAAElFTkSuQmCC">
+        </a>
+      </p>
+    </div>
+  </div>
+</div>    </div> 
+      </div>
+>>>>>>> d4dce33e0d3a5a4d6549271c7fd88daddea9a7ac
 
                                 var html2 ="<ul class=\"sellListContent\" log-mod=\"list\">";
                                 $.each(result.rows,function(index,obj){

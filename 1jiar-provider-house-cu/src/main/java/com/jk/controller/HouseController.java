@@ -77,5 +77,20 @@ public class HouseController {
         return houseService.queryIdhouse(houseId);
 
     }
+    //跳转详情页面
+    @RequestMapping("queryXiangQing")
+    @ResponseBody
+    public House queryXiangQing(@RequestParam Integer houseId){
+        return houseService.queryXiangQing(houseId);
+
+    }
+    //收藏
+    @RequestMapping("shouCang")
+    @ResponseBody
+    public void shouCang(@RequestBody House house){
+          houseService.shouCang(house);
+
+
+    }
 
 }

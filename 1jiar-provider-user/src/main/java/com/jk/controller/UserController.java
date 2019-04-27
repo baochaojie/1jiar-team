@@ -29,7 +29,6 @@ public class UserController {
     @RequestMapping("duanxinyanzheng")
     @ResponseBody
     public String duanxinyanzheng(String login,HttpServletRequest request) {
-
         Object object = redisTemplate.opsForValue().get(ConstantConf.STRINGDXYZ+"Verification");
         if (object!=null) {
             return "sss";
@@ -53,13 +52,13 @@ public class UserController {
         Login qlogin  =  userservice.phoneVerification(login);
         return qlogin;
     }
+
     /*@RequestMapping("phoneVerificat/{login}")
     @ResponseBody
     public Login phoneVerificat(@RequestParam("login")String login) {
         Login qlogin  =  userservice.phoneVerificat(login);
         return qlogin;
     }*/
-
 
     @RequestMapping("queryhouse")
     @ResponseBody
@@ -77,6 +76,8 @@ public class UserController {
         return  housePage;
 
     }
+
+
     /**
      * 左侧树
      */
@@ -91,10 +92,12 @@ public class UserController {
      */
     @RequestMapping("qureyResume")
     @ResponseBody
-    public List<Resume> qureyResume(){
-        return userService.qureyResume();
-    }
+    public HashMap<String, Object> qureyResume(@RequestParam Integer page, @RequestParam Integer rows, @RequestBody Login login){
+        HashMap<String, Object> housePage=null;
+        housePage = userservice.qureyResume(page, rows, login);
+        return  housePage;
 
+    }
     /**
      * 注册
      */
@@ -119,16 +122,19 @@ public class UserController {
     public List<jiaoyid> selectjiaoyid(){
         return userService.selectjiaoyid();
     }
+
     @RequestMapping("selecthengyid")
     @ResponseBody
     public List<hengyid> selecthengyid(){
         return userService.selecthengyid();
     }
+
     @RequestMapping("selectshuozaiid")
     @ResponseBody
     public List<shuozaiid> selectshuozaiid(){
         return userService.selectshuozaiid();
     }
+
     @RequestMapping("shuosiname")
     @ResponseBody
     public List<shuosiname> shuosiname(@RequestParam Integer pid){
@@ -151,8 +157,8 @@ public class UserController {
 
     @RequestMapping("addOwner")
     @ResponseBody
-    public void addOwner(@RequestBody Resume resume){
-        userService.addOwner(resume);
+    public void updatewner(@RequestBody Login resume){
+        userService.updatewner(resume);
     }
 
     @RequestMapping("deleteuser")
@@ -161,10 +167,30 @@ public class UserController {
          userService.deleteuser(id);
     }
 
+    @RequestMapping("deleteshouc")
+    @ResponseBody
+    public void deleteshouc(Integer houseId) {
+        userService.deleteshouc(houseId);
+    }
+
     @RequestMapping("zenghe")
     @ResponseBody
     public List<zenghe> zenghe(){
         return userService.zenghe();
+    }
+
+
+    @RequestMapping("inituserphone")
+    @ResponseBody
+    public List<Login> inituserphone(){
+        return userService.inituserphone();
+    }
+
+
+    @RequestMapping("queryhunx")
+    @ResponseBody
+    public Login queryhunx(@RequestParam Integer id){
+       return userService.queryhunx(id);
     }
 
 }

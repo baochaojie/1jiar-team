@@ -8,9 +8,9 @@ import java.io.Serializable;
 public class House implements Serializable {
     private static final long serialVersionUID = -3999842267868731167L;
     private  Integer houseId;//id
-    private  String houseaheName;//小区名字
+    private  String houseaheName;//名字
     private  Integer housePrice;//售价
-    private  Integer houseManId;//房主id 房屋拥有者 关联一张用户表
+    private  Integer houseManId;//用户id 房屋拥有者 关联一张用户表
     private  String name;       //房主名字
     private  String phoneNum;   //房主的联系方式
 
@@ -29,23 +29,28 @@ public class House implements Serializable {
     public void setPhoneNum(String phoneNum) {
         this.phoneNum = phoneNum;
     }
-
+    private  String houseManName;//用户姓名
     private  Integer houseJianzhuMianji;//建筑面积
     private  String houseTaoneiMianji;//套内面积
     private  String houseTypeId;//房型id 关联一张房屋类型表
     private  String  houseTypeName;//房型名
     private  Integer houseUseId;//用途id 关联一张房屋用途表
-    private  String  houseUseName;//户名
+    private  String  houseUseName;//房型名
     private  Integer houseFloorTypeId;//楼层类型表id 关联一张楼层类型表
     private  String  houseFloorTypeName;//楼层类型名
     private  String houseDirectionId;//房屋朝向表id 关联一张房屋朝向表
     private  String  houseDirectionName;//房屋朝向名
     private  Integer houseAgeId;//楼龄id 关联一张楼龄表
     private  String  houseAgeName;//楼龄名
-    private  Integer zuTypeid;//租房方式id 关联一张租房表
+    private  Integer ZuTypeid;//租房方式id 关联一张租房表
     private  String  houseZuTypeName;//租房方式 1整租 2合租
     private  String  houseTeSeId;//房屋特色id 关联一张房屋特色表
-    private  String  teSeName;//房屋特色名
+    private  String  TeSeName;//房屋特色名
+    private  String  agentId;//经纪人关联表id 关联一张经纪人表
+    private  String  agentName;//经纪人名
+    private  String  argentImg;//经纪人头像
+    private  String  detail;//经纪人简介
+    private  String  agentPhone;//经纪人电话
     private  Integer houseElevator;//有无电梯 1是有电梯，2是没有电梯
     private  Integer houseFinish;//是否装修 1是已装修，2是未装修
     private  Integer houseHeating;//是否供暖 1是供暖，2是不供暖
@@ -57,6 +62,8 @@ public class House implements Serializable {
     private  Integer houseDiTieId;//地铁关联表id
     private  String houseDiTieName;//地铁名
     private  Integer houseZuQi;//租期 1月租 2年租
+    private  String houseImg;//图片
+    private  Integer houseShoucang;//用户收藏
     //临时
     private Integer	startPrice;//开始价格
     private Integer	endPrice;//结束价格
@@ -64,12 +71,44 @@ public class House implements Serializable {
     private Integer	houseDiTieFuId;//地铁线路临时字段
     private Integer	intid;//排序类型临时字段
 
-    public Integer getIntid() {
-        return intid;
+    public String getDetail() {
+        return detail;
     }
 
-    public void setIntid(Integer intid) {
-        this.intid = intid;
+    public void setDetail(String detail) {
+        this.detail = detail;
+    }
+
+    public String getArgentImg() {
+        return argentImg;
+    }
+
+    public void setArgentImg(String argentImg) {
+        this.argentImg = argentImg;
+    }
+
+    public String getAgentPhone() {
+        return agentPhone;
+    }
+
+    public void setAgentPhone(String agentPhone) {
+        this.agentPhone = agentPhone;
+    }
+
+    public Integer getHouseShoucang() {
+        return houseShoucang;
+    }
+
+    public void setHouseShoucang(Integer houseShoucang) {
+        this.houseShoucang = houseShoucang;
+    }
+
+    public String getHouseImg() {
+        return houseImg;
+    }
+
+    public void setHouseImg(String houseImg) {
+        this.houseImg = houseImg;
     }
 
     public static long getSerialVersionUID() {
@@ -325,11 +364,11 @@ public class House implements Serializable {
     }
 
     public Integer getZuTypeid() {
-        return zuTypeid;
+        return ZuTypeid;
     }
 
     public void setZuTypeid(Integer zuTypeid) {
-        this.zuTypeid = zuTypeid;
+        ZuTypeid = zuTypeid;
     }
 
     public String getHouseZuTypeName() {
@@ -349,10 +388,42 @@ public class House implements Serializable {
     }
 
     public String getTeSeName() {
-        return teSeName;
+        return TeSeName;
     }
 
     public void setTeSeName(String teSeName) {
-        this.teSeName = teSeName;
+        TeSeName = teSeName;
+    }
+
+    public Integer getIntid() {
+        return intid;
+    }
+
+    public void setIntid(Integer intid) {
+        this.intid = intid;
+    }
+
+    public String getHouseManName() {
+        return houseManName;
+    }
+
+    public void setHouseManName(String houseManName) {
+        this.houseManName = houseManName;
+    }
+
+    public String getAgentId() {
+        return agentId;
+    }
+
+    public void setAgentId(String agentId) {
+        this.agentId = agentId;
+    }
+
+    public String getAgentName() {
+        return agentName;
+    }
+
+    public void setAgentName(String agentName) {
+        this.agentName = agentName;
     }
 }

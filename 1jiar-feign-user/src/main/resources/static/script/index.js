@@ -2,14 +2,38 @@ $(function(){
     initbooklist();
 })
 
-function initbooklist(){
-    $('#bookTable').bootstrapTable({
-        toolbar:'#toolbar',
-        url:'../qureyResume',
-        type:'post',
-        columns:[
+function tiaojianchaxun(){
+    $('#bookTable').bootstrapTable('refresh')
 
-            {field:'name',title:'用户姓名'},
+}
+function initbooklist(){
+
+
+        $('#bookTable').bootstrapTable({
+        toolbar:'#toolbar',
+        url:"../qureyResume",
+        type:"post",
+        pagination:true, //是否展示分页
+        pageList:[3, 10, 20, 50],//分页组件
+        pageNumber:1,
+        pageSize:3,//默认每页条数
+        sidePagination:'server',//分页方式：client客户端分页，server服务端分页
+        striped:true,//显示条纹状表格
+        queryParams:function(){
+            var boname = $("#namea").val();
+            var mlogin = $("#login").val();
+            return {
+                page:this.pageNumber,
+                rows:this.pageSize,
+                namea:boname,
+                login:mlogin,
+            }
+        },
+        columns:[
+            {field:'login',title:'手机号'},
+            {field:'password',title:'密码'},
+
+            {field:'namea',title:'用户姓名'},
             {field:'jiaxidname',title:'家乡市'},
             {field:'jiaoxidname',title:'家乡省'},
 
@@ -38,10 +62,28 @@ function initbooklist(){
 
 
 
+
+
+
+
+
+
+
+
 function shanchu(id){
     bootbox.confirm({
-        size: "small",
-        message: "删除的数据",
+        size:'small',
+        message:"你确认要删除吗",
+        buttons:{
+            confirm:{
+                label:'确认',
+                className:'btn-success'
+            },
+            cancel:{
+                label:'取消',
+                className: 'btn-danger'
+            }
+        },
         callback:function(result){
             if(result){
                 $.ajax({

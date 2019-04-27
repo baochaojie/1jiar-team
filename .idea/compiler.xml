@@ -37,6 +37,7 @@
       <module name="1jiar-provider-integral" target="1.8" />
       <module name="1jiar-provider-user" target="1.8" />
       <module name="SSSS" target="1.5" />
+      <module name="XiaoMing" target="1.5" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
