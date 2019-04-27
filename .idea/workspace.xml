@@ -5,47 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="615e4efb-1719-49d0-b855-b3a2a07e7d09" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/1jiar-common/src/java/com/jk/model/Exhibition.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1jiar-feign-agent/src/main/resources/templates/agent.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1jiar-common/src/java/com/jk/model/AgentBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/1jiar-common/src/java/com/jk/model/AgentBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1jiar-common/target/classes/com/jk/model/AgentBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/1jiar-common/target/classes/com/jk/model/AgentBean.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1jiar-common/target/classes/com/jk/model/Exhibition.class" beforeDir="false" afterPath="$PROJECT_DIR$/1jiar-common/target/classes/com/jk/model/Exhibition.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1jiar-feign-agent/src/main/java/com/jk/controller/AgentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/1jiar-feign-agent/src/main/java/com/jk/controller/AgentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1jiar-feign-agent/src/main/java/com/jk/service/AgentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/1jiar-feign-agent/src/main/java/com/jk/service/AgentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1jiar-feign-agent/src/main/resources/templates/jingjiren.html" beforeDir="false" afterPath="$PROJECT_DIR$/1jiar-feign-agent/src/main/resources/templates/jingjiren.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1jiar-feign-agent/src/main/resources/templates/toVillage.html" beforeDir="false" afterPath="$PROJECT_DIR$/1jiar-feign-agent/src/main/resources/templates/toVillage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1jiar-feign-agent/src/main/resources/templates/toVillage2.html" beforeDir="false" afterPath="$PROJECT_DIR$/1jiar-feign-agent/src/main/resources/templates/toVillage2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1jiar-feign-agent/target/classes/com/jk/controller/AgentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/1jiar-feign-agent/target/classes/com/jk/controller/AgentController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1jiar-feign-agent/target/classes/com/jk/service/AgentService.class" beforeDir="false" afterPath="$PROJECT_DIR$/1jiar-feign-agent/target/classes/com/jk/service/AgentService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1jiar-feign-agent/target/classes/templates/jingjiren.html" beforeDir="false" afterPath="$PROJECT_DIR$/1jiar-feign-agent/target/classes/templates/jingjiren.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1jiar-feign-agent/target/classes/templates/toVillage.html" beforeDir="false" afterPath="$PROJECT_DIR$/1jiar-feign-agent/target/classes/templates/toVillage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1jiar-feign-agent/target/classes/templates/toVillage2.html" beforeDir="false" afterPath="$PROJECT_DIR$/1jiar-feign-agent/target/classes/templates/toVillage2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1jiar-feign-agent/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1jiar-feign-agent/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1jiar-feign-integral/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/1jiar-feign-integral/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1jiar-feign-integral/target/classes/com/jk/controller/DlrldBeanController.class" beforeDir="false" afterPath="$PROJECT_DIR$/1jiar-feign-integral/target/classes/com/jk/controller/DlrldBeanController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1jiar-feign-integral/target/classes/com/jk/service/DlrldBeanService.class" beforeDir="false" afterPath="$PROJECT_DIR$/1jiar-feign-integral/target/classes/com/jk/service/DlrldBeanService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1jiar-feign-integral/target/classes/static/fileinput.js" beforeDir="false" afterPath="$PROJECT_DIR$/1jiar-feign-integral/target/classes/static/fileinput.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1jiar-feign-integral/target/classes/static/script/book.js" beforeDir="false" afterPath="$PROJECT_DIR$/1jiar-feign-integral/target/classes/static/script/book.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1jiar-feign-integral/target/classes/static/script/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/1jiar-feign-integral/target/classes/static/script/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1jiar-feign-integral/target/classes/templates/addbook.html" beforeDir="false" afterPath="$PROJECT_DIR$/1jiar-feign-integral/target/classes/templates/addbook.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1jiar-feign-integral/target/classes/templates/booklist.html" beforeDir="false" afterPath="$PROJECT_DIR$/1jiar-feign-integral/target/classes/templates/booklist.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1jiar-feign-integral/target/classes/templates/choujiang.html" beforeDir="false" afterPath="$PROJECT_DIR$/1jiar-feign-integral/target/classes/templates/choujiang.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1jiar-provider-agent/src/main/java/com/jk/controller/AgentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/1jiar-provider-agent/src/main/java/com/jk/controller/AgentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1jiar-provider-agent/src/main/java/com/jk/mapper/AgentMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/1jiar-provider-agent/src/main/java/com/jk/mapper/AgentMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/1jiar-provider-agent/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/1jiar-provider-agent/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1jiar-provider-agent/src/main/resources/mapper/AgentMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1jiar-provider-agent/src/main/resources/mapper/AgentMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1jiar-provider-agent/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/1jiar-provider-agent/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1jiar-provider-agent/target/classes/com/jk/controller/AgentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/1jiar-provider-agent/target/classes/com/jk/controller/AgentController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1jiar-provider-agent/target/classes/com/jk/mapper/AgentMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/1jiar-provider-agent/target/classes/com/jk/mapper/AgentMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1jiar-provider-agent/target/classes/mapper/AgentMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1jiar-provider-agent/target/classes/mapper/AgentMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1jiar-provider-integral/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/1jiar-provider-integral/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1jiar-provider-integral/target/classes/com/jk/controller/DlrldBeanController.class" beforeDir="false" afterPath="$PROJECT_DIR$/1jiar-provider-integral/target/classes/com/jk/controller/DlrldBeanController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1jiar-provider-integral/target/classes/com/jk/mapper/DlrldBeanMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/1jiar-provider-integral/target/classes/com/jk/mapper/DlrldBeanMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1jiar-provider-integral/target/classes/com/jk/service/DlrldBeanService.class" beforeDir="false" afterPath="$PROJECT_DIR$/1jiar-provider-integral/target/classes/com/jk/service/DlrldBeanService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1jiar-provider-integral/target/classes/com/jk/service/DlrldBeanServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/1jiar-provider-integral/target/classes/com/jk/service/DlrldBeanServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1jiar-provider-integral/target/classes/mapper/DlrldBeanMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/1jiar-provider-integral/target/classes/mapper/DlrldBeanMapper.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/1jiar-feign-house-cu/target/" />
     <ignored path="$PROJECT_DIR$/1jiar-provider-integral/target/" />
@@ -85,11 +46,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/1jiar-provider-agent/src/main/resources/application.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+            <state relative-caret-position="275">
+              <caret line="14" column="12" lean-forward="true" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -97,17 +58,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/1jiar-provider-agent/src/main/resources/mapper/AgentMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1750">
+            <state relative-caret-position="245">
               <caret line="70" column="100" selection-start-line="68" selection-start-column="9" selection-end-line="70" selection-end-column="100" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/1jiar-feign-agent/src/main/resources/templates/jingjiren.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
-              <caret line="95" column="72" selection-start-line="95" selection-start-column="72" selection-end-line="95" selection-end-column="72" />
+            <state relative-caret-position="-295">
+              <caret line="95" column="71" selection-start-line="95" selection-start-column="71" selection-end-line="95" selection-end-column="71" />
               <folding>
                 <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
                 <element signature="e#77#83#0" expanded="true" />
@@ -225,12 +186,12 @@
         <option value="$PROJECT_DIR$/1jiar-common/src/java/com/jk/model/AgentBean.java" />
         <option value="$PROJECT_DIR$/1jiar-feign-agent/src/main/resources/templates/agent.html" />
         <option value="$PROJECT_DIR$/1jiar-feign-agent/src/main/java/com/jk/Application.java" />
-        <option value="$PROJECT_DIR$/1jiar-provider-agent/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/1jiar-provider-agent/src/main/java/com/jk/controller/AgentController.java" />
         <option value="$PROJECT_DIR$/1jiar-provider-agent/src/main/java/com/jk/mapper/AgentMapper.java" />
         <option value="$PROJECT_DIR$/1jiar-feign-agent/src/main/java/com/jk/controller/AgentController.java" />
         <option value="$PROJECT_DIR$/1jiar-feign-agent/src/main/java/com/jk/service/AgentService.java" />
         <option value="$PROJECT_DIR$/1jiar-feign-agent/src/main/resources/templates/jingjiren.html" />
+        <option value="$PROJECT_DIR$/1jiar-provider-agent/src/main/resources/application.yml" />
       </list>
     </option>
   </component>
@@ -252,7 +213,7 @@
   <component name="MavenRunner">
     <option name="skipTests" value="true" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="621" />
     <option name="y" value="93" />
     <option name="width" value="1080" />
@@ -560,7 +521,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="add_unversioned_files" value="$PROJECT_DIR$/.gitignore" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556330519953" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556332545550" />
     <property name="ignore_missing_gitignore" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -695,12 +656,12 @@
       <workItem from="1556247121479" duration="2730000" />
       <workItem from="1556250162520" duration="3071000" />
       <workItem from="1556325625413" duration="1248000" />
-      <workItem from="1556326950409" duration="1852000" />
+      <workItem from="1556326950409" duration="2428000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="205015000" />
+    <option name="totallyTimeSpent" value="205591000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -715,7 +676,7 @@
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49848023" visible="true" weight="0.22635408" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49848023" visible="true" weight="0.22635408" />
       <window_info id="Designer" order="1" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -725,13 +686,13 @@
       <window_info id="Structure" order="7" sideWeight="0.4973545" weight="0.2934519" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.42451155" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.42451155" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.5186501" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3285968" />
       <window_info anchor="bottom" id="Spring" order="7" weight="0.3285968" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.27175844" />
+      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.13143872" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.5435169" />
@@ -1119,20 +1080,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/1jiar-provider-agent/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/1jiar-provider-agent/src/main/resources/mapper/AgentMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1750">
-          <caret line="70" column="100" selection-start-line="68" selection-start-column="9" selection-end-line="70" selection-end-column="100" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/1jiar-eureka/src/main/java/com/jk/Appeurlication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
@@ -1142,8 +1089,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/1jiar-feign-agent/src/main/resources/templates/jingjiren.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="95" column="72" selection-start-line="95" selection-start-column="72" selection-end-line="95" selection-end-column="72" />
+        <state relative-caret-position="-295">
+          <caret line="95" column="71" selection-start-line="95" selection-start-column="71" selection-end-line="95" selection-end-column="71" />
           <folding>
             <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
             <element signature="e#77#83#0" expanded="true" />
@@ -1164,6 +1111,20 @@
             <element signature="n#style#0;n#h2#0;n#div#0;n#div#0;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#input#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1jiar-provider-agent/src/main/resources/mapper/AgentMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="70" column="100" selection-start-line="68" selection-start-column="9" selection-end-line="70" selection-end-column="100" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1jiar-provider-agent/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="14" column="12" lean-forward="true" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
         </state>
       </provider>
     </entry>
