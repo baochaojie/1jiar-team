@@ -1,10 +1,14 @@
 package com.jk.service;
 
 import com.jk.mapper.HouseMapper;
-import com.jk.model.*;
+import com.jk.model.Area;
+import com.jk.model.HouseAge;
+import com.jk.model.Owner;
+import com.jk.model.UserBean;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
+
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -54,6 +58,7 @@ public class HouseServiceImpl {
      * @param map
      * @return
      */
+    int a = 1;
     @PostMapping("queryOwner")
     @ResponseBody
     public HashMap<String, Object> queryOwner(@RequestBody Map<String, Object> map){
@@ -62,6 +67,8 @@ public class HouseServiceImpl {
         Integer rows= (Integer) map.get("rows");
         String name= (String) map.get("name");
         String ownerState= (String) map.get("ownerState");
+System.out.println(a);
+a++;
         //条查数据放到owner对象里
         Owner owner=new Owner();
         owner.setName(name);
@@ -84,10 +91,5 @@ public class HouseServiceImpl {
     public List<Area> initcity(@RequestParam Integer pid){
         List<Area> areas=houseMapper.initcity(pid);
         return areas;
-    }
-    @RequestMapping("addhousemoreinfo")
-    @ResponseBody
-    public void addhousemoreinfo(@RequestBody House house){
-        houseMapper.addhousemoreinfo(house);
     }
 }

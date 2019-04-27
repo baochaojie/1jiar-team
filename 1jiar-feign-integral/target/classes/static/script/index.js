@@ -12,11 +12,14 @@ function MembershipPoint(){
         url:'/QueryMembershipPoint',//获取数据地址
         type:'post',
         columns:[
+            {checkbox:true},
+            {field:'dlrIdId',title:'ID'},
             {field:'loimg',title:'用户头像',formatter:function(data){
                     return "<img src="+data+" width='50' height='50'>";
                 }},
             {field:'userName',title:'用户名'},
             {field:'integralAdd',title:'剩余积分'},
+            {field:'houseId',title:'用户id'},
             {field:'123',title:'操作',formatter:function(value,row,index){
                     return '<a href="javascript:record('+row.houseId+');">查看抽奖记录</a>-<a href="javascript:updatebookbyid('+row.houseId+');">抽奖</a>'
                 }}
@@ -66,16 +69,65 @@ function inittypee() {
     }
 
 //抽奖
+    var res;
+    function createAddContent(url){
+        $.ajax({
+            url:url,
+            async:false,
+            success:function(data){
+                res = data;
+            }
+        });
+        return res;
+    }
+
+    function openAddDlrld(){
+        bootbox.dialog({
+            title:'抽奖',
+            message: createAddContent("/choujiang"),
+            closeButton: true,
+            buttons : {
+                "success" : {
+                    "label" : "<i class='icon-ok'></i> 保存",
+                    "className" : "btn-sm btn-success",
+                    "callback" : function() {
+                        $.ajax({
+                            url:'/saveDlrldBean',
+                            type:'post',
+                            data:$("#upupform").serialize(),
+                            dataType:'json',
+                            success:function(data){
+                                if(data){
+                                        MembershipPoint();
+                                }else{
+                                    bootbox.alert({
+                                        size: "small",
+                                        title: "提示",
+                                        message: "新增失败！",
+                                        buttons: {
+                                            ok: {
+                                                label: '确定',
+                                                className: 'btn-success'
+                                            }
+                                        }
+                                    })
+                                }}
+                        });
+                    }
+                },
+                "cancel" : {
+                    "label" : "<i class='icon-info'></i> 取消",
+                    "className" : "btn-sm btn-danger",
+                    "callback" : function() {
+                            MembershipPoint();
+                    }
+                }
+            }
+
+        });
+    }
 
 
-function openAddDlrld(){
-    bootbox.dialog({
-    title:'添加商品',
-        message: createAddContent("/choujiang"),
-        closeButton: true,
-})
-
-}
 
 //查看抽奖记录
 function record(houseId){
@@ -86,12 +138,16 @@ function record(houseId){
         data:{
         },
         columns:[
+            {checkbox:true},
+            {field:'dlrIdId',title:'ID'},
             {field:'loimg',title:'用户头像',formatter:function(data){
                     return "<img src="+data+" width='50' height='50'>";
                 }},
             {field:'userName',title:'用户名'},
             {field:'integralAdd',title:'剩余积分'},
+            {field:'houseId',title:'用户id'},
             {field:'dltyname',title:'抽奖级别'},
+            {field:'dley',title:'抽奖所用积分'},
             {field:'tame',title:'抽奖时间'},
             {field:'dllname',title:'奖品'},
             {field:'stateId',title:'状体',formatter:function(value,row,index){
@@ -117,6 +173,8 @@ function record(houseId){
         ]
     });
 }
+<<<<<<< HEAD
+=======
 
    //领取
     function lingqu(dlrIdId,houseId){
@@ -154,3 +212,4 @@ function fangqi(dlrIdId,houseId){
         }
     })
 }
+>>>>>>> 8713299a6eb8ad5f202e5154f2938ff5df858695

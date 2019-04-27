@@ -1,7 +1,1 @@
-com\jk\controller\PageController.class
-com\jk\shiro\VerificationCode.class
-com\jk\service\UserService.class
-com\jk\shiro\CheckImgUtil.class
 com\jk\Application.class
-com\jk\controller\UserController.class
-com\jk\shiro\FileUtil.class

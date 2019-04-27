@@ -111,6 +111,8 @@
         /*房屋特色查询*/
         <if test="house.houseTeSeId !=null and house.houseTeSeId!=''">
             and (h.houseTeSeId in (${house.houseTeSeId}))
+<<<<<<< HEAD
+=======
         </if>
         /*根据前台传过来的int类的值排序 */
         <if test="house.intid ==1 and  house.intid==null">
@@ -121,6 +123,7 @@
         </if>
         <if test="house.intid ==3 ">
             group by h.houseJianzhuMianji
+>>>>>>> 8713299a6eb8ad5f202e5154f2938ff5df858695
         </if>
     </sql>
     <!-- 根据pid获取地区数据 -->
@@ -151,23 +154,4 @@
 		where h.houseId = #{houseId}
 		group by h.houseId
 	</select>
-    <select id="queryIdhouse" resultType="com.jk.model.House">
-        select h.*,a.name houseQuYuName,s.subwayName houseDiTieName,hage.ageName houseAgeName,
-        hdir.otName houseDirectionName,hfl.floorName houseFloorTypeName,
-        hty.houseName houseTypeName,hus.useName houseUseName,hzu.ZuTypeName houseZuTypeName,
-        hfe.houseTeSeName TeSeName, hman.name houseManName,
-        tage.agentName agentName from t_house h
-        left join t_area a on h.houseQuYuId = a.id
-        left join t_subway s on h.houseDiTieId = s.subwayId
-        left join house_age hage on h.houseAgeId = hage.houseAgeId
-        left join house_direction hdir on h.houseDirectionId = hdir.houseDirectionId
-        left join house_floor hfl on h.houseFloorTypeId = hfl.houseFloorTypeId
-        left join house_type hty on h.houseTypeId = hty.houseTypeId
-        left join house_use hus on h.houseUseId = hus.houseUseId
-        left join house_zutype hzu on h.ZuTypeid = hzu.ZuTypeid
-        left join house_feature hfe on h.houseTeSeId = hfe.houseTeSeId
-        left join house_man hman on h.houseManId = hman.id
-        left join t_agent tage on h.agentId = tage.agentId
-        where  h.houseId = #{houseId}
-    </select>
 </mapper>

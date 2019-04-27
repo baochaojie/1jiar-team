@@ -34,15 +34,4 @@ public interface HouseService {
     @RequestMapping("findHouseById")
     @ResponseBody
     House findHouseById(@RequestParam Integer houseId);
-
-    @RequestMapping("queryIdhouse")
-    @ResponseBody
-    List<House> queryIdhouse(@RequestParam Integer houseId);
-    @RequestMapping("shouCang")
-    @ResponseBody
-    void shouCang(@RequestBody House house);
-    //跳转详情页面
-    @RequestMapping("queryXiangQing")
-    @ResponseBody
-    House queryXiangQing(@RequestParam Integer houseId);
 }

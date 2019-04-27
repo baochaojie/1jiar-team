@@ -45,7 +45,7 @@ public interface DlrldBeanMapper {
     DlrldBean querydlrldId(Integer houseId);
 
     @Insert("insert into house_dlrld(integralAdd,houseId,prizeTypeid,dlrldtyId,stateId,takeTime,status) values(#{integral},#{dlrldBean.houseId},#{dlrldBean.prizeTypeid},#{dlrldBean.dlrldtyId},1,sysdate(),2)")
-    String saveDlrldBean(@Param("dlrldBean") DlrldBean dlrldBean,@Param("integral") Integer integral);
+    void saveDlrldBean(@Param("dlrldBean") DlrldBean dlrldBean,@Param("integral") Integer integral);
 
     @Update("update house_dlrld set integralAdd=#{intee} where dlrIdId=#{dlrldBean.dlrIdId}")
     void upupDlrldBean(@Param("dlrldBean") DlrldBean dlrldBean,@Param("intee")  Integer intee);
@@ -58,7 +58,4 @@ public interface DlrldBeanMapper {
 
     @Update("update house_dlrld set stateId=3 where stateId=1 and dlrIdId=#{dlrIdId}")
     void fangqiTyped(Integer dlrIdId);
-
-    @Select("select * from dlrld_type where dlrldtyId = #{dlrldtyId}")
-    DlrldTypeBean querytype(Integer dlrldtyId);
 }

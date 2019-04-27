@@ -1,7 +1,9 @@
 package com.jk.controller;
 
 import com.jk.ConstantConf;
-import com.jk.model.*;
+import com.jk.model.Login;
+import com.jk.model.Resume;
+import com.jk.model.Tree;
 import com.jk.service.UserService;
 import com.jk.utils.HttpClientUtil;
 import com.jk.utils.Md5Util;
@@ -33,6 +35,7 @@ public class UserController {
     @RequestMapping("duanxinyanzheng")
     @ResponseBody
     public String duanxinyanzheng(String login,HttpServletRequest request) {
+
 
         HashMap<String, Object> hashMap = new HashMap<>();
         hashMap.put("accountSid", ConstantConf.STRINGW);
@@ -79,42 +82,18 @@ public class UserController {
         session.setAttribute(session.getId(), login1);
         return 0;
     }
-   /* @RequestMapping("phoneVerificat")
-    @ResponseBody
-    public Integer phoneVerificat(String login,String password ,HttpServletRequest request) {
-        System.out.println(login);
-        System.out.println(password);
-        HttpSession session = request.getSession();
-        String attribute = session.getAttribute("password").toString();
-        System.out.println(attribute);
-        //String attribute = redisTemplate.opsForValue().get(ConstantConf.STRINGDXYZ+"Verification").toString();
-        if (!attribute.equals(password)) {
-            return 2;
-        }
-        Login login1  =  userService.phoneVerificat(login);
-        if (login1==null) {
-            return 1;
-        }
 
-        session.setAttribute(session.getId(), login1);
-        return 0;
-    }*/
     @RequestMapping("qureyResume")
     @ResponseBody
-
-    public HashMap<String, Object> qureyResume(Integer page, Integer rows, Login login ){
-
-        return userService.qureyResume(page,rows,login);
+    public List<Resume> qureyResume(){
+        return userService.qureyResume();
     }
 
-    @RequestMapping("inituserphone")
-    @ResponseBody
-    public List<Login> inituserphone(){
-        return userService.inituserphone();
-    }
     /**
      * 左侧树
      */
+
+
 
     @RequestMapping("findTree")
     @ResponseBody
@@ -129,7 +108,6 @@ public class UserController {
     @RequestMapping("savelogin")
     @ResponseBody
     public Integer savelogin(Login login){
-        System.out.println("大声大声道");
         return  userService.savelogin(login);
     }
 
@@ -138,128 +116,10 @@ public class UserController {
      */
     @RequestMapping("login")
     @ResponseBody
-    public String login(Login login,HttpServletRequest request) {
-        String login1 = userService.login(login);
-        HttpSession session1 = request.getSession();
-        System.out.println(session1.getId());
-        String login2 = login.getLogin();
-        Login login3 = userService.phoneVerification(login2);
-        if (login1.equals("0")){
-            redisTemplate.opsForValue().set(session1.getId(),login3);
-            redisTemplate.expire(session1.getId(),30 , TimeUnit.MINUTES);
-        }
-        return login1;
+    public String login(Login login){
+        return userService.login(login);
     }
 
 
-    /**
-     * 教育
-     */
-    @RequestMapping("selectjiaoyid")
-    @ResponseBody
-    public List<jiaoyid> selectjiaoyid(){
-        return userService.selectjiaoyid();
-    }
-    /**
-     * 行业
-     */
-    @RequestMapping("selecthengyid")
-    @ResponseBody
-    public List<hengyid> selecthengyid(){
-        return userService.selecthengyid();
-    }
-    /**
-     * 地址市
-     */
-    @RequestMapping("selectshuozaiid")
-    @ResponseBody
-    public List<shuozaiid> selectshuozaiid(){
-        return userService.selectshuozaiid();
-    }
-    /**
-     * 地址省
-     */
-    @RequestMapping("shuosiname")
-    @ResponseBody
-    public List<shuosiname> shuosiname(Integer pid){
-        return userService.shuosiname(pid);
-
-    }
-    /**
-     * 地址市
-     */
-    @RequestMapping("jiaxidname")
-    @ResponseBody
-    public List<jiaxid> jiaxidname(){
-        return userService.jiaxidname();
-    }
-    /**
-     * 地址省
-     */
-    @RequestMapping("jiaoxidname")
-    @ResponseBody
-    public List<jiaoxi> jiaoxidname(Integer pid){
-        return userService.jiaoxidname(pid);
-
-    }
-    /**
-     * 新增
-     */
-
-    @RequestMapping("addOwner")
-    @ResponseBody
-    public void updatewner(Login resume){
-
-        userService.updatewner(resume);
-    }
-    /**
-     * 删除
-     */
-    @RequestMapping("deleteuser")
-    @ResponseBody
-    public void deleteuser(Integer id) {
-         userService.deleteuser(id);
-    }
-
-    @RequestMapping("deleteshouc")
-    @ResponseBody
-    public void deleteshouc(Integer houseId) {
-        userService.deleteshouc(houseId);
-    }
-    /**
-     * 整合
-     */
-    @RequestMapping("zenghe")
-    @ResponseBody
-    public List<zenghe> zenghe(){
-        return userService.zenghe();
-    }
-
-    @RequestMapping("queryhouse")
-    @ResponseBody
-    public HashMap<String, Object> findUserPage(Integer page, Integer rows, House house ){
-
-        return userService.findHousePage(page,rows,house);
-    }
-    @RequestMapping("inituser")
-    @ResponseBody
-    public String findUserPage(HttpServletRequest request){
-        HttpSession session = request.getSession();
-        System.out.println(session.getId());
-        Boolean aBoolean = redisTemplate.hasKey(session.getId());
-        if (aBoolean){
-            //1说明以登入
-            return session.getId();
-        }
-        //2说明没登入
-        return "";
-    }
-
-    @RequestMapping("queryhunx")
-    @ResponseBody
-    public Login queryhunx(Integer id){
-
-        return userService.queryhunx(id);
-    }
 
 }

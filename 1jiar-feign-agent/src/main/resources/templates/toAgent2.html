@@ -53,7 +53,6 @@
                 {field:"agentJob",title:"经纪人职位"},
                 {field:"store",title:"所属店铺"},
                 {field:"agentYears",title:"工作年限"},
-                {field:"labelName",title:"个人标签"},
                 {field:"achievement",title:"个人成绩"},
                 {field:"houseName",title:"主要负责小区"},
                 {field:"argentImg",title:"图片",formatter:function(value,row,index){
@@ -69,8 +68,6 @@
                         var butt = '<button onclick="deleteOne(\''+row.agentId+'\')" class="btn btn-danger glyphicon glyphicon-remove glyphicon glyphicon-trash" >删除</button>';
                         butt+=" "
                         butt += '<button onclick="openUpdate(\''+row.agentId+'\')" class="btn btn-info glyphicon glyphicon-wrench" >修改</button>';
-                        butt += '<button onclick="openShow(\''+row.agentId+'\')" class="btn btn-info" >成交小区</button>';
-                        butt += '<button onclick="openShow2(\''+row.agentId+'\')" class="btn btn-info" >带看小区</button>';
 
                         return butt
                     }
@@ -207,7 +204,7 @@
     //修改弹框
     function editOpenDialog(){
         bootbox.dialog({
-            title:'修改经纪人',
+            title:'修改经济人',
             message: createAddContent("/toEditAgent"),
             closeButton: true,
             buttons : {
@@ -250,8 +247,6 @@
             }
 
         });
-        //初始化区域
-        initRegion();
     }
     //修改
     function openUpdate(agentId){
@@ -259,7 +254,6 @@
         editOpenDialog();
         //初始化表单数据
         initRegion();
-        initStreet();
         //查询回显数据
         $.ajax({
             url:'/findAgentInfoById',
@@ -267,8 +261,6 @@
             data:{agentId:agentId},
             dataType:'json',
             success:function(data){
-                initRegion();
-                initStreet(data.region);
                 $("#agentId").val(data.agentId);
                 $("#agentName").val(data.agentName);
                 $("#agentJob").val(data.agentJob);
@@ -282,7 +274,8 @@
                 $("#score").val(data.score);
                 $("#store").val(data.store);
                 $("#achievement").val(data.achievement);
-                $("#headImg").val(data.argentImg);
+                $("#headImg").src(data.argentImg);
+                alert(112)
                 alert(data.argentImg);
                 $("#uploadImg").val(data.argentImg);
                 //回显上传插件
@@ -348,23 +341,6 @@
         })
     }
 
-
-//成交小区
-    function openShow(agentId){
-        bootbox.dialog({
-            title:'成交小区',
-            message: createAddContent("/toVillage?agentId="+agentId),
-
-        });
-    }
-    //带看小区
-    function openShow2(agentId){
-        bootbox.dialog({
-            title:'带看小区',
-            message: createAddContent("/toVillage2?agentId="+agentId),
-
-        });
-    }
     </script>
 </body>
 </html>

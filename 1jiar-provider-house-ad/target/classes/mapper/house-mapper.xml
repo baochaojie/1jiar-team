@@ -10,26 +10,9 @@
     </select>
     <!-- 新增房源基本信息表t_owner -->
     <insert id="addOwner">
-        INSERT INTO t_owner(
-            ownerXiaoqu,
-            ownerSiteDong,
-            ownerSiteDanyuan,
-            ownerSiteMenpai,
-            ownerUserId,
-            ownerSell,
-            ownerState,
-            ownerXian,
-            ownerZhen)
-        VALUES(
-            #{ownerXiaoqu},
-            #{ownerSiteDong},
-            #{ownerSiteDanyuan},
-            #{ownerSiteMenpai},
-            #{ownerUserId},
-            #{ownerSell},
-            #{ownerState},
-            #{ownerXian},
-            #{ownerZhen});
+        INSERT INTO t_owner(ownerXiaoqu,ownerSiteDong,ownerSiteDanyuan,ownerSiteMenpai,ownerUserId,ownerSell,ownerState)
+        VALUES
+            (#{ownerXiaoqu}, #{ownerSiteDong}, #{ownerSiteDanyuan}, #{ownerSiteMenpai}, #{ownerUserId}, #{ownerSell}, #{ownerState});
     </insert>
     <!-- 新增用户表,并返回用户id用到下一部新增t_owner表 -->
     <insert id="addOwner2" useGeneratedKeys="true" keyProperty="id">
@@ -63,63 +46,16 @@
         FROM
             china
         WHERE
-            pid = #{pid}
+            pid = #{value}
     </select>
     <sql id="searchSql">
       where 1=1
       <if test="owner.name!=null and owner.name!=''">
-          AND hm.name LIKE '%${owner.name}%'
+          AND hm.`name` LIKE '%${owner.name}%'
+          OR o.ownerXiaoqu LIKE '%${owner.name}%'
       </if>
-      <if test="owner.ownerState!=null">
+      <if test="owner.ownerState!=null and owner.ownerState!=''">
           AND o.ownerState=#{owner.ownerState}
       </if>
     </sql>
-    <!-- 新增房源详情信息表 -->
-    <insert id="addhousemoreinfo">
-        INSERT INTO t_house (
-            houseaheName,
-            housePrice,
-            houseJianzhuMianji,
-            houseTypeId,
-            houseUseId,
-            houseFloorTypeId,
-            houseDirectionId,
-            houseAgeId,
-            houseElevator,
-            houseFinish,
-            houseHeating,
-            ridgepoleName,
-            elementName,
-            doorplateName,
-            houseTaoneiMianji,
-            houseQuYuId,
-            houseDiTieId,
-            houseZuQi,
-            ZuTypeid,
-            houseTeSeId
-        )
-        VALUES
-            (
-                #{houseaheName},
-                #{housePrice},
-                #{houseJianzhuMianji},
-                #{houseTypeId},
-                #{houseUseId},
-                #{houseFloorTypeId},
-                #{houseDirectionId},
-                #{houseAgeId},
-                #{houseElevator},
-                #{houseFinish},
-                #{houseHeating},
-                #{ridgepoleName},
-                #{elementName},
-                #{doorplateName},
-                #{houseTaoneiMianji},
-                #{houseQuYuId},
-                #{houseDiTieId},
-                #{houseZuQi},
-                #{zuTypeid},
-                #{houseTeSeId}
-            )
-    </insert>
 </mapper>

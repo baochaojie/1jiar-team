@@ -1,6 +1,5 @@
 //注冊賬號
 function addLog() {
-    alert(1)
     $("#loginForm").form("submit",{
         url:"../savelogin",
             success:function(data){

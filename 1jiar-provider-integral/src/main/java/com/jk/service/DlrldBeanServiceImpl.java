@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
 
+import java.util.Date;
 import java.util.List;
 
 @Service
@@ -41,7 +42,7 @@ public class DlrldBeanServiceImpl implements DlrldBeanService{
     //查询用户积分余额
     @Override
     public List<DlrldBean> QueryMembershipPoint(Integer houseId) {
-        List range = redisTemplate.opsForList().range("QueryMembershipPoint" + houseId, 0, -1);
+        List<DlrldBean> range = redisTemplate.opsForList().range("QueryMembershipPoint" + houseId, 0, -1);
         if (range != null && range.size() > 0){
             List<DlrldBean> dlrldBean = (List<DlrldBean>) range.get(0);
             return dlrldBean;
@@ -98,17 +99,24 @@ public class DlrldBeanServiceImpl implements DlrldBeanService{
     }
 
     @Override
-    public String saveDlrldBean(DlrldBean dlrldBean,Integer intee, Integer integral) {
-                   dlrldBeanMapper.upupDlrldBean(dlrldBean,intee);
-            return dlrldBeanMapper.saveDlrldBean(dlrldBean,integral);
-
+    public void saveDlrldBean(DlrldBean dlrldBean) {
+        Integer intee = dlrldBean.getIntegralAdd();
+        Integer integral = 0;
+        if (dlrldBean.getPrizeTypeid()==1){
+            integral=500;
+            intee=intee-integral;
+        }else if (dlrldBean.getPrizeTypeid()==2){
+            integral=1000;
+            intee=intee-integral;
+        }else if (dlrldBean.getPrizeTypeid()==3){
+            integral=3000;
+            intee=intee-integral;
         }
-
-    @Override
-    public DlrldTypeBean querytype(Integer dlrldtyId) {
-        DlrldTypeBean list = dlrldBeanMapper.querytype(dlrldtyId);
-        return list;
-    }
+        if(integral>=0){
+            dlrldBeanMapper.saveDlrldBean(dlrldBean,integral);
+            dlrldBeanMapper.upupDlrldBean(dlrldBean,intee);
+        }
+        }
 
     @Override
     public List<DlrldTypeBean> queryprize2() {

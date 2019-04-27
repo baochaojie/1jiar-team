@@ -71,23 +71,4 @@ public class HouseServiceImpl implements HouseService {
         return houseById;
     }
 
-    @Override
-    public List<House> queryIdhouse(Integer houseId) {
-        List<House> houses = houseMapper.queryIdhouse(houseId);
-        return houses;
-
-    }
-
-    @Override
-    public void shouCang(House house) {
-       houseMapper.shouCang(house);
-
-
-    }
-
-    @Override
-    public House queryXiangQing(Integer houseId) {
-        return houseMapper.queryXiangQing(houseId);
-    }
-
 }

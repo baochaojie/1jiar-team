@@ -1,6 +1,6 @@
 
 server:
-  port: 8765
+  port: 8767
 spring:
   application:
     name: 1jiar-feign-agent

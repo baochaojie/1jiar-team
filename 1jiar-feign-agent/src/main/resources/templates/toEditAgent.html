@@ -72,9 +72,9 @@
         <div class="form-group">
             <label for="region" class="col-sm-2 control-label">区域</label>
             <div class="col-sm-4">
-                <select id="region"  name="region" class="from-control"  onchange="initStreet(this.value)">  </select>
+                <select onchange="initStreet(this.value)" id="region"  name="region" class="from-control">  </select>
             </div>
-            <label for="street" class="col-sm-2 control-label" >街道</label>
+            <label for="street" class="col-sm-2 control-label">街道</label>
             <div class="col-sm-4">
                 <select id="street"  name="street" class="from-control">  </select>
             </div>
@@ -95,7 +95,7 @@
     })
       function upload(data){
         $('#uploadImg').fileinput({
-            initialPreview:'/'+data,//图片地址
+            initialPreview:'../'+data,//图片地址
             //初始化图片配置：
             initialPreviewConfig: [
                 {key: 1, showDelete: false}

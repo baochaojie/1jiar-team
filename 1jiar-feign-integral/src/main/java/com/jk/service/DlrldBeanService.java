@@ -37,7 +37,7 @@ public interface DlrldBeanService {
     DlrldBean querydlrldId(@RequestParam Integer houseId);
 
     @RequestMapping("saveDlrldBean")
-    String saveDlrldBean(@RequestBody DlrldBean dlrldBean,@RequestParam Integer intee,@RequestParam Integer integral);
+    void saveDlrldBean(@RequestBody DlrldBean dlrldBean);
 
     @PostMapping("queryprize2")
     List<DlrldTypeBean> queryprize2();

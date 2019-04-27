@@ -1,6 +1,8 @@
 package com.jk.mapper;
 
-import com.jk.model.*;
+import com.jk.model.AgentBean;
+import com.jk.model.House;
+import com.jk.model.LabelBean;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.HashMap;
@@ -23,18 +25,4 @@ public interface AgentMapper {
     List<House> findHouse();
 
     List<LabelBean> findLabel();
-
-    void updateAgent(AgentBean agentBean);
-
-
-
-    List<Exhibition> findExhibition(Integer agentId);
-
-    List<DictionaryTable> queryTree(Integer pid);
-
-    void addProblemInfoById(Problem problem);
-
-    List<Problem> findProblem();
-
-    List<House> findEcharts(Integer agentId);
 }

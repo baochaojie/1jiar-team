@@ -1,11 +1,13 @@
 package com.jk.controller;
 
-import com.jk.model.*;
+import com.jk.model.AgentBean;
+import com.jk.model.AreaBean;
+import com.jk.model.House;
+import com.jk.model.LabelBean;
 import com.jk.service.AgentService;
 import com.jk.utils.OSSClientUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
@@ -17,10 +19,6 @@ import java.util.List;
 public class AgentController {
     @Autowired
     private AgentService agentService;
-    @RequestMapping("quanbu")
-    public String aa(String url){
-        return url;
-    }
    //跳转到查询经济人的页面
     @RequestMapping("toAgent")
     public String toAgent(){
@@ -116,58 +114,5 @@ public class AgentController {
     @ResponseBody
     public List<LabelBean> findLabel(){
         return agentService.findLabel();
-    }
-
-    Integer initinterid = 0;
-    @RequestMapping("toVillage")
-     public String  toVillage(Integer agentId){
-        initinterid=agentId;
-        return  "toVillage";
-    }
-    @RequestMapping("toVillage2")
-    public String  toVillage2(Integer agentId){
-        initinterid=agentId;
-        return  "toVillage2";
-    }
-    //查询成交小区
-    @RequestMapping("findExhibition")
-    @ResponseBody
-    public List<Exhibition> findExhibition(Integer agentId){
-        return agentService.findExhibition(agentId);
-    }
-    @RequestMapping("initagentId")
-    @ResponseBody
-    public Integer initagentId(){
-        System.out.println(initinterid);
-        return initinterid;
-    }
-    //查询树
-    @RequestMapping("findGuide")
-    @ResponseBody
-    public List<DictionaryTable> findGuide() {
-        List<DictionaryTable> list = agentService.findGuide();
-        return list;
-    }
-    //新增问题
-    @RequestMapping("addProblemInfoById")
-    @ResponseBody
-    public void addProblemInfoById(Problem problem){
-        agentService.addProblemInfoById(problem);
-    }
-    @RequestMapping("toAddProblem")
-    public String toAddProblem(){
-        return "toAddProblem";
-    }
-    //查询树
-    @RequestMapping("findProblem")
-    @ResponseBody
-    public List<Problem> findProblem() {
-        List<Problem> list = agentService.findProblem();
-        return list;
-    }
-    @RequestMapping("findEcharts")
-    @ResponseBody
-    public List<House> findEcharts(Integer agentId){
-        return agentService.findEcharts(agentId);
     }
 }

@@ -1,5 +1,1 @@
 com\jk\Application.class
-com\jk\mapper\UserMapper.class
-com\jk\controller\UserController.class
-com\jk\service\UserServiceImpl.class
-com\jk\service\UserService.class
