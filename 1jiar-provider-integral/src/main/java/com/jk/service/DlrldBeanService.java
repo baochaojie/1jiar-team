@@ -4,12 +4,16 @@ package com.jk.service;
         import com.jk.model.DlrldIntegrelBean;
         import com.jk.model.DlrldTypeBean;
 
+        import java.util.HashMap;
         import java.util.List;
 
 public interface DlrldBeanService {
 
     //查询历史中奖纪录
     List<DlrldBean> queryDlrld(Integer houseId);
+
+    //后台查询历史中奖纪录
+    HashMap<String, Object> queryDlrldht(Integer page, Integer rows, DlrldBean dlrldBean);
 
     //查询用户积分余额
     List<DlrldBean> QueryMembershipPoint(Integer houseId);
@@ -25,12 +29,16 @@ public interface DlrldBeanService {
     void deleteTyped(Integer ids);
 
     DlrldBean querydlrldId(Integer houseId);
-
-    void saveDlrldBean(DlrldBean dlrldBean);
-
+    
     List<DlrldTypeBean> queryprize2();
 
-    void lingquTyped(Integer dlrIdId,Integer houseId);
+    void lingquTyped(Integer dlrIdId, Integer houseId);
 
     void fangqiTyped(Integer dlrIdId, Integer houseId);
+
+    String saveDlrldBean(DlrldBean dlrldBean, Integer intee, Integer integral, Integer houseId);
+
+    DlrldTypeBean querytype(Integer dlrldtyId);
+
+    void UpMembershipPoint(Integer houseId, Integer integralAdd);
 }

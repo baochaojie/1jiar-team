@@ -147,8 +147,52 @@
 	</update>
     <!-- 根据id查询房屋信息跳转付款页面 -->
     <select id="findHouseById" parameterType="int" resultType="com.jk.model.House">
-		select h.houseId,h.housePrice,h.houseaheName from t_house h
+		select h.houseId,h.housePrice,h.houseaheName  from t_house h
 		where h.houseId = #{houseId}
 		group by h.houseId
 	</select>
+    <select id="queryIdhouse" resultType="com.jk.model.House">
+        select h.*,a.name houseQuYuName,s.subwayName houseDiTieName,hage.ageName houseAgeName,
+        hdir.otName houseDirectionName,hfl.floorName houseFloorTypeName,
+        hty.houseName houseTypeName,hus.useName houseUseName,hzu.ZuTypeName houseZuTypeName,
+        hfe.houseTeSeName TeSeName, hman.name houseManName,
+        tage.agentName agentName from t_house h
+        left join t_area a on h.houseQuYuId = a.id
+        left join t_subway s on h.houseDiTieId = s.subwayId
+        left join house_age hage on h.houseAgeId = hage.houseAgeId
+        left join house_direction hdir on h.houseDirectionId = hdir.houseDirectionId
+        left join house_floor hfl on h.houseFloorTypeId = hfl.houseFloorTypeId
+        left join house_type hty on h.houseTypeId = hty.houseTypeId
+        left join house_use hus on h.houseUseId = hus.houseUseId
+        left join house_zutype hzu on h.ZuTypeid = hzu.ZuTypeid
+        left join house_feature hfe on h.houseTeSeId = hfe.houseTeSeId
+        left join house_man hman on h.houseManId = hman.id
+        left join t_agent tage on h.agentId = tage.agentId
+        where  h.houseId = #{houseId}
+    </select>
+    <!-- 收藏 -->
+    <update id="shouCang" parameterType="com.jk.model.House">
+		update t_house u set u.houseShoucang=2
+		where u.houseId=#{houseId}
+	</update>
+    <select id="queryXiangQing" resultType="com.jk.model.House">
+        select h.*,a.name houseQuYuName,s.subwayName houseDiTieName,hage.ageName houseAgeName,
+        hdir.otName houseDirectionName,hfl.floorName houseFloorTypeName,
+        hty.houseName houseTypeName,hus.useName houseUseName,hzu.ZuTypeName houseZuTypeName,
+        hfe.houseTeSeName TeSeName, hman.name houseManName,
+        tage.agentName agentName ,tage.argentImg argentImg,tage.agentPhone agentPhone,
+        tage.detail detail  from t_house h
+        left join t_area a on h.houseQuYuId = a.id
+        left join t_subway s on h.houseDiTieId = s.subwayId
+        left join house_age hage on h.houseAgeId = hage.houseAgeId
+        left join house_direction hdir on h.houseDirectionId = hdir.houseDirectionId
+        left join house_floor hfl on h.houseFloorTypeId = hfl.houseFloorTypeId
+        left join house_type hty on h.houseTypeId = hty.houseTypeId
+        left join house_use hus on h.houseUseId = hus.houseUseId
+        left join house_zutype hzu on h.ZuTypeid = hzu.ZuTypeid
+        left join house_feature hfe on h.houseTeSeId = hfe.houseTeSeId
+        left join house_man hman on h.houseManId = hman.id
+        left join t_agent tage on h.agentId = tage.agentId
+        where  h.houseId = #{houseId}
+    </select>
 </mapper>

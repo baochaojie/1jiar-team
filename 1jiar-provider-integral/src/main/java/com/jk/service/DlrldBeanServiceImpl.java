@@ -8,7 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
 
-import java.util.Date;
+import java.util.HashMap;
 import java.util.List;
 
 @Service
@@ -23,35 +23,37 @@ public class DlrldBeanServiceImpl implements DlrldBeanService{
     //查询历史中奖纪录
     @Override
     public List<DlrldBean> queryDlrld(Integer houseId) {
-        List<DlrldBean> range = redisTemplate.opsForList().range("queryDlrld" + houseId, 0, -1);
-        if (range!=null && range.size()>0){
-            List<DlrldBean> dlrldBean = (List<DlrldBean>) range.get(0);
-            return dlrldBean;
-        }
         List<DlrldBean> list = dlrldBeanMapper.queryDlrld(houseId);
-        System.out.println(list);
-        if (list==null){
-            redisTemplate.opsForList().leftPush("queryDlrld"+houseId,list);
-        }else{
-            redisTemplate.opsForList().leftPush("queryDlrld"+houseId,list);
-        }
-
         return list;
+    }
+
+    //查询历史中奖纪录
+    @Override
+    public HashMap<String, Object> queryDlrldht(Integer page, Integer rows, DlrldBean dlrldBean) {
+        HashMap<String, Object> hashMap = new HashMap<>();
+        //查询总条数
+        int total = dlrldBeanMapper.findUserCount(dlrldBean);
+        //分页查询
+        int start = (page-1)*rows;//开始条数
+        List<DlrldBean> list = dlrldBeanMapper.findUserPage(start,rows,dlrldBean);
+        hashMap.put("total", total);
+        hashMap.put("rows", list);
+        return hashMap;
     }
 
     //查询用户积分余额
     @Override
     public List<DlrldBean> QueryMembershipPoint(Integer houseId) {
-        List<DlrldBean> range = redisTemplate.opsForList().range("QueryMembershipPoint" + houseId, 0, -1);
+        List range = redisTemplate.opsForList().range("QueryMembershipPoint", 0, -1);
         if (range != null && range.size() > 0){
             List<DlrldBean> dlrldBean = (List<DlrldBean>) range.get(0);
             return dlrldBean;
         }
         List<DlrldBean> list = dlrldBeanMapper.QueryMembershipPoint(houseId);
             if (list==null){
-                redisTemplate.opsForList().leftPush("QueryMembershipPoint"+houseId,list);
+                redisTemplate.opsForList().leftPush("QueryMembershipPoint",list);
             }else{
-                redisTemplate.opsForList().leftPush("QueryMembershipPoint"+houseId,list);
+                redisTemplate.opsForList().leftPush("QueryMembershipPoint",list);
             }
         return list;
     }
@@ -99,24 +101,22 @@ public class DlrldBeanServiceImpl implements DlrldBeanService{
     }
 
     @Override
-    public void saveDlrldBean(DlrldBean dlrldBean) {
-        Integer intee = dlrldBean.getIntegralAdd();
-        Integer integral = 0;
-        if (dlrldBean.getPrizeTypeid()==1){
-            integral=500;
-            intee=intee-integral;
-        }else if (dlrldBean.getPrizeTypeid()==2){
-            integral=1000;
-            intee=intee-integral;
-        }else if (dlrldBean.getPrizeTypeid()==3){
-            integral=3000;
-            intee=intee-integral;
+    public String saveDlrldBean(DlrldBean dlrldBean,Integer intee, Integer integral ,Integer houseId) {
+                   dlrldBeanMapper.upupDlrldBean(dlrldBean,intee,houseId);
+            return dlrldBeanMapper.saveDlrldBean(dlrldBean,integral,houseId);
+
         }
-        if(integral>=0){
-            dlrldBeanMapper.saveDlrldBean(dlrldBean,integral);
-            dlrldBeanMapper.upupDlrldBean(dlrldBean,intee);
-        }
-        }
+
+    @Override
+    public DlrldTypeBean querytype(Integer dlrldtyId) {
+        DlrldTypeBean list = dlrldBeanMapper.querytype(dlrldtyId);
+        return list;
+    }
+
+    @Override
+    public void UpMembershipPoint(Integer houseId, Integer integralAdd) {
+        dlrldBeanMapper.UpMembershipPoint(houseId,integralAdd);
+    }
 
     @Override
     public List<DlrldTypeBean> queryprize2() {
@@ -126,13 +126,11 @@ public class DlrldBeanServiceImpl implements DlrldBeanService{
     @Override
     public void lingquTyped(Integer dlrIdId,Integer houseId) {
         dlrldBeanMapper.lingquTyped(dlrIdId);
-        redisTemplate.delete("queryDlrld" + houseId);
     }
 
     @Override
     public void fangqiTyped(Integer dlrIdId, Integer houseId) {
         dlrldBeanMapper.fangqiTyped(dlrIdId);
-        redisTemplate.delete("queryDlrld" + houseId);
     }
 
 }

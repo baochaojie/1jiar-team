@@ -24,6 +24,7 @@
 </head>
 <body>
 <div id="toolbar">
+    <center><font size="5px">房屋出售管理</font></center>
     <form class="form-inline" id="query_form">
         <div class="form-group">
             <label for="houseaheName">房屋名:</label>
@@ -126,11 +127,11 @@
 
 
 
-        <button type="reset" class="btn btn-primary glyphicon glyphicon-search" >重置</button>
+        <button type="reset" class="btn btn-primary glyphicon glyphicon-refresh" >重置</button>
         <button type="button" class="btn btn-primary glyphicon glyphicon-search" onclick="searchUser(1)">搜索</button>
-        <button type="button"   onclick="searchUser(1)">综合排序</button>
-        <button type="button"   onclick="searchUser(2)">价格</button>
-        <button type="button"   onclick="searchUser(3)">面积</button>
+        <button type="button"  class="btn btn-success "  onclick="searchUser(1)">综合排序</button>
+        <button type="button"  class="btn btn-info " onclick="searchUser(2)">价格</button>
+        <button type="button"  class="btn btn-warning " onclick="searchUser(3)">面积</button>
     </form>
 
 </div>
@@ -240,7 +241,7 @@
                 {field:"houseaheName",title:"房名"},
                 {field:"housePrice",title:"价格",
                     formatter: function(value,row,index){
-                        return value+"万";
+                        return "人民币"+value+"元";
                     }},
                 {field:"houseManName",title:"用户名"},
                 {field:"agentName",title:"经纪人"},
@@ -272,9 +273,9 @@
                 {field:"tools",title:"操作",
                     formatter: function (value, row, index) {
                         //js传递字符串的时候一定要加引号!!!!
-                        var butt = '<button onclick="chuzuTan(\''+row.houseId+'\',\''+row.agentId+'\')" class="btn btn-danger glyphicon glyphicon-jpy" >确认出租</button>';
+                        var butt = '<button onclick="chuzuTan(\''+row.houseId+'\',\''+row.agentId+'\')" class="btn btn-danger glyphicon glyphicon-jpy" >确认出售</button>';
                         //butt+=" "
-                        butt += '<button onclick="LookHouse(\''+row.agentId+'\')" class="btn btn-info glyphicon glyphicon-wrench" >看房子</button>';
+                        butt += '<button onclick="LookHouse(\''+row.agentId+'\')" class="btn btn-info glyphicon glyphicon-eye-open" >看房子</button>';
 
                         return butt
                     }
@@ -405,7 +406,7 @@
         //打开弹框
         bootbox.dialog({
             title:'修改',
-            message: createAddContent("/house/chuzuFuKuan"),
+            message: createAddContent("/house/chushouFuKuan"),
             closeButton: true,//显示关闭按钮
             buttons : {
                 "success" : {

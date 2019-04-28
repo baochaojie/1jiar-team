@@ -18,7 +18,18 @@ public class HouseController {
     @RequestMapping("queryhouse")
     @ResponseBody
     public HashMap<String, Object> findHousePage(@RequestParam Integer page, @RequestParam Integer rows, @RequestBody House house){
-        return houseService.findHousePage(page,rows,house);
+        HashMap<String, Object> housePage=null;
+       // List<Object> range = redisTemplate.opsForList().range(CommonConf.SMS_QUERYHOUSE+"_"+page+"_"+rows, 0, -1);
+        //if(range == null || range.size()<=0){
+            housePage = houseService.findHousePage(page, rows, house);
+          //  redisTemplate.opsForList().leftPush(CommonConf.SMS_QUERYHOUSE+"_"+page+"_"+rows, housePage);
+           // redisTemplate.expire(CommonConf.SMS_QUERYHOUSE+"_"+page+"_"+rows,1, TimeUnit.MINUTES);
+
+       // }else{
+         //   housePage = (HashMap<String, Object>) range.get(0);
+      //  }
+        return  housePage;
+
     }
     //查询地区
     @RequestMapping("queryquyu")
@@ -53,4 +64,28 @@ public class HouseController {
     public House findHouseById(Integer houseId){
         return houseService.findHouseById(houseId);
     }
+
+   //根据id查询
+    @RequestMapping("queryIdhouse")
+    @ResponseBody
+    public List<House> queryIdhouse(@RequestParam Integer houseId){
+        return houseService.queryIdhouse(houseId);
+
+    }
+    //跳转详情页面
+    @RequestMapping("queryXiangQing")
+    @ResponseBody
+    public House queryXiangQing(@RequestParam Integer houseId){
+        return houseService.queryXiangQing(houseId);
+
+    }
+    //收藏
+    @RequestMapping("shouCang")
+    @ResponseBody
+    public void shouCang(@RequestBody House house){
+          houseService.shouCang(house);
+
+
+    }
+
 }

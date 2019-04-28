@@ -44,11 +44,11 @@ public interface DlrldBeanMapper {
     @Select("select * from house_dlrld  where houseId = #{houseId} and status=1 ")
     DlrldBean querydlrldId(Integer houseId);
 
-    @Insert("insert into house_dlrld(integralAdd,houseId,prizeTypeid,dlrldtyId,stateId,takeTime,status) values(#{integral},#{dlrldBean.houseId},#{dlrldBean.prizeTypeid},#{dlrldBean.dlrldtyId},1,sysdate(),2)")
-    void saveDlrldBean(@Param("dlrldBean") DlrldBean dlrldBean,@Param("integral") Integer integral);
+    @Insert("insert into house_dlrld(integralAdd,houseId,prizeTypeid,dlrldtyId,stateId,takeTime,status) values(#{integral},#{houseId},#{dlrldBean.prizeTypeid},#{dlrldBean.dlrldtyId},1,sysdate(),2)")
+    String saveDlrldBean(@Param("dlrldBean") DlrldBean dlrldBean, @Param("integral") Integer integral, @Param("houseId") Integer houseId);
 
-    @Update("update house_dlrld set integralAdd=#{intee} where dlrIdId=#{dlrldBean.dlrIdId}")
-    void upupDlrldBean(@Param("dlrldBean") DlrldBean dlrldBean,@Param("intee")  Integer intee);
+    @Update("update house_dlrld set integralAdd=#{intee} where houseId=#{houseId} and status=1")
+    void upupDlrldBean(@Param("dlrldBean") DlrldBean dlrldBean, @Param("intee") Integer intee, @Param("houseId") Integer houseId);
 
     @Select("select dt.*,di.dltypeName as integName from dlrld_type dt left join dltle_integral di on dt.prizeId=di.dltypeid")
     List<DlrldTypeBean> queryprize2();
@@ -58,4 +58,14 @@ public interface DlrldBeanMapper {
 
     @Update("update house_dlrld set stateId=3 where stateId=1 and dlrIdId=#{dlrIdId}")
     void fangqiTyped(Integer dlrIdId);
+
+    @Select("select * from dlrld_type where dlrldtyId = #{dlrldtyId}")
+    DlrldTypeBean querytype(Integer dlrldtyId);
+
+    @Update("update house_dlrld set integralAdd=integralAdd+#{integralAdd/10} where stateId=1 and dlrIdId=#{houseId}")
+    void UpMembershipPoint(Integer houseId, Integer integralAdd);
+
+    int findUserCount(@Param("dlrldBean") DlrldBean dlrldBean);
+
+    List<DlrldBean> findUserPage(@Param("start") int start, @Param("rows") Integer rows, @Param("dlrldBean") DlrldBean dlrldBean);
 }

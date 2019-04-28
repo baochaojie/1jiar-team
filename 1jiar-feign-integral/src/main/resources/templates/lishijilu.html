@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html
+        xmlns="http://www.w3.org/1999/xhtml"
+        xmlns:th="http://www.thymeleaf.org"
+        xmlns:shiro="http://www.pollix.at/thymeleaf/shiro"
+        xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3"
+>
+<head>
+    <meta charset="UTF-8">
+    <title>title</title>
+    <style type="text/css">
+        .table>tbody>tr>td{
+            border:0px;
+        }
+        .table>thead>tr>th{
+            border:0px;
+        }
+    </style>
+</head>
+<body>
+<div th:include="/index.html"></div>
+<div class="container-fluid">
+        <table id="DlrldHistoryTable" border="0"></table>
+    </div>
+<script  th:src="@{/script/loishijil.js}"></script>
+</body>
+</html>

@@ -13,8 +13,6 @@ function  queryprize2(){
         url:'/queryprize2',//获取数据地址
         type:'post',
         columns:[
-            {checkbox:true},
-            {field:'dlrldtyId',title:'ID'},
             {field:'integName',title:'奖品级别'},
             {field:'dlrldName',title:'奖品类型'},
             {field:'awardImg',title:'用户头像',formatter:function(data){
@@ -25,6 +23,28 @@ function  queryprize2(){
                 }}
         ]
     });
+}
+//+<a href="javascript:xuigaitype('+row.dlrldtyId+');">修改</a>
+
+//回显
+function xuigaitype(dlrldtyId){
+    //打开修改弹框
+    openAdd();
+    //初始化表单数据
+    inittype();
+    //查询回显数据
+    $.ajax({
+        url:'/saveprize',
+        type:'post',
+        async:false,//同步
+        data:{dlrldtyId:dlrldtyId},
+        dataType:'json',
+        success:function(data) {
+            $("#prizeId").val(data.prizeId);
+            $("#dlrldName").val(data.dlrldName);
+            $("#headImg").val(data.headImg);
+        }
+    })
 }
 
 //单删

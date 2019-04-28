@@ -8,5 +8,49 @@
     insert into dlrld_type(dlrldName,prizeId,awardImg) values(#{dlrldName},#{prizeId},#{awardImg})
 </insert>
 
+    <select id="findUserCount" parameterType="com.jk.model.DlrldBean" resultType="int">
+        select count(1) from house_dlrld hd
+        <include refid="searchSql"></include>
+    </select>
+
+    <select id="findUserPage" resultType="com.jk.model.DlrldBean">
+        select hd.*,di.dltypeName as dltyname,di.dltymoney as dley,
+        hd.takeTime as tame,hd.dlrldtyId as dllid,
+        dt.dlrldName as dllname,dt.awardImg as awardImg,
+        hm.name as userName,hm.loginimg as loimg
+        from house_dlrld hd left join dltle_integral di on hd.prizeTypeid=di.dltypeid
+        left join dlrld_type dt on hd.dlrldtyId=dt.dlrldtyId
+        left join house_man hm on hd.houseId=hm.id
+
+        <include refid="searchSql"></include>
+        limit #{start},#{rows}
+    </select>
+    <sql id="searchSql">
+        <where>
+             hd.status=2
+            <if test="dlrldBean.userName != null and dlrldBean.userName != ''">
+                and hd.houseId in (select mm.id from house_man mm where mm.name like '%${dlrldBean.userName}%')
+            </if>
+        </where>
+    </sql>
+   <!-- <select id="queryDlrld" parameterType="com.jk.model.DlrldBean">
+  select hd.*,di.dltypeName as dltyname,di.dltymoney as dley,
+      hd.takeTime as tame,hd.dlrldtyId as dllid,
+      dt.dlrldName as dllname,dt.awardImg as awardImg,
+      hm.name as userName,hm.loginimg as loimg
+      from house_dlrld hd left join dltle_integral di on hd.prizeTypeid=di.dltypeid
+                             left join dlrld_type dt on hd.dlrldtyId=dt.dlrldtyId
+                             LEFT JOIN house_man hm on hd.houseId=hm.id
+            where status=2
+        <include refid="hjk"></include>
+    </select>
+    <sql id="hjk">
+        <where>
+            <if test="dlrldBean.username != null dlrldBean.username != ''">
+                and hd.houseId in (select id from house_man mm where mm.name like '%${dlrldBean.username}%')
+            </if>
+        </where>
+    </sql>
+-->
 
 </mapper>

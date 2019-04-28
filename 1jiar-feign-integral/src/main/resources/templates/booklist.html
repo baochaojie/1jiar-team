@@ -20,15 +20,22 @@
         </div>
     </div>
 </nav>
+<div id="toolbar">
+    <form class="form-inline" id="query_form">
+        <div class="form-group">
+            <label for="userName">用户名字</label>
+            <input type="text" class="form-control" id="userName" placeholder="请输入用户名">
+        </div>
+    </form>
+    <button type="button" onclick="searchUser()" class="btn btn-info glyphicon glyphicon-plus ">奖品记录</button>
+</div>
 <div class="container-fluid">
     <div class="row">
         <div class="col-md-10">
             <button type="button" onclick="openAdd()" class="btn btn-info glyphicon glyphicon-plus ">新增奖品</button>
-            //用户积分
-            <div class="table" id="MembershipPoint"></div></div>
-              //奖品历史记录
-            <div class="table" id="DlrldHistoryTable"></div></div>
-            //奖品
+
+        <table class="table" id="DlrldHistoryTable2"></table>
+            ,</div>
             <div class="table" id="prizeTable"></div></div>
     </div>
 </div>
